@@ -1,0 +1,396 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* Paths */
+/* Colors */
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabserifextralight-webfont.eot');
+  src: url('../fonts/pragmatica-slabserifextralight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabserifextralight-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabserifextralight-webfont.woff') format('woff'), url('../fonts/pragmatica-slabserifextralight-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabserifextralight-webfont.svg#pragmatica_slabserifXLt') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabseriflight-webfont.eot');
+  src: url('../fonts/pragmatica-slabseriflight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabseriflight-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabseriflight-webfont.woff') format('woff'), url('../fonts/pragmatica-slabseriflight-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabseriflight-webfont.svg#pragmatica_slabseriflight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabserifbook-webfont.eot');
+  src: url('../fonts/pragmatica-slabserifbook-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabserifbook-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabserifbook-webfont.woff') format('woff'), url('../fonts/pragmatica-slabserifbook-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabserifbook-webfont.svg#pragmatica_slabserifbook') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabserifmedium-webfont.eot');
+  src: url('../fonts/pragmatica-slabserifmedium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabserifmedium-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabserifmedium-webfont.woff') format('woff'), url('../fonts/pragmatica-slabserifmedium-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabserifmedium-webfont.svg#pragmatica_slabserifmedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabserifbold-webfont.eot');
+  src: url('../fonts/pragmatica-slabserifbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabserifbold-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabserifbold-webfont.woff') format('woff'), url('../fonts/pragmatica-slabserifbold-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabserifbold-webfont.svg#pragmatica_slabserifbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pragmatica-slabserif';
+  src: url('../fonts/pragmatica-slabserifextrabold-webfont.eot');
+  src: url('../fonts/pragmatica-slabserifextrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pragmatica-slabserifextrabold-webfont.woff2') format('woff2'), url('../fonts/pragmatica-slabserifextrabold-webfont.woff') format('woff'), url('../fonts/pragmatica-slabserifextrabold-webfont.ttf') format('truetype'), url('../fonts/pragmatica-slabserifextrabold-webfont.svg#pragmatica_slabserifextrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #001837;
+  background-color: #fafcfe;
+  font-weight: 400;
+  overflow-y: scroll;
+}
+.grid__inner {
+  max-width: 1320px;
+  position: relative;
+  *zoom: 1;
+  margin: 0 auto;
+}
+.grid__inner:before,
+.grid__inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.grid__inner:after {
+  clear: both;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-weight: 500;
+  font-family: 'pragmatica-slabserif', sans-serif;
+}
+h2,
+.h2 {
+  font-size: 48px;
+  line-height: 56px;
+}
+h3,
+.h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h5,
+.h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.header {
+  height: 141px;
+  background-color: white;
+  box-shadow: 10px 0 50px rgba(61, 110, 146, 0.1);
+}
+.get-card__inner {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+  padding: 66px 100px 70px;
+}
+.get-card__steps {
+  *zoom: 1;
+  margin-top: 70px;
+}
+.get-card__steps:before,
+.get-card__steps:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.get-card__steps:after {
+  clear: both;
+}
+.get-card__steps._2-steps .get-card__step {
+  width: 45%;
+}
+.get-card__steps._2-steps .get-card__step + .get-card__step {
+  margin-left: 10%;
+}
+.get-card__steps._4-steps .get-card__step {
+  width: 22%;
+}
+.get-card__steps._4-steps .get-card__step + .get-card__step {
+  margin-left: 4%;
+}
+.get-card__step {
+  float: left;
+  width: 256px;
+  position: relative;
+}
+.get-card__step:last-child:after {
+  display: none;
+}
+.get-card__step:after {
+  content: '';
+  width: 24px;
+  height: 18px;
+  background: url('../images/icons/arr-next.svg') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 5px;
+  top: 37px;
+  opacity: 0.2;
+}
+.get-card__step + .get-card__step {
+  margin-left: 128px;
+}
+.get-card__step-ico {
+  width: 95px;
+  height: 95px;
+  background: none no-repeat center;
+  background-size: contain;
+}
+.get-card__step-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.get-card__step-text {
+  margin-top: 22px;
+  opacity: 0.7;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.affix {
+  position: fixed;
+}
+.t-a-c {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
