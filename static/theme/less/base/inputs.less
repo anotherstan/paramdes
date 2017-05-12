@@ -1,0 +1,82 @@
+
+.input-base-skin() {
+	box-sizing: border-box;
+	vertical-align: top;
+	border: 2px solid @cBorder;
+	background: #fff;
+	box-shadow: none;
+	width: 100%;
+	font-weight: 400;
+	font-family: @font-family-base;
+}
+
+input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea {
+	.input-base-skin();
+	font-size: 20px;
+	line-height: 20px;
+	padding: 20px 22px;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	color: @textColor;
+	border-radius: 2px;
+	&::-webkit-input-placeholder {color:fade(#001837,30%);}
+	&::-moz-placeholder          {color:fade(#001837,30%);}/* Firefox 19+ */
+	&:-moz-placeholder           {color:fade(#001837,30%);}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:fade(#001837,30%);}
+}
+textarea{
+	resize: none;
+}
+
+.ideal-radio{
+	width: 20px;
+	height:20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid @cBorder;
+	transition: border 0.3s;
+	&.checked{
+		border: 6px solid @cRed;
+	}
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	&[disabled] + .ideal-check{
+		background-color: @cBorder;
+		border-color:@cBorder;
+	}
+}
+.b-check{
+	position: relative;
+	padding-left:40px;
+	a{
+		color: @cRed;
+	}
+	.ideal-check{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+.ideal-check{
+	width: 24px;
+	height: 24px;
+	background:  none no-repeat center #fff;
+	background-size: 12px 9px;
+	border: 2px solid @cBorder;
+	border-radius: 2px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 16px;
+	&.checked{
+		border-color: transparent;
+		background-color: @cRed;
+		background-image: url('@{pathToImg}icons/ok_small.svg');
+	}
+}

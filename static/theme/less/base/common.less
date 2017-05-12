@@ -1,3 +1,15 @@
+* {
+	box-sizing:border-box;
+}
+*:before,
+*:after {
+	box-sizing:border-box;
+}
+*,*:hover,*:focus{
+	outline: none;
+}
+
+
 body {
 	font-family: @font-family-base;
 	font-size: @font-size-base;
@@ -8,13 +20,16 @@ body {
 	overflow-y: scroll;
 }
 .grid{
-
+	min-width: 1440px;
 }
 .grid__inner{
-	max-width: 1320px;
+	max-width: 1312px;
 	position: relative;
 	.clearfix;
 	margin: 0 auto;
+}
+a{
+	text-decoration: none;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	font-weight: 500;
@@ -39,4 +54,21 @@ h5,.h5{
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 28px;
+}
+.frame{
+	width: 128px;
+	height: 128px;
+	background: url('@{pathToImg}icons/frame.svg') no-repeat center;
+	background-size: contain;
+	box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
+	position: relative;
+	&__img{
+		position: absolute;
+		width: 50%;
+		height:50%;
+		top: 25%;
+		left: 25%;
+		background: none no-repeat center;
+		background-size: contain;
+	}
 }

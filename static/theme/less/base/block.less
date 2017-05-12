@@ -1,0 +1,45 @@
+.b-blocks{
+	padding-top: 96px;
+	padding-bottom: 96px;
+	&._dark{
+		background-color: #001837;
+	}
+}
+.b-block{
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+	padding: 48px 96px;
+	&._transparent{
+		background-color: transparent;
+		box-shadow: none;
+	}
+	&__title{
+		&._dash{
+			position: relative;
+			&:before{
+				content: '';
+				width: 90px;
+				height: 12px;
+				background-color: @cRed;
+				position: absolute;
+				left: -141px;
+				top: 12px;
+				transform: skewX(-30deg);
+			}
+		}
+	}
+	&__indent{
+		margin-left: -96px;
+		margin-right: -96px;
+	}
+	&__subtitle{
+		font-size: 16px;
+		color: fade(#001e45,70%);
+		margin-top: 13px;
+	}
+	&+&{
+		margin-top: 64px;
+	}
+
+}

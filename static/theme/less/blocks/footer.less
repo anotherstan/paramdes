@@ -1,3 +1,93 @@
 .footer{
-
+	background-color: #001837;
+	color: #fff;
+	min-width: 1440px;
+	&__inner{
+		padding: 96px 96px 48px;
+	}
+	&__menu{
+		border-top: 1px solid fade(#fff,10%);
+		margin-top: 50px;
+		padding-top: 50px;
+		.clearfix;
+		&-col{
+			float: left;
+			width: 352px;
+			&+&{
+				margin-left: 32px;
+			}
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 20px;
+			font-family: @fPragmatica;
+			a{
+				color: #fff;
+			}
+		}
+		&-list{
+			list-style: none;
+			padding-left: 0;
+			margin-top: 31px;
+			margin-bottom: 0;
+			li{
+				&+li{
+					margin-top: 20px;
+				}
+				a{
+					color: fade(#fff,70%);
+				}
+			}
+		}
+	}
+	&__bottom{
+		border-top: 1px solid fade(#fff,10%);
+		margin-top: 48px;
+		padding-top: 48px;
+		position: relative;
+		.clearfix;
+		&-text{
+			font-size: 12px;
+			line-height: 20px;
+			color: fade(#fff,70%);
+			float: left;
+			width: 352*2px+32px;
+			padding-right: 32px;
+		}
+		&-logo{
+			width: 98px;
+			height: 36px;
+			background: url('@{pathToImg}icons/vtb-logo.png') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			z-index: 2;
+			left: 100%;
+			top: -9px;
+		}
+	}
+	&__social{
+		float: left;
+		.clearfix;
+		&-item{
+			float: left;
+			height: 18px;
+			background: none no-repeat center;
+			background-size: contain;
+			margin-right: 32px;
+			margin-top: 4px;
+			&._fb{
+				width: 9px;
+				background-image: url('@{pathToImg}icons/social/fb.svg');
+			}
+			&._tw{
+				width: 21px;
+				background-image: url('@{pathToImg}icons/social/tw.svg');
+			}
+			&._google{
+				width: 26px;
+				background-image: url('@{pathToImg}icons/social/google.svg');
+			}
+		}
+	}
 }

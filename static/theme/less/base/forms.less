@@ -1,0 +1,38 @@
+.b-form{
+	&__row{
+		&+&{
+			margin-top: 24px;
+		}
+	}
+	&__block{
+		&-field{
+			height: 64px;
+		}
+	}
+	&__check{
+		margin-top: 33px;
+	}
+	&__btn{
+		&-wrap{
+			margin-top: 49px;
+		}
+	}
+}
+.request-form{
+	position: relative;
+	margin-top: 48px;
+	&__block{
+		position: relative;
+		z-index: 2;
+		width: 544px;
+	}
+	&__img{
+		width: 1022px;
+		height: 377px;
+		position: absolute;
+		right: -160px;
+		top: -29px;
+		background: url('@{pathToImg}request-form.png') no-repeat center;
+		background-size: contain;
+	}
+}
