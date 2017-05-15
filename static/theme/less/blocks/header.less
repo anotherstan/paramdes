@@ -1,5 +1,62 @@
 .header{
-	height: 141px;
 	background-color: white;
 	box-shadow: 10px 0 50px rgba(61, 110, 146, 0.1);
+	&__top{
+		border-bottom: 1px solid fade(@textColor,10%);
+		padding-top: 15px;
+		padding-bottom: 13px;
+	}
+	&__inner{
+		padding-left: 96px;
+		padding-right: 96px;
+	}
+	&__logo{
+		float: left;
+		width: 100px;
+		height: 48px;
+		.background('@{pathToImg}logo.png');
+	}
+	&__main{
+		padding-top: 24px;
+		.clearfix;
+		&-btn{
+			float: right;
+			height: 40px;
+			margin-top: 4px;
+			padding: 13px 26px;
+		}
+	}
+	&__menu{
+		float: left;
+		.clearfix;
+		margin-left: 48px;
+		&-link{
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 16px;
+			display: block;
+			color: @textColor;
+			padding-top: 16px;
+			padding-bottom: 37px;
+			border-bottom: 3px solid transparent;
+			transition: border-color @animTime;
+			&:hover,&._active{
+				border-color: @cRed;
+			}
+			.dots{
+				font-size: 30px;
+				display: inline-block;
+				vertical-align: top;
+				line-height: 0;
+				color: fade(@textColor,20%);
+				margin-left: 11px;
+			}
+		}
+		&-item{
+			float: left;
+			&+&{
+				margin-left: 48px;
+			}
+		}
+	}
 }

@@ -1,0 +1,46 @@
+.top-menu{
+	.clearfix;
+	&__item{
+		float: left;
+		&+&{
+			margin-left: 48px;
+		}
+		&._login{
+			float: right;
+			.top-menu__link{
+				&:before{
+					content: '';
+					display: inline-block;
+					vertical-align: top;
+					width: 12px;
+					height:16px;
+					margin-right: 11px;
+					margin-top: -1px;
+					.background('@{pathToImg}icons/lock.svg');
+				}
+			}
+		}
+	}
+	&__link{
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 16px;
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		color: @textColor;
+		display: block;
+		&._arr{
+			&:after{
+				content: '';
+				width: 8px;
+				height: 6px;
+				opacity: 0.2;
+				.background('@{pathToImg}icons/arr_down.svg');
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 4px;
+				margin-left: 14px;
+			}
+		}
+	}
+}

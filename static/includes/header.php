@@ -14,6 +14,59 @@
 </head>
 <body>
 <header class="header">
-
+	<div class="header__top">
+		<div class="grid__inner">
+			<div class="header__inner">
+				<div class="top-menu">
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link _arr">Частным лицам</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link _arr">Москва</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Офисы и банкоматы</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Контакты</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Поддержка</a>
+					</div>
+					<div class="top-menu__item _login">
+						<a href="#" class="top-menu__link">Интернет-банк</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__main">
+		<div class="grid__inner">
+			<div class="header__inner">
+				<a href="#" class="header__logo"></a>
+				<div class="header__menu">
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link _active">Карты</a>
+					</div>
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link">Вклады</a>
+					</div>
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link">Кредиты</a>
+					</div>
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link">Сберегательный счет</a>
+					</div>
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link">Платежи</a>
+					</div>
+					<div class="header__menu-item">
+						<a href="#" class="header__menu-link">Еще <span class="dots">...</span></a>
+					</div>
+				</div>
+				<a href="#" class="header__main-btn btn">Онлайн-заявка</a>
+			</div>
+		</div>
+	</div>
 </header>
 <div class="grid">
