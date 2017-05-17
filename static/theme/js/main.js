@@ -62,46 +62,23 @@ app.getCard = function () {
 			$form = $block.find('[data-get-card-form]'),
 			$counter = $block.find('[data-get-card-steps-counter]'),
 			$steps = $block.find('[data-get-card-step]'),
-			$activeSteps = null,
-			$stepIco = $block.find('[data-get-card-step-ico]'),
-			$stepTitle = $block.find('[data-get-card-step-title]'),
-			$stepText = $block.find('[data-get-card-step-text]'),
 			$blockHtml = $block.find('[data-get-card-html]'),
-			$blockText = $block.find('[data-get-card-text]'),
-			steps = '',
-			temp = '',
-			counter = null
+			$blockText = $block.find('[data-get-card-text]')
 		;
-	rendering();
+	$.post($form.attr('action'), $form.serialize(), function(data){
+		$blockHtml.html(data.body);
+		$blockText.text(data.body);
+	},'json');
+
 	$form.on('submit',function () {
-		rendering();
+		$.post($form.attr('action'), $form.serialize(), function(data){
+			$blockHtml.html(data.body);
+			$blockText.text(data.body);
+		},'json');
 		return false;
 	});
-	function rendering() {
-		counter = $counter.val();
-		$activeSteps = $steps.slice(0,counter);
-		$steps.hide();
-		$activeSteps.show();
-		steps='';
-
-		$activeSteps.each(function () {
-			var $self = $(this);
-
-			steps = steps+'<div class="b-steps__item">' +
-				'<div class="b-steps__item-ico" style="background-image: url('+$self.find($stepIco).val()+')"></div> ' +
-				'<div class="b-steps__item-title">'+$self.find($stepTitle).val()+'</div> ' +
-				'<div class="b-steps__item-text">'+$self.find($stepText).val()+'</div> ' +
-				'</div> ';
-
-		});
-		
-		temp = '<div class="b-block">' +
-
-				'<div class="b-block__title h3">Как получить карту?</div> ' +
-				'<div class="b-steps _indent _arrs _'+counter+'-steps">'+steps+'</div>' +
-			'</div>';
-
-		$blockHtml.html(temp);
-		$blockText.text(temp);
-	}
+	$counter.on('change',function () {
+		$steps.hide().slice(0,$counter.val()).show();
+		$form.trigger('submit');
+	});
 };
