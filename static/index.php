@@ -3,6 +3,255 @@
 		<div class="b-blocks">
 			<div class="grid__inner">
 				<div class="b-block">
+					<div class="b-block__title h3 _dash">Тарифы</div>
+					<div class="b-steps _indent">
+						<div class="b-steps__item">
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1.svg')"></div>
+							<div class="b-steps__item-title _small">Кредитный лимит</div>
+							<div class="b-steps__item-value">500 000 ₽</div>
+						</div>
+						<div class="b-steps__item">
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2.svg')"></div>
+							<div class="b-steps__item-title _small">Процентная ставка</div>
+							<div class="b-steps__item-value">0%</div>
+						</div>
+						<div class="b-steps__item">
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3.svg')"></div>
+							<div class="b-steps__item-title _small">Ежемесячный платеж</div>
+							<div class="b-steps__item-value">5%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-blocks _dark conditions">
+			<div class="grid__inner">
+				<div class="b-block conditions__main" data-tabs>
+					<div class="h3">Условия обслуживания</div>
+					<div class="conditions__tabs tabs">
+						<a href="javascript:void(0);" class="tabs__tab _active" data-tabs-tab="1">Новый клиент</a>
+						<a href="javascript:void(0);" class="tabs__tab" data-tabs-tab="2">Зарплатный клиент</a>
+					</div>
+					<div class="conditions__block">
+						<div class="h4 conditions__block-title">Основная информация</div>
+						<div class="conditions__block-items">
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Тип карты</div>
+								<div class="conditions__block-item-val">Visa Platinum</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Срок действия</div>
+								<div class="conditions__block-item-val">60 месяцев</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Выпуск карты</div>
+								<div class="conditions__block-item-val">900 ₽</div>
+							</div>
+						</div>
+					</div>
+					<div class="conditions__block">
+						<div class="h4 conditions__block-title">Процентная ставка</div>
+						<div class="conditions__block-items">
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Беспроцентный период</div>
+								<div class="conditions__block-item-val">120 дней</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">При выполнении условий </div>
+								<div class="conditions__block-item-val">0%</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">В остальных случаях</div>
+								<div class="conditions__block-item-val">27,9%</div>
+							</div>
+						</div>
+					</div>
+					<div class="conditions__notice">
+						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи
+						и вовремя погашать задолженность.
+					</div>
+				</div>
+				<div class="b-block _transparent conditions__all">
+					<div class="h3">Полные условия</div>
+					<div class="conditions__all-files files">
+						<a href="#" class="file">
+							<div class="file__type">
+								<div class="file__type-text">PDF</div>
+								<div class="file__type-ico"></div>
+							</div>
+							<div class="file__inner">
+								<div class="file__name">Тариф по кредитной карте «Элемент 120» (действует с 24.01.17)</div>
+								<div class="file__size">254 Кб</div>
+							</div>
+						</a>
+						<a href="#" class="file">
+							<div class="file__type">
+								<div class="file__type-text">PDF</div>
+								<div class="file__type-ico"></div>
+							</div>
+							<div class="file__inner">
+								<div class="file__name">Тариф по кредитной карте «Элемент 120» <nobr>(для зарплатных клиентов,	 действует с 10.03.17)</nobr></div>
+								<div class="file__size">229 Кб</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="benefits__wrap">
+			<div class="grid__inner">
+				<div class="b-block _transparent benefits" data-benefits>
+					<div class="benefits__inner">
+						<div class="benefits__top">
+							<div class="h2">Уникальные преимущества</div>
+							<div class="b-block__subtitle _white">Особенные сервисы Почта-Банка.</div>
+						</div>
+						<div class="b-block__indent">
+							<div class="benefits__gall">
+								<div class="benefits__gall-block">
+									<div class="b-block _transparent">
+										<div class="h3">Пакет онлайн-покупателя</div>
+										<div class="b-block__subtitle">Комфортные и безопасные покупки в интернете.</div>
+										<div class="benefits__gall-price">
+											<div class="benefits__gall-price-block">
+												<span class="val">0</span>
+												<div class="benefits__gall-price-period">
+													Руб<hr/>Мес
+												</div>
+											</div>
+											<div class="benefits__gall-price-text">Автоматическая активация пакета<br/>при сумме покупок от 7500 Р.</div>
+										</div>
+										<div class="benefits__gall-tabs">
+											<div class="h4">Ваш помощник в любой ситуации</div>
+											<div class="benefits__gall-tabs-items">
+												<a href="javascript:void(0);" data-benefits-tab="1" class="benefits__gall-tab _active"><span class="benefits__gall-tab-num">1</span>Вам не подошел купленный товар</a>
+												<a href="javascript:void(0);" data-benefits-tab="2" class="benefits__gall-tab"><span class="benefits__gall-tab-num">2</span>Приобретенная техника вышла из строя</a>
+												<a href="javascript:void(0);" data-benefits-tab="3" class="benefits__gall-tab"><span class="benefits__gall-tab-num">3</span>Вы нашли цену ниже в другом месте</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="benefits__gall-slides">
+									<div class="benefits__gall-slide" data-benefits-slide="1">
+										<div class="benefits__gall-slide-img" style="background-image: url('/static/theme/images/benefits/1.png');"></div>
+										<div class="benefits__gall-slide-in">
+											<div class="benefits__gall-slide-counter"><span>1</span> / 3</div>
+											<div class="benefits__gall-slide-texts">
+												<div class="benefits__gall-slide-title h4">Бесплатный возврат</div>
+												<div class="benefits__gall-slide-text">
+													Если товар не подошел или отличается  от заказанного,
+													то вам будет возмещена стоимость обратной отправки его продавцу.
+												</div>
+											</div>
+											<div class="benefits__gall-slide-video">
+												<a href="javascript:void(0);" class="video-btn">
+													<div class="video-btn__ico"></div>
+													<div class="video-btn__title">Посмотреть видео</div>
+													<div class="video-btn__duration">3:20</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="benefits__gall-slide hide" data-benefits-slide="2">
+										<div class="benefits__gall-slide-img" style="background-image: url('/static/theme/images/benefits/2.png');"></div>
+										<div class="benefits__gall-slide-in">
+											<div class="benefits__gall-slide-counter"><span>2</span> / 3</div>
+											<div class="benefits__gall-slide-texts">
+												<div class="benefits__gall-slide-title">Бесплатный ремонт</div>
+												<div class="benefits__gall-slide-text">
+													Если техника оказалась сломанной,  ее бесплатно отремонтируют
+													 или компенсируют вам  ее полную стоимость.
+												</div>
+											</div>
+											<div class="benefits__gall-slide-video">
+												<a href="javascript:void(0);" class="video-btn">
+													<div class="video-btn__ico"></div>
+													<div class="video-btn__title">Посмотреть видео</div>
+													<div class="video-btn__duration">3:29</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="benefits__gall-slide hide" data-benefits-slide="3">
+										<div class="benefits__gall-slide-img" style="background-image: url('/static/theme/images/benefits/3.png');"></div>
+										<div class="benefits__gall-slide-in">
+											<div class="benefits__gall-slide-counter"><span>3</span> / 3</div>
+											<div class="benefits__gall-slide-texts">
+												<div class="benefits__gall-slide-title">Гарантия лучшей цены</div>
+												<div class="benefits__gall-slide-text">
+													Если купленный товар стоит дешевле  в любом другом магазине на территории РФ, вам вернется разница в цене.
+												</div>
+											</div>
+											<div class="benefits__gall-slide-video">
+												<a href="javascript:void(0);" class="video-btn">
+													<div class="video-btn__ico"></div>
+													<div class="video-btn__title">Посмотреть видео</div>
+													<div class="video-btn__duration">3:20</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits__guarantee">
+								<div class="benefits__guarantee-item">
+									<div class="benefits__guarantee-item-period">
+										<div class="val">30</div>
+										<div class="benefits__guarantee-item-period-text">Дней</div>
+									</div>
+									<div class="benefits__guarantee-item-content">
+										<div class="benefits__guarantee-item-title">Все покупки по карте застрахованы</div>
+										<div class="benefits__guarantee-item-text">На случай утери, кражи или случайного повреждения.</div>
+									</div>
+								</div>
+								<div class="benefits__guarantee-item">
+									<div class="benefits__guarantee-item-period">
+										<div class="val">24</div>
+										<div class="benefits__guarantee-item-period-text">месяца</div>
+									</div>
+									<div class="benefits__guarantee-item-content">
+										<div class="benefits__guarantee-item-title">Увеличение срока гарантии в два раза</div>
+										<div class="benefits__guarantee-item-text">Срок гарантии на покупки увеличивается до 24 месяцев.</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits__blocks">
+								<div class="benefits__block">
+									<div class="h4">Привилегии Visa Premium</div>
+									<div class="benefits__block-subtitle">Доступ к специальным предложениям  «Visa&nbsp;Premium» по всему миру.</div>
+									<ul class="benefits__block-list">
+										<li>Скидки, бонусы и подарки</li>
+										<li>Повышение класса обслуживания</li>
+										<li>Акции от 1 500 компаний России</li>
+										<li>20 000 партнеров по всему миру</li>
+									</ul>
+									<div class="article__ico frame">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1.svg')"></div>
+									</div>
+								</div>
+								<div class="benefits__block">
+									<div class="h4">Помощь за рубежом</div>
+									<div class="benefits__block-subtitle">Экстренная помощь в случае непредвиденных ситуаций.</div>
+									<ul class="benefits__block-list">
+										<li>Информационная поддержка</li>
+										<li>Решение проблем со здоровьем</li>
+										<li>Поиск юристов и переводчиков</li>
+										<li>Организация возвращения домой</li>
+									</ul>
+									<div class="article__ico frame">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/2.svg')"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-blocks">
+			<div class="grid__inner">
+				<div class="b-block">
 					<div class="b-block__title h3 _dash">Как получить карту?</div>
 					<div class="b-steps _indent _arrs">
 						<div class="b-steps__item">

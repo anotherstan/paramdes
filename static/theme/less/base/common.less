@@ -72,3 +72,81 @@ h5,.h5{
 		background-size: contain;
 	}
 }
+.video-btn{
+	display: inline-block;
+	vertical-align: top;
+	min-height: 64px;
+	position: relative;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 12px;
+	text-transform: uppercase;
+	padding-left: 90px;
+	padding-top: 15px;
+	color: #fff;
+	letter-spacing: 0.8px;
+	&__ico{
+		width: 64px;
+		height:64px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url('@{pathToImg}icons/play-blue.svg') no-repeat 25px center #fff;
+		border: 4px solid fade(#021896,90%);
+		border-radius: 50%;
+	}
+	&__title{
+
+	}
+	&__duration{
+		color: fade(#fff,70%);
+		margin-top: 12px;
+	}
+}
+.files{
+	.file{
+		float: left;
+		width: 544px;
+		&:nth-child(2n){
+			margin-left: 32px;
+		}
+	}
+}
+.file{
+	display: block;
+	border: 1px solid fade(#fff,10%);
+	color: #fff;
+	padding: 24px 31px 22px;
+	&__type{
+		float: left;
+		&-text{
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			line-height: 12px;
+			text-transform: uppercase;
+		}
+		&-ico{
+			width: 24px;
+			height: 14px;
+			.background('@{pathToImg}icons/file.svg');
+			opacity: 0.1;
+			margin-top: 15px;
+		}
+	}
+	&__inner{
+		margin-left: 59px;
+		border-left: 1px solid fade(#fff,10%);
+		padding-left: 32px;
+	}
+	&__name{
+
+	}
+	&__size{
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 12px;
+		color: fade(#fff,70%);
+		margin-top: 16px;
+	}
+}

@@ -1,13 +1,14 @@
 <?php
 	$ROOT = '..';
 	class HtmlCodeGenerator {
-		public static function getHtmlCodeForCardSteps($stepsCounter, $stepsIco, $stepsTitle, $stepsText) {
-			$params = array(
+		//public static function getHtmlCodeForCardSteps($stepsCounter, $stepsIco, $stepsTitle, $stepsText) {
+		public static function getHtmlCodeForCardSteps($params) {
+			/*$params = array(
 				'stepsCounter' => $stepsCounter,
-				'stepsIco' => $stepsIco,
-				'stepsTitle' => $stepsTitle,
-				'stepsText' => $stepsText,
-			);
+				'stepIco' => $stepsIco,
+				'stepTitle' => $stepsTitle,
+				'stepText' => $stepsText,
+			);*/
 			$code = self::render('cardSteps',$params);
 			return $code;
 		}

@@ -10,6 +10,7 @@ app.init = function () {
 	app.initNav();
 	app.questions();
 	app.masks();
+	app.benefits();
 };
 app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
@@ -81,4 +82,29 @@ app.getCard = function () {
 		$steps.hide().slice(0,$counter.val()).show();
 		$form.trigger('submit');
 	});
+};
+
+app.benefits = function () {
+	var $block = $('[data-benefits]'),
+			$tab = $block.find('[data-benefits-tab]'),
+			$slide = $block.find('[data-benefits-slide]')
+		;
+	$tab.on('click',function () {
+		if($(this).hasClass('_active')){
+			return false;
+		}
+		setSlide($(this).data('benefitsTab'));
+	});
+	$tab.hover(function () {
+		if($(this).hasClass('_active')){
+			return false;
+		}
+		setSlide($(this).data('benefitsTab'));
+	},function () {
+		
+	});
+	function  setSlide(n) {
+		$tab.removeClass('_active').filter('[data-benefits-tab="'+n+'"]').addClass('_active');
+		$slide.hide().filter('[data-benefits-slide="'+n+'"]').show();
+	}
 };
