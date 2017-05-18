@@ -37,34 +37,58 @@
 	}
 	&__all{
 		margin-top: 48px;
-		&-btn{
-			display: inline-block;
-			vertical-align: top;
-			color: @cRed;
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 12px;
-			text-transform: uppercase;
+	}
+}
+.all-btn{
+	display: inline-block;
+	vertical-align: top;
+	color: @cRed;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 12px;
+	text-transform: uppercase;
+	&._toggle{
+		position: absolute;
+		left: 96px;
+		top: -24px;
+		z-index: 3;
+		.all-btn{
+			&__counter{
+				background-image: url('@{pathToImg}icons/plus_white.svg');
+			}
 		}
-		&-text{
-			padding-top: 18px;
-			display: inline-block;
-			vertical-align: top;
-			letter-spacing: 0.8px;
+		&._active{
+			.all-btn{
+				&__counter{
+					background-image: url('@{pathToImg}icons/close_white.svg');
+				}
+				&__text{
+					opacity: 0;
+				}
+			}
 		}
-		&-counter{
-			color: #fff;
-			width: 48px;
-			height: 48px;
-			background-color: @cRed;
-			box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.2);
-			display: inline-block;
-			vertical-align: top;
-			border-radius: 50%;
-			text-align: center;
-			padding-top: 18px;
-			box-sizing: border-box;
-			margin-right: 24px;
-		}
+	}
+	&__text{
+		padding-top: 18px;
+		display: inline-block;
+		vertical-align: top;
+		letter-spacing: 0.8px;
+		opacity: 1;
+		transition: opacity 0.3s 0.5s;
+	}
+	&__counter{
+		color: #fff;
+		width: 48px;
+		height: 48px;
+		background: none no-repeat center @cRed;
+		box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.2);
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 50%;
+		text-align: center;
+		padding-top: 18px;
+		box-sizing: border-box;
+		margin-right: 24px;
+
 	}
 }

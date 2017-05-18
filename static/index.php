@@ -43,6 +43,71 @@
 	</div>
 	<div class="b-blocks">
 		<div class="grid__inner">
+			<div class="about">
+				<div class="about__bg"></div>
+				<div class="about__photo" style="background-image: url('/static/theme/images/about.png');"></div>
+				<div class="about__inner">
+					<div class="clearfix">
+						<div class="about__left">
+							<div class="about__frame"></div>
+							<div class="about__counter h3"><span>1</span> / 4</div>
+						</div>
+						<div class="about__main">
+							<div class="about__title h3">
+								Покупайте сейчас,<br/>
+								платите через 120 дней
+							</div>
+							<div class="about__subtitle">Без комиссий и переплат.</div>
+							<div class="about__video">
+								<a href="javascript:void(0);" class="video-btn _red">
+									<div class="video-btn__ico"></div>
+									<div class="video-btn__title">Посмотреть видео</div>
+									<div class="video-btn__duration">1:24</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="about__steps">
+						<a href="javascript:void(0)" class="about__step _active">
+							<div class="about__step-num">1 <span>’’</span></div>
+							<div class="about__step-title">Как купить вещи  в интернете</div>
+							<div class="about__step-text">И не прогадать.</div>
+						</a><a href="javascript:void(0)" class="about__step">
+							<div class="about__step-num">2 <span>’’</span></div>
+							<div class="about__step-title">Как получать<br />доход от хобби</div>
+							<div class="about__step-text">Не уходя с работы.</div>
+						</a><a href="javascript:void(0)" class="about__step">
+							<div class="about__step-num">3 <span>’’</span></div>
+							<div class="about__step-title">Как покупать<br />все новые игры</div>
+							<div class="about__step-text">И не разориться.</div>
+						</a><a href="javascript:void(0)" class="about__step">
+							<div class="about__step-num">4 <span>’’</span></div>
+							<div class="about__step-title">Как путешествовать<br />по всему миру</div>
+							<div class="about__step-text">Почти бесплатно.</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-nav-block>
+	<div class="grid__inner">
+		<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+			<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+				<span data-nav-text>Показать график платежей</span>
+			</span>
+		</a>
+	</div>
+	<div class="b-blocks _dark conditions hide"  data-nav-content>
+		<div class="grid__inner">
+			<div class="b-block conditions__main" data-tabs>
+				<div class="h3">Как работает беспроцентный период</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="b-blocks">
+		<div class="grid__inner">
 			<div class="b-block">
 				<div class="b-block__title h3 _dash">Тарифы</div>
 				<div class="b-steps _indent">
@@ -65,76 +130,85 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-blocks _dark conditions">
+	<div data-nav-block>
 		<div class="grid__inner">
-			<div class="b-block conditions__main" data-tabs>
-				<div class="h3">Условия обслуживания</div>
-				<div class="conditions__tabs tabs">
-					<a href="javascript:void(0);" class="tabs__tab _active" data-tabs-tab="1">Новый клиент</a>
-					<a href="javascript:void(0);" class="tabs__tab" data-tabs-tab="2">Зарплатный клиент</a>
-				</div>
-				<div class="conditions__block">
-					<div class="h4 conditions__block-title">Основная информация</div>
-					<div class="conditions__block-items">
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">Тип карты</div>
-							<div class="conditions__block-item-val">Visa Platinum</div>
-						</div>
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">Срок действия</div>
-							<div class="conditions__block-item-val">60 месяцев</div>
-						</div>
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">Выпуск карты</div>
-							<div class="conditions__block-item-val">900 ₽</div>
+			<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+				<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+				<span data-nav-text>Показать условия обслуживания</span>
+			</span>
+			</a>
+		</div>
+		<div class="b-blocks _dark conditions hide"  data-nav-content>
+			<div class="grid__inner">
+				<div class="b-block conditions__main" data-tabs>
+					<div class="h3">Условия обслуживания</div>
+					<div class="conditions__tabs tabs">
+						<a href="javascript:void(0);" class="tabs__tab _active" data-tabs-tab="1">Новый клиент</a>
+						<a href="javascript:void(0);" class="tabs__tab" data-tabs-tab="2">Зарплатный клиент</a>
+					</div>
+					<div class="conditions__block">
+						<div class="h4 conditions__block-title">Основная информация</div>
+						<div class="conditions__block-items">
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Тип карты</div>
+								<div class="conditions__block-item-val">Visa Platinum</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Срок действия</div>
+								<div class="conditions__block-item-val">60 месяцев</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Выпуск карты</div>
+								<div class="conditions__block-item-val">900 ₽</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="conditions__block">
-					<div class="h4 conditions__block-title">Процентная ставка</div>
-					<div class="conditions__block-items">
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">Беспроцентный период</div>
-							<div class="conditions__block-item-val">120 дней</div>
-						</div>
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">При выполнении условий </div>
-							<div class="conditions__block-item-val">0%</div>
-						</div>
-						<div class="conditions__block-item">
-							<div class="conditions__block-item-title">В остальных случаях</div>
-							<div class="conditions__block-item-val">27,9%</div>
+					<div class="conditions__block">
+						<div class="h4 conditions__block-title">Процентная ставка</div>
+						<div class="conditions__block-items">
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">Беспроцентный период</div>
+								<div class="conditions__block-item-val">120 дней</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">При выполнении условий </div>
+								<div class="conditions__block-item-val">0%</div>
+							</div>
+							<div class="conditions__block-item">
+								<div class="conditions__block-item-title">В остальных случаях</div>
+								<div class="conditions__block-item-val">27,9%</div>
+							</div>
 						</div>
 					</div>
+					<div class="conditions__notice">
+						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи
+						и вовремя погашать задолженность.
+					</div>
 				</div>
-				<div class="conditions__notice">
-					Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи
-					и вовремя погашать задолженность.
-				</div>
-			</div>
-			<div class="b-block _transparent conditions__all">
-				<div class="h3">Полные условия</div>
-				<div class="conditions__all-files files">
-					<a href="#" class="file">
-						<div class="file__type">
-							<div class="file__type-text">PDF</div>
-							<div class="file__type-ico"></div>
-						</div>
-						<div class="file__inner">
-							<div class="file__name">Тариф по кредитной карте «Элемент 120» (действует с 24.01.17)</div>
-							<div class="file__size">254 Кб</div>
-						</div>
-					</a>
-					<a href="#" class="file">
-						<div class="file__type">
-							<div class="file__type-text">PDF</div>
-							<div class="file__type-ico"></div>
-						</div>
-						<div class="file__inner">
-							<div class="file__name">Тариф по кредитной карте «Элемент 120» <nobr>(для зарплатных клиентов,	 действует с 10.03.17)</nobr></div>
-							<div class="file__size">229 Кб</div>
-						</div>
-					</a>
+				<div class="b-block _transparent conditions__all">
+					<div class="h3">Полные условия</div>
+					<div class="conditions__all-files files">
+						<a href="#" class="file">
+							<div class="file__type">
+								<div class="file__type-text">PDF</div>
+								<div class="file__type-ico"></div>
+							</div>
+							<div class="file__inner">
+								<div class="file__name">Тариф по кредитной карте «Элемент 120» (действует с 24.01.17)</div>
+								<div class="file__size">254 Кб</div>
+							</div>
+						</a>
+						<a href="#" class="file">
+							<div class="file__type">
+								<div class="file__type-text">PDF</div>
+								<div class="file__type-ico"></div>
+							</div>
+							<div class="file__inner">
+								<div class="file__name">Тариф по кредитной карте «Элемент 120» <nobr>(для зарплатных клиентов,	 действует с 10.03.17)</nobr></div>
+								<div class="file__size">229 Кб</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -346,8 +420,8 @@
 						<?}?>
 					</div>
 					<div class="questions__all">
-						<a href="javascript:void(0);" class="questions__all-btn" data-nav-btn>
-							<span class="questions__all-counter">8</span><span class="questions__all-text">
+						<a href="javascript:void(0);" class="all-btn" data-nav-btn>
+							<span class="all-btn__counter">8</span><span class="all-btn__text">
 								<span data-nav-text>Показать все вопросы</span>
 								<span data-nav-text class="hide">Скрыть</span>
 							</span>

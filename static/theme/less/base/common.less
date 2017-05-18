@@ -18,9 +18,9 @@ body {
 	background-color: @bgColor;
 	font-weight: 400;
 	overflow-y: scroll;
+	min-width: 1440px;
 }
 .grid{
-	min-width: 1440px;
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
@@ -90,6 +90,19 @@ h5,.h5{
 	padding-top: 15px;
 	color: #fff;
 	letter-spacing: 0.8px;
+	&._red{
+		color: @cRed;
+		.video-btn{
+			&__ico{
+				background-image: url('@{pathToImg}icons/play-white.svg');
+				background-color: @cRed;
+				border-color: #ddd;
+			}
+			&__duration{
+				color: fade(#001e45,70%);
+			}
+		}
+	}
 	&__ico{
 		width: 64px;
 		height:64px;
