@@ -3,6 +3,14 @@ app = {};
 $(function () {
 	app.init();
 });
+app.dom = {
+	$window		: $(window),
+	$body	: $('body'),
+	$document	: $(document),
+	$grid:$('.grid'),
+	$header:$('.header'),
+	$footer:$('.footer')
+};
 
 app.init = function () {
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
@@ -11,6 +19,7 @@ app.init = function () {
 	app.questions();
 	app.masks();
 	app.benefits();
+	app.pageMenu();
 };
 app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
@@ -106,5 +115,23 @@ app.benefits = function () {
 	function  setSlide(n) {
 		$tab.removeClass('_active').filter('[data-benefits-tab="'+n+'"]').addClass('_active');
 		$slide.hide().filter('[data-benefits-slide="'+n+'"]').show();
+	}
+};
+app.pageMenu = function () {
+	var $menu = $('[data-page-menu]');
+
+	if(!$menu.length){
+		return false;
+	}
+	var throttled = _.throttle(updateMenu, 10);
+	app.dom.$window.on('scroll',throttled);
+	updateMenu();
+
+	function updateMenu() {
+		if(app.dom.$window.scrollTop() >= $menu.offset().top){
+			$menu.addClass('_fixed');
+		}else{
+			$menu.removeClass('_fixed');
+		}
 	}
 };

@@ -76,6 +76,7 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/jquery.ui.touch-punch.min.js',
 		options.sourcePathScripts + '/swiper/dist/js/swiper.min.js',
 		options.sourcePathScripts + '/masked-input.js',
+		options.sourcePathScripts + '/underscore-min.js',
 		options.sourcePathScripts + '/radiocheck.js'
 	])
 		.pipe(concat('libs.js'))
