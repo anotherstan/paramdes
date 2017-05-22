@@ -15,6 +15,9 @@
 	&__btn{
 		&-wrap{
 			margin-top: 49px;
+			.btn+.btn{
+				margin-left: 32px;
+			}
 		}
 	}
 }
@@ -34,5 +37,41 @@
 		top: -29px;
 		background: url('@{pathToImg}request-form.png') no-repeat center;
 		background-size: contain;
+	}
+}
+.tablet-v{
+	.b-form{
+		&__row{
+			&+.b-form__row{
+				margin-top: 20px;
+			}
+		}
+		&__block{
+			&-field{
+				height: 64px;
+			}
+		}
+		&__check{
+			margin-top: 25px;
+		}
+		&__btn{
+			&-wrap{
+				margin-top: 33px;
+			}
+		}
+	}
+	.request-form{
+		margin-top: 32px;
+		&__block{
+			position: relative;
+			z-index: 2;
+			width: 544px;
+		}
+		&__img{
+			width: 841px;
+			height: 307px;
+			right: -166px;
+			top: -21px;
+		}
 	}
 }

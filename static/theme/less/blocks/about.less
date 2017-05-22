@@ -36,10 +36,16 @@
 		float: left;
 	}
 	&__frame{
-
+		position: absolute;
+		top: -34px;
+		left: 96px;
+		z-index: 2;
 	}
 	&__counter{
-		color: #fff;
+		color: fade(#fff,30%);
+		span{
+			color: #fff;
+		}
 	}
 	&__subtitle{
 		margin-top: 18px;
@@ -70,6 +76,9 @@
 			box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.2);
 			height: 232px;
 			z-index: 2;
+			.about__step-num span{
+				opacity: 1;
+			}
 		}
 		&:first-child{
 			border-left:1px solid #e5e7eb;
@@ -95,6 +104,53 @@
 		&-text{
 			color: fade(#001e45,70%);
 			margin-top: 16px;
+		}
+	}
+}
+.tablet-v{
+	.about{
+		margin-top: 7px;
+		&__photo{
+			width: 301px;
+			height: 361px;
+			left: 255px;
+			top: -24px;
+		}
+		&__left{
+			padding-top: 84px;
+		}
+		&__inner{
+			padding: 34px 96px 0;
+		}
+		&__frame{
+			top: -25px;
+		}
+		&__subtitle{
+			margin-top: 14px;
+		}
+		&__video{
+			margin-top: 32px;
+		}
+		&__steps{
+			margin-top: 32px;
+		}
+		&__step{
+			height: 180px;
+			padding: 25px 48px;
+			&._active,&:hover{
+				height: 200px;
+			}
+			&-num{
+				font-size: 24px;
+				line-height: 24px;
+				span{
+					font-size: 48px;
+					margin-top: 10px;
+				}
+			}
+			&-title{
+				margin-top: 18px;
+			}
 		}
 	}
 }

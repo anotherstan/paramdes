@@ -26,6 +26,9 @@ body {
 	z-index: 10;
 	background-color: #fafcfe;
 	margin-bottom:935px;
+	.tablet-v &{
+		margin-bottom: 742px;
+	}
 }
 .grid__inner{
 	max-width: 1312px;
@@ -60,6 +63,7 @@ h5,.h5{
 	font-weight: 600;
 	line-height: 28px;
 }
+
 .frame{
 	width: 128px;
 	height: 128px;
@@ -67,6 +71,11 @@ h5,.h5{
 	background-size: contain;
 	box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
 	position: relative;
+	.tablet-v &{
+		width: 96px;
+		height: 96px;
+		//background-image: url('@{pathToImg}icons/frame_tablet.svg');
+	}
 	&__img{
 		position: absolute;
 		width: 50%;
@@ -90,6 +99,9 @@ h5,.h5{
 	padding-top: 15px;
 	color: #fff;
 	letter-spacing: 0.8px;
+	.tablet-v &{
+		padding-left: 84px;
+	}
 	&._red{
 		color: @cRed;
 		.video-btn{
@@ -138,6 +150,9 @@ h5,.h5{
 	.clearfix;
 	letter-spacing: 0.8px;
 	margin-bottom: 23px;
+	.tablet-v &{
+		margin-bottom: 19px;
+	}
 	&__item{
 		float: left;
 		margin-top: 18px;
@@ -204,6 +219,16 @@ h5,.h5{
 }
 .tabs{
 	.clearfix;
+	&._white{
+		.tabs{
+			&__item{
+				color: fade(#fff,70%);
+				&._active,&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
 	&__item{
 		font-size: 12px;
 		font-weight: 700;
@@ -259,5 +284,45 @@ h5,.h5{
 		line-height: 12px;
 		color: fade(#fff,70%);
 		margin-top: 16px;
+	}
+}
+.next-page{
+	position: absolute;
+	z-index:100;
+	right: 0;
+	top: 273px;
+	width: 253px;
+	height:124px;
+	background: url('@{pathToImg}next-page.png') no-repeat center;
+	background-size: contain;
+	.tablet-v &{
+		top: 198px;
+	}
+}
+.tablet-v{
+	h2,.h2{
+		font-size: 32px;
+		line-height: 40px;
+	}
+	h3,.h3{/**/
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h4,.h4{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	h5,.h5{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28px;
+	}
+
+	.file{
+		padding: 20px 32px 19px 23px;
+		&__inner{
+			margin-left: 51px;
+			padding-left: 24px;
+		}
 	}
 }

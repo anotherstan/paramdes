@@ -20,6 +20,11 @@
 	.user-select(none);
 	text-transform: uppercase;
 	transition: background-color 0.2s;
+	&._transparent{
+		border: 1px solid fade(@cRed,20%);
+		background-color: transparent;
+		.color(@cRed);
+	}
 	/*.no-touch &:hover{
 		background-color: @cRedHover;
 		box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);

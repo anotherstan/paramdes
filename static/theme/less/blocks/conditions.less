@@ -5,6 +5,7 @@
 		padding-top: 30px;
 		&-files{
 			margin-top: 42px;
+			.clearfix;
 		}
 	}
 	&__main{
@@ -14,7 +15,13 @@
 		padding-bottom: 64px;
 	}
 	&__tabs{
-
+		margin-top: 28px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid fade(#fff,10%);
+		margin-left: -96px;
+		margin-right: -96px;
+		padding-left: 96px;
+		padding-right: 96px;
 	}
 	&__notice{
 		border-radius: 2px;
@@ -54,6 +61,45 @@
 				font-size: 20px;
 				line-height: 20px;
 				margin-top: 16px;
+			}
+		}
+	}
+}
+.tablet-v{
+	.conditions{
+		&__all{
+			padding-top: 12px;
+			padding-bottom: 0;
+			&-files{
+				margin-top: 26px;
+			}
+		}
+		&__main{
+			padding-bottom: 48px;
+		}
+		&__tabs{
+			margin-top: 12px;
+			.tabs__item{
+				padding-bottom: 21px;
+			}
+		}
+		&__notice{
+			padding: 26px 160px 26px 110px;
+			background-size: 46px;
+			background-position-x: 32px;
+		}
+		&__block{
+			padding-bottom: 32px;
+			padding-top: 29px;
+			&-items{
+				margin-top: 28px;
+			}
+			&-item{
+				&-val{
+					font-size: 16px;
+					line-height: 16px;
+					margin-top: 15px;
+				}
 			}
 		}
 	}

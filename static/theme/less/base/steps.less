@@ -85,3 +85,42 @@
 		}
 	}
 }
+.tablet-v{
+	.b-steps{
+		padding-bottom: 0;
+		&._indent{
+			margin-top: 26px;
+		}
+		&._white{
+			.b-steps__item{
+				color: white;
+				&-text{
+					color: fade(#fff,70%);
+				}
+			}
+		}
+		&._arrs{
+			.b-steps__item{
+				&:after{
+					right: 20px;
+					top: 25px;
+				}
+			}
+		}
+		&__item{
+			&-ico{
+				width: 64px;
+				height: 64px;
+			}
+			&-title{
+				margin-top: 25px;
+				font-size: 16px;
+			}
+			&-value{
+				font-size: 24px;
+				line-height: 24px;
+				margin-top: 18px;
+			}
+		}
+	}
+}
