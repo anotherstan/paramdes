@@ -1,0 +1,116 @@
+.calc{
+	color: #fff;
+	padding-bottom: 48px;
+	background: url('@{pathToImg}calc.png') no-repeat center bottom;
+	select{
+		background: transparent;
+		color: red;
+		height: 64px;
+		width: 100%;
+	}
+	&__fields{
+		.clearfix;
+		margin-top: 58px;
+	}
+	&__field{
+		float: left;
+		&._sum{
+			width: 736px;
+		}
+		&._month{
+			width: 352px;
+			margin-left: 32px;
+		}
+
+	}
+	&__sum{
+		&-field{
+			height:64px;
+			input[type="text"]{
+				background: transparent;
+				border: 2px solid fade(#fff,20%);
+				border-radius: 2px;
+				color: #fff;
+			}
+		}
+		&-slider{
+
+		}
+	}
+	&__label{
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 12px;
+		text-transform: uppercase;
+		color: fade(#fff,70%);
+		margin-bottom: 24px;
+		letter-spacing: 0.8px;
+	}
+	&__schedule{
+		margin-top: 76px;
+		&-blocks{
+			.clearfix;
+			margin-left: -24px;
+			margin-top: 43px;
+		}
+		&-block{
+			float: left;
+			width: 383px;
+			padding-left: 24px;
+			border-left: 1px dashed fade(#fff,10%);
+			&:nth-child(3n){
+				width: 378px;
+			}
+			&-sum{
+				line-height: 24px;
+				&:before{
+					content: '';
+					width: 24px;
+					height: 16px;
+					.background('@{pathToImg}icons/calc-sum-ico.svg');
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 2px;
+					margin-right: 12px;
+					opacity: 0.2;
+				}
+			}
+			&-text{
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 20px;
+				color: fade(#fff,70%);
+				margin-top: 47px;
+			}
+		}
+
+	}
+}
+.ui-slider{
+	border: 0;
+	height: 3px;
+	background: transparent;
+	border-radius: 0 0 0 4px;
+	cursor: pointer;
+	margin-top: -2px;
+}
+.ui-widget-header{
+	background: red;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	width: 32px;
+	height: 32px;
+	background: red;
+	border: 8px  solid #fff;
+	border-radius: 50%;
+	margin-left: -16px;
+	top: -15px;
+	box-shadow: 0 4px 34px rgba(30, 48, 85, 0.6);
+	cursor: pointer;
+}
+.ui-slider-handle{
+
+	&.ui-state-hover/*,&.ui-state-focus*/{
+		//background-image: url('@{pathToImg}icons/range_handle_hover.png')
+	}
+}
