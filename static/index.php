@@ -101,7 +101,7 @@
 			</span>
 		</a>
 	</div>
-	<div class="b-blocks _dark"  data-nav-content>
+	<div class="b-blocks _dark hide"  data-nav-content>
 		<div class="grid__inner">
 			<div class="b-block conditions__main calc" data-calc>
 				<div class="h3">Как работает беспроцентный период</div>
