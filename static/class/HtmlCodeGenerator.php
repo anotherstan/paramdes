@@ -1,15 +1,20 @@
 <?php
 	$ROOT = '..';
 	class HtmlCodeGenerator {
-		//public static function getHtmlCodeForCardSteps($stepsCounter, $stepsIco, $stepsTitle, $stepsText) {
 		public static function getHtmlCodeForCardSteps($params) {
-			/*$params = array(
-				'stepsCounter' => $stepsCounter,
-				'stepIco' => $stepsIco,
-				'stepTitle' => $stepsTitle,
-				'stepText' => $stepsText,
-			);*/
 			$code = self::render('cardSteps',$params);
+			return $code;
+		}
+		public static function getHtmlCodeForInstruction($params) {
+			$code = self::render('instruction',$params);
+			return $code;
+		}
+		public static function getHtmlCodeForQuestions($params) {
+			$code = self::render('questions',$params);
+			return $code;
+		}
+		public static function getHtmlCodeForRequest($params) {
+			$code = self::render('request',$params);
 			return $code;
 		}
 

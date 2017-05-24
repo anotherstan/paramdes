@@ -4,6 +4,7 @@
 		<div class="grid__inner">
 			<h3>Настройки</h3>
 			<form action="generator.php" data-get-card-form>
+				<input type="hidden" name="formName" value="cardSteps">
 				<div class="h5">Кол-во пунктов</div>
 				<div>
 					<select name="stepsCounter" data-chosen data-get-card-steps-counter>

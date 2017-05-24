@@ -23,6 +23,8 @@ app.init = function () {
 	app.benefits();
 	app.pageMenu();
 	app.calc();
+	app.initTabs();
+	app.constructor();
 };
 app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
@@ -43,9 +45,9 @@ app.questions = function () {
 			$questionTitle = $question.find('[data-questions-item-title]'),
 			$questionAnswer = $question.find('[data-questions-item-answer]')
 		;
-	$questionTitle.on('click',function () {
-		var $self = $(this);
 
+	/*$questionTitle.on('click',function () {
+		var $self = $(this);
 		if($self.hasClass('_active')){
 			$self.closest($question).find($questionAnswer).slideUp(300);
 		}else{
@@ -54,6 +56,39 @@ app.questions = function () {
 			$self.closest($question).find($questionAnswer).slideDown(300);
 		}
 		$self.toggleClass('_active');
+	});*/
+
+	$('html').on('click','[data-questions-item-title]',function () {
+		var $self = $(this);
+		if($self.hasClass('_active')){
+			$self.closest('[data-questions-item]').find('[data-questions-item-answer]').slideUp(300);
+		}else{
+			$questionAnswer.slideUp(300);
+			$questionTitle.removeClass('_active');
+			$self.closest('[data-questions-item]').find('[data-questions-item-answer]').slideDown(300);
+		}
+		$self.toggleClass('_active');
+	});
+
+};
+app.initTabs = function () {
+	var self = this,
+			$closest = null,
+			$tabs = null,
+			$content = null
+
+		;
+	$('html').on('click.tabs','[data-tabs-tab]',function(){
+		var $self = $(this);
+		if(!($self.hasClass('_active')|| $self.hasClass('_disabled'))){
+			$closest = $self.closest('[data-tabs]');
+			$tabs = $closest.find('[data-tabs-tab]');
+			$content = $closest.find('[data-tabs-content]');
+
+			$tabs.removeClass('_active');
+			$self.addClass('_active');
+			$content.hide().filter('[data-tabs-content="'+$self.data('tabsTab')+'"]').show();
+		}
 	});
 };
 app.initNav = function () {
@@ -84,12 +119,14 @@ app.getCard = function () {
 	$.post($form.attr('action'), $form.serialize(), function(data){
 		$blockHtml.html(data.body);
 		$blockText.text(data.body);
+		$blockHtml.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	},'json');
 
 	$form.on('submit',function () {
 		$.post($form.attr('action'), $form.serialize(), function(data){
 			$blockHtml.html(data.body);
 			$blockText.text(data.body);
+			$blockHtml.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
 		},'json');
 		return false;
 	});
@@ -141,6 +178,37 @@ app.pageMenu = function () {
 		}
 	}
 };
+app.constructor = function () {
+	var $constructor = $('[data-constructor]');
+
+	if(!$constructor.length){
+		return false;
+	}
+	var $form = $constructor.find('[data-constructor-form]'),
+			$content = $constructor.find('[data-constructor-content]'),
+			$code = $constructor.find('[data-constructor-code]'),
+			$option = $constructor.find('[data-constructor-option]')
+		;
+	$.post($form.attr('action'), $form.serialize(), function(data){
+		$content.html(data.body);
+		$code.text(data.body);
+		$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
+	},'json');
+
+	$form.on('submit',function () {
+		$.post($form.attr('action'), $form.serialize(), function(data){
+			$content.html(data.body);
+			$code.text(data.body);
+			$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
+		},'json');
+		return false;
+	});
+
+	$option.on('change',function () {
+		$form.trigger('submit');
+	});
+
+};
 app.calc = function(){
 	var self = this,
 			$calc = $('[data-calc]'),
@@ -154,7 +222,7 @@ app.calc = function(){
 			calcData = $sumSlider.data('calcSumSlider'),
 			months=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],
 			sum = null,
-			month = calcData.month,
+			month = null,
 			startSumValue = null,
 			val = null
 
@@ -162,6 +230,7 @@ app.calc = function(){
 	if(!$calc.length){
 		return false;
 	}
+	month = calcData.month;
 	$monthSelect.val(month);
 	$monthSelect.on('change',function () {
 		month = $(this).val();
