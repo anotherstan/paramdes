@@ -21,7 +21,7 @@
 							<option value="3" selected>3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
-							<option value="6">7</option>
+							<option value="6">6</option>
 						</select>
 					</div>
 					<div class="settings-form__check-list">

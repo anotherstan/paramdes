@@ -14,6 +14,9 @@
 		case 'request':
 			$content = HtmlCodeGenerator::getHtmlCodeForRequest($params);
 			break;
+		case 'slider':
+			$content = HtmlCodeGenerator::getHtmlCodeForSlider($params);
+			break;
 	}
 
 

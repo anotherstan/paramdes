@@ -10,21 +10,27 @@
 		left: 0;
 		top: 0;
 		bottom: 0;
+		background-repeat: no-repeat;
+		background-position: 48px 48px;
+		&.blue{
+			background-color: #011689;
+		}
 	}
 	&__photo{
 		width: 350px;
-		height: 420px;
-		background: none no-repeat center bottom;
-		background-size: contain;
+		background: none no-repeat top center;
+		//background-size: contain;
 		position: absolute;
 		z-index: 2;
 		left: 246px;
 		top: -33px;
+		bottom:0;
 	}
 	&__inner{
 		position: relative;
-		padding: 50px 96px 0;
+		padding: 50px 96px 64px;
 		z-index: 2;
+		min-height: 270px;
 		.clearfix;
 	}
 	&__left{
@@ -34,6 +40,7 @@
 	}
 	&__main{
 		float: left;
+		width: 544px;
 	}
 	&__frame{
 		position: absolute;
@@ -47,35 +54,95 @@
 			color: #fff;
 		}
 	}
+	.card__options{
+		margin-top: 24px;
+	}
 	&__subtitle{
 		margin-top: 18px;
 	}
 	&__video{
 		margin-top: 48px;
+		.video-btn{
+
+		}
 	}
 	&__steps{
-		margin-top: 49px;
+		overflow: visible;
+		height: 208px;
+		z-index: 10;
+		position: relative;
+		&-wrap{
+			padding: 32px 96px 0;
+			margin-top: -32px;
+			overflow: hidden;
+			position: relative;
+			&._2-steps{
+				.about__step{
+					width: 50%!important;
+				}
+			}
+			&._3-steps{
+				.about__step{
+					width: 33.33%!important;
+				}
+			}
+		}
+		&-btn{
+			position: absolute;
+			top: 33px;
+			width: 95px;
+			background-color: fade(#fff,70%);
+			z-index: 20;
+			bottom: 0;
+			cursor: pointer;
+			&:before{
+				content: '';
+				width: 48px;
+				height: 48px;
+				background:url('@{pathToImg}icons/arr_next_red.svg') no-repeat center #fff;
+				position: absolute;
+				top: 22px;
+				right: 12px;
+			}
+			&.swiper-button-disabled{
+				opacity:0;
+				cursor: default;
+			}
+			&._prev{
+				left: 0;
+				&:before{
+					background-image: url('@{pathToImg}icons/arr_prev_red.svg');
+					left: 12px;
+					right: auto;
+				}
+
+			}
+			&._next{
+				right: 0;
+			}
+		}
 	}
 	&__step{
 		display: inline-block;
-		vertical-align: bottom;
-		width: 25%;
-		height: 208px;
+		width: 280px;
 		border-right:1px solid #e5e7eb;
 		border-top:1px solid #e5e7eb;
 		color: @textColor;
-		padding: 32px 48px;
 		background-color: #fff;
 		font-size: 16px;
 		line-height: 24px;
 		transition:all 0.5s;
 		position: relative;
+		height: 208px;
+		top: 0;
+		padding: 32px 48px;
 		&._active,&:hover{
 			border-color: transparent;
 			border-radius: 2px 2px 0 0;
 			box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.2);
 			height: 232px;
 			z-index: 2;
+			top: -24px;
 			.about__step-num span{
 				opacity: 1;
 			}

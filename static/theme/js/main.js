@@ -11,6 +11,7 @@ $(function () {
 		$footer:$('.footer')
 	};
 	app.init();
+
 });
 
 
@@ -25,6 +26,41 @@ app.init = function () {
 	app.calc();
 	app.initTabs();
 	app.constructor();
+
+};
+app.about=function () {
+	var $about = $('[data-about]'),
+			$counter = $about.find('[data-about-counter]'),
+			$counterActive = $about.find('[data-about-counter-active]'),
+			$pag = $about.find('[data-about-pag]'),
+			$pagItem = $about.find('[data-about-pag-item]'),
+			$content = $about.find('[data-slide-content]'),
+			swiper = null
+		;
+	 swiper = new Swiper($pag, {
+		slidesPerView: 4,
+		simulateTouch: false,
+		nextButton:$('[data-about-slider-next]'),
+		prevButton:$('[data-about-slider-prev]')
+	});
+	$pagItem.hover(function () {
+		setSlide($(this).data('aboutPagItem'));
+	},function () {
+		setSlide(0);
+	});
+	$pag.hover(function () {
+		$counter.fadeIn();
+	},function () {
+		$counter.fadeOut();
+	});
+	function setSlide(n) {
+		if(n>0){
+			$counterActive.text(n);
+		}
+		$content.hide().filter('[data-slide-content="'+n+'"]').show();
+
+	}
+
 };
 app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
@@ -189,17 +225,22 @@ app.constructor = function () {
 			$code = $constructor.find('[data-constructor-code]'),
 			$option = $constructor.find('[data-constructor-option]')
 		;
-	$.post($form.attr('action'), $form.serialize(), function(data){
+
+	function helper(data) {
 		$content.html(data.body);
 		$code.text(data.body);
 		$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
+		if($(data.body).find('[data-about-pag]').length){
+			app.about();
+		}
+	}
+	$.post($form.attr('action'), $form.serialize(), function(data){
+		helper(data);
 	},'json');
 
 	$form.on('submit',function () {
 		$.post($form.attr('action'), $form.serialize(), function(data){
-			$content.html(data.body);
-			$code.text(data.body);
-			$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
+			helper(data);
 		},'json');
 		return false;
 	});

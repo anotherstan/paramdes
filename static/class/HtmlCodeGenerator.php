@@ -17,6 +17,10 @@
 			$code = self::render('request',$params);
 			return $code;
 		}
+		public static function getHtmlCodeForSlider($params) {
+			$code = self::render('slider',$params);
+			return $code;
+		}
 
 		private static function render($viewName, $data) {
 			global $ROOT;
