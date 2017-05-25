@@ -6,7 +6,7 @@
 			<div class="settings-form__block">
 				<div class="settings-form__block-title">1. Количество слайдов</div>
 				<div class="settings-form__field">
-					<select name="slidesCounter"  data-constructor-option>
+					<select name="slidesCounter"  data-chosen data-constructor-option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>

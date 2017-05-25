@@ -6,7 +6,7 @@
 			<div class="settings-form__block">
 				<div class="settings-form__block-title">1. Количество шагов</div>
 				<div class="settings-form__field">
-					<select name="stepsCounter" data-constructor-option>
+					<select name="stepsCounter" data-chosen data-constructor-option>
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>

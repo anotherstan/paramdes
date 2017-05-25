@@ -6,7 +6,7 @@
 			<div class="settings-form__block">
 				<div class="settings-form__block-title">1. Количество вопросов</div>
 				<div class="settings-form__field">
-					<select name="questionsCounter" data-constructor-option>
+					<select name="questionsCounter" data-chosen data-constructor-option>
 						<?for ($i=1;$i<=50;$i++){?>
 						<option value="<?=$i?>" <?=$i==3 ? ' selected' :''?>><?=$i?></option>
 						<?}?>
@@ -16,7 +16,7 @@
 			<div class="settings-form__block">
 				<div class="settings-form__block-title">2. Выводить по-умолчанию</div>
 				<div class="settings-form__field">
-					<select name="questionsActiveCounter" data-constructor-option>
+					<select name="questionsActiveCounter" data-chosen data-constructor-option>
 						<option value="all">Все вопросы</option>
 						<?for ($i=1;$i<=20;$i++){?>
 

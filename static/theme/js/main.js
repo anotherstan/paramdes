@@ -70,7 +70,7 @@ app.formatNumber = function (value) {
 };
 app.initChosen = function () {
 	$('[data-chosen]').chosen({
-		disable_search_threshold: 30,
+		disable_search_threshold: 1000,
 		no_results_text:"Нет результатов для",
 		width: "100%"
 	});
@@ -237,6 +237,12 @@ app.constructor = function () {
 	$.post($form.attr('action'), $form.serialize(), function(data){
 		helper(data);
 	},'json');
+
+	$form.find('[data-chosen]').chosen({
+		disable_search_threshold: 1000,
+		no_results_text:"Нет результатов для",
+		width: "100%"
+	});
 
 	$form.on('submit',function () {
 		$.post($form.attr('action'), $form.serialize(), function(data){

@@ -14,7 +14,7 @@
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">2. Количество полей</div>
 					<div class="settings-form__field">
-						<select name="fieldsCounter" data-constructor-option>
+						<select name="fieldsCounter" data-chosen data-constructor-option>
 							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
