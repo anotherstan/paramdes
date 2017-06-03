@@ -137,7 +137,7 @@ include "includes/header.php"
 					<div class="calc__field _month">
 						<div class="calc__label">Начало использования</div>
 						<div class="calc__month">
-							<select  data-calc-month-field>
+							<select  data-calc-month-field data-chosen>
 								<option value="1">Январь</option>
 								<option value="2">Февраль</option>
 								<option value="3" selected>Март</option>

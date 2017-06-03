@@ -26,6 +26,7 @@ app.init = function () {
 	app.calc();
 	app.initTabs();
 	app.constructor();
+	app.initChosen();
 
 };
 app.about=function () {
