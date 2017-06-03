@@ -1041,8 +1041,50 @@ h5,
   bottom: 0;
   z-index: 1010;
   background-color: #001837;
+  transform: translate(-352px, 0);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.settings-form._active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.settings-form__in {
+  height: 100%;
   padding: 24px 48px;
   overflow-y: auto;
+  box-sizing: border-box;
+}
+.settings-form__btns {
+  *zoom: 1;
+  margin-bottom: 48px;
+  position: relative;
+  margin-right: -20px;
+}
+.settings-form__btns:before,
+.settings-form__btns:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.settings-form__btns:after {
+  clear: both;
+}
+.settings-form__close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 24px;
+  right: -24px;
+  border-radius: 50%;
+  background: url('../images/icons/close_white.svg') no-repeat center #cc003d;
+}
+.settings-form__btn {
+  float: left;
+}
+.settings-form__btn._transparent {
+  color: #fff;
+  border: 0;
 }
 .settings-form__block {
   margin-bottom: 48px;

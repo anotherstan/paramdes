@@ -489,10 +489,15 @@ include "includes/header.php"
 		</div>
 	</div>
 	<div data-constructors-block>
-	<div class="hide" data-constructor="instruction">
-		<div class="settings-form">
+	<div class="settings-form" data-constructor="instruction">
+		<a href="javascript:void(0);" class="settings-form__close" data-constructor-close></a>
+		<div class="settings-form__in">
 			<form action="templates/generator.php" data-constructor-form>
 				<input type="hidden" name="formName" value="instruction">
+				<div class="settings-form__btns">
+					<a href="javascript:void(0);" class="settings-form__btn btn" data-constructor-form-save>сохранить</a>
+					<a href="javascript:void(0);" class="settings-form__btn btn _transparent"  data-constructor-form-cancel>отменить</a>
+				</div>
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">1. Количество шагов</div>
 					<div class="settings-form__field">
@@ -513,10 +518,15 @@ include "includes/header.php"
 			</form>
 		</div>
 	</div>
-	<div class="hide" data-constructor="questions">
-		<div class="settings-form">
+	<div class="settings-form" data-constructor="questions">
+		<a href="javascript:void(0);" class="settings-form__close" data-constructor-close></a>
+		<div class="settings-form__in">
 			<form action="templates/generator.php" data-constructor-form>
 				<input type="hidden" name="formName" value="questions">
+				<div class="settings-form__btns">
+					<a href="javascript:void(0);" class="settings-form__btn btn" data-constructor-form-save>сохранить</a>
+					<a href="javascript:void(0);" class="settings-form__btn btn _transparent"  data-constructor-form-cancel>отменить</a>
+				</div>
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">1. Количество вопросов</div>
 					<div class="settings-form__field">
@@ -544,8 +554,13 @@ include "includes/header.php"
 			</form>
 		</div>
 	</div>
-	<div class="hide" data-constructor="request">
-		<div class="settings-form" data-tabs>
+	<div class="settings-form" data-tabs data-constructor="request">
+		<a href="javascript:void(0);" class="settings-form__close" data-constructor-close></a>
+		<div class="settings-form__in">
+			<div class="settings-form__btns">
+				<a href="javascript:void(0);" class="settings-form__btn btn" data-constructor-form-save>сохранить</a>
+				<a href="javascript:void(0);" class="settings-form__btn btn _transparent"  data-constructor-form-cancel>отменить</a>
+			</div>
 			<form action="templates/generator.php" data-constructor-form>
 				<input type="hidden" name="formName" value="request">
 				<div class="settings-form__block">
@@ -591,8 +606,13 @@ include "includes/header.php"
 			</form>
 		</div>
 	</div>
-	<div class="hide" data-constructor="slider">
-		<div class="settings-form">
+	<div class="settings-form" data-constructor="slider">
+		<a href="javascript:void(0);" class="settings-form__close" data-constructor-close></a>
+		<div class="settings-form__in">
+			<div class="settings-form__btns">
+				<a href="javascript:void(0);" class="settings-form__btn btn" data-constructor-form-save>сохранить</a>
+				<a href="javascript:void(0);" class="settings-form__btn btn _transparent"  data-constructor-form-cancel>отменить</a>
+			</div>
 			<form action="templates/generator.php" data-constructor-form>
 				<input type="hidden" name="formName" value="slider">
 				<div class="settings-form__block">
@@ -637,7 +657,8 @@ include "includes/header.php"
 				</div>
 			</form>
 		</div>
-	</div>
 </div>
+
+	</div>
 <?include "includes/footer.php"?>
 

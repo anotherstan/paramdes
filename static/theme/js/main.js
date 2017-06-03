@@ -225,9 +225,13 @@ app.constructor = function () {
 	$constructors.each(function () {
 		var $constructor = $(this),
 			  $form = $constructor.find('[data-constructor-form]'),
+			  $saveBtn = $constructor.find('[data-constructor-form-save]'),
+			  $cancelBtn = $constructor.find('[data-constructor-form-cancel]'),
+			  $closeBtn = $constructor.find('[data-constructor-close]'),
 				$content = $('[data-constructor-content="'+$constructor.find('input[name=formName]').val()+'"]'),
 				$code = $constructor.find('[data-constructor-code]'),
-				$option = $constructor.find('[data-constructor-option]')
+				$option = $constructor.find('[data-constructor-option]'),
+				options = ''
 			;
 		function helper(data) {
 			$content.html($(data.body).html());
@@ -251,18 +255,28 @@ app.constructor = function () {
 		$form.on('submit',function () {
 			$.post($form.attr('action'), $form.serialize(), function(data){
 				helper(data);
-				setCookie($form.find('input[name=formName]').val(),JSON.stringify($form.serializeJSON()), {path: '/'});
+				options = JSON.stringify($form.serializeJSON());
+
 			},'json');
 			return false;
 
 		});
+		$saveBtn.on('click',function () {
+			setCookie($form.find('input[name=formName]').val(),options, {path: '/'});
+		});
+		$cancelBtn.on('click',function () {
+			location.reload();
+		});
 		$option.on('change',function () {
 			$form.trigger('submit');
+		});
+		$closeBtn.on('click',function () {
+			$constructor.removeClass('_active');
 		});
 	});
 	$('html').on('click','[data-block-edit-btn]',function () {
 		var $self = $(this);
-		$constructors.hide().filter('[data-constructor="'+$self.data('blockEditBtn')+'"]').show();
+		$constructors.removeClass('_active').filter('[data-constructor="'+$self.data('blockEditBtn')+'"]').addClass('_active');
 	});
 
 };
