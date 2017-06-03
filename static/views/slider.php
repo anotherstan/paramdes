@@ -1,4 +1,5 @@
-<div class="about" data-about>
+<div class="about" data-about data-constructor-content="slider">
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="slider"></a>
 <?if ($parameters['substrate'] !='none'){?>
 	<div class="about__bg <?=$parameters['substrate'];?>" <?=$parameters['decor'] =='pattern' ? 'style="background-image: url(\'/static/theme/images/pattern.png\');"':'';?>></div>
 <?}?>

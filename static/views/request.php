@@ -1,4 +1,5 @@
-<div class="b-block <?=$parameters['type'] == 'close' ? '  _transparent request-form__close':'' ?>">
+<div class="b-block <?=$parameters['type'] == 'close' ? '  _transparent request-form__close':'' ?>"  data-constructor-content="request">
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="request"></a>
 	<div class="b-block__title h3 <?=$parameters['type'] == 'open' ? '  _dash':'' ?>">Заголовок</div>
 	<div class="b-block__subtitle">Подстрочник.</div>
 <?if($parameters['type'] == 'close' && $parameters['closeDecor'] && $parameters['closeDecor']!='none'){?>

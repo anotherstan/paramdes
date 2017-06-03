@@ -1,6 +1,7 @@
 
-<div class="b-block">
-	<div class="b-block__title h3">Как получить карту?</div>
+<div class="b-block" data-constructor-content="instruction">
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="instruction"></a>
+	<div class="b-block__title h3 _dash">Как получить карту?</div>
 <?if ($parameters['stepsCounter']){?>
 	<div class="b-steps _indent <?=$parameters['decor'] && $parameters['decor']!='none'?' _arrs':''?> _<?=$parameters['stepsCounter'];?>-steps">
 <? for ($i = 0; $i < $parameters['stepsCounter']; $i++) { ?>

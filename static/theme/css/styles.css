@@ -814,6 +814,17 @@ h5,
   border-radius: 2px;
   box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
   padding: 48px 96px;
+  position: relative;
+}
+.b-block__edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icons/settings.png') no-repeat center;
+  background-size: 60%;
+  z-index: 100;
 }
 .b-block._transparent {
   background-color: transparent;
@@ -1028,7 +1039,7 @@ h5,
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1010;
   background-color: #001837;
   padding: 24px 48px;
   overflow-y: auto;

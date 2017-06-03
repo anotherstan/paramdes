@@ -1,4 +1,5 @@
 <?
+	require_once('root.php');
 	require_once('../class/HtmlCodeGenerator.php');
 	$params = $_POST;
 	switch($params['formName']) {

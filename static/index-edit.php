@@ -1,5 +1,60 @@
-<?include "includes/header.php"?>
+<?
+	require_once('root.php');
+	require_once('class/HtmlCodeGenerator.php');
+
+	/*
+
+				$constParam = array(
+					'title'=>'Pfujkjdjr',
+					'op' => array(
+						'h' => 'h'
+					)
+				);
+	 */
+
+	$defaultSlider = array('slidesCounter'=>7, 'subtitle'=>'text', 'video'=>true, 'substrate'=>'red', 'decor'=>'none');
+	if (isset($_COOKIE['slider'])) {
+		$cookiesSlider = json_decode($_COOKIE['slider'], true);
+	} else {
+		$cookiesSlider = $defaultSlider;
+		setcookie('slider', json_encode($cookiesSlider),0,'/');
+	}
+	//$params = array_merge($cookies, $constParam);
+
+	$defaultInstruction = array('stepsCounter'=>3, 'decor'=>'icons');
+	if (isset($_COOKIE['instruction'])) {
+		$cookiesInstruction = json_decode($_COOKIE['instruction'], true);
+	} else {
+		$cookiesInstruction = $defaultInstruction;
+		setcookie('instruction', json_encode($cookiesInstruction),0,'/');
+	}
+	//$params = array_merge($cookies, $constParam);
+
+	$defaultQuestions = array('questionsActiveCounter'=>4, 'questionsCounter'=>10);
+	if (isset($_COOKIE['questions'])) {
+		$cookiesQuestions = json_decode($_COOKIE['questions'], true);
+	} else {
+		$cookiesQuestions = $defaultQuestions;
+		setcookie('questions', json_encode($cookiesQuestions),0,'/');
+	}
+	//$params = array_merge($cookiesQuestions, $constParam);
+
+	$defaultRequest = array('type'=>'open', 'fieldsCounter'=>3, 'check'=>true, 'openDecor'=>'none', 'closeDecor'=>'none');
+	if (isset($_COOKIE['request'])) {
+		$cookiesRequest = json_decode($_COOKIE['request'], true);
+	} else {
+		$cookiesRequest = $defaultRequest;
+		setcookie('request', json_encode($cookiesRequest),0,'/');
+	}
+	//$params = array_merge($cookies, $constParam);
+
+
+?>
+<?
+include "includes/header.php"
+?>
 	<a href="#" class="next-page"></a>
+
 	<div class="grid__inner">
 		<div class="card">
 			<div class="card__img"></div>
@@ -44,53 +99,10 @@
 	</div>
 	<div class="b-blocks">
 		<div class="grid__inner">
-			<div class="about" data-about>
-				<div class="about__bg"></div>
-				<div class="about__photo" style="background-image: url('/static/theme/images/about.png');"></div>
-				<div class="about__inner">
-					<div class="clearfix">
-						<div class="about__left">
-							<div class="about__frame frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_red.svg')"></div>
-							</div>
-							<div class="about__counter h3"><span>1</span> / 4</div>
-						</div>
-						<div class="about__main">
-							<div class="about__title h3">
-								Покупайте сейчас,<br/>
-								платите через 120 дней
-							</div>
-							<div class="about__subtitle">Без комиссий и переплат.</div>
-							<div class="about__video">
-								<a href="javascript:void(0);" class="video-btn _red">
-									<div class="video-btn__ico"></div>
-									<div class="video-btn__title">Посмотреть видео</div>
-									<div class="video-btn__duration">1:24</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="about__steps">
-						<a href="javascript:void(0)" class="about__step _active">
-							<div class="about__step-num">1 <span>’’</span></div>
-							<div class="about__step-title">Как купить вещи  в интернете</div>
-							<div class="about__step-text">И не прогадать.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">2 <span>’’</span></div>
-							<div class="about__step-title">Как получать<br />доход от хобби</div>
-							<div class="about__step-text">Не уходя с работы.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">3 <span>’’</span></div>
-							<div class="about__step-title">Как покупать<br />все новые игры</div>
-							<div class="about__step-text">И не разориться.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">4 <span>’’</span></div>
-							<div class="about__step-title">Как путешествовать<br />по всему миру</div>
-							<div class="about__step-text">Почти бесплатно.</div>
-						</a>
-					</div>
-				</div>
-			</div>
+			<?php
+				$content = HtmlCodeGenerator::getHtmlCodeForSlider($cookiesSlider);
+				echo $content;
+			?>
 		</div>
 	</div>
 	<div data-nav-block>
@@ -426,113 +438,18 @@
 	</div>
 	<div class="b-blocks">
 		<div class="grid__inner">
-			<div class="b-block">
-				<div class="b-block__title h3 _dash">Как получить карту?</div>
-				<div class="b-steps _indent _arrs">
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1.svg')"></div>
-						<div class="b-steps__item-title">1. Подайте заявку</div>
-						<div class="b-steps__item-text">В клиентском центре, на стойке продаж или на сайте.</div>
-					</div>
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2.svg')"></div>
-						<div class="b-steps__item-title">2. Узнайте решение</div>
-						<div class="b-steps__item-text">Ваша заявка будет рассмотрена в течение 5 минут.</div>
-					</div>
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3.svg')"></div>
-						<div class="b-steps__item-title">3. Дождитесь выпуска</div>
-						<div class="b-steps__item-text">Получите карту в выбранном отделении Банка.</div>
-					</div>
-				</div>
-			</div>
-			<div class="b-block questions">
-				<div class="b-block__title h3 _dash">У вас остались вопросы?</div>
-				<div class="questions__items" data-questions data-nav-block>
-					<?
-						$questions = [
-							"Как узнать сумму ежемесячного платежа?",
-							"Может ли кто-то другой внести за меня ежемесячный платеж?",
-							"Я внес сумму, превышающую ежемесячный платеж, что произойдет?",
-							"Что такое частичное досрочное погашение кредита?",
-							"Могу ли я сразу внести несколько платежей?",
-							"Шестой вопрос",
-							"Седьмой вопрос",
-							"Восьмой вопрос"
-						];
-						for ($i=0;$i<5;$i++){
-							?>
-							<div class="questions__item " data-questions-item>
-								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title><?=$questions[$i]?></a>
-								<div class="questions__item-answer" data-questions-item-answer>
-									Ответ на вопрос <?=$questions[$i]?>
-								</div>
-							</div>
-						<?}?>
-					<div class="hide" data-nav-content>
-						<?for ($i=5;$i<count($questions);$i++){?>
-							<div class="questions__item " data-questions-item>
-								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title><?=$questions[$i]?></a>
-								<div class="questions__item-answer" data-questions-item-answer>
-									Ответ на вопрос <?=$questions[$i]?>
-								</div>
-							</div>
-						<?}?>
-					</div>
-					<div class="questions__all">
-						<a href="javascript:void(0);" class="all-btn" data-nav-btn>
-							<span class="all-btn__counter">8</span><span class="all-btn__text">
-								<span data-nav-text>Показать все вопросы</span>
-								<span data-nav-text class="hide">Скрыть</span>
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="b-block">
-				<div class="b-block__title h3 _dash">Оформите заявку онлайн</div>
-				<div class="b-block__subtitle">Узнайте решение в течение 5 минут.</div>
-				<div class="request-form">
-					<div class="request-form__img"></div>
-					<div class="request-form__block b-form">
-						<form action="">
-							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="text" placeholder="Имя и фамилия" >
-									</div>
-								</div>
-							</div>
-							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="email" placeholder="Электронная почта" >
-									</div>
-								</div>
-							</div>
-							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="text" data-mask-phone placeholder="Телефон" >
-									</div>
-								</div>
-							</div>
-							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-check b-form__check">
-										<label><input type="checkbox" checked > Я cогласен на передачу и обработку
-											<a href="#" target="_blank">персональных данных.</a></label>
-									</div>
-								</div>
-							</div>
-							<div class="b-form__btn-wrap">
-								<button type="submit" class="btn">Оформить карту</button>
-								<a href="#" class="btn _transparent">Заказать звонок</a>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
+			<?
+				$content = HtmlCodeGenerator::getHtmlCodeForInstruction($cookiesInstruction);
+				echo $content;
+			?>
+			<?
+				$content = HtmlCodeGenerator::getHtmlCodeForQuestions($cookiesQuestions);
+				echo $content;
+			?>
+			<?
+				$content = HtmlCodeGenerator::getHtmlCodeForRequest($cookiesRequest);
+				echo $content;
+			?>
 			<div class="b-block _transparent articles">
 				<div class="b-block__title h3 _dash">Пользуйтесь банком выгодно</div>
 				<div class="b-block__indent articles__list">
@@ -571,5 +488,156 @@
 			</div>
 		</div>
 	</div>
+	<div data-constructors-block>
+	<div class="hide" data-constructor="instruction">
+		<div class="settings-form">
+			<form action="templates/generator.php" data-constructor-form>
+				<input type="hidden" name="formName" value="instruction">
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">1. Количество шагов</div>
+					<div class="settings-form__field">
+						<select name="stepsCounter"  data-chosen data-constructor-option>
+							<? for ($i=0;$i<=4;$i++){?>
+									<option value="<?=$i?>" <?= ($i==$cookiesInstruction['stepsCounter']) ? ' selected' :''?>><?=$i?></option>
+								<?}?>
+						</select>
+					</div>
+				</div>
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">2. Оформление</div>
+					<div class="settings-form__radio-list">
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'icons' ? 'checked' : ''?> data-constructor-option value="icons">Иконки</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="hide" data-constructor="questions">
+		<div class="settings-form">
+			<form action="templates/generator.php" data-constructor-form>
+				<input type="hidden" name="formName" value="questions">
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">1. Количество вопросов</div>
+					<div class="settings-form__field">
+						<select name="questionsCounter" data-chosen data-constructor-option>
+
+							<?
+								for ($i=1;$i<=50;$i++){?>
+									<option value="<?=$i?>" <?=$i==$cookiesQuestions['questionsCounter'] ? ' selected' :''?>><?=$i?></option>
+								<?}?>
+						</select>
+					</div>
+				</div>
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">2. Выводить по-умолчанию</div>
+					<div class="settings-form__field">
+						<select name="questionsActiveCounter" data-chosen data-constructor-option>
+							<option value="all" <?= 'all'==$cookiesQuestions['questionsActiveCounter'] ? ' selected' :''?>>Все вопросы</option>
+							<?
+								for ($i=1;$i<=20;$i++){?>
+									<option value="<?=$i?>" <?=$i==$cookiesQuestions['questionsActiveCounter'] ? ' selected' :''?>><?=$i?></option>
+								<?}?>
+						</select>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="hide" data-constructor="request">
+		<div class="settings-form" data-tabs>
+			<form action="templates/generator.php" data-constructor-form>
+				<input type="hidden" name="formName" value="request">
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">1. Тип заявки</div>
+					<div class="settings-form__radio-list">
+						<label class="settings-form__radio" data-tabs-tab="1"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'open' ? 'checked' : ''?> data-constructor-option value="open">Открытая</label>
+						<label class="settings-form__radio" data-tabs-tab="2"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'close' ? 'checked' : ''?> data-constructor-option value="close">Закрытая</label>
+					</div>
+				</div>
+				<div data-tabs-content="1">
+					<div class="settings-form__block">
+						<div class="settings-form__block-title">2. Количество полей</div>
+						<div class="settings-form__field">
+							<select name="fieldsCounter" data-chosen data-constructor-option>
+								<?for ($i=0;$i<=6;$i++){?>
+										<option value="<?=$i?>" <?=$i==$cookiesRequest['fieldsCounter'] ? ' selected' :''?>><?=$i?></option>
+								<?}?>
+							</select>
+						</div>
+						<div class="settings-form__check-list">
+							<label class="settings-form__check">
+								<input type="checkbox" data-constructor-option name="check" <?= $cookiesRequest['check'] == true ? 'checked' : ''?> >Checkbox
+							</label>
+						</div>
+					</div>
+					<div class="settings-form__block">
+						<div class="settings-form__block-title">3. Оформление</div>
+						<div class="settings-form__radio-list">
+							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
+							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img">Изображение</label>
+						</div>
+					</div>
+				</div>
+				<div data-tabs-content="2" class="hide">
+					<div class="settings-form__block">
+						<div class="settings-form__block-title">2. Оформление</div>
+						<div class="settings-form__radio-list">
+							<label class="settings-form__radio"><input type="radio" name="closeDecor"  <?= $cookiesRequest['closeDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
+							<label class="settings-form__radio"><input type="radio" name="closeDecor" <?= $cookiesRequest['closeDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img">Изображение</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="hide" data-constructor="slider">
+		<div class="settings-form">
+			<form action="templates/generator.php" data-constructor-form>
+				<input type="hidden" name="formName" value="slider">
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">1. Количество слайдов</div>
+					<div class="settings-form__field">
+						<select name="slidesCounter"  data-chosen data-constructor-option>
+							<?for ($i=1;$i<=8;$i++){?>
+								<option value="<?=$i?>" <?=$i==$cookiesSlider['slidesCounter'] ? ' selected' :''?>><?=$i?></option>
+							<?}?>
+						</select>
+					</div>
+				</div>
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">2. Подстрочник</div>
+					<div class="settings-form__radio-list">
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'text' ? 'checked' : ''?> data-constructor-option value="text">Текст</label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'val' ? 'checked' : ''?> data-constructor-option value="val">Значения</label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'list' ? 'checked' : ''?> data-constructor-option value="list">Список</label>
+					</div>
+					<div class="settings-form__check-list">
+						<label class="settings-form__check">
+							<input type="checkbox" data-constructor-option <?= $cookiesSlider['video'] == true ? 'checked' : ''?> name="video">Видео
+						</label>
+					</div>
+				</div>
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">3. Подложка</div>
+					<div class="settings-form__radio-list">
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'red' ? 'checked' : ''?> data-constructor-option value="red">Алая</label>
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'blue' ? 'checked' : ''?> data-constructor-option value="blue">Синяя</label>
+					</div>
+				</div>
+				<div class="settings-form__block">
+					<div class="settings-form__block-title">4. Оформление</div>
+					<div class="settings-form__radio-list">
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'none' ? 'checked' : ''?>  checked data-constructor-option value="none">Не использовать</label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'mark' ? 'checked' : ''?> data-constructor-option value="mark">Марка</label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'pattern' ? 'checked' : ''?> data-constructor-option value="pattern">Паттерн</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <?include "includes/footer.php"?>
 

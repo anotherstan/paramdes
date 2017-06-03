@@ -215,44 +215,54 @@ app.pageMenu = function () {
 	}
 };
 app.constructor = function () {
-	var $constructor = $('[data-constructor]');
-
-	if(!$constructor.length){
+	var $constructorsBlocks = $('[data-constructors-block]');
+	var $constructors = $constructorsBlocks.find('[data-constructor]');
+	var $constructorsBlock = $('[data-constructor-block]');
+	var $editBtn = $('[data-block-edit-btn]');
+	if(!$constructors.length){
 		return false;
 	}
-	var $form = $constructor.find('[data-constructor-form]'),
-			$content = $constructor.find('[data-constructor-content]'),
-			$code = $constructor.find('[data-constructor-code]'),
-			$option = $constructor.find('[data-constructor-option]')
-		;
-
-	function helper(data) {
-		$content.html(data.body);
-		$code.text(data.body);
-		$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
-		if($(data.body).find('[data-about-pag]').length){
-			app.about();
+	$constructors.each(function () {
+		var $constructor = $(this),
+			  $form = $constructor.find('[data-constructor-form]'),
+				$content = $('[data-constructor-content="'+$constructor.find('input[name=formName]').val()+'"]'),
+				$code = $constructor.find('[data-constructor-code]'),
+				$option = $constructor.find('[data-constructor-option]')
+			;
+		function helper(data) {
+			$content.html($(data.body).html());
+			$code.text(data.body);
+			$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
+			$constructorsBlock.html(data.body);
+			if($(data.body).find('[data-about-pag]').length){
+				app.about();
+			}
 		}
-	}
-	$.post($form.attr('action'), $form.serialize(), function(data){
-		helper(data);
-	},'json');
-
-	$form.find('[data-chosen]').chosen({
-		disable_search_threshold: 1000,
-		no_results_text:"Нет результатов для",
-		width: "100%"
-	});
-
-	$form.on('submit',function () {
 		$.post($form.attr('action'), $form.serialize(), function(data){
 			helper(data);
 		},'json');
-		return false;
-	});
 
-	$option.on('change',function () {
-		$form.trigger('submit');
+		$form.find('[data-chosen]').chosen({
+			disable_search_threshold: 1000,
+			no_results_text:"Нет результатов для",
+			width: "100%"
+		});
+
+		$form.on('submit',function () {
+			$.post($form.attr('action'), $form.serialize(), function(data){
+				helper(data);
+				setCookie($form.find('input[name=formName]').val(),JSON.stringify($form.serializeJSON()), {path: '/'});
+			},'json');
+			return false;
+
+		});
+		$option.on('change',function () {
+			$form.trigger('submit');
+		});
+	});
+	$('html').on('click','[data-block-edit-btn]',function () {
+		var $self = $(this);
+		$constructors.hide().filter('[data-constructor="'+$self.data('blockEditBtn')+'"]').show();
 	});
 
 };

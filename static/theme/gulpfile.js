@@ -79,6 +79,8 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/masked-input.js',
 		options.sourcePathScripts + '/underscore-min.js',
 		options.sourcePathScripts + '/chosen/chosen.jquery.js',
+		options.sourcePathScripts + '/Cookie.js',
+		options.sourcePathScripts + '/jquery.serializejson.min.js',
 		options.sourcePathScripts + '/radiocheck.js'
 	])
 		.pipe(concat('libs.js'))

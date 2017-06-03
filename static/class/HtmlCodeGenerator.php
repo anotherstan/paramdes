@@ -1,5 +1,5 @@
 <?php
-	$ROOT = '..';
+	//$ROOT = '..';
 	class HtmlCodeGenerator {
 		public static function getHtmlCodeForCardSteps($params) {
 			$code = self::render('cardSteps',$params);
@@ -27,7 +27,7 @@
 			$parameters = $data;
 
 			ob_start();
-			require $ROOT . '/views/' . $viewName . '.php';
+			require $ROOT . 'views/' . $viewName . '.php';
 			$content = ob_get_contents();
 
 			ob_end_clean();

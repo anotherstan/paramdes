@@ -1,16 +1,17 @@
-<div class="b-block questions">
+<div class="b-block questions"  data-constructor-content="questions">
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="questions"></a>
 	<div class="b-block__title h3 _dash">Заголовок</div>
 	<div class="questions__items" data-questions data-nav-block>
 <?if ($parameters['questionsActiveCounter'] =='all' || $parameters['questionsActiveCounter']>=$parameters['questionsCounter']){
 for ($i=1;$i<=$parameters['questionsCounter'];$i++){?>
-		<div class="questions__item " data-questions-item>
+		<div class="questions__item" data-questions-item>
 			<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>Вопрос <?=$i?></a>
 			<div class="questions__item-answer" data-questions-item-answer>Ответ на вопрос <?=$i?></div>
 		</div>
 <?}?>
 <?}else{
 for ($i=1;$i<=$parameters['questionsActiveCounter'];$i++){?>
-		<div class="questions__item " data-questions-item>
+		<div class="questions__item" data-questions-item>
 			<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>Вопрос <?=$i?></a>
 			<div class="questions__item-answer" data-questions-item-answer>Ответ на вопрос <?=$i?></div>
 		</div>
