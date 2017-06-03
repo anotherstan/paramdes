@@ -1004,6 +1004,9 @@ h5,
 }
 .request-form {
   position: relative;
+  margin-top: 64px;
+}
+.request-form__indent {
   margin-top: 48px;
 }
 .request-form__close {
