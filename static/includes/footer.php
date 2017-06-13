@@ -6,17 +6,17 @@
 					<div class="b-block__title h3">Вам могут подойти</div>
 					<div class="b-steps _indent _white">
 						<div class="b-steps__item">
-							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1_white.svg')"></div>
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/1.svg')"></div>
 							<div class="b-steps__item-title">Кредит наличными</div>
 							<div class="b-steps__item-text">На любые цели.</div>
 						</div>
 						<div class="b-steps__item">
-							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2_white.svg')"></div>
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/2.svg')"></div>
 							<div class="b-steps__item-title">Покупки в кредит</div>
 							<div class="b-steps__item-text">Оплата товаров и услуг.</div>
 						</div>
 						<div class="b-steps__item">
-							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3_white.svg')"></div>
+							<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/3.svg')"></div>
 							<div class="b-steps__item-title">Рефинансирование</div>
 							<div class="b-steps__item-text">На выгодных условиях.</div>
 						</div>
@@ -55,14 +55,16 @@
 					</div>
 					<div class="footer__bottom">
 						<a href="#" class="footer__bottom-logo" target="_blank"></a>
-						<div class="footer__bottom-text">
-							Лицензия ЦБ РФ на осуществление банковских операций № 650 от 25.03.2016.<br />
-							ПАО «Почта Банк» является частью международной финансовой группы ВТБ и ФГУП «Почта России»
-						</div>
 						<div class="footer__social">
+							<a href="#" class="footer__social-item _vk" target="_blank"></a>
 							<a href="#" class="footer__social-item _fb" target="_blank"></a>
+							<a href="#" class="footer__social-item _ok" target="_blank"></a>
 							<a href="#" class="footer__social-item _tw" target="_blank"></a>
 							<a href="#" class="footer__social-item _google" target="_blank"></a>
+						</div>
+						<div class="footer__bottom-text">
+							ПАО «Почта Банк» является частью международной финансовой группы ВТБ и ФГУП «Почта России».<br/>
+							Лицензия ЦБ РФ на осуществление банковских операций № 650 от 25.03.2016.
 						</div>
 					</div>
 				</div>

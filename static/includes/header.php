@@ -29,10 +29,10 @@
 						<a href="#" class="top-menu__link">Офисы и банкоматы</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Контакты</a>
+						<a href="#" class="top-menu__link">Поддержка</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Поддержка</a>
+						<a href="#" class="top-menu__link">Погасить кредит</a>
 					</div>
 					<div class="top-menu__item _login">
 						<a href="#" class="top-menu__link">Интернет-банк</a>
@@ -59,7 +59,7 @@
 						<a href="#" class="header__menu-link">Сберегательный счет</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Платежи</a>
+						<a href="#" class="header__menu-link">Ипотека</a>
 					</div>
 					<div class="header__menu-item">
 						<a href="#" class="header__menu-link">Еще <span class="dots">...</span></a>

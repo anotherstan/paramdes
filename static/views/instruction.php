@@ -10,7 +10,7 @@
 			<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/<?=$i%3+1?>.svg')"></div>
 <?}?>
 			<div class="b-steps__item-title"><?='1. Шаг'?></div>
-			<div class="b-steps__item-text">Описание действий для шага в две строки.</div>
+			<div class="b-steps__item-text">Описание действий<br/>для шага в две строки.</div>
 		</div>
 <? } ?>
 	</div>

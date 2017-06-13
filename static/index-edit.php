@@ -68,17 +68,24 @@ include "includes/header.php"
 					</div>
 				</div>
 				<div class="card__title">Элемент 120</div>
-				<div class="card__type">для покупок</div>
+				<?/*div class="card__type">для покупок</div*/?>
 				<div class="card__options">
 					<div class="card__option">
-						<div class="card__option-val">500 000 ₽</div>
-						<div class="card__option-title">Кредитный лимит</div>
+						<div class="card__option-val"><span>до</span> 500 000 ₽</div>
+						<div class="card__option-title">
+							Кредитный лимит на<br />
+							покупки и оплату услуг
+						</div>
 					</div>
 					<div class="card__option">
-						<div class="card__option-val">120 дней</div>
-						<div class="card__option-title">Без процентов</div>
+						<div class="card__option-val"><span>до</span> 120 дней</div>
+						<div class="card__option-title">
+							Возобновляемый<br />
+							беспроцентный период
+						</div>
 					</div>
 				</div>
+				<div class="card__btn"><a href="" class="btn">Оформить карту</a></div>
 			</div>
 		</div>
 	</div>
@@ -109,7 +116,7 @@ include "includes/header.php"
 	<div class="grid__inner">
 		<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
 			<span class="all-btn__counter _plus"></span><span class="all-btn__text">
-				<span data-nav-text>Показать график платежей</span>
+				<span data-nav-text>Как не платить проценты</span>
 			</span>
 		</a>
 	</div>
@@ -184,19 +191,19 @@ include "includes/header.php"
 				<div class="b-block__title h3 _dash">Тарифы</div>
 				<div class="b-steps _indent">
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1.svg')"></div>
-						<div class="b-steps__item-title _small">Кредитный лимит</div>
-						<div class="b-steps__item-value">500 000 ₽</div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/1.svg')"></div>
+						<div class="b-steps__item-title _small">Фиксированная ставка</div>
+						<div class="b-steps__item-value">27,9%</div>
 					</div>
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2.svg')"></div>
-						<div class="b-steps__item-title _small">Процентная ставка</div>
-						<div class="b-steps__item-value">0%</div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/2.svg')"></div>
+						<div class="b-steps__item-title _small">Выпуск карты</div>
+						<div class="b-steps__item-value"><span>от</span> 0 ₽</div>
 					</div>
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3.svg')"></div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/3.svg')"></div>
 						<div class="b-steps__item-title _small">Ежемесячный платеж</div>
-						<div class="b-steps__item-value">5%</div>
+						<div class="b-steps__item-value"><span>от</span> 5%</div>
 					</div>
 				</div>
 			</div>
@@ -290,8 +297,8 @@ include "includes/header.php"
 			<div class="b-block _transparent benefits" data-benefits>
 				<div class="benefits__inner">
 					<div class="benefits__top">
-						<div class="h2">Уникальные преимущества</div>
-						<div class="b-block__subtitle _white">Особенные сервисы Почта-Банка.</div>
+						<div class="h2">Привилегии для держателей карты</div>
+						<div class="b-block__subtitle _white">Только в Почта Банке.</div>
 					</div>
 					<div class="b-block__indent">
 						<div class="benefits__gall">
@@ -303,7 +310,7 @@ include "includes/header.php"
 										<div class="benefits__gall-price-block">
 											<span class="val">0</span>
 											<div class="benefits__gall-price-period">
-												Руб<hr/>Мес
+												Руб<hr/>Год
 											</div>
 										</div>
 										<div class="benefits__gall-price-text">Автоматическая активация пакета<br/>при сумме покупок от 7500 Р.</div>
@@ -311,9 +318,9 @@ include "includes/header.php"
 									<div class="benefits__gall-tabs">
 										<div class="h4">Ваш помощник в любой ситуации</div>
 										<div class="benefits__gall-tabs-items">
-											<a href="javascript:void(0);" data-benefits-tab="1" class="benefits__gall-tab _active"><span class="benefits__gall-tab-num">1</span>Вам не подошел купленный товар</a>
-											<a href="javascript:void(0);" data-benefits-tab="2" class="benefits__gall-tab"><span class="benefits__gall-tab-num">2</span>Приобретенная техника вышла из строя</a>
-											<a href="javascript:void(0);" data-benefits-tab="3" class="benefits__gall-tab"><span class="benefits__gall-tab-num">3</span>Вы нашли цену ниже в другом месте</a>
+											<a href="javascript:void(0);" data-benefits-tab="1" class="benefits__gall-tab _active"><span class="benefits__gall-tab-num">1</span>Бесплатный возврат товара</a>
+											<a href="javascript:void(0);" data-benefits-tab="2" class="benefits__gall-tab"><span class="benefits__gall-tab-num">2</span>Бесплатный ремонт техники</a>
+											<a href="javascript:void(0);" data-benefits-tab="3" class="benefits__gall-tab"><span class="benefits__gall-tab-num">3</span>Гарантия лучшей цены</a>
 										</div>
 									</div>
 								</div>
@@ -413,7 +420,7 @@ include "includes/header.php"
 									<li>20 000 партнеров по всему миру</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1.svg')"></div>
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/1.svg')"></div>
 								</div>
 							</div>
 							<div class="benefits__block">
@@ -426,7 +433,7 @@ include "includes/header.php"
 									<li>Организация возвращения домой</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/2.svg')"></div>
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/2.svg')"></div>
 								</div>
 							</div>
 						</div>
@@ -461,10 +468,10 @@ include "includes/header.php"
 							<div class="article__author">
 								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
 								<div class="article__author-name">Никита Осипов</div>
-								<div class="article__author-position">Журналист</div>
+								<div class="article__author-position">Финансовый аналитик</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1.svg')"></div>
+								<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/3.svg')"></div>
 							</div>
 						</div>
 					</a>
@@ -477,10 +484,10 @@ include "includes/header.php"
 							<div class="article__author">
 								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
 								<div class="article__author-name">Дарья Ермолинa</div>
-								<div class="article__author-position">покупатель со стажем</div>
+								<div class="article__author-position">Покупатель со стажем</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/2.svg')"></div>
+								<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/4.svg')"></div>
 							</div>
 						</div>
 					</a>

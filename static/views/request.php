@@ -31,7 +31,6 @@
 					<?}}?>
 					<div class="b-form__btn-wrap">
 						<button type="submit" class="btn">Оформить карту</button>
-						<a href="#" class="btn _transparent">Заказать звонок</a>
 					</div>
 				</form>
 			</div>

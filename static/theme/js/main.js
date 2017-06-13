@@ -47,18 +47,17 @@ app.about=function () {
 	$pagItem.hover(function () {
 		setSlide($(this).data('aboutPagItem'));
 	},function () {
-		setSlide(0);
+		//setSlide(0);
 	});
-	$pag.hover(function () {
+	/*$pag.hover(function () {
 		$counter.fadeIn();
 	},function () {
 		$counter.fadeOut();
-	});
+	});*/
 	function setSlide(n) {
-		if(n>0){
-			$counterActive.text(n);
-		}
+		$counterActive.text(n);
 		$content.hide().filter('[data-slide-content="'+n+'"]').show();
+		$pagItem.removeClass('_active').filter('[data-about-pag-item="'+n+'"]').addClass('_active');
 
 	}
 
