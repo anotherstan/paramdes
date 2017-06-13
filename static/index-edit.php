@@ -463,7 +463,8 @@ include "includes/header.php"
 					<a href="#" class="article">
 						<div class="article__inner">
 							<div class="article__title h4">
-								Как заработать на<br/>использовании карты
+								Как оплачивать товары<br />
+								и услуги без комиссий
 							</div>
 							<div class="article__author">
 								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
