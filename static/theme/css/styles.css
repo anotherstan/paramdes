@@ -2251,10 +2251,28 @@ h5,
   margin-top: 32px;
 }
 .conditions {
+  position: relative;
   color: #fff;
+}
+.conditions:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
+}
+.conditions:after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.4);
 }
 .conditions__all {
   padding-top: 30px;
+  padding-bottom: 0;
 }
 .conditions__all-files {
   margin-top: 42px;
@@ -2287,8 +2305,8 @@ h5,
 .conditions__notice {
   border-radius: 2px;
   font-size: 16px;
-  padding: 40px 160px;
-  background: url('../images/icons/article/2_white.svg') no-repeat 48px center #002352;
+  padding: 32px 160px 32px 120px;
+  background: url('../images/icons/flag.svg') no-repeat 48px center #002352;
 }
 .conditions__block {
   padding-bottom: 47px;

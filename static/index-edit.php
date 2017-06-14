@@ -233,8 +233,8 @@ include "includes/header.php"
 								<div class="conditions__block-item-val">Visa Platinum</div>
 							</div>
 							<div class="conditions__block-item">
-								<div class="conditions__block-item-title">Срок действия</div>
-								<div class="conditions__block-item-val">60 месяцев</div>
+								<div class="conditions__block-item-title">Комиссия за снятие наличных</div>
+								<div class="conditions__block-item-val">5,9%</div>
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Выпуск карты</div>

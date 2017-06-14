@@ -1,8 +1,25 @@
 .conditions{
-
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		bottom:20px;
+		left: 0;
+		right: 0;
+		box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.4);
+	}
 	color: #fff;
 	&__all{
 		padding-top: 30px;
+		padding-bottom: 0;
 		&-files{
 			margin-top: 42px;
 			.clearfix;
@@ -26,8 +43,8 @@
 	&__notice{
 		border-radius: 2px;
 		font-size: 16px;
-		padding: 40px 160px;
-		background: url('@{pathToImg}icons/article/2_white.svg') no-repeat 48px center #002352;
+		padding: 32px 160px 32px 120px;
+		background: url('@{pathToImg}icons/flag.svg') no-repeat 48px center #002352;
 	}
 	&__block{
 		padding-bottom: 47px;
