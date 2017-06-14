@@ -796,6 +796,10 @@ h5,
   color: rgba(255, 255, 255, 0.7);
   margin-top: 16px;
 }
+.rub:after {
+  font-family: 'pragmatica-slabserif', sans-serif !important;
+  content: "\20BD";
+}
 .next-page {
   position: absolute;
   z-index: 100;
