@@ -3,6 +3,23 @@
 	padding-bottom: 96px;
 	&._dark{
 		background-color: #001837;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0;
+			box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom:20px;
+			left: 0;
+			right: 0;
+			box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.4);
+		}
 	}
 	&._blue{
 		background-color: #011689;

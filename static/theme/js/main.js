@@ -295,7 +295,7 @@ app.calc = function(){
 			$minPayment = $calc.find('[data-calc-min-payment]'),
 			$restPayment = $calc.find('[data-calc-rest-payment]'),
 			calcData = $sumSlider.data('calcSumSlider'),
-			months=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],
+			months=["В январе","в Феврале","в Марте","в Апреле","в Мае","в Июне","в Июле"," в Августе","в Сентябре"," в Октябре","в Ноябре","в Декабре"],
 			sum = null,
 			month = null,
 			startSumValue = null,
@@ -318,6 +318,7 @@ app.calc = function(){
 		step: calcData.step,
 		value: calcData.value || calcData.min,
 		slide: function( event, ui ){
+			calculate();
 			$sumInp.val(app.formatNumber(ui.value));
 		},
 		start: function( event, ui ){
@@ -364,7 +365,7 @@ app.calc = function(){
 			var $self = $(this),
 					data = +$self.data('calcScheduleMonth')
 				;
-			$self.text(setMonth(+month + data -1));
+			$self.text(setMonth(+month + data));
 		});
 	}
 };

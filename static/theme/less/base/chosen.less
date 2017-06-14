@@ -1,7 +1,38 @@
 .calc__month {
+	.chosen-results{
+		li{
+			&.highlighted{
+				background: transparent!important;
+				color: fade(#fff,80%);
+			}
+		}
+	}
+	.chosen-container-single .chosen-drop {
+		margin-top: -2px;
+	}
 	.chosen-container-single .chosen-single{
-		height: 64px;
-		line-height: 62px;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		background-color: #002352;
+	}
+	.chosen-container.chosen-with-drop{
+		.chosen-single{
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+	.chosen-container:hover{
+		.chosen-single{
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+	.chosen-container .chosen-drop{
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		background-color: #002352;
+	}
+	.chosen-container-single .chosen-single div{
+		width: 28px;
+		b{
+			background-size: 12px 8px;
+		}
 	}
 
 }

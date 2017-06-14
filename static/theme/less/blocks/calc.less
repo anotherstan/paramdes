@@ -1,36 +1,95 @@
 .calc{
 	color: #fff;
 	padding-bottom: 48px;
-	background: url('@{pathToImg}calc.png') no-repeat center bottom;
+	background-color: #001e45;
 	select{
 		background: transparent;
-		color: red;
 		height: 64px;
 		width: 100%;
 	}
-	&__fields{
+	&__top{
 		.clearfix;
-		margin-top: 58px;
+		margin-top: 29px;
+		&-add{
+			float: left;
+			width: 352px;
+			height: 96px;
+			border: 1px dashed fade(#fff,20%);
+			border-radius: 2px;
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.8px;
+			line-height: 12px;
+			text-transform: uppercase;
+			text-align: center;
+			padding-top: 42px;
+			color: #fff;
+			margin-left: 32px;
+			&-ico{
+				display: inline-block;
+				vertical-align: top;
+				width: 12px;
+				height: 12px;
+				background: url('@{pathToImg}icons/plus_white.svg') no-repeat center;
+				margin-right: 24px;
+			}
+		}
+	}
+	&__fields{
+		background-color: #002352;
+		border-radius: 2px;
+		padding: 24px 32px;
+		padding-right: 0;
+		float: left;
+		width: 736px;
+		.clearfix;
+		&-title{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			float: left;
+			padding-top: 12px;
+		}
+	}
+	&__help{
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 12px;
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 50%;
+		text-align: center;
+		padding: 4px;
+		margin-left: 10px;
+		border: 1px solid fade(#fff,20%);
+		color: #fff;
+		text-decoration: none!important;
 	}
 	&__field{
 		float: left;
 		&._sum{
-			width: 736px;
+			width: 178px;
+			margin-left: 34px;
+			margin-right: 20px;
 		}
 		&._month{
-			width: 352px;
-			margin-left: 32px;
+			width: 178px;
+			margin-left: 20px;
 		}
 
 	}
 	&__sum{
 		&-field{
-			height:64px;
+			height: 48px;
 			input[type="text"]{
 				background: transparent;
 				border: 2px solid fade(#fff,20%);
 				border-radius: 2px;
 				color: #fff;
+				font-size: 16px;
+				padding: 12px 17px;
 			}
 		}
 		&-slider{
@@ -47,19 +106,18 @@
 		letter-spacing: 0.8px;
 	}
 	&__schedule{
-		margin-top: 76px;
+		margin-top: 61px;
 		&-blocks{
 			.clearfix;
-			margin-left: -24px;
 			margin-top: 43px;
 		}
 		&-block{
 			float: left;
-			width: 383px;
-			padding-left: 24px;
+			width: 385px;
+			padding-left: 32px;
 			border-left: 1px dashed fade(#fff,10%);
 			&:nth-child(3n){
-				width: 378px;
+				width: 340px;
 			}
 			&-sum{
 				line-height: 24px;
@@ -80,7 +138,7 @@
 				font-weight: 400;
 				line-height: 20px;
 				color: fade(#fff,70%);
-				margin-top: 47px;
+				margin-top: 30px;
 			}
 		}
 
@@ -95,16 +153,16 @@
 	margin-top: -2px;
 }
 .ui-widget-header{
-	background: red;
+	background: @cRed;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
-	width: 32px;
-	height: 32px;
-	background: red;
-	border: 8px  solid #fff;
+	width: 20px;
+	height: 20px;
+	background: @cRed;
+	border: 6px  solid #fff;
 	border-radius: 50%;
-	margin-left: -16px;
-	top: -15px;
+	margin-left: -10px;
+	top: -9px;
 	box-shadow: 0 4px 34px rgba(30, 48, 85, 0.6);
 	cursor: pointer;
 }
