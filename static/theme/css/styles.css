@@ -1013,7 +1013,7 @@ h5,
 .b-steps__item-ico {
   width: 95px;
   height: 95px;
-  background: none no-repeat center;
+  background: none no-repeat 0 center;
   background-size: contain;
   margin-bottom: 33px;
 }
@@ -1619,6 +1619,35 @@ h5,
 }
 .tablet-v .footer__bottom-text {
   width: 768px;
+}
+.instruction__top {
+  *zoom: 1;
+  margin-left: -96px;
+  margin-right: -96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid rgba(0, 24, 55, 0.1);
+}
+.instruction__top:before,
+.instruction__top:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.instruction__top:after {
+  clear: both;
+}
+.instruction__top .b-block__title {
+  float: left;
+}
+.instruction__top + .b-steps {
+  margin-top: 48px;
+}
+.instruction__tabs {
+  float: left;
+  margin-left: 41px;
+  margin-top: 4px;
 }
 .questions__items {
   margin-top: 25px;
