@@ -34,13 +34,40 @@
 	position: relative;
 	&__edit{
 		position: absolute;
-		right: 0;
-		top: 0;
-		width: 40px;
-		height:40px;
-		background: url('@{pathToImg}icons/settings.png') no-repeat center;
-		background-size: 60%;
+		right: 96px;
+		top: 55px;
 		z-index: 100;
+		&:hover{
+			.b-block__edit-text{
+				width: 125px;
+			}
+
+		}
+		&-ico{
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			vertical-align: top;
+			background: url('@{pathToImg}icons/edit.svg') no-repeat center;
+		}
+		&-text{
+			display: inline-block;
+			vertical-align: top;
+			width: 0;
+			overflow: hidden;
+			text-align: right;
+			transition: width 0.3s;
+			&-in{
+				color: @cRed;
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.8px;
+				line-height: 12px;
+				text-transform: uppercase;
+				width: 125px;
+				display: inline-block;
+			}
+		}
 	}
 	&._transparent{
 		background-color: transparent;

@@ -1,5 +1,10 @@
 <div class="b-block questions"  data-constructor-content="questions">
-	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="questions"></a>
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="questions">
+		<span class="b-block__edit-ico"></span>
+		<span class="b-block__edit-text">
+			<span class="b-block__edit-text-in">Редактировать</span>
+		</span>
+	</a>
 	<div class="b-block__title h3 _dash">Заголовок</div>
 	<div class="questions__items" data-questions data-nav-block>
 <?if ($parameters['questionsActiveCounter'] =='all' || $parameters['questionsActiveCounter']>=$parameters['questionsCounter']){

@@ -875,13 +875,37 @@ h5,
 }
 .b-block__edit {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  background: url('../images/icons/settings.png') no-repeat center;
-  background-size: 60%;
+  right: 96px;
+  top: 55px;
   z-index: 100;
+}
+.b-block__edit:hover .b-block__edit-text {
+  width: 125px;
+}
+.b-block__edit-ico {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: top;
+  background: url('../images/icons/edit.svg') no-repeat center;
+}
+.b-block__edit-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 0;
+  overflow: hidden;
+  text-align: right;
+  transition: width 0.3s;
+}
+.b-block__edit-text-in {
+  color: #cc003d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  width: 125px;
+  display: inline-block;
 }
 .b-block._transparent {
   background-color: transparent;
@@ -1087,13 +1111,13 @@ h5,
   width: 544px;
 }
 .request-form__img {
-  width: 1166px;
-  height: 378px;
+  width: 544px;
   position: absolute;
-  right: -304px;
-  top: -30px;
-  background: url('../images/request-form.png') no-repeat center;
-  background-size: contain;
+  right: 0;
+  bottom: 0;
+  top: 49px;
+  background: url('../images/eagle.png') no-repeat 0 0;
+  background-size: 948px 778px;
 }
 .settings-form {
   width: 352px;
@@ -1442,6 +1466,14 @@ h5,
   right: 0;
   z-index: 1;
 }
+.footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
+}
 .footer__inner {
   padding: 96px 96px 48px;
 }
@@ -1615,12 +1647,17 @@ h5,
   background-size: contain;
   opacity: 0.2;
 }
+.questions__item-title._active {
+  font-weight: 600;
+}
 .questions__item-title._active:after {
   background-image: url('../images/icons/minus.svg');
+  opacity: 1;
 }
 .questions__item-answer {
   display: none;
-  padding-top: 30px;
+  padding-top: 32px;
+  padding-right: 100px;
 }
 .questions__all {
   margin-top: 48px;
@@ -1757,6 +1794,7 @@ h5,
   position: absolute;
   left: 0;
   top: 0;
+  background-size: contain;
 }
 .article__author-photo:before {
   content: '';

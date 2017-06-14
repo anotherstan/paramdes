@@ -1,5 +1,10 @@
 <div class="about" data-about data-constructor-content="slider">
-	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="slider"></a>
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="slider">
+		<span class="b-block__edit-ico"></span>
+		<span class="b-block__edit-text">
+			<span class="b-block__edit-text-in">Редактировать</span>
+		</span>
+	</a>
 <?if ($parameters['substrate'] !='none'){?>
 	<div class="about__bg <?=$parameters['substrate'];?>" <?=$parameters['decor'] =='pattern' ? 'style="background-image: url(\'/static/theme/images/pattern-'.$parameters['substrate'].'.png\');"':'';?>></div>
 <?}?>

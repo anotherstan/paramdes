@@ -1,6 +1,11 @@
 
 <div class="b-block" data-constructor-content="instruction">
-	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="instruction"></a>
+	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="instruction">
+		<span class="b-block__edit-ico"></span>
+		<span class="b-block__edit-text">
+			<span class="b-block__edit-text-in">Редактировать</span>
+		</span>
+	</a>
 	<div class="b-block__title h3 _dash">Как получить карту?</div>
 <?if ($parameters['stepsCounter']){?>
 	<div class="b-steps _indent <?=$parameters['decor'] && $parameters['decor']!='none'?' _arrs':''?> _<?=$parameters['stepsCounter'];?>-steps">

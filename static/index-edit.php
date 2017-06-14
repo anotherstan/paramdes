@@ -39,7 +39,7 @@
 	}
 	//$params = array_merge($cookiesQuestions, $constParam);
 
-	$defaultRequest = array('type'=>'open', 'fieldsCounter'=>3, 'check'=>true, 'openDecor'=>'none', 'closeDecor'=>'none');
+	$defaultRequest = array('type'=>'open', 'fieldsCounter'=>3, 'check'=>true, 'openDecor'=>'img', 'closeDecor'=>'img');
 	if (isset($_COOKIE['request'])) {
 		$cookiesRequest = json_decode($_COOKIE['request'], true);
 	} else {
@@ -472,7 +472,7 @@ include "includes/header.php"
 								и услуги без комиссий
 							</div>
 							<div class="article__author">
-								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
+								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author1.png');"></div>
 								<div class="article__author-name">Никита Осипов</div>
 								<div class="article__author-position">Финансовый аналитик</div>
 							</div>
@@ -488,7 +488,7 @@ include "includes/header.php"
 								по самой выгодной цене
 							</div>
 							<div class="article__author">
-								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
+								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author2.png');"></div>
 								<div class="article__author-name">Дарья Ермолинa</div>
 								<div class="article__author-position">Покупатель со стажем</div>
 							</div>
@@ -603,8 +603,8 @@ include "includes/header.php"
 					<div class="settings-form__block">
 						<div class="settings-form__block-title">3. Оформление</div>
 						<div class="settings-form__radio-list">
-							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
 							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img"><span class="settings-form__radio-in">Изображение</span></label>
+							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
 						</div>
 					</div>
 				</div>
@@ -612,8 +612,8 @@ include "includes/header.php"
 					<div class="settings-form__block">
 						<div class="settings-form__block-title">2. Оформление</div>
 						<div class="settings-form__radio-list">
-							<label class="settings-form__radio"><input type="radio" name="closeDecor"  <?= $cookiesRequest['closeDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
 							<label class="settings-form__radio"><input type="radio" name="closeDecor" <?= $cookiesRequest['closeDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img"><span class="settings-form__radio-in">Изображение</span></label>
+							<label class="settings-form__radio"><input type="radio" name="closeDecor"  <?= $cookiesRequest['closeDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
 						</div>
 					</div>
 				</div>
