@@ -35,6 +35,7 @@
 	color: #fff;
 	font-size: 16px;
 	background-color: @textColor;
+	transition: border-color 0.3s;
 	&.chosen-default{
 
 	}
@@ -48,6 +49,14 @@
 		border-bottom-right-radius: 0;
 		border-color: #33465f;
 	}
+}
+.chosen-container:hover{
+	.chosen-single{
+		border-color: #33465f;
+	}
+}
+.chosen-container-single .chosen-drop{
+	margin-top: 0;
 }
 .chosen-container .chosen-drop{
 	border: 2px solid #1a2f4b;

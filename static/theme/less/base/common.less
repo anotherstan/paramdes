@@ -19,6 +19,14 @@ body {
 	font-weight: 400;
 	overflow-y: scroll;
 	min-width: 1440px;
+	&._show-form{
+		.header,.grid,.footer{
+			transform: translate(352px, 0);
+		}
+	}
+}
+.header,.grid,.footer{
+	transition: transform 0.3s;
 }
 .grid{
 	overflow: hidden;
@@ -87,6 +95,28 @@ h5,.h5{
 		left: 25%;
 		background: none no-repeat center;
 		background-size: contain;
+	}
+}
+.b-list{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	color: fade(@textColor,70%);
+	li{
+		padding-left: 32px;
+		position: relative;
+		&+li{
+			margin-top: 12px;
+		}
+		&:before{
+			content: '';
+			width: 12px;
+			height: 2px;
+			background: @cRed;
+			position: absolute;
+			left: 0;
+			top: 11px;
+		}
 	}
 }
 .video-btn{

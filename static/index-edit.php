@@ -496,7 +496,8 @@ include "includes/header.php"
 			</div>
 		</div>
 	</div>
-	<div data-constructors-block>
+</div>
+<div data-constructors-block>
 	<div class="settings-form" data-constructor="instruction">
 		<a href="javascript:void(0);" class="settings-form__close" data-constructor-close></a>
 		<div class="settings-form__in">
@@ -511,16 +512,16 @@ include "includes/header.php"
 					<div class="settings-form__field">
 						<select name="stepsCounter"  data-chosen data-constructor-option>
 							<? for ($i=0;$i<=4;$i++){?>
-									<option value="<?=$i?>" <?= ($i==$cookiesInstruction['stepsCounter']) ? ' selected' :''?>><?=$i?></option>
-								<?}?>
+								<option value="<?=$i?>" <?= ($i==$cookiesInstruction['stepsCounter']) ? ' selected' :''?>><?=$i?></option>
+							<?}?>
 						</select>
 					</div>
 				</div>
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">2. Оформление</div>
 					<div class="settings-form__radio-list">
-						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
-						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'icons' ? 'checked' : ''?> data-constructor-option value="icons">Иконки</label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesInstruction['decor'] == 'icons' ? 'checked' : ''?> data-constructor-option value="icons"><span class="settings-form__radio-in">Иконки</span></label>
 					</div>
 				</div>
 			</form>
@@ -541,7 +542,7 @@ include "includes/header.php"
 						<select name="questionsCounter" data-chosen data-constructor-option>
 
 							<?
-								for ($i=1;$i<=50;$i++){?>
+								for ($i=1;$i<=10;$i++){?>
 									<option value="<?=$i?>" <?=$i==$cookiesQuestions['questionsCounter'] ? ' selected' :''?>><?=$i?></option>
 								<?}?>
 						</select>
@@ -553,7 +554,7 @@ include "includes/header.php"
 						<select name="questionsActiveCounter" data-chosen data-constructor-option>
 							<option value="all" <?= 'all'==$cookiesQuestions['questionsActiveCounter'] ? ' selected' :''?>>Все вопросы</option>
 							<?
-								for ($i=1;$i<=20;$i++){?>
+								for ($i=1;$i<=10;$i++){?>
 									<option value="<?=$i?>" <?=$i==$cookiesQuestions['questionsActiveCounter'] ? ' selected' :''?>><?=$i?></option>
 								<?}?>
 						</select>
@@ -574,8 +575,8 @@ include "includes/header.php"
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">1. Тип заявки</div>
 					<div class="settings-form__radio-list">
-						<label class="settings-form__radio" data-tabs-tab="1"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'open' ? 'checked' : ''?> data-constructor-option value="open">Открытая</label>
-						<label class="settings-form__radio" data-tabs-tab="2"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'close' ? 'checked' : ''?> data-constructor-option value="close">Закрытая</label>
+						<label class="settings-form__radio" data-tabs-tab="1"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'open' ? 'checked' : ''?> data-constructor-option value="open"><span class="settings-form__radio-in">Открытая</span></label>
+						<label class="settings-form__radio" data-tabs-tab="2"><input type="radio" name="type"  <?= $cookiesRequest['type'] == 'close' ? 'checked' : ''?> data-constructor-option value="close"><span class="settings-form__radio-in">Закрытая</span></label>
 					</div>
 				</div>
 				<div data-tabs-content="1">
@@ -584,7 +585,7 @@ include "includes/header.php"
 						<div class="settings-form__field">
 							<select name="fieldsCounter" data-chosen data-constructor-option>
 								<?for ($i=0;$i<=6;$i++){?>
-										<option value="<?=$i?>" <?=$i==$cookiesRequest['fieldsCounter'] ? ' selected' :''?>><?=$i?></option>
+									<option value="<?=$i?>" <?=$i==$cookiesRequest['fieldsCounter'] ? ' selected' :''?>><?=$i?></option>
 								<?}?>
 							</select>
 						</div>
@@ -597,8 +598,8 @@ include "includes/header.php"
 					<div class="settings-form__block">
 						<div class="settings-form__block-title">3. Оформление</div>
 						<div class="settings-form__radio-list">
-							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
-							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img">Изображение</label>
+							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+							<label class="settings-form__radio"><input type="radio" name="openDecor"  <?= $cookiesRequest['openDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img"><span class="settings-form__radio-in">Изображение</span></label>
 						</div>
 					</div>
 				</div>
@@ -606,8 +607,8 @@ include "includes/header.php"
 					<div class="settings-form__block">
 						<div class="settings-form__block-title">2. Оформление</div>
 						<div class="settings-form__radio-list">
-							<label class="settings-form__radio"><input type="radio" name="closeDecor"  <?= $cookiesRequest['closeDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
-							<label class="settings-form__radio"><input type="radio" name="closeDecor" <?= $cookiesRequest['closeDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img">Изображение</label>
+							<label class="settings-form__radio"><input type="radio" name="closeDecor"  <?= $cookiesRequest['closeDecor'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+							<label class="settings-form__radio"><input type="radio" name="closeDecor" <?= $cookiesRequest['closeDecor'] == 'img' ? 'checked' : ''?> data-constructor-option value="img"><span class="settings-form__radio-in">Изображение</span></label>
 						</div>
 					</div>
 				</div>
@@ -636,10 +637,10 @@ include "includes/header.php"
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">2. Подстрочник</div>
 					<div class="settings-form__radio-list">
-						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
-						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'text' ? 'checked' : ''?> data-constructor-option value="text">Текст</label>
-						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'val' ? 'checked' : ''?> data-constructor-option value="val">Значения</label>
-						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'list' ? 'checked' : ''?> data-constructor-option value="list">Список</label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'text' ? 'checked' : ''?> data-constructor-option value="text"><span class="settings-form__radio-in">Текст</span></label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'val' ? 'checked' : ''?> data-constructor-option value="val"><span class="settings-form__radio-in">Значения</span></label>
+						<label class="settings-form__radio"><input type="radio" name="subtitle" <?= $cookiesSlider['subtitle'] == 'list' ? 'checked' : ''?> data-constructor-option value="list"><span class="settings-form__radio-in">Список</span></label>
 					</div>
 					<div class="settings-form__check-list">
 						<label class="settings-form__check">
@@ -650,23 +651,94 @@ include "includes/header.php"
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">3. Подложка</div>
 					<div class="settings-form__radio-list">
-						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'none' ? 'checked' : ''?> data-constructor-option value="none">Не использовать</label>
-						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'red' ? 'checked' : ''?> data-constructor-option value="red">Алая</label>
-						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'blue' ? 'checked' : ''?> data-constructor-option value="blue">Синяя</label>
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'none' ? 'checked' : ''?> data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'red' ? 'checked' : ''?> data-constructor-option value="red"><span class="settings-form__radio-in"><span class="settings-form__radio-color _red"></span>Алая</span></label>
+						<label class="settings-form__radio"><input type="radio" name="substrate" <?= $cookiesSlider['substrate'] == 'blue' ? 'checked' : ''?> data-constructor-option value="blue"><span class="settings-form__radio-in"><span class="settings-form__radio-color _blue"></span>Синяя</span></label>
 					</div>
 				</div>
 				<div class="settings-form__block">
 					<div class="settings-form__block-title">4. Оформление</div>
 					<div class="settings-form__radio-list">
-						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'none' ? 'checked' : ''?>  checked data-constructor-option value="none">Не использовать</label>
-						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'mark' ? 'checked' : ''?> data-constructor-option value="mark">Марка</label>
-						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'pattern' ? 'checked' : ''?> data-constructor-option value="pattern">Паттерн</label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'none' ? 'checked' : ''?>  checked data-constructor-option value="none"><span class="settings-form__radio-in">Не использовать</span></label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'mark' ? 'checked' : ''?> data-constructor-option value="mark"><span class="settings-form__radio-in">Марка</span></label>
+						<label class="settings-form__radio"><input type="radio" name="decor" <?= $cookiesSlider['decor'] == 'pattern' ? 'checked' : ''?> data-constructor-option value="pattern"><span class="settings-form__radio-in">Паттерн</span></label>
 					</div>
 				</div>
 			</form>
 		</div>
-</div>
-
 	</div>
-<?include "includes/footer.php"?>
+
+</div>
+<footer class="footer">
+	<div class="grid__inner">
+		<div class="footer__inner">
+			<div class="b-block__title h3">Вам могут подойти</div>
+			<div class="b-steps _indent _white">
+				<div class="b-steps__item">
+					<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/1.svg')"></div>
+					<div class="b-steps__item-title">Кредит наличными</div>
+					<div class="b-steps__item-text">На любые цели.</div>
+				</div>
+				<div class="b-steps__item">
+					<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/2.svg')"></div>
+					<div class="b-steps__item-title">Покупки в кредит</div>
+					<div class="b-steps__item-text">Оплата товаров и услуг.</div>
+				</div>
+				<div class="b-steps__item">
+					<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/footer/3.svg')"></div>
+					<div class="b-steps__item-title">Рефинансирование</div>
+					<div class="b-steps__item-text">На выгодных условиях.</div>
+				</div>
+			</div>
+			<div class="footer__menu">
+				<div class="footer__menu-col">
+					<div class="footer__menu-title"><a href="#">Продукты и услуги</a></div>
+					<ul class="footer__menu-list">
+						<li><a href="#">Кредит и ипотека</a></li>
+						<li><a href="#">Карты</a></li>
+						<li><a href="#">Платежи и переводы</a></li>
+						<li><a href="#">Страхование</a></li>
+						<li><a href="#">Вклады и инвестиции</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<div class="footer__menu-title"><a href="#">Помощь</a></div>
+					<ul class="footer__menu-list">
+						<li><a href="#">Как оформить кредит</a></li>
+						<li><a href="#">Как оплатить кредит</a></li>
+						<li><a href="#">Часто задаваемые вопросы</a></li>
+						<li><a href="#">Задать вопрос</a></li>
+						<li><a href="#">Поддержка сайта</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-col">
+					<div class="footer__menu-title"><a href="#">О банке</a></div>
+					<ul class="footer__menu-list">
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Работа у нас</a></li>
+						<li><a href="#">Пресс-служба</a></li>
+						<li><a href="#">Раскрытие информации</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<a href="#" class="footer__bottom-logo" target="_blank"></a>
+				<div class="footer__social">
+					<a href="#" class="footer__social-item _vk" target="_blank"></a>
+					<a href="#" class="footer__social-item _fb" target="_blank"></a>
+					<a href="#" class="footer__social-item _ok" target="_blank"></a>
+					<a href="#" class="footer__social-item _tw" target="_blank"></a>
+					<a href="#" class="footer__social-item _google" target="_blank"></a>
+				</div>
+				<div class="footer__bottom-text">
+					ПАО «Почта Банк» является частью международной финансовой группы ВТБ и ФГУП «Почта России».<br/>
+					Лицензия ЦБ РФ на осуществление банковских операций № 650 от 25.03.2016.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
 

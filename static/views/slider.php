@@ -1,7 +1,7 @@
 <div class="about" data-about data-constructor-content="slider">
 	<a href="javascript:void(0);" class="b-block__edit" data-block-edit-btn="slider"></a>
 <?if ($parameters['substrate'] !='none'){?>
-	<div class="about__bg <?=$parameters['substrate'];?>" <?=$parameters['decor'] =='pattern' ? 'style="background-image: url(\'/static/theme/images/pattern.png\');"':'';?>></div>
+	<div class="about__bg <?=$parameters['substrate'];?>" <?=$parameters['decor'] =='pattern' ? 'style="background-image: url(\'/static/theme/images/pattern-'.$parameters['substrate'].'.png\');"':'';?>></div>
 <?}?>
 	<div class="about__inner">
 <?for ($i=1;$i<=$parameters['slidesCounter'];$i++){?>
@@ -12,7 +12,7 @@
 <?if($parameters['decor'] == 'mark'){?>
 <?for ($i=1;$i<=$parameters['slidesCounter'];$i++){?>
 				<div class="about__frame frame  <?=$i==1 ? '':'hide '?> <?=$parameters['substrate'];?>"  data-slide-content="<?=$i?>">
-					<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_red.svg')"></div>
+					<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_<?=$parameters['substrate']!='none' ? $parameters['substrate'] : 'red'?>.svg')"></div>
 				</div>
 <?}?>
 <?}?>
@@ -30,17 +30,24 @@
 <?if($parameters['subtitle'] == 'val'){?>
 	<div class="card__options">
 		<div class="card__option">
-			<div class="card__option-val">Значение</div>
-			<div class="card__option-title">Подпись значения</div>
+			<div class="card__option-val">1 000</div>
+			<div class="card__option-title">Подстрочник</div>
 		</div>
 		<div class="card__option">
-			<div class="card__option-val">Значение</div>
-			<div class="card__option-title">Подпись значения</div>
+			<div class="card__option-val">1 000</div>
+			<div class="card__option-title">Подстрочник</div>
 		</div>
 	</div>
 <?}?>
 <?if($parameters['subtitle'] == 'list'){?>
-				<div class="about__subtitle">позже будет список</div>
+		<div class="about__subtitle">
+			<ul class="b-list about__list">
+				<li>Значение 1</li>
+				<li>Значение 2</li>
+				<li>Значение 3</li>
+			</ul>
+		</div>
+
 <?}?>
 				<?if ($parameters['video']){?>
 				<?for ($i=1;$i<=$parameters['slidesCounter'];$i++){?>

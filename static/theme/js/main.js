@@ -263,6 +263,8 @@ app.constructor = function () {
 		});
 		$saveBtn.on('click',function () {
 			setCookie($form.find('input[name=formName]').val(),options, {path: '/'});
+			$constructor.removeClass('_active');
+			app.dom.$body.removeClass('_show-form');
 		});
 		$cancelBtn.on('click',function () {
 			location.reload();
@@ -272,10 +274,12 @@ app.constructor = function () {
 		});
 		$closeBtn.on('click',function () {
 			$constructor.removeClass('_active');
+			app.dom.$body.removeClass('_show-form');
 		});
 	});
 	$('html').on('click','[data-block-edit-btn]',function () {
 		var $self = $(this);
+		app.dom.$body.addClass('_show-form');
 		$constructors.removeClass('_active').filter('[data-constructor="'+$self.data('blockEditBtn')+'"]').addClass('_active');
 	});
 

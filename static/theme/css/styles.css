@@ -460,6 +460,16 @@ body {
   overflow-y: scroll;
   min-width: 1440px;
 }
+body._show-form .header,
+body._show-form .grid,
+body._show-form .footer {
+  transform: translate(352px, 0);
+}
+.header,
+.grid,
+.footer {
+  transition: transform 0.3s;
+}
 .grid {
   overflow: hidden;
   position: relative;
@@ -545,6 +555,28 @@ h5,
   left: 25%;
   background: none no-repeat center;
   background-size: contain;
+}
+.b-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  color: rgba(0, 24, 55, 0.7);
+}
+.b-list li {
+  padding-left: 32px;
+  position: relative;
+}
+.b-list li + li {
+  margin-top: 12px;
+}
+.b-list li:before {
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: #cc003d;
+  position: absolute;
+  left: 0;
+  top: 11px;
 }
 .video-btn {
   display: inline-block;
@@ -1057,6 +1089,7 @@ h5,
   transform: translate(-352px, 0);
   opacity: 0;
   transition: all 0.3s;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
 }
 .settings-form._active {
   opacity: 1;
@@ -1140,16 +1173,37 @@ h5,
   border-radius: 2px;
   position: relative;
 }
+.settings-form__radio-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -3px;
+  margin-right: 20px;
+}
+.settings-form__radio-color._red {
+  background-color: #cc003d;
+}
+.settings-form__radio-color._blue {
+  background-color: #011689;
+}
+.settings-form__radio-in {
+  z-index: 2;
+  position: relative;
+}
 .settings-form__radio .ideal-radio {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  left: -2px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  z-index: -1;
+  z-index: 1;
+  width: auto;
+  height: auto;
 }
 .settings-form__radio .ideal-radio.checked {
   background-color: #002352;
@@ -1226,6 +1280,7 @@ h5,
   color: #fff;
   font-size: 16px;
   background-color: #001837;
+  transition: border-color 0.3s;
 }
 .chosen-container-single .chosen-single span {
   margin-right: 40px;
@@ -1234,6 +1289,12 @@ h5,
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-color: #33465f;
+}
+.chosen-container:hover .chosen-single {
+  border-color: #33465f;
+}
+.chosen-container-single .chosen-drop {
+  margin-top: 0;
 }
 .chosen-container .chosen-drop {
   border: 2px solid #1a2f4b;
@@ -2441,6 +2502,7 @@ h5,
   bottom: 0;
   background-repeat: no-repeat;
   background-position: 48px 48px;
+  background-size: contain;
 }
 .about__bg.blue {
   background-color: #011689;
