@@ -27,6 +27,7 @@ app.init = function () {
 	app.initTabs();
 	app.constructor();
 	app.initChosen();
+	app.footer();
 
 };
 app.about=function () {
@@ -59,6 +60,14 @@ app.about=function () {
 		$content.hide().filter('[data-slide-content="'+n+'"]').show();
 		$pagItem.removeClass('_active').filter('[data-about-pag-item="'+n+'"]').addClass('_active');
 
+	}
+
+};
+app.footer=function () {
+	_helper();
+	app.dom.$window.resize(_helper);
+	function _helper() {
+		app.dom.$grid.css({ marginBottom : app.dom.$window.height()});
 	}
 
 };
