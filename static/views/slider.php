@@ -17,7 +17,10 @@
 <?if($parameters['decor'] == 'mark'){?>
 <?for ($i=1;$i<=$parameters['slidesCounter'];$i++){?>
 				<div class="about__frame frame  <?=$i==1 ? '':'hide '?> <?=$parameters['substrate'];?>"  data-slide-content="<?=$i?>">
-					<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_<?=$parameters['substrate']!='none' ? $parameters['substrate'] : 'red'?>.svg')"></div>
+					<div class="frame__shadow"></div>
+					<div class="frame__in">
+						<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_<?=$parameters['substrate']!='none' ? $parameters['substrate'] : 'red'?>.svg')"></div>
+					</div>
 				</div>
 <?}?>
 <?}?>

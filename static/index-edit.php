@@ -426,7 +426,10 @@ include "includes/header.php"
 									<li>20 000 партнеров по всему миру</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/1.svg')"></div>
+									<div class="frame__shadow"></div>
+									<div class="frame__in">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/1.svg')"></div>
+									</div>
 								</div>
 							</div>
 							<div class="benefits__block">
@@ -439,7 +442,10 @@ include "includes/header.php"
 									<li>Организация возвращения домой</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/2.svg')"></div>
+									<div class="frame__shadow"></div>
+									<div class="frame__in">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/2.svg')"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -478,7 +484,10 @@ include "includes/header.php"
 								<div class="article__author-position">Финансовый аналитик</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/3.svg')"></div>
+								<div class="frame__shadow"></div>
+								<div class="frame__in">
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/3.svg')"></div>
+								</div>
 							</div>
 						</div>
 					</a>
@@ -494,7 +503,10 @@ include "includes/header.php"
 								<div class="article__author-position">Покупатель со стажем</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/4.svg')"></div>
+								<div class="frame__shadow"></div>
+								<div class="frame__in">
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/4.svg')"></div>
+								</div>
 							</div>
 						</div>
 					</a>
