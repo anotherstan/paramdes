@@ -1503,6 +1503,7 @@ h5,
   z-index: 1;
   top: 0;
   overflow-y: auto;
+  min-width: 1440px;
 }
 .footer:before {
   content: '';
@@ -1688,7 +1689,7 @@ h5,
   margin-top: 4px;
 }
 .questions__items {
-  margin-top: 25px;
+  margin-top: 8px;
 }
 .questions__item {
   border-bottom: 1px solid rgba(0, 24, 55, 0.1);

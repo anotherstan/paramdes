@@ -13,17 +13,24 @@
 					</div>
 				</div>
 				<div class="card__title">Элемент 120</div>
-				<div class="card__type">для покупок</div>
+				<?/*div class="card__type">для покупок</div*/?>
 				<div class="card__options">
 					<div class="card__option">
-						<div class="card__option-val">500 000 ₽</div>
-						<div class="card__option-title">Кредитный лимит</div>
+						<div class="card__option-val"><span>до</span> 500 000 ₽</div>
+						<div class="card__option-title">
+							Кредитный лимит на<br />
+							покупки и оплату услуг
+						</div>
 					</div>
 					<div class="card__option">
-						<div class="card__option-val">120 дней</div>
-						<div class="card__option-title">Без процентов</div>
+						<div class="card__option-val"><span>до</span> 120 дней</div>
+						<div class="card__option-title">
+							Возобновляемый<br />
+							беспроцентный период
+						</div>
 					</div>
 				</div>
+				<div class="card__btn"><a href="" class="btn">Оформить карту</a></div>
 			</div>
 		</div>
 	</div>
@@ -46,14 +53,21 @@
 		<div class="grid__inner">
 			<div class="about" data-about>
 				<div class="about__bg"></div>
-				<div class="about__photo" style="background-image: url('/static/theme/images/about.png');"></div>
 				<div class="about__inner">
+					<?for ($i=1;$i<=5;$i++){?>
+						<div class="about__photo <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>" style="background-image: url('/static/theme/images/about.png');"></div>
+					<?}?>
 					<div class="clearfix">
 						<div class="about__left">
-							<div class="about__frame frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_red.svg')"></div>
-							</div>
-							<div class="about__counter h3"><span>1</span> / 4</div>
+							<?for ($i=1;$i<=5;$i++){?>
+								<div class="about__frame frame  <?=$i==1 ? '':'hide '?> red"  data-slide-content="<?=$i?>">
+									<div class="frame__shadow"></div>
+									<div class="frame__in">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_red.svg')"></div>
+									</div>
+								</div>
+							<?}?>
+							<div class="about__counter h3" data-about-counter><span data-about-counter-active>1</span> / 5</div>
 						</div>
 						<div class="about__main">
 							<div class="about__title h3">
@@ -61,130 +75,49 @@
 								платите через 120 дней
 							</div>
 							<div class="about__subtitle">Без комиссий и переплат.</div>
-							<div class="about__video">
-								<a href="javascript:void(0);" class="video-btn _red">
-									<div class="video-btn__ico"></div>
-									<div class="video-btn__title">Посмотреть видео</div>
-									<div class="video-btn__duration">1:24</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="about__steps">
-						<a href="javascript:void(0)" class="about__step _active">
-							<div class="about__step-num">1 <span>’’</span></div>
-							<div class="about__step-title">Как купить вещи  в интернете</div>
-							<div class="about__step-text">И не прогадать.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">2 <span>’’</span></div>
-							<div class="about__step-title">Как получать<br />доход от хобби</div>
-							<div class="about__step-text">Не уходя с работы.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">3 <span>’’</span></div>
-							<div class="about__step-title">Как покупать<br />все новые игры</div>
-							<div class="about__step-text">И не разориться.</div>
-						</a><a href="javascript:void(0)" class="about__step">
-							<div class="about__step-num">4 <span>’’</span></div>
-							<div class="about__step-title">Как путешествовать<br />по всему миру</div>
-							<div class="about__step-text">Почти бесплатно.</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div data-nav-block>
-	<div class="grid__inner">
-		<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
-			<span class="all-btn__counter _plus"></span><span class="all-btn__text">
-				<span data-nav-text>Показать график платежей</span>
-			</span>
-		</a>
-	</div>
-	<div class="b-blocks _dark hide"  data-nav-content>
-		<div class="grid__inner">
-			<div class="b-block conditions__main calc" data-calc>
-				<div class="h3">Как работает беспроцентный период</div>
-				<div class="calc__fields">
-					<div class="calc__field _sum">
-						<div class="calc__label">Траты по карте</div>
-						<div class="calc__sum" data-calc-sum>
-							<div class="calc__sum-field">
-								<input type="text" data-calc-sum-inp value="">
-							</div>
-							<div class="calc__sum-slider" data-calc-sum-slider='{
-								"min":0,
-								"max":500000,
-								"step":500,
-								"value":10000,
-								"month":5
-
-							}'></div>
-						</div>
-					</div>
-					<div class="calc__field _month">
-						<div class="calc__label">Начало использования</div>
-						<div class="calc__month">
-							<select  data-calc-month-field>
-								<option value="1">Январь</option>
-								<option value="2">Февраль</option>
-								<option value="3" selected>Март</option>
-								<option value="4">Апрель</option>
-								<option value="5">Май</option>
-								<option value="6">Июнь</option>
-								<option value="7">Июль</option>
-								<option value="8">Август</option>
-								<option value="9">Сентябрь</option>
-								<option value="10">Октябрь</option>
-								<option value="11">Ноябрь</option>
-								<option value="12">Декабрь</option>
-							</select>
+							<?for ($i=1;$i<=5;$i++){?>
+								<div class="about__video  <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>">
+									<a href="javascript:void(0);" class="video-btn _red">
+										<div class="video-btn__ico"></div>
+										<div class="video-btn__title">Посмотреть видео</div>
+										<div class="video-btn__duration">1:24</div>
+									</a>
+								</div>
+							<?}?>
 						</div>
 					</div>
 				</div>
-				<div class="calc__schedule">
-					<div class="h4">Ваш график платежей</div>
-					<div class="calc__schedule-blocks">
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="0"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж</div>
+				<div class="about__steps-wrap">
+					<div class="about__steps-btn _prev" data-about-slider-prev></div>
+					<div class="about__steps-btn _next" data-about-slider-next></div>
+					<div class="about__steps swiper-container" data-about-pag>
+						<div class="swiper-wrapper">
+							<a href="javascript:void(0)" class="swiper-slide about__step _active" data-about-pag-item="1">
+								<div class="about__step-num">1 <span>’’</span></div>
+								<div class="about__step-title">Как купить вещи  в магазинах</div>
+								<div class="about__step-text">И не прогадать.</div>
+							</a>
+							<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="2">
+								<div class="about__step-num">2 <span>’’</span></div>
+								<div class="about__step-title">Как купить<br/>себе мотоцикл</div>
+								<div class="about__step-text">По цене бензина.</div>
+							</a>
+							<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="3">
+								<div class="about__step-num">3 <span>’’</span></div>
+								<div class="about__step-title">Как путешествовать<br/>по всему миру</div>
+								<div class="about__step-text">Почти бесплатно.</div>
+							</a>
+							<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="4">
+								<div class="about__step-num">4 <span>’’</span></div>
+								<div class="about__step-title">Как получать<br/>доход от хобби</div>
+								<div class="about__step-text">Не уходя с работы.</div>
+							</a>
+							<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="5">
+								<div class="about__step-num">5 <span>’’</span></div>
+								<div class="about__step-title">Как покупать<br/>все новые игры</div>
+								<div class="about__step-text">И не разориться.</div>
+							</a>
 						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="1"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж</div>
-						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="2"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-rest-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Оплата задолженности</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-	<div class="b-blocks">
-		<div class="grid__inner">
-			<div class="b-block">
-				<div class="b-block__title h3 _dash">Тарифы</div>
-				<div class="b-steps _indent">
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1.svg')"></div>
-						<div class="b-steps__item-title _small">Кредитный лимит</div>
-						<div class="b-steps__item-value">500 000 ₽</div>
-					</div>
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2.svg')"></div>
-						<div class="b-steps__item-title _small">Процентная ставка</div>
-						<div class="b-steps__item-value">0%</div>
-					</div>
-					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3.svg')"></div>
-						<div class="b-steps__item-title _small">Ежемесячный платеж</div>
-						<div class="b-steps__item-value">5%</div>
 					</div>
 				</div>
 			</div>
@@ -194,8 +127,111 @@
 		<div class="grid__inner">
 			<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
 				<span class="all-btn__counter _plus"></span><span class="all-btn__text">
-				<span data-nav-text>Показать условия обслуживания</span>
-			</span>
+						<span data-nav-text>Как не платить проценты</span>
+					</span>
+			</a>
+		</div>
+		<div class="b-blocks _dark hide"  data-nav-content>
+			<div class="grid__inner">
+				<div class="b-block conditions__main calc" data-calc>
+					<div class="h3">Все просто — платите через 4 месяца после покупок. </div>
+					<div class="calc__top">
+						<div class="calc__fields">
+							<div class="calc__fields-title">Вы сделали покупки на сумму</div>
+							<div class="calc__field _sum">
+								<div class="calc__sum" data-calc-sum>
+									<div class="calc__sum-field">
+										<span class="rub calc__sum-rub"></span>
+										<input type="text" data-calc-sum-inp value="">
+									</div>
+									<div class="calc__sum-slider" data-calc-sum-slider='{
+										"min":0,
+										"max":500000,
+										"step":500,
+										"value":10000,
+										"month":5
+
+									}'></div>
+								</div>
+							</div>
+							<div class="calc__fields-title">в</div>
+							<div class="calc__field _month">
+								<div class="calc__month">
+									<select  data-calc-month-field data-chosen>
+										<option value="1">январе</option>
+										<option value="2">феврале</option>
+										<option value="3" selected>марте</option>
+										<option value="4">апреле</option>
+										<option value="5">мае</option>
+										<option value="6">июне</option>
+										<option value="7">июле</option>
+										<option value="8">августе</option>
+										<option value="9">сентябре</option>
+										<option value="10">октябре</option>
+										<option value="11">ноябре</option>
+										<option value="12">декабре</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:void(0);" class="calc__top-add">
+							<span class="calc__top-add-ico"></span>Добавить покупки
+						</a>
+					</div>
+					<div class="calc__schedule">
+						<div class="h4">Чтобы не платить проценты, вам нужно будет вернуть</div>
+						<div class="calc__schedule-blocks">
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="0"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="1"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="2"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-rest-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Последний платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-blocks">
+		<div class="grid__inner">
+			<div class="b-block">
+				<div class="b-block__title h3 _dash">Тарифы</div>
+				<div class="b-steps _indent">
+					<div class="b-steps__item">
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/1.svg')"></div>
+						<div class="b-steps__item-title _small">Фиксированная ставка</div>
+						<div class="b-steps__item-value">27,9%</div>
+					</div>
+					<div class="b-steps__item">
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/2.svg')"></div>
+						<div class="b-steps__item-title _small">Выпуск карты</div>
+						<div class="b-steps__item-value"><span>от</span> 0 ₽</div>
+					</div>
+					<div class="b-steps__item">
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/tariffs/3.svg')"></div>
+						<div class="b-steps__item-title _small">Ежемесячный платеж</div>
+						<div class="b-steps__item-value"><span>от</span> 5%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-nav-block>
+		<div class="grid__inner">
+			<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+				<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+					<span data-nav-text>Показать условия обслуживания</span>
+				</span>
 			</a>
 		</div>
 		<div class="b-blocks _dark conditions hide"  data-nav-content>
@@ -214,12 +250,12 @@
 								<div class="conditions__block-item-val">Visa Platinum</div>
 							</div>
 							<div class="conditions__block-item">
-								<div class="conditions__block-item-title">Срок действия</div>
-								<div class="conditions__block-item-val">60 месяцев</div>
+								<div class="conditions__block-item-title">Комиссия за снятие наличных</div>
+								<div class="conditions__block-item-val">5,9%</div>
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Выпуск карты</div>
-								<div class="conditions__block-item-val">900 ₽</div>
+								<div class="conditions__block-item-val">900 <span class="rub"></span></div>
 							</div>
 						</div>
 					</div>
@@ -241,7 +277,7 @@
 						</div>
 					</div>
 					<div class="conditions__notice">
-						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи
+						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи<br />
 						и вовремя погашать задолженность.
 					</div>
 				</div>
@@ -278,8 +314,8 @@
 			<div class="b-block _transparent benefits" data-benefits>
 				<div class="benefits__inner">
 					<div class="benefits__top">
-						<div class="h2">Уникальные преимущества</div>
-						<div class="b-block__subtitle _white">Особенные сервисы Почта-Банка.</div>
+						<div class="h2">Привилегии для держателей карты</div>
+						<div class="b-block__subtitle _white">Только в Почта Банке.</div>
 					</div>
 					<div class="b-block__indent">
 						<div class="benefits__gall">
@@ -291,7 +327,7 @@
 										<div class="benefits__gall-price-block">
 											<span class="val">0</span>
 											<div class="benefits__gall-price-period">
-												Руб<hr/>Мес
+												Руб<hr/>Год
 											</div>
 										</div>
 										<div class="benefits__gall-price-text">Автоматическая активация пакета<br/>при сумме покупок от 7500 Р.</div>
@@ -299,9 +335,9 @@
 									<div class="benefits__gall-tabs">
 										<div class="h4">Ваш помощник в любой ситуации</div>
 										<div class="benefits__gall-tabs-items">
-											<a href="javascript:void(0);" data-benefits-tab="1" class="benefits__gall-tab _active"><span class="benefits__gall-tab-num">1</span>Вам не подошел купленный товар</a>
-											<a href="javascript:void(0);" data-benefits-tab="2" class="benefits__gall-tab"><span class="benefits__gall-tab-num">2</span>Приобретенная техника вышла из строя</a>
-											<a href="javascript:void(0);" data-benefits-tab="3" class="benefits__gall-tab"><span class="benefits__gall-tab-num">3</span>Вы нашли цену ниже в другом месте</a>
+											<a href="javascript:void(0);" data-benefits-tab="1" class="benefits__gall-tab _active"><span class="benefits__gall-tab-num">1</span>Бесплатный возврат товара</a>
+											<a href="javascript:void(0);" data-benefits-tab="2" class="benefits__gall-tab"><span class="benefits__gall-tab-num">2</span>Бесплатный ремонт техники</a>
+											<a href="javascript:void(0);" data-benefits-tab="3" class="benefits__gall-tab"><span class="benefits__gall-tab-num">3</span>Гарантия лучшей цены</a>
 										</div>
 									</div>
 								</div>
@@ -314,8 +350,8 @@
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title h4">Бесплатный возврат</div>
 											<div class="benefits__gall-slide-text">
-												Если товар не подошел или отличается  от заказанного,
-												то вам будет возмещена стоимость обратной отправки его продавцу.
+												Если товар не подошел или отличается<br /> от заказанного,
+												то вам будет возмещена<br />стоимость обратной отправки его продавцу.
 											</div>
 										</div>
 										<div class="benefits__gall-slide-video">
@@ -334,7 +370,7 @@
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title">Бесплатный ремонт</div>
 											<div class="benefits__gall-slide-text">
-												Если техника оказалась сломанной,  ее бесплатно отремонтируют
+												Если техника оказалась сломанной,<br /> ее бесплатно отремонтируют<br />
 												 или компенсируют вам  ее полную стоимость.
 											</div>
 										</div>
@@ -354,7 +390,7 @@
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title">Гарантия лучшей цены</div>
 											<div class="benefits__gall-slide-text">
-												Если купленный товар стоит дешевле  в любом другом магазине на территории РФ, вам вернется разница в цене.
+												Если купленный товар стоит дешевле<br /> в любом другом магазине на территории РФ, вам вернется разница в цене.
 											</div>
 										</div>
 										<div class="benefits__gall-slide-video">
@@ -401,7 +437,10 @@
 									<li>20 000 партнеров по всему миру</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1.svg')"></div>
+									<div class="frame__shadow"></div>
+									<div class="frame__in">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/1.svg')"></div>
+									</div>
 								</div>
 							</div>
 							<div class="benefits__block">
@@ -414,7 +453,10 @@
 									<li>Организация возвращения домой</li>
 								</ul>
 								<div class="article__ico frame">
-									<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/2.svg')"></div>
+									<div class="frame__shadow"></div>
+									<div class="frame__in">
+										<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/2.svg')"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -427,20 +469,26 @@
 	<div class="b-blocks">
 		<div class="grid__inner">
 			<div class="b-block">
-				<div class="b-block__title h3 _dash">Как получить карту?</div>
+				<div class="instruction__top">
+					<div class="b-block__title h3 _dash">Как получить карту?</div>
+					<div class="tabs instruction__tabs">
+						<a href="#" class="tabs__item _active">Неименную</a>
+						<a href="#" class="tabs__item">Именную</a>
+					</div>
+				</div>
 				<div class="b-steps _indent _arrs">
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/1.svg')"></div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/1.svg')"></div>
 						<div class="b-steps__item-title">1. Подайте заявку</div>
-						<div class="b-steps__item-text">В клиентском центре, на стойке продаж или на сайте.</div>
+						<div class="b-steps__item-text">В клиентском центре, на стойке продаж или <a href="#">онлайн на сайте.</a></div>
 					</div>
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/2.svg')"></div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/2.svg')"></div>
 						<div class="b-steps__item-title">2. Узнайте решение</div>
-						<div class="b-steps__item-text">Ваша заявка будет рассмотрена в течение 5 минут.</div>
+						<div class="b-steps__item-text">Ваша онлайн-заявка будет рассмотрена в течение минуты.</div>
 					</div>
 					<div class="b-steps__item">
-						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/get-card/3.svg')"></div>
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/3.svg')"></div>
 						<div class="b-steps__item-title">3. Дождитесь выпуска</div>
 						<div class="b-steps__item-text">Получите карту в выбранном отделении Банка.</div>
 					</div>
@@ -492,21 +540,21 @@
 			<div class="b-block">
 				<div class="b-block__title h3 _dash">Оформите заявку онлайн</div>
 				<div class="b-block__subtitle">Узнайте решение в течение 5 минут.</div>
+				<div class="request-form__img"></div>
 				<div class="request-form">
-					<div class="request-form__img"></div>
 					<div class="request-form__block b-form">
 						<form action="">
 							<div class="b-form__row">
 								<div class="b-form__block">
 									<div class="b-form__block-field">
-										<input type="text" placeholder="Имя и фамилия" >
+										<input type="text" placeholder="Имя" >
 									</div>
 								</div>
 							</div>
 							<div class="b-form__row">
 								<div class="b-form__block">
 									<div class="b-form__block-field">
-										<input type="email" placeholder="Электронная почта" >
+										<input type="text" placeholder="Фамилия" >
 									</div>
 								</div>
 							</div>
@@ -527,7 +575,6 @@
 							</div>
 							<div class="b-form__btn-wrap">
 								<button type="submit" class="btn">Оформить карту</button>
-								<a href="#" class="btn _transparent">Заказать звонок</a>
 							</div>
 						</form>
 					</div>
@@ -539,15 +586,19 @@
 					<a href="#" class="article">
 						<div class="article__inner">
 							<div class="article__title h4">
-								Как заработать на<br/>использовании карты
+								Как оплачивать товары<br />
+								и услуги без комиссий
 							</div>
 							<div class="article__author">
-								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
+								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author1.png');"></div>
 								<div class="article__author-name">Никита Осипов</div>
-								<div class="article__author-position">Журналист</div>
+								<div class="article__author-position">Финансовый аналитик</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1.svg')"></div>
+								<div class="frame__shadow"></div>
+								<div class="frame__in">
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/3.svg')"></div>
+								</div>
 							</div>
 						</div>
 					</a>
@@ -558,12 +609,15 @@
 								по самой выгодной цене
 							</div>
 							<div class="article__author">
-								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/photo2.png');"></div>
+								<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author2.png');"></div>
 								<div class="article__author-name">Дарья Ермолинa</div>
-								<div class="article__author-position">покупатель со стажем</div>
+								<div class="article__author-position">Покупатель со стажем</div>
 							</div>
 							<div class="article__ico frame">
-								<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/2.svg')"></div>
+								<div class="frame__shadow"></div>
+								<div class="frame__in">
+									<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/4.svg')"></div>
+								</div>
 							</div>
 						</div>
 					</a>

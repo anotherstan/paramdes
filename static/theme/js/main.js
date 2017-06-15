@@ -28,6 +28,7 @@ app.init = function () {
 	app.constructor();
 	app.initChosen();
 	app.footer();
+	app.about();
 
 };
 app.about=function () {
