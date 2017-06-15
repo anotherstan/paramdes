@@ -6,7 +6,7 @@
 				<span class="b-block__edit-text-in">Редактировать</span>
 			</span>
 		</a>
-		<div class="b-block__title h3 <?=$parameters['type'] == 'open' ? '  _dash':'' ?>">Заголовок</div>
+		<div class="b-block__title h3 _dash">Заголовок</div>
 		<div class="b-block__subtitle">Подстрочник.</div>
 		<?if($parameters['type'] == 'close' && $parameters['closeDecor'] && $parameters['closeDecor']!='none'){?>
 			<div class="request-form__img"></div>

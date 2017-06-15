@@ -207,7 +207,7 @@ app.pageMenu = function () {
 	updateMenu();
 
 	function updateMenu() {
-		if(app.dom.$window.scrollTop() >= $menu.offset().top ){
+		if(app.dom.$window.scrollTop() >= $menu.offset().top && app.dom.$window.scrollTop() <= (app.dom.$body.height() - app.dom.$window.height())){
 			$menu.addClass('_fixed');
 		}else{
 			$menu.removeClass('_fixed');

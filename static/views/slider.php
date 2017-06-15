@@ -21,7 +21,7 @@
 				</div>
 <?}?>
 <?}?>
-<?if($parameters['slidesCounter'] > 1){?>
+<?if($parameters['slidesCounter'] > 1 && $parameters['decor'] !='pattern'){?>
 				<div class="about__counter h3" data-about-counter><span data-about-counter-active>1</span> / <?=$parameters['slidesCounter']?></div>
 <?}?>
 			</div>
@@ -59,7 +59,7 @@
 				<div class="about__video  <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>">
 					<a href="javascript:void(0);" class="video-btn _red">
 						<div class="video-btn__ico"></div>
-						<div class="video-btn__title">Посмотреть видео слайд <?=$i?></div>
+						<div class="video-btn__title">Посмотреть видео</div>
 						<div class="video-btn__duration">1:24</div>
 					</a>
 				</div>

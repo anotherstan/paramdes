@@ -266,7 +266,7 @@ include "includes/header.php"
 						</div>
 					</div>
 					<div class="conditions__notice">
-						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи
+						Чтобы воспользоваться беспроцентным периодом, необходимо оплачивать минимальные платежи<br />
 						и вовремя погашать задолженность.
 					</div>
 				</div>
@@ -339,8 +339,8 @@ include "includes/header.php"
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title h4">Бесплатный возврат</div>
 											<div class="benefits__gall-slide-text">
-												Если товар не подошел или отличается  от заказанного,
-												то вам будет возмещена стоимость обратной отправки его продавцу.
+												Если товар не подошел или отличается<br /> от заказанного,
+												то вам будет возмещена<br />стоимость обратной отправки его продавцу.
 											</div>
 										</div>
 										<div class="benefits__gall-slide-video">
@@ -359,7 +359,7 @@ include "includes/header.php"
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title">Бесплатный ремонт</div>
 											<div class="benefits__gall-slide-text">
-												Если техника оказалась сломанной,  ее бесплатно отремонтируют
+												Если техника оказалась сломанной,<br /> ее бесплатно отремонтируют<br />
 												 или компенсируют вам  ее полную стоимость.
 											</div>
 										</div>
@@ -379,7 +379,7 @@ include "includes/header.php"
 										<div class="benefits__gall-slide-texts">
 											<div class="benefits__gall-slide-title">Гарантия лучшей цены</div>
 											<div class="benefits__gall-slide-text">
-												Если купленный товар стоит дешевле  в любом другом магазине на территории РФ, вам вернется разница в цене.
+												Если купленный товар стоит дешевле<br /> в любом другом магазине на территории РФ, вам вернется разница в цене.
 											</div>
 										</div>
 										<div class="benefits__gall-slide-video">

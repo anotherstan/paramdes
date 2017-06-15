@@ -560,7 +560,7 @@ h5,
   list-style: none;
   margin: 0;
   padding-left: 0;
-  color: rgba(0, 24, 55, 0.7);
+  color: #001837;
 }
 .b-list li {
   padding-left: 32px;
@@ -751,6 +751,7 @@ h5,
   margin-right: 32px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+  margin-bottom: -1px;
 }
 .tabs__item._active {
   font-weight: 700;
@@ -1134,6 +1135,14 @@ h5,
   transform: translate(-352px, 0);
   opacity: 0;
   transition: all 0.3s;
+}
+.settings-form:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  right: 20px;
   box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
 }
 .settings-form._active {
@@ -1169,6 +1178,7 @@ h5,
   right: -24px;
   border-radius: 50%;
   background: url('../images/icons/close_white.svg') no-repeat center #cc003d;
+  z-index: 2;
 }
 .settings-form__btn {
   float: left;
@@ -1215,8 +1225,15 @@ h5,
   padding: 14px 20px;
   line-height: 16px;
   border: 2px solid #1a2f4b;
-  border-radius: 2px;
   position: relative;
+}
+.settings-form__radio:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.settings-form__radio:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .settings-form__radio-color {
   width: 24px;
@@ -1721,6 +1738,9 @@ h5,
 }
 .all-btn._toggle .all-btn__counter {
   background-image: url('../images/icons/plus_white.svg');
+}
+.all-btn._toggle._active:after {
+  display: none;
 }
 .all-btn._toggle._active .all-btn__counter {
   background-image: url('../images/icons/close_white.svg');
@@ -2382,10 +2402,11 @@ h5,
   clear: both;
 }
 .conditions__main {
-  background-color: #001e45;
   border-radius: 2px;
   box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
   padding-bottom: 64px;
+  background: url('../images/vector.png') no-repeat 96px bottom #001e45;
+  background-size: 1240px 185px;
 }
 .conditions__tabs {
   margin-top: 28px;
@@ -2482,12 +2503,12 @@ h5,
   min-height: 390px;
 }
 .card__img {
-  width: 985px;
+  width: 1433px;
   height: 394px;
   background: url('../images/card/img.png') no-repeat center;
   background-size: contain;
   position: absolute;
-  left: -65px;
+  left: -511px;
   top: 48px;
   z-index: 2;
 }
@@ -2622,9 +2643,10 @@ h5,
 .about__photo {
   width: 427px;
   background: none no-repeat top center;
+  background-size: 427px 610px;
   position: absolute;
   z-index: 2;
-  left: 208px;
+  left: 211px;
   top: -62px;
   bottom: 0;
 }
@@ -2827,7 +2849,7 @@ h5,
 }
 .calc {
   color: #fff;
-  padding-bottom: 48px;
+  padding-bottom: 0px;
   background-color: #001e45;
 }
 .calc select {
@@ -2975,6 +2997,7 @@ h5,
   width: 385px;
   padding-left: 32px;
   border-left: 1px dashed rgba(255, 255, 255, 0.1);
+  height: 158px;
 }
 .calc__schedule-block:nth-child(3n) {
   width: 340px;
