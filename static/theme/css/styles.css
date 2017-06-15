@@ -797,7 +797,7 @@ h5,
   margin-top: 16px;
 }
 .rub:after {
-  font-family: 'pragmatica-slabserif', sans-serif !important;
+  font-family: 'PT Sans', sans-serif !important;
   content: "\20BD";
 }
 .next-page {
@@ -2925,8 +2925,16 @@ h5,
   width: 178px;
   margin-left: 20px;
 }
+.calc__sum-rub {
+  position: absolute;
+  right: 20px;
+  line-height: 20px;
+  top: 13px;
+  font-size: 16px;
+}
 .calc__sum-field {
   height: 48px;
+  position: relative;
 }
 .calc__sum-field input[type="text"] {
   background: transparent;

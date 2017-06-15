@@ -130,6 +130,7 @@ include "includes/header.php"
 						<div class="calc__field _sum">
 							<div class="calc__sum" data-calc-sum>
 								<div class="calc__sum-field">
+									<span class="rub calc__sum-rub"></span>
 									<input type="text" data-calc-sum-inp value="">
 								</div>
 								<div class="calc__sum-slider" data-calc-sum-slider='{
@@ -243,7 +244,7 @@ include "includes/header.php"
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Выпуск карты</div>
-								<div class="conditions__block-item-val">900 ₽</div>
+								<div class="conditions__block-item-val">900 <span class="rub"></span></div>
 							</div>
 						</div>
 					</div>
