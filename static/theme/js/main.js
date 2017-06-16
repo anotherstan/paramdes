@@ -13,7 +13,27 @@ $(function () {
 	app.init();
 
 });
+app.utils = {};
+app.utils.okonchanie = function( number, one, two, five ) {
 
+	var poslezpt = parseInt( number ) !== parseFloat( number );
+
+	number += '';
+	// 10 - 19 || 5 - 10
+	if ( (number.length > 1 && +number.substr( number.length - 2, 1) == '1') || +number.substr( number.length - 1, 1 ) > 4  && +number.substr( number.length - 1, 1 ) < 10 && !poslezpt ){
+		return five;
+	}
+	// 1
+	else if ( number.substr( number.length - 1, 1) == '1' && !poslezpt )
+	{
+		return one;
+	}
+	// 2 - 4, 1.5
+	else
+	{
+		return two;
+	}
+};
 
 app.init = function () {
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
@@ -29,6 +49,7 @@ app.init = function () {
 	app.initChosen();
 	app.footer();
 	app.about();
+	app.creditCalc();
 
 };
 app.about=function () {
@@ -378,4 +399,57 @@ app.calc = function(){
 			$self.text(setMonth(+month + data));
 		});
 	}
+};
+app.creditCalc = function(){
+	var self = this,
+			$calc = $('[data-credit-calc]'),
+			$option = $calc.find('[data-credit-calc-option]')
+
+		;
+	if(!$calc.length){
+		return false;
+	}
+	function setVal(val,type) {
+		return type == 'date' ? val +' '+ app.utils.okonchanie(val,'месяц','месяца','месяцев'): val;
+	}
+	$option.each(function () {
+		var $self = $(this),
+			$inp = $self.find('[data-credit-calc-option-inp]'),
+			$slider = $self.find('[data-credit-calc-option-slider]'),
+			calcData = $slider.data('creditCalcOptionSlider'),
+			val = null,
+			type = 	$self.data('creditCalcOption')
+		;
+		$slider.slider({
+			range: "min",
+			min: calcData.min,
+			max: calcData.max,
+			step: calcData.step,
+			value: calcData.value || calcData.min,
+			slide: function( event, ui ){
+				$inp.val(setVal(app.formatNumber(ui.value),type));
+			},
+			start: function( event, ui ){
+				//startSumValue = ui.value;
+			},
+			stop: function( event, ui ){
+				$inp.val(setVal(app.formatNumber(ui.value),type));
+			}
+		});
+		$inp.focus(function () {
+			val = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10);
+			$inp.val(val);
+		}).keyup(function () {
+
+		});
+		console.log(type);
+		//$inp.val(setVal(app.formatNumber(calcData.value)),type).change();
+
+		$inp.on('change',function(){
+			var val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10) || calcData.min;
+			val = Math.min(Math.max(calcData.min, val1),calcData.max);
+			$slider.slider("value",val);
+			$inp.val(setVal(app.formatNumber(val),type));
+		});
+	});
 };

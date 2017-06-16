@@ -1,0 +1,146 @@
+.credit-calc{
+	margin-top: 96px;
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+		width: 32px;
+		height: 32px;
+		background: @cRed;
+		border: 8px  solid #fff;
+		margin-left: -16px;
+		top: -15px;
+	}
+	color: #fff;
+	&__inner{
+		padding-left: 96px;
+		padding-right: 96px;
+	}
+	&__block{
+		float: left;
+		width: 544px;
+	}
+	&__tabs{
+		margin-top: 27px;
+		border-bottom: 1px solid fade(#fff,10%);
+		.tabs__item{
+			padding-bottom: 21px;
+		}
+	}
+	&__options{
+		margin-top: 48px;
+	}
+	&__option{
+		&-rub{
+			position: absolute;
+			right: 24px;
+			line-height: 20px;
+			top: 21px;
+			font-size: 21px;
+		}
+		&+&{
+			margin-top: 63px;
+		}
+		&-title{
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.8px;
+			line-height: 12px;
+			text-transform: uppercase;
+			color:fade(#fff,70%) ;
+			margin-bottom: 24px;
+		}
+		&-block{
+
+		}
+		&-field{
+			height: 64px;
+			position: relative;
+			input[type="text"]{
+				background:transparent;
+				font-size: 20px;
+				color:#fff;
+				border: 2px solid fade(#fff,20%);
+				border-radius: 2px;
+				padding-right: 40px;
+			}
+		}
+	}
+	&__info{
+		position: relative;
+		width: 352px;
+		float: right;
+		background-color: #001e45;
+		border-radius: 2px;
+		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+		padding: 146px 48px 29px;
+		&-ico{
+			width: 226px;
+			height: 224px;
+			background: url('@{pathToImg}icons/frame/blue.svg') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			left: -18px;
+			top: -60px;
+
+		}
+		&-return{
+			height: 48px;
+			background-color: #002352;
+			border-radius: 2px;
+			padding: 12px 16px 12px 51px;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: -3px;
+			margin-left: -15px;
+			position: relative;
+			&:before{
+				content: '';
+				width: 24px;
+				height: 22px;
+				position: absolute;
+				left: 14px;
+				top: 11px;
+				background: url('@{pathToImg}icons/credit/1.svg') no-repeat center;
+				background-size: contain;
+				opacity: 0.3;
+			}
+			&-percent{
+				padding-left: 24px;
+				padding-top: 9px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		&-block{
+			&+&{
+				margin-top: 48px;
+			}
+			&-title{
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.8px;
+				line-height: 12px;
+				text-transform: uppercase;
+				color:fade(#fff,70%) ;
+				margin-bottom: 24px;
+			}
+			&-val{
+				font-family:@fPragmatica;
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 24px;
+			}
+		}
+		&-btns{
+			margin-top: 48px;
+		}
+		&-btn{
+			display: block;
+			text-align: center;
+			&+&{
+				margin-top: 6px;
+			}
+			&._transparent-btn{
+				background-color: transparent;
+			}
+		}
+	}
+}

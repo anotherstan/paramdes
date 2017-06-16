@@ -410,9 +410,11 @@
 									<div class="val">30</div>
 									<div class="benefits__guarantee-item-period-text">Дней</div>
 								</div>
-								<div class="benefits__guarantee-item-content">
-									<div class="benefits__guarantee-item-title">Все покупки по карте застрахованы</div>
-									<div class="benefits__guarantee-item-text">На случай утери, кражи или случайного повреждения.</div>
+								<div class="benefits__guarantee-item-content middle">
+									<div class="middle__inner">
+										<div class="benefits__guarantee-item-title">Все покупки по карте застрахованы</div>
+										<div class="benefits__guarantee-item-text">На случай утери, кражи<br />или случайного повреждения.</div>
+									</div>
 								</div>
 							</div>
 							<div class="benefits__guarantee-item">
@@ -420,9 +422,11 @@
 									<div class="val">24</div>
 									<div class="benefits__guarantee-item-period-text">месяца</div>
 								</div>
-								<div class="benefits__guarantee-item-content">
-									<div class="benefits__guarantee-item-title">Увеличение срока гарантии в два раза</div>
-									<div class="benefits__guarantee-item-text">Срок гарантии на покупки увеличивается до 24 месяцев.</div>
+								<div class="benefits__guarantee-item-content middle">
+									<div class="middle__inner">
+										<div class="benefits__guarantee-item-title">Увеличение срока гарантии в два раза</div>
+										<div class="benefits__guarantee-item-text">Срок гарантии на покупки увеличивается до 24 месяцев.</div>
+									</div>
 								</div>
 							</div>
 						</div>

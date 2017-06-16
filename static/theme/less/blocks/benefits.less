@@ -15,6 +15,109 @@
 			margin-top: 21px;
 		}
 	}
+	&__credit{
+		background-color: #021896;
+		float: left;
+		width: 512px;
+		padding: 38px 64px;
+		height: 541px;
+		&-rate{
+			&-val{
+				text-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+				font-family: @fPragmatica;
+				font-size: 48px;
+				font-weight: 500;
+				line-height: 48px;
+				span{
+					font-size: 32px;
+					padding-right: 10px;
+				}
+			}
+			&-text{
+				font-size: 16px;
+				color:fade(#fff,70%);
+				line-height: 24px;
+				margin-top: 9px;
+			}
+		}
+		&-blocks{
+			margin-top: 65px;
+			margin-bottom: 48px;
+		}
+		&-block{
+			&+&{
+				margin-top: 43px;
+			}
+			&-title{
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.8px;
+				line-height: 12px;
+				text-transform: uppercase;
+				color: fade(#fff,70%);
+			}
+			&-val{
+				position: relative;
+				padding-left: 35px;
+				margin-top: 21px;
+			}
+			&-ico{
+				position: absolute;
+				left: 0;
+				top: 4px;
+				width: 22px;
+				height: 22px;
+				background: none no-repeat center;
+				background-size: contain;
+				opacity: 0.3;
+				&._1{
+					background-image: url('@{pathToImg}icons/credit/1.svg');
+				}
+				&._2{
+					background-image: url('@{pathToImg}icons/credit/2.svg');
+				}
+			}
+		}
+	}
+	&__steps{
+		margin-top: 64px;
+	}
+	&__step{
+		position: relative;
+		padding-left: 96px;
+		min-height: 64px;
+		&+&{
+			margin-top: 48px;
+		}
+		&-num{
+			width: 64px;
+			height: 64px;
+			border: 1px solid #e5e7eb;
+			border-radius: 2px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #000076;
+			font-family: @fPragmatica;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 24px;
+			text-align: center;
+			padding: 20px 10px;
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 25px;
+		}
+		&-text{
+			color: rgba(1, 18, 42, 0.7);
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-top: 13px;
+		}
+	}
 	&__gall{
 		margin-top: 64px;
 		.clearfix;
@@ -26,6 +129,9 @@
 			width: 800px;
 			height: 650px;
 			color: @textColor;
+			&._credit{
+				height: 541px;
+			}
 		}
 		&-tabs{
 			width: 544px;
@@ -198,12 +304,13 @@
 				border-radius: 2px;
 				float: left;
 				text-align: center;
-				padding: 37px 10px 0;
+				padding: 32px 10px 0;
 				.val{
 					font-size: 32px;
 					font-weight: 500;
 					line-height: 32px;
 					font-family: @fPragmatica;
+					padding-top: 5px;
 				}
 				&-text{
 					font-size: 12px;
@@ -214,11 +321,19 @@
 					color: fade(#fff,70%);
 					margin-top: 15px;
 				}
+				&-ico{
+					width: 64px;
+					height: 64px;
+					background: none no-repeat center;
+					background-size: contain;
+					margin: 0 auto;
+				}
 			}
 			&-content{
 				margin-left: 192px;
-				padding-top: 6px;
-				padding-right: 70px;
+				//padding-top: 6px;
+				padding-right: 60px;
+				height: 128px;
 			}
 			&-title{
 				font-size: 20px;
@@ -248,6 +363,9 @@
 		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
 		&:nth-child(2n){
 			margin-left: 32px;
+		}
+		.h4{
+			margin-right: -30px;
 		}
 		&-subtitle{
 			margin-top: 14px;

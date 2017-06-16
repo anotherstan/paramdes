@@ -71,7 +71,13 @@ h5,.h5{
 	font-weight: 600;
 	line-height: 28px;
 }
-
+.notice{
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 31px 145px 31px 120px;
+	border: 1px solid fade(#001837,10%);
+	background: url('@{pathToImg}icons/flag-blue.svg') no-repeat 48px center;
+}
 .frame{
 	//box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
 	position: relative;
@@ -184,12 +190,33 @@ h5,.h5{
 		margin-top: 12px;
 	}
 }
+.middle {
+	white-space: nowrap;
+	> * {
+		white-space: normal;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+		height: 100%;
+	}
+}
+
+.middle__inner {
+	display: inline-block;
+	vertical-align: middle !important;
+}
 .files{
 	.file{
 		float: left;
 		width: 544px;
 		&:nth-child(2n){
 			margin-left: 32px;
+		}
+		&:nth-child(n+3){
+			margin-top: 32px;
 		}
 	}
 }
@@ -364,6 +391,16 @@ h5,.h5{
 	.tablet-v &{
 		top: 198px;
 	}
+}
+.next-page-slider{
+	position: absolute;
+	z-index:100;
+	right: -13px;
+	bottom: -20px;
+	width: 80px;
+	height: 40px;
+	background: url('@{pathToImg}icons/next.svg') no-repeat center;
+	background-size: contain;
 }
 .tablet-v{
 	h2,.h2{
