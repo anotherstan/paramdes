@@ -90,6 +90,32 @@
 			}
 		}
 	}
+	&._vertical{
+		.b-steps__item{
+			float: none;
+			width: 100%;
+			text-align: center;
+			&:after{
+				.background('@{pathToImg}icons/arr-next_down.svg');
+				right: auto;
+				left: 50%;
+				width: 18px;
+				height: 24px;
+				margin-left: -9px;
+				top: auto;
+				bottom: -72px;
+			}
+			&-ico{
+				margin-left: auto;
+				margin-right: auto;
+				background-position: center;
+			}
+			&+.b-steps__item{
+				margin-left: 0;
+				margin-top: 120px;
+			}
+		}
+	}
 }
 .tablet-v{
 	.b-steps{

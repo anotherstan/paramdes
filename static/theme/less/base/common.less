@@ -33,10 +33,6 @@ body {
 	position: relative;
 	z-index: 10;
 	background-color: #fafcfe;
-	margin-bottom:935px;
-	.tablet-v &{
-		margin-bottom: 742px;
-	}
 }
 .grid__inner{
 	max-width: 1312px;
@@ -46,6 +42,7 @@ body {
 }
 a{
 	text-decoration: none;
+	color: @cRed;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	font-weight: 500;
@@ -77,6 +74,84 @@ h5,.h5{
 	padding: 31px 145px 31px 120px;
 	border: 1px solid fade(#001837,10%);
 	background: url('@{pathToImg}icons/flag-blue.svg') no-repeat 48px center;
+}
+.help{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	line-height: 0;
+	margin-left: 8px;
+	margin-bottom: 1px;
+	&:hover{
+		.help__ico{
+			background-color: @cRed;
+			color: #fff;
+		}
+		.help__content{
+			display: block;
+		}
+	}
+	&__ico{
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 12px;
+		width: 20px;
+		height: 20px;
+		color: @cRed;
+		text-align: center;
+		padding: 3px;
+		border: 1px solid @cRed;
+		display: inline-block;
+		background-color: transparent;
+		vertical-align: top;
+		border-radius: 50%;
+		transition: all 0.3s;
+	}
+	&__content{
+		display: none;
+		position: absolute;
+		transform: translate(0,-50%);
+		top:10px;
+		left: 0;
+		padding-left: 32px;
+		&-in{
+			padding: 32px 48px;
+			background-color: white;
+			border-radius: 2px;
+			box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.1);
+			line-height: 1.5;
+			text-align: center;
+			width: 352px;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				border: 8px solid transparent;
+				border-left: 0;
+				border-right: 9px solid #fff;
+				left: -9px;
+				margin-top: -8px;
+			}
+		}
+		&-img{
+			line-height: 0;
+			margin-bottom: 34px;
+			img{
+				max-width: 100%;
+				height: auto;
+				box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.1);
+			}
+		}
+		&-text{
+			font-size: 12px;
+			line-height: 20px;
+		}
+		&-btn{
+			width: 100%;
+			margin-top: 32px;
+		}
+	}
 }
 .frame{
 	//box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
@@ -401,6 +476,79 @@ h5,.h5{
 	height: 40px;
 	background: url('@{pathToImg}icons/next.svg') no-repeat center;
 	background-size: contain;
+}
+.phone-popup{
+	position: relative;
+	text-align: center;
+	border: 1px solid fade(@textColor,10%);
+	border-radius: 2px;
+	padding: 57px 36px 31px;
+	&._indent{
+		margin-top: 118px;
+	}
+	&__logo{
+		position: absolute;
+		top: -24px;
+		left: 50%;
+		z-index: 2;
+		margin-left: -50px;
+	}
+	&__num{
+		margin-top: 29px;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 10px;
+		color: #000076;
+	}
+	&__text{
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	&__bottom{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color: fade(@textColor,70%);
+	}
+}
+
+.tariff-popup{
+	width: 1312px;
+	background: #fff;
+	padding-bottom: 64px;
+	box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+	.conditions__main{
+		background-color: transparent;
+		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+	}
+	.conditions__tabs{
+		border-color: fade(@textColor,10%);
+	}
+	.conditions__block + .conditions__block{
+		border-color: fade(@textColor,10%);
+	}
+	.conditions__block-item-title{
+		color:fade(@textColor,70%) ;
+	}
+	.b-block + .b-block{
+		margin-top: 32px;
+	}
+	.file{
+		color: @textColor;
+		border-color: fade(@textColor,10%);
+		&__size{
+			color:fade(@textColor,70%) ;
+		}
+		&__type{
+			&-text{
+				color: @cRed;
+			}
+			&-ico{
+				background-image: url('@{pathToImg}icons/file_gray.svg');
+			}
+		}
+	}
 }
 .tablet-v{
 	h2,.h2{

@@ -50,6 +50,147 @@ app.init = function () {
 	app.footer();
 	app.about();
 	app.creditCalc();
+	app.anketa();
+	app.popups();
+	app.checkToggle();
+
+};
+app.popups = function () {
+	var $popups = $('[data-popup]'),
+			$popupShowBtn = $('[data-popup-show]'),
+			popupId = null,
+			$content = null
+		;
+	$popupShowBtn.on('click', function () {
+		var $self = $(this),
+				data = $self.data('popupShow');
+
+		$content = $popups.filter('[data-popup="' + data + '"]');
+
+		$.fancybox({
+			wrapCSS: 'fc-base _popups',
+			content: $content,
+			fitToView: false,
+			autoWidth: true,
+			autoResize: true,
+			padding: 0,
+			margin:[120,10,10,60]
+		});
+	});
+
+};
+app.anketa=function () {
+	var $anketa = $('[data-anketa]'),
+		$nav = $anketa.find('[data-anketa-nav]'),
+		$navStep = $anketa.find('[data-anketa-nav-step]'),
+		$gotoBtn = $anketa.find('[ data-anketa-goto-btn]'),
+		$steps = $anketa.find('[data-anketa-step]'),
+		selectedStep = 1,
+		$fields = $anketa.find('[data-form-field]'),
+		$inputs = $anketa.find('[data-form-field-inp]'),
+		$autocomplete = $anketa.find('[data-autocomplete]'),
+		$autocompleteInp = $autocomplete.find('[data-autocomplete-inp]'),
+		$autocompleteLink = $autocomplete.find('[data-autocomplete-link]'),
+		$selects = $anketa.find('select'),
+		errors = false
+	;
+	$autocompleteInp.on('keyup',function () {
+		var $self = $(this);
+		$self.closest($autocomplete).addClass('_autocomplete-show');
+	});
+	$autocompleteInp.on('blur',function () {
+		var $self = $(this);
+		setTimeout(function () {
+			$self.closest($autocomplete).removeClass('_autocomplete-show');
+		},300);
+
+	});
+	$autocompleteLink.on('click',function () {
+		var $self = $(this),
+				text = $self.text()
+			;
+
+		if($self.find('.autocomplete-title').length){
+			text = $self.find('.autocomplete-title').text();
+		}
+
+		$self.closest($autocomplete).find($autocompleteInp).val(text).change();
+	});
+
+	$gotoBtn.on('click',function () {
+		setStep($(this).data('anketaGotoBtn'));
+	});
+	app.setStep = function (n) {
+		selectedStep = n;
+		$steps.hide();
+		$steps.filter('[data-anketa-step="'+n+'"]').show();
+		$navStep.removeClass('_past _active')
+			.filter('[data-anketa-nav-step="'+n+'"]')
+			.addClass('_active')
+			.prevAll()
+			.addClass('_past')
+		;
+		$('html, body').stop(true, true).animate({'scrollTop': 0},300);
+	};
+	$navStep.on('click',function () {
+		var n = $(this).data('anketaNavStep');
+		if(n<selectedStep){
+			setStep(n);
+		}
+	});
+	$selects.change(function () {
+		$(this).closest($fields).removeClass('_error').addClass('_focus');
+	});
+	$inputs.focus(function () {
+		$(this).addClass('_focus').closest($fields).removeClass('_error');
+	});
+
+	$inputs.blur(function () {
+		if($(this).val() == '') {
+			$(this).removeClass('_focus');
+		}
+	});
+
+	function validate($items) {
+		errors = false;
+		$items.each(function () {
+			var $self = $(this);
+			if($.trim($self.val()) == ''){
+				$self.closest('[data-form-field]').addClass('_error');
+				errors = true;
+				console.log($self.val());
+			}else{
+				$self.closest('[data-form-field]').removeClass('_error');
+			}
+		});
+		return errors;
+	}
+
+
+	function setStep(n) {
+		if(selectedStep == n){
+			return false;
+		}
+		var $activeStep = $steps.filter('[data-anketa-step="'+selectedStep+'"]');
+
+		if(n>selectedStep){
+			if(validate($activeStep.find($('[data-required]')))){
+				$('html, body').stop(true, true).animate({'scrollTop': $activeStep.find('.b-form__block._error').first().offset().top},300);
+				return false;
+			}
+		}
+		selectedStep = n;
+		$activeStep.hide();
+		$steps.filter('[data-anketa-step="'+n+'"]').show();
+		$navStep.removeClass('_past _active')
+						.filter('[data-anketa-nav-step="'+n+'"]')
+						.addClass('_active')
+						.prevAll()
+						.addClass('_past')
+		;
+		$('html, body').stop(true, true).animate({'scrollTop': 0},300);
+	}
+	
 
 };
 app.about=function () {
@@ -89,13 +230,32 @@ app.footer=function () {
 	_helper();
 	app.dom.$window.resize(_helper);
 	function _helper() {
-		app.dom.$grid.css({ marginBottom : app.dom.$window.height()});
+		//app.dom.$grid.css({ marginBottom : app.dom.$window.height()});
 	}
 
 };
 app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
+	$('[data-mask-snils]').mask("999-999-999 99");
+	$('[data-date-mask]').mask("99.99.9999");
 };
+app.checkToggle = function () {
+	var $check = $('[data-check-toggle]'),
+			$content = $('[data-check-toggle-content]')
+		;
+	$check.on('change',function () {
+		var $self = $(this),
+				data = $self.data('checkToggle'),
+				$block = $content.filter('[data-check-toggle-content="'+data+'"]')
+			;
+		if($self.is(':checked')){
+			$block.slideDown();
+		}else{
+			$block.slideUp();
+		}
+	});
+};
+
 app.formatNumber = function (value) {
 	return String(value).replace(/(?=\B(?:\d{3})+\b)/g, ' ');
 };
@@ -442,7 +602,6 @@ app.creditCalc = function(){
 		}).keyup(function () {
 
 		});
-		console.log(type);
 		//$inp.val(setVal(app.formatNumber(calcData.value)),type).change();
 
 		$inp.on('change',function(){

@@ -1,16 +1,240 @@
 .b-form{
 	&__row{
+		.clearfix;
 		&+&{
 			margin-top: 24px;
 		}
 	}
+	&__error{
+		color: @cRed;
+		font-size: 12px;
+		line-height: 20px;
+		margin-top: 12px;
+		display: none;
+	}
 	&__block{
+		&._focus{
+			.b-form__placeholder{
+				font-size: 12px;
+				line-height: 12px;
+				top: -6px;
+				z-index: 3;
+				color: fade(@textColor,30%);
+			}
+		}
 		&-field{
 			height: 64px;
+		}
+		&._error{
+			.b-form__error{
+				display: block;
+			}
+			.b-form__placeholder{
+				color: @cRed;
+			}
+			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				border:2px solid @cRed!important;
+			}
+		}
+		&._w50{
+			.b-form__autocomplete{
+				width: 200%;
+			}
+			&._error{
+				&+&{
+					input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+					input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+						border-left: 0!important;
+					}
+
+				}
+			}
+			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				border-radius: 0;
+			}
+			width: 50%;
+			float: left;
+			&+&{
+				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+					border-left: 0;
+				}
+			}
+			&:first-child{
+				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+					border-top-left-radius: 2px;
+					border-top-right-radius: 2px;
+				}
+			}
+			&:last-child{
+				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+					border-bottom-left-radius: 2px;
+					border-bottom-right-radius: 2px;
+				}
+			}
+		}
+	}
+	&__autocomplete{
+		border: 2px solid fade(@textColor,10%);
+		border-top: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		border-radius: 0 0 2px 2px;
+		background-color: #fff;
+		z-index: 100;
+		display: none;
+		&._big-indents{
+			li+li{
+				margin-top: 44px;
+			}
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 22px 23px 16px;
+			li{
+				.autocomplete-text{
+					font-size: 12px;
+					margin-top: 12px;
+					color: fade(#01122a,70%);
+				}
+				&+li{
+					margin-top: 40px;
+				}
+				a{
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 20px;
+					color: @textColor;
+				}
+			}
+		}
+	}
+	&__placeholder{
+		font-size: 20px;
+		line-height: 20px;
+		color: @textColor;
+		position: absolute;
+		left: 20px;
+		top: 23px;
+		padding-left: 4px;
+		padding-right: 4px;
+		background-color: #fff;
+		transition: all 0.3s;
+	}
+	&__field{
+		height: 64px;
+		position: relative;
+		&._autocomplete-show{
+			.b-form__autocomplete{
+				display: block;
+			}
+			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+		.help{
+			position: absolute;
+			right: 24px;
+			top: 50%;
+			margin-top: -10px;
+			z-index: 10;
+			&__content{
+				padding-left: 76px;
+			}
+		}
+		input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
+		input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+			background-color: transparent;
+			&._focus{
+				&+.b-form__placeholder{
+					font-size: 12px;
+					line-height: 12px;
+					top: -6px;
+					z-index: 3;
+					color: fade(@textColor,30%);
+				}
+			}
 		}
 	}
 	&__check{
 		margin-top: 33px;
+		&._indent{
+			margin-top: 48px;
+		}
+		a{
+			color: @cRed;
+		}
+	}
+	&__radio{
+		.clearfix;
+		&-text{
+			position: relative;
+			z-index: 2;
+		}
+		&-btn{
+			display: block;
+			height: 64px;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 20px;
+			padding: 20px 10px;
+			position: relative;
+			.ideal-radio{
+				position: absolute;
+				left: -2px;
+				top: -2px;
+				right: -2px;
+				bottom:-2px;
+				width: auto;
+				height: auto;
+				background: none;
+				border: 0;
+				border-radius: 0;
+				z-index: 0;
+				&.checked{
+					background-color: @cRed;
+					color: #fff;
+					&+.b-form__radio-text{
+						color: #fff;
+					}
+				}
+			}
+			&:first-child{
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+			&:last-child{
+				border-bottom-left-radius: 2px;
+				border-bottom-right-radius: 2px;
+			}
+			&._w50{
+				float: left;
+				width: 50%;
+				border: 2px solid fade(@textColor,10%);
+				text-align: center;
+				&+&{
+					border-left: 0;
+				}
+			}
+		}
+	}
+	&__check-list{
+		margin-top: 48px;
+		.b-form__check{
+			margin-top: 0;
+			&+.b-form__check{
+				margin-top: 26px;
+			}
+		}
 	}
 	&__btn{
 		&-wrap{
