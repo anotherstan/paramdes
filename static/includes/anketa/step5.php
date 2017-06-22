@@ -98,7 +98,7 @@
 			</div>
 			<div class="anketa__form-block">
 				<div class="b-block__title h4 _dash anketa__form-block-title">Имущество в собственности</div>
-				<div class="b-form__row">
+				<div class="b-form__row _checks">
 					<div class="b-form__check-list">
 						<div class="b-form__check"><label><input type="checkbox" data-check-toggle="realty">Имею в собственности недвижимость</label></div>
 						<div class="b-form__check"><label><input type="checkbox" data-check-toggle="car">Имею в собственности автомобиль</label></div>
@@ -107,7 +107,7 @@
 				<div class="b-form__row hide" data-check-toggle-content="realty">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<select data-chosen  data-required>
+							<select data-chosen>
 								<option value=""></option>
 								<option value="Дача">Дача</option>
 								<option value="Земельный участок">Земельный участок</option>
@@ -122,7 +122,7 @@
 				<div class="b-form__row hide" data-check-toggle-content="car">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field" data-autocomplete>
-							<input type="text" data-form-field-inp data-required data-autocomplete-inp>
+							<input type="text" data-form-field-inp data-autocomplete-inp>
 							<div class="b-form__placeholder">Марка автомобиля</div>
 							<?include "autocomplate.php"?>
 						</div>
@@ -208,7 +208,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="anketa__aside"></div>
+		<div class="anketa__aside">
+			<?include "conditions.php"?>
+			<div class="anketa__aside-img-wrap">
+				<div class="anketa__aside-img"></div>
+			</div>
+		</div>
 	</div>
 
 </div>

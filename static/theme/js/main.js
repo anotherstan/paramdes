@@ -53,6 +53,7 @@ app.init = function () {
 	app.anketa();
 	app.popups();
 	app.checkToggle();
+	app.anketaAddress();
 
 };
 app.popups = function () {
@@ -78,6 +79,37 @@ app.popups = function () {
 		});
 	});
 
+};
+app.anketaAddress=function () {
+	var $anketa = $('[data-anketa]'),
+			$check = $anketa.find('[data-anketa-address-check]'),
+			$addressRegistration = $anketa.find('[data-anketa-address="registration"]'),
+			$addressResidence = $anketa.find('[data-anketa-address="residence"]'),
+			$addressRegistrationFields = $addressRegistration.find('[data-anketa-address-field]'),
+			$addressResidenceFields = $addressResidence.find('[data-anketa-address-field]')
+		;
+
+	$check.on('change',function () {
+		if($(this).is(':checked')){
+			$addressRegistrationFields.each(function () {
+				var $self = $(this),
+						data = $self.data('anketaAddressField')
+					;
+				$self.val($addressResidenceFields.filter('[data-anketa-address-field="'+data+'"]').val());
+				$self.closest('[data-form-field]').addClass('_disabled _focus');
+				if($self.is('select')){
+					$self.trigger('chosen:updated');
+				}
+			});
+		}else{
+			$addressRegistrationFields.each(function () {
+				$(this).removeClass('_focus').val('').change().closest('[data-form-field]').removeClass('_disabled _focus');
+				if($(this).is('select')){
+					$(this).trigger('chosen:updated');
+				}
+			});
+		}
+	});
 };
 app.anketa=function () {
 	var $anketa = $('[data-anketa]'),

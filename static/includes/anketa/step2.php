@@ -25,15 +25,25 @@
 					</div>
 				</div>
 				<div class="b-form__check-list">
-					<div class="b-form__check"><label><input type="checkbox">Я менял фамилию</label></div>
+					<div class="b-form__check"><label><input type="checkbox" data-check-toggle="surnameChange">Я менял фамилию</label></div>
+				</div>
+				<div class="b-form__row hide" data-check-toggle-content="surnameChange">
+					<div class="b-form__block" data-form-field>
+						<div class="b-form__field" data-autocomplete>
+							<input type="text" data-form-field-inp data-autocomplete-inp>
+							<div class="b-form__placeholder">Старая фамилия</div>
+							<?include "autocomplate.php"?>
+						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+					</div>
 				</div>
 			</div>
-			<div class="anketa__form-block">
+			<div class="anketa__form-block" data-anketa-address="residence">
 				<div class="b-block__title h4 _dash anketa__form-block-title">Адрес проживания</div>
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp  data-required>
+							<input type="text" data-form-field-inp data-anketa-address-field="index" data-required>
 							<div class="b-form__placeholder">Индекс</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
@@ -42,7 +52,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field" data-autocomplete>
-							<input type="text" data-form-field-inp  data-required data-autocomplete-inp>
+							<input type="text" data-form-field-inp data-anketa-address-field="city" data-required data-autocomplete-inp>
 							<div class="b-form__placeholder">Населенный пункт</div>
 							<?include "autocomplate.php"?>
 						</div>
@@ -52,7 +62,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field" data-autocomplete>
-							<input type="text" data-form-field-inp  data-required data-autocomplete-inp>
+							<input type="text" data-form-field-inp data-anketa-address-field="street"  data-required data-autocomplete-inp>
 							<div class="b-form__placeholder">Улица</div>
 							<?include "autocomplate.php"?>
 						</div>
@@ -62,7 +72,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block _w50" data-form-field>
 						<div class="b-form__field" data-autocomplete>
-							<input type="text" data-form-field-inp  data-required data-autocomplete-inp>
+							<input type="text" data-form-field-inp data-anketa-address-field="home" data-required data-autocomplete-inp>
 							<div class="b-form__placeholder">Дом</div>
 							<?include "autocomplate.php"?>
 						</div>
@@ -71,7 +81,7 @@
 					<div class="b-form__block _w50" data-form-field>
 						<div class="b-form__field">
 							<input type="text" data-form-field-inp>
-							<div class="b-form__placeholder">Квартира</div>
+							<div class="b-form__placeholder" data-anketa-address-field="flat" >Квартира</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
@@ -88,7 +98,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<select data-chosen  data-required>
+							<select data-chosen  data-required data-anketa-address-field="status">
 								<option value=""></option>
 								<option value="Дача">Дача</option>
 								<option value="Собственное, в том числе приватизированное">Собственное, в том числе приватизированное</option>
@@ -117,7 +127,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="anketa__aside"></div>
+		<div class="anketa__aside">
+			<?include "conditions.php"?>
+			<div class="anketa__aside-img-wrap">
+				<div class="anketa__aside-img"></div>
+			</div>
+		</div>
 	</div>
 
 </div>

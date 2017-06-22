@@ -197,7 +197,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="anketa__aside"></div>
+		<div class="anketa__aside">
+			<?include "conditions.php"?>
+			<div class="anketa__aside-img-wrap">
+				<div class="anketa__aside-img"></div>
+			</div>
+		</div>
 	</div>
 
 </div>

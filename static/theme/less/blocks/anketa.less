@@ -20,6 +20,65 @@
 			}
 		}
 	}
+	&__conditions{
+		position: relative;
+		width: 353px;
+		height: 393px;
+		text-align: center;
+		padding: 73px 48px 48px;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('@{pathToImg}conditions.png') no-repeat;
+			opacity: 0.1;
+			z-index: -1;
+		}
+
+		&-logo{
+			position: absolute;
+			top: -24px;
+			left: 50%;
+			margin-left: -50px;
+		}
+		&-block{
+			&+&{
+				margin-top: 48px;
+			}
+			&-title{
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.8px;
+				line-height: 12px;
+				text-transform: uppercase;
+				color: fade(@textColor,70%);
+			}
+			&-val{
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 32px;
+				color: #000076;
+				font-family: @fPragmatica;
+				margin-top: 24px;
+				&._small-indent{
+					margin-top: 16px;
+				}
+				span{
+					font-size: 24px;
+				}
+			}
+		}
+		&-btn{
+			margin-top: 44px;
+			.btn{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
 	&__nav{
 		position: absolute;
 		top: 0;
