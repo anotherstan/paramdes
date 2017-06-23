@@ -1,9 +1,9 @@
-<div class="anketa__nav">
+<div class="anketa__nav" data-anketa-nav>
 	<div class="anketa__nav-inner grid__inner">
 		<div class="anketa__nav-inner-line"></div>
 		<a href="javascript:history.back();" class="anketa__nav-back"></a>
 		<a href="#" class="header__logo anketa__nav-logo"></a>
-		<div class="anketa__nav-steps" data-anketa-nav>
+		<div class="anketa__nav-steps">
 			<a href="javascript:void(0);" class="anketa__nav-step _active" data-anketa-nav-step="1" >
 				<div class="anketa__nav-step-num">Шаг 1</div>
 				<div class="anketa__nav-step-title">Начало</div>
@@ -24,8 +24,8 @@
 				<div class="anketa__nav-step-num">Шаг 5</div>
 				<div class="anketa__nav-step-title">Личная информация</div>
 			</a>
+			<div class="anketa__nav-finish" data-anketa-nav-step="6"></div>
 		</div>
-		<div class="anketa__nav-finish"></div>
 	</div>
 </div>
 <div class="anketa__nav-holder"></div>

@@ -20,6 +20,9 @@
 						<div class="hide" data-anketa-step="5">
 							<?include "includes/anketa/step5.php"?>
 						</div>
+						<div class="hide" data-anketa-step="6">
+							<?include "includes/anketa/finish.php"?>
+						</div>
 					</form>
 				</div>
 			</div>

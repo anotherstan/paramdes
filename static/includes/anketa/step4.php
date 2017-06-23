@@ -85,6 +85,7 @@
 							</select>
 							<div class="b-form__placeholder">Отрасль</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -109,6 +110,7 @@
 							</select>
 							<div class="b-form__placeholder">Должность</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -123,6 +125,7 @@
 							</select>
 							<div class="b-form__placeholder">Количество сотрудников</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 			</div>
@@ -131,7 +134,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-required>
+							<input type="text" data-form-field-inp data-required data-num-mask>
 							<div class="b-form__placeholder">Индекс</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>

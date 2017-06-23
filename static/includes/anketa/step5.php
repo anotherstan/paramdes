@@ -15,6 +15,7 @@
 							</select>
 							<div class="b-form__placeholder">Образование</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -30,6 +31,7 @@
 							</select>
 							<div class="b-form__placeholder">Семейное положение</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -45,6 +47,7 @@
 							</select>
 							<div class="b-form__placeholder">Количество детей</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -60,6 +63,7 @@
 							</select>
 							<div class="b-form__placeholder">Количество иждивенцев</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 			</div>
@@ -68,7 +72,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-required>
+							<input type="text" data-form-field-inp data-money-mask data-required>
 							<div class="b-form__placeholder">Ваш доход в месяц</div>
 							<span class="rub credit-calc__option-rub"></span>
 						</div>
@@ -78,7 +82,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-required>
+							<input type="text" data-form-field-inp data-money-mask data-required>
 							<div class="b-form__placeholder">Доход семьи в месяц</div>
 							<span class="rub credit-calc__option-rub"></span>
 						</div>
@@ -88,7 +92,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-required>
+							<input type="text" data-form-field-inp data-money-mask data-required>
 							<div class="b-form__placeholder">Расход семьи в месяц</div>
 							<span class="rub credit-calc__option-rub"></span>
 						</div>
@@ -117,6 +121,7 @@
 							</select>
 							<div class="b-form__placeholder">Вид недвижимости</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row hide" data-check-toggle-content="car">
@@ -144,6 +149,7 @@
 							</select>
 							<div class="b-form__placeholder">Контрольный вопрос</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
@@ -174,6 +180,7 @@
 							</select>
 							<div class="b-form__placeholder">Цель кредита</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 			</div>
@@ -189,6 +196,7 @@
 							</select>
 							<div class="b-form__placeholder">Адрес для корреспонденции</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 			</div>
@@ -203,7 +211,7 @@
 					</div>
 					<div class="anketa__form-bottom-btns">
 						<a href="javascript:void(0);" class="anketa__form-bottom-btn btn _transparent" data-anketa-goto-btn="4">Назад</a>
-						<a href="javascript:void(0);" class="anketa__form-bottom-btn btn" data-anketa-goto-btn="finish">Отправить заявку</a>
+						<a href="javascript:void(0);" class="anketa__form-bottom-btn btn" data-anketa-goto-btn="6">Отправить заявку</a>
 					</div>
 				</div>
 			</div>

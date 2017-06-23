@@ -111,6 +111,39 @@ app.anketaAddress=function () {
 		}
 	});
 };
+app.anketaCountdown =function(){
+
+	var $timer = $('[data-anketa-timer]'),
+			$timerMinutes = $timer.find('[data-anketa-timer-m]'),
+			$timerSeconds = $timer.find('[data-anketa-timer-s]'),
+			startTime = $timer.data('anketaTimer'),
+			seconds = null,
+			minutes = null,
+			timeInt = null
+		;
+	startTime = +startTime;
+	setTime();
+	$timer.addClass('_active');
+	function setTime() {
+		if(!startTime){
+			clearInterval(timeInt);
+		}
+		seconds	= startTime % 60;
+		minutes	= Math.floor(startTime / 60);
+
+		$timerMinutes.html(minutes);
+		$timerSeconds.html(beatifyNum(seconds));
+
+		--startTime;
+	}
+	function beatifyNum (i) {
+		if ( i < 10 ) {
+			i = '0' + i;
+		}
+		return i.toString();
+	}
+	timeInt = setInterval(setTime,1000);
+};
 app.anketa=function () {
 	var $anketa = $('[data-anketa]'),
 		$nav = $anketa.find('[data-anketa-nav]'),
@@ -163,6 +196,9 @@ app.anketa=function () {
 			.addClass('_past')
 		;
 		$('html, body').stop(true, true).animate({'scrollTop': 0},300);
+		if(n == $steps.length){
+			finish();
+		}
 	};
 	$navStep.on('click',function () {
 		var n = $(this).data('anketaNavStep');
@@ -190,7 +226,6 @@ app.anketa=function () {
 			if($.trim($self.val()) == ''){
 				$self.closest('[data-form-field]').addClass('_error');
 				errors = true;
-				console.log($self.val());
 			}else{
 				$self.closest('[data-form-field]').removeClass('_error');
 			}
@@ -204,7 +239,6 @@ app.anketa=function () {
 			return false;
 		}
 		var $activeStep = $steps.filter('[data-anketa-step="'+selectedStep+'"]');
-
 		if(n>selectedStep){
 			if(validate($activeStep.find($('[data-required]')))){
 				$('html, body').stop(true, true).animate({'scrollTop': $activeStep.find('.b-form__block._error').first().offset().top},300);
@@ -221,8 +255,16 @@ app.anketa=function () {
 						.addClass('_past')
 		;
 		$('html, body').stop(true, true).animate({'scrollTop': 0},300);
+
+		if(n == $steps.length){
+			finish();
+		}
 	}
-	
+
+	function finish() {
+		app.anketaCountdown();
+		
+	}
 
 };
 app.about=function () {
@@ -267,9 +309,12 @@ app.footer=function () {
 
 };
 app.masks = function () {
-	$('[data-mask-phone]').mask("+7 (999) 999-99-99");
-	$('[data-mask-snils]').mask("999-999-999 99");
-	$('[data-date-mask]').mask("99.99.9999");
+	//$('[data-mask-phone]').mask("+7 (999) 999-99-99");
+	$('[data-mask-phone]').mask("+7 (000) 000-00-00",{clearIfNotMatch: true});
+	$('[data-mask-snils]').mask("999-999-999 99",{clearIfNotMatch: true});
+	$('[data-date-mask]').mask('00/00/0000',{clearIfNotMatch: true});
+	$('[data-num-mask]').mask("#0", {reverse: true});
+	$('[data-money-mask]').mask("# ##0", {reverse: true});
 };
 app.checkToggle = function () {
 	var $check = $('[data-check-toggle]'),

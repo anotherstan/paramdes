@@ -3990,6 +3990,32 @@ h5,
 .credit-calc__info-btn._transparent-btn {
   background-color: transparent;
 }
+@keyframes rota {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mask {
+  0% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
 .anketa {
   position: relative;
 }
@@ -4070,6 +4096,101 @@ h5,
   width: 100%;
   text-align: center;
 }
+.anketa__finish {
+  text-align: center;
+}
+.anketa__finish-timer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  padding-top: 64px;
+}
+.anketa__finish-timer-text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 24, 55, 0.7);
+  margin-top: 11px;
+}
+.anketa__finish-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 14px;
+  color: rgba(0, 24, 55, 0.7);
+}
+.anketa__finish .wrapper {
+  width: 192px;
+  height: 192px;
+  margin: 48px auto 0;
+  position: relative;
+  background: white;
+}
+.anketa__finish .wrapper._active .spinner {
+  animation: rota 300s linear forwards;
+}
+.anketa__finish .wrapper._active .spinner:after {
+  right: -5px;
+  transition: right 300s;
+}
+.anketa__finish .wrapper._active .filler {
+  animation: fill 300s steps(1, end) forwards;
+}
+.anketa__finish .wrapper._active .mask {
+  animation: mask 300s steps(1, end) forwards;
+}
+.anketa__finish .wrapper:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 24, 55, 0.1);
+  border-radius: 50%;
+  z-index: 400;
+}
+.anketa__finish .pie {
+  width: 50%;
+  height: 100%;
+  transform-origin: 100% 50%;
+  position: absolute;
+  border: 3px solid #cc003d;
+}
+.anketa__finish .spinner {
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+}
+.anketa__finish .spinner:after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #cc003d;
+  border-radius: 50%;
+  top: -5px;
+  right: -8px;
+  content: "";
+}
+.anketa__finish .filler {
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  left: 50%;
+  opacity: 0;
+  z-index: 100;
+  border-left: none;
+}
+.anketa__finish .mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: 1;
+  z-index: 300;
+}
 .anketa__nav {
   position: absolute;
   top: 0;
@@ -4084,7 +4205,7 @@ h5,
 .anketa__nav-inner {
   *zoom: 1;
   padding-top: 24px;
-  padding-left: 72px;
+  padding-left: 6px;
   position: relative;
 }
 .anketa__nav-inner:before,
@@ -4095,14 +4216,6 @@ h5,
 }
 .anketa__nav-inner:after {
   clear: both;
-}
-.anketa__nav-inner-line {
-  position: absolute;
-  left: 0;
-  right: 30px;
-  bottom: 0;
-  height: 1px;
-  background-color: rgba(0, 24, 55, 0.1);
 }
 .anketa__nav-steps {
   float: left;
@@ -4171,6 +4284,9 @@ h5,
   background-color: #cc003d;
   height: 3px;
 }
+.anketa__nav-step._past:before {
+  right: -45px;
+}
 .anketa__nav-step-num {
   color: rgba(0, 24, 55, 0.3);
   font-size: 12px;
@@ -4201,17 +4317,25 @@ h5,
   float: left;
 }
 .anketa__nav-finish {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  right: 7px;
+  float: left;
+  margin-left: 106px;
+  margin-top: 40px;
   width: 23px;
   height: 32px;
   background: url('../images/icons/finish.svg') no-repeat center;
+  position: relative;
+}
+.anketa__nav-finish:before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  height: 1px;
+  width: 1000px;
+  background-color: rgba(0, 24, 55, 0.1);
 }
 .anketa__content {
   margin-top: 96px;
-  padding-left: 64px;
   padding-bottom: 96px;
 }
 .anketa__calc {

@@ -6,14 +6,14 @@
 				<div class="b-form__row">
 					<div class="b-form__block _w50" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp  data-required>
+							<input type="text" data-form-field-inp data-num-mask  data-required>
 							<div class="b-form__placeholder">Серия</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 					<div class="b-form__block _w50" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-required>
+							<input type="text" data-form-field-inp data-num-mask data-required>
 							<div class="b-form__placeholder">Номер</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
@@ -66,7 +66,7 @@
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
 						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-anketa-address-field="index" data-required>
+							<input type="text" data-form-field-inp data-num-mask data-anketa-address-field="index" data-required>
 							<div class="b-form__placeholder">Индекс</div>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
@@ -122,6 +122,7 @@
 							</select>
 							<div class="b-form__placeholder">Статус места жительства</div>
 						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 					</div>
 				</div>
 				<div class="b-form__row">
