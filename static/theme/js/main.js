@@ -55,7 +55,31 @@ app.init = function () {
 	app.checkToggle();
 	app.anketaAddress();
 	app.anketaOffice();
+	app.fancyClose();
 
+};
+app.fancyClose = function () {
+	var flag = false;
+	$('html').on('mousemove',function (e) {
+		console.log(flag);
+		if(flag){
+			$('.fancybox-close').addClass('_fixed').css({
+				'top':e.clientY-24,
+				'left':e.clientX-24,
+			});
+			console.log(e.pageY);
+		}else {
+			$('.fancybox-close').addClass('_remove').css({
+
+			});
+		}
+	});
+	$('html').on('mouseover','.fancybox-wrap',function () {
+		flag = false;
+	});
+	$('html').on('mouseleave','.fancybox-wrap',function (e) {
+		flag = true;
+	});
 };
 app.popups = function () {
 	var $popups = $('[data-popup]'),
