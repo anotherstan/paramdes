@@ -113,7 +113,7 @@
 						<div class="credit-calc__option-block">
 							<div class="credit-calc__option-field">
 								<span class="rub credit-calc__option-rub"></span>
-								<input type="text" value="500 000" data-credit-calc-option-inp>
+								<input type="text" value="500 000" data-credit-calc-option-inp data-credit-calc-sum>
 							</div>
 							<div class="calc__sum-slider" data-credit-calc-option-slider='{
 								"min":0,
@@ -128,7 +128,7 @@
 						<div class="credit-calc__option-title">Срок кредита</div>
 						<div class="credit-calc__option-block">
 							<div class="credit-calc__option-field">
-								<input type="text" value="24 месяца" data-credit-calc-option-inp>
+								<input type="text" value="24 месяца" data-credit-calc-option-inp data-credit-calc-period>
 							</div>
 							<div class="calc__sum-slider" data-credit-calc-option-slider='{
 								"min":1,
@@ -138,19 +138,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="credit-calc__option" data-credit-calc-option>
+					<div class="credit-calc__option">
 						<div class="credit-calc__option-title">Ежемесячный платеж</div>
 						<div class="credit-calc__option-block">
 							<div class="credit-calc__option-field">
 								<span class="rub credit-calc__option-rub"></span>
-								<input type="text" value="25 460" data-credit-calc-option-inp>
-							</div>
-							<div class="calc__sum-slider" data-credit-calc-option-slider='{
-								"min":0,
-								"max":100000,
-								"step":10,
-								"value":25460}'>
-
+								<input type="text" value="25 460">
 							</div>
 						</div>
 					</div>

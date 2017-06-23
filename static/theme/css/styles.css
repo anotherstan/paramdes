@@ -1576,6 +1576,14 @@ h5,
 .b-form__radio-btn .ideal-radio.checked + .b-form__radio-text {
   color: #fff;
 }
+.b-form__radio-btn .ideal-radio.checked + .b-form__radio-text .help__ico {
+  color: #fff;
+  border-color: #fff;
+}
+.b-form__radio-btn .ideal-radio.checked + .b-form__radio-text .help__ico:hover {
+  background-color: #fff;
+  color: #cc003d;
+}
 .b-form__radio-btn:first-child {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2000,6 +2008,10 @@ h5,
 }
 .fancybox-wrap {
   margin-bottom: 64px;
+}
+.fancybox-wrap._right-close .fancybox-close {
+  top: 24px;
+  right: -151px;
 }
 .header {
   background-color: white;
@@ -4057,6 +4069,12 @@ h5,
   background: url('../images/conditions.png') no-repeat;
   opacity: 0.1;
   z-index: -1;
+}
+.anketa__conditions-popup {
+  width: 736px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
 }
 .anketa__conditions-logo {
   position: absolute;

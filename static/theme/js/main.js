@@ -20,7 +20,7 @@ app.utils.okonchanie = function( number, one, two, five ) {
 
 	number += '';
 	// 10 - 19 || 5 - 10
-	if ( (number.length > 1 && +number.substr( number.length - 2, 1) == '1') || +number.substr( number.length - 1, 1 ) > 4  && +number.substr( number.length - 1, 1 ) < 10 && !poslezpt ){
+	if ((+number % 10==0) || (number.length > 1 && +number.substr( number.length - 2, 1) == '1') || +number.substr( number.length - 1, 1 ) > 4  && +number.substr( number.length - 1, 1 ) < 10 && !poslezpt ){
 		return five;
 	}
 	// 1
@@ -640,15 +640,57 @@ app.calc = function(){
 app.creditCalc = function(){
 	var self = this,
 			$calc = $('[data-credit-calc]'),
-			$option = $calc.find('[data-credit-calc-option]')
+			$option = $calc.find('[data-credit-calc-option]'),
+			$popup = $('[data-anketa-conditions-popup]'),
+			$conditionsSum = $('[data-anketa-conditions-sum]'),
+			$conditionsPeriod = $('[data-anketa-conditions-period]'),
+			$sum = $calc.find('[data-credit-calc-sum]'),
+			$period = $calc.find('[data-credit-calc-period]'),
+			$popupSum = $popup.find('[data-credit-calc-popup-sum]'),
+			$popupPeriod = $popup.find('[data-credit-calc-popup-period]'),
+
+			
+			$popupSave = $popup.find('[data-anketa-conditions-popup-save]'),
+			$popupShow = $('[data-anketa-conditions-popup-show]')
 
 		;
 	if(!$calc.length){
 		return false;
 	}
+	$sum.on('change',function () {
+		$conditionsSum.text($(this).val());
+	});
+	$period.on('change',function () {
+		$conditionsPeriod.text($(this).val());
+	});
+
+	$popupShow.on('click',function () {
+		$.fancybox({
+			wrapCSS: 'fc-base _popups _right-close',
+			content: $popup,
+			fitToView: false,
+			autoWidth: true,
+			autoResize: true,
+			padding: 0,
+			margin:[60,10,10,60],
+			beforeShow:function () {
+				$popupSum.val($sum.val()).change();
+				$popupPeriod.val($period.val()).change();
+			}
+		});
+	});
+	$popupSave.on('click',function () {
+		$sum.val($popupSum.val()).change();
+		$period.val($popupPeriod.val()).change();
+		$.fancybox.close();
+	});
+
 	function setVal(val,type) {
 		return type == 'date' ? val +' '+ app.utils.okonchanie(val,'месяц','месяца','месяцев'): val;
 	}
+
+
+
 	$option.each(function () {
 		var $self = $(this),
 			$inp = $self.find('[data-credit-calc-option-inp]'),
@@ -664,13 +706,13 @@ app.creditCalc = function(){
 			step: calcData.step,
 			value: calcData.value || calcData.min,
 			slide: function( event, ui ){
-				$inp.val(setVal(app.formatNumber(ui.value),type));
+				$inp.val(setVal(app.formatNumber(ui.value),type)).change();
 			},
 			start: function( event, ui ){
 				//startSumValue = ui.value;
 			},
 			stop: function( event, ui ){
-				$inp.val(setVal(app.formatNumber(ui.value),type));
+				$inp.val(setVal(app.formatNumber(ui.value),type)).change();
 			}
 		});
 		$inp.focus(function () {
@@ -687,5 +729,14 @@ app.creditCalc = function(){
 			$slider.slider("value",val);
 			$inp.val(setVal(app.formatNumber(val),type));
 		});
+	});
+
+	$conditionsSum.text($sum.val());
+	$conditionsPeriod.html(parseInt($period.val())+' '+'<span>'+app.utils.okonchanie(+parseInt($period.val()),"месяц","месяца","месяцев")+'</span>');
+	$sum.on('change',function () {
+		$conditionsSum.text($sum.val());
+	});
+	$period.on('change',function () {
+		$conditionsPeriod.html(parseInt($period.val())+' '+'<span>'+app.utils.okonchanie(+parseInt($period.val()),"месяц","месяца","месяцев")+'</span>');
 	});
 };

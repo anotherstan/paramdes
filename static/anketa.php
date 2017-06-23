@@ -26,6 +26,9 @@
 					</form>
 				</div>
 			</div>
+			<div class="hide">
+				<?include "includes/anketa/conditions-popup.php"?>
+			</div>
 		</div>
 	</div>
 <?include "includes/footer-empty.php"?>
