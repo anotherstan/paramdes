@@ -61,13 +61,11 @@ app.init = function () {
 app.fancyClose = function () {
 	var flag = false;
 	$('html').on('mousemove',function (e) {
-		console.log(flag);
 		if(flag){
 			$('.fancybox-close').addClass('_fixed').css({
 				'top':e.clientY-24,
-				'left':e.clientX-24,
+				'left':e.clientX-24
 			});
-			console.log(e.pageY);
 		}else {
 			$('.fancybox-close').addClass('_remove').css({
 
