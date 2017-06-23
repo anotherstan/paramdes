@@ -342,17 +342,32 @@ app.mobPhone = function () {
 	var $inp = $('[data-mob-phone-inp]'),
 			$btn = $('[data-mob-phone-btn]'),
 			$popup = $('[data-mob-phone-popup]'),
+			$success = $('[data-mob-phone-success]'),
+			$codeTimerSeconds = $popup.find('[data-mob-phone-timer-s]'),
+			$codeTimerText = $popup.find('[data-mob-phone-timer-text]'),
 			$codeInp = $popup.find('[data-mob-phone-code-inp]'),
-			$codeBtn = $popup.find('[data-mob-phone-code-btn]')
+			$codeReturn = $popup.find('[data-mob-phone-code-return]'),
+			$codeBtn = $popup.find('[data-mob-phone-code-btn]'),
+			startTime = 15,
+			timeInt = null,
+			flag = true//не обновлять таймер
 		;
 	$inp.on('keyup',function () {
 		var $self = $(this);
-		if($self.val().length == 18){
+		if($self.val().length == 18 ){
 			$btn.removeClass('_disabled');
+			if(flag){
+				timer();
+				flag = false;
+			}
+
 		}else{
+			$btn.show();
+			$success.hide();
 			$btn.addClass('_disabled');
 			$popup.hide();
 			$codeInp.val('').change().removeClass('_focus');
+			flag = true;
 		}
 	});
 
@@ -371,6 +386,36 @@ app.mobPhone = function () {
 			}
 		});
 	});
+	$codeBtn.on('click',function () {
+		var $self = $(this);
+		if($self.hasClass('_disabled')){
+			return false;
+		}
+		$popup.hide();
+		$btn.hide();
+		$success.show();
+	});
+	$codeReturn.on('click',function () {
+		if(!$(this).hasClass('_disabled')){
+			timer();
+		}
+	});
+	function timer() {
+		clearInterval(timeInt);
+		startTime = 15;
+		$codeReturn.addClass('_disabled');
+		setTime();
+		function setTime() {
+			if(!startTime){
+				clearInterval(timeInt);
+				$codeReturn.removeClass('_disabled');
+			}
+			$codeTimerSeconds.text(startTime);
+			$codeTimerText.text(app.utils.okonchanie(startTime,'секунду','секунды','секунд'));
+			--startTime;
+		}
+		timeInt = setInterval(setTime,1000)
+	}
 };
 app.about=function () {
 	var $about = $('[data-about]'),

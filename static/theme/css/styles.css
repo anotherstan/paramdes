@@ -630,6 +630,28 @@ h5,
   padding: 24px;
   z-index: 2;
 }
+.mob-phone__success {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #cc003d;
+  position: absolute;
+  right: 24px;
+  top: 22px;
+  white-space: nowrap;
+  display: none;
+}
+.mob-phone__success:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-left: 12px;
+  background: url('../images/icons/ok.svg') no-repeat center #cc003d;
+}
 .mob-phone__popup {
   margin-top: 48px;
   background-color: white;
@@ -647,6 +669,9 @@ h5,
   font-size: 12px;
   margin-top: 13px;
   line-height: 20px;
+}
+.mob-phone__popup-text .red {
+  color: #cc003d;
 }
 .mob-phone__popup-bottom {
   border-top: 1px solid rgba(0, 24, 55, 0.1);
@@ -670,6 +695,7 @@ h5,
 }
 .mob-phone__popup-bottom-link._disabled {
   color: rgba(0, 24, 55, 0.3);
+  cursor: default;
 }
 .frame {
   position: relative;
