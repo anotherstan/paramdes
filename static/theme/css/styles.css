@@ -409,6 +409,11 @@ input[type='checkbox'][disabled] + .ideal-check {
   width: 100%;
   text-align: center;
 }
+.btn._disabled {
+  cursor: default;
+  background-color: #e5e7eb;
+  border-radius: 0 2px 2px 0;
+}
 .btn._transparent {
   border: 1px solid rgba(204, 0, 61, 0.2);
   background-color: transparent;
@@ -615,6 +620,56 @@ h5,
 .help__content-btn {
   width: 100%;
   margin-top: 32px;
+}
+.mob-phone__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 64px;
+  padding: 24px;
+  z-index: 2;
+}
+.mob-phone__popup {
+  margin-top: 48px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+  padding: 32px 48px;
+}
+.mob-phone__popup-field {
+  margin-top: 32px;
+}
+.mob-phone__popup-field .b-form__placeholder {
+  color: rgba(0, 24, 55, 0.3);
+}
+.mob-phone__popup-text {
+  font-size: 12px;
+  margin-top: 13px;
+  line-height: 20px;
+}
+.mob-phone__popup-bottom {
+  border-top: 1px solid rgba(0, 24, 55, 0.1);
+  *zoom: 1;
+  margin-top: 32px;
+  padding-top: 32px;
+  line-height: 18px;
+}
+.mob-phone__popup-bottom:before,
+.mob-phone__popup-bottom:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mob-phone__popup-bottom:after {
+  clear: both;
+}
+.mob-phone__popup-bottom-link {
+  float: left;
+  margin-right: 32px;
+}
+.mob-phone__popup-bottom-link._disabled {
+  color: rgba(0, 24, 55, 0.3);
 }
 .frame {
   position: relative;

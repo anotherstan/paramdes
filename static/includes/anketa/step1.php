@@ -223,11 +223,30 @@
 				</div>
 				<div class="b-form__row">
 					<div class="b-form__block" data-form-field>
-						<div class="b-form__field">
-							<input type="text" data-form-field-inp data-mask-phone  data-required>
+						<div class="b-form__field mob-phone">
+							<input type="text" data-form-field-inp data-mob-phone-inp data-mask-phone  data-required>
 							<div class="b-form__placeholder">Мобильный телефон</div>
+							<a href="javascript:void(0);" class="btn mob-phone__btn _disabled" data-mob-phone-btn>Подтвердить</a>
 						</div>
 						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+					</div>
+					<div class="mob-phone__popup hide" data-mob-phone-popup>
+						<div class="mob-phone__popup-title">Вам отправлено СМС с кодом подтверждения.</div>
+						<div class="b-form__field mob-phone__popup-field">
+							<input type="text" data-form-field-inp data-mob-phone-code-inp>
+							<div class="b-form__placeholder">Код из СМС</div>
+							<a href="javascript:void(0);" class="btn mob-phone__btn _disabled" data-mob-phone-code-btn>Подтвердить</a>
+						</div>
+						<div class="mob-phone__popup-text">Повторно код можно будет отправить через 84 секунды.</div>
+						<div class="mob-phone__popup-bottom">
+							<a href="javascript:void(0);" class="mob-phone__popup-bottom-link _disabled">Отправить код повторно</a>
+							<div class="mob-phone__popup-bottom-link">
+								СМС не приходит
+								<div class="help">
+									<a href="#" class="help__ico">?</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="b-form__check-list">

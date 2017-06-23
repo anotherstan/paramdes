@@ -153,6 +153,49 @@ h5,.h5{
 		}
 	}
 }
+.mob-phone{
+	&__btn{
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom:0;
+		height: 64px;
+		padding: 24px;
+		z-index: 2;
+	}
+	&__popup{
+		margin-top: 48px;
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+		padding: 32px 48px;
+		&-field{
+			margin-top: 32px;
+			.b-form__placeholder{
+				color:fade(@textColor,30%);
+			}
+		}
+		&-text{
+			font-size: 12px;
+			margin-top: 13px;
+			line-height: 20px;
+		}
+		&-bottom{
+			border-top: 1px solid fade(@textColor,10%);
+			.clearfix;
+			margin-top: 32px;
+			padding-top: 32px;
+			line-height: 18px;
+			&-link{
+				float: left;
+				margin-right: 32px;
+				&._disabled{
+					color:fade(@textColor,30%);
+				}
+			}
+		}
+	}
+}
 .frame{
 	//box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
 	position: relative;

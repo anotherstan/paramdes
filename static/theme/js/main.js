@@ -56,6 +56,7 @@ app.init = function () {
 	app.anketaAddress();
 	app.anketaOffice();
 	app.fancyClose();
+	app.mobPhone();
 
 };
 app.fancyClose = function () {
@@ -336,6 +337,40 @@ app.anketa=function () {
 		
 	}
 
+};
+app.mobPhone = function () {
+	var $inp = $('[data-mob-phone-inp]'),
+			$btn = $('[data-mob-phone-btn]'),
+			$popup = $('[data-mob-phone-popup]'),
+			$codeInp = $popup.find('[data-mob-phone-code-inp]'),
+			$codeBtn = $popup.find('[data-mob-phone-code-btn]')
+		;
+	$inp.on('keyup',function () {
+		var $self = $(this);
+		if($self.val().length == 18){
+			$btn.removeClass('_disabled');
+		}else{
+			$btn.addClass('_disabled');
+			$popup.hide();
+			$codeInp.val('').change().removeClass('_focus');
+		}
+	});
+
+	$btn.on('click',function () {
+		var $self = $(this);
+		if($self.hasClass('_disabled')){
+			return false;
+		}
+		$popup.show();
+		$codeInp.on('change keyup',function () {
+			var $self = $(this);
+			if($self.val()!=''){
+				$codeBtn.removeClass('_disabled');
+			}else{
+				$codeBtn.addClass('_disabled');
+			}
+		});
+	});
 };
 app.about=function () {
 	var $about = $('[data-about]'),
