@@ -115,6 +115,149 @@
 			}
 		}
 	}
+	&__office{
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+		padding: 32px 48px;
+		&-title{
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 24px;
+			color: #01122a;
+		}
+		&-subtitle{
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 12px;
+			color: fade(#01122a,70%);
+			margin-top: 8px;
+		}
+		&-btn{
+
+		}
+		&-schedule{
+			.clearfix;
+			margin-top: 32px;
+			&-block{
+				float: left;
+				width: 156px;
+				padding-right: 6px;
+				margin-bottom: 33px;
+				&-title {
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0.8px;
+					line-height: 12px;
+					text-transform: uppercase;
+					color: fade(@textColor,70%);
+				}
+				&-val{
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+					color: #01122a;
+					margin-top: 11px;
+				}
+			}
+		}
+	}
+	&__offices{
+		border-radius: 2px;
+		box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+		background: #fff;
+		position: relative;
+		padding: 29px 48px 32px;
+		&:before{
+			content: '';
+			width: 156px;
+			height: 128px;
+			position: absolute;
+			left: 340px;
+			top: 37px;
+			z-index: 1;
+			.background('@{pathToImg}eagle-small.svg');
+			opacity: 0.1;
+		}
+		&-counter{
+			color: #000076;
+			letter-spacing: 0.1px;
+			span{
+				font-size: 24px;
+				letter-spacing: 0;
+			}
+		}
+		&-city{
+			font-size: 16px;
+			line-height: 24px;
+			color: fade(@textColor,70%);
+			margin-top: 5px;
+		}
+		&-btn{
+			position: relative;
+			z-index: 3;
+			margin-top: 32px;
+		}
+		&-map{
+			width: 1312px;
+			height: 600px;
+			.background('@{pathToImg}map.jpg');
+			position: relative;
+			&-marker{
+				width: 36px;
+				height: 48px;
+				.background('@{pathToImg}marker.png');
+				position: absolute;
+				left: 528px;
+				top: 399px;
+			}
+			&-popup{
+				left: 370px;
+				top: 183px;
+				width: 352px;
+				position: absolute;
+				&-close{
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					right: 12px;
+					top: 12px;
+					background: url('@{pathToImg}icons/close-small.svg') no-repeat center;
+					opacity: 0.3;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					top: 100%;
+					border: 8px solid transparent;
+					border-bottom: 0;
+					border-top: 9px solid #fff;
+					left:50%;
+					margin-left: -9px;
+				}
+				.anketa__office-btn{
+					margin-top: 15px;
+				}
+				.anketa__office-schedule-block{
+					float: none;
+					margin-bottom: 16px;
+					.clearfix;
+					width: 100%;
+					&-title{
+						float: left;
+						width: 74px;
+
+					}
+					&-val{
+						float: left;
+						font-size: 12px;
+						line-height: 12px;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
 	&__finish{
 		text-align: center;
 		&-title{

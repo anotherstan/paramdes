@@ -200,8 +200,85 @@
 					</div>
 				</div>
 			</div>
-			<div class="anketa__form-block">
+			<div class="anketa__form-block" data-anketa-office>
 				<div class="b-block__title h4 _dash anketa__form-block-title">Отделение для получения кредита</div>
+				<div class="b-form__row">
+					<div class="b-form__block" data-form-field>
+						<div class="b-form__field" data-autocomplete>
+							<input type="text" data-form-field-inp data-anketa-office-inp data-required data-autocomplete-inp>
+							<div class="b-form__placeholder">Населенный пункт</div>
+							<div class="b-form__autocomplete">
+								<ul>
+									<li><a href="javascript:void(0);" data-autocomplete-link>Москва</a></li>
+									<li><a href="javascript:void(0);" data-autocomplete-link>Смоленск</a></li>
+									<li><a href="javascript:void(0);" data-autocomplete-link>Сочи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+					</div>
+				</div>
+				<div class="b-form__row hide" data-anketa-office-block>
+					<div class="anketa__offices">
+						<div class="anketa__offices-counter h3">215 <span>отделений</span></div>
+						<div class="anketa__offices-city">В городе Москва</div>
+						<div class="anketa__offices-btn">
+							<a href="javascript:void(0);" class="btn _w100" data-anketa-office-map-show>Указать отделение на карте</a>
+						</div>
+					</div>
+				</div>
+				<div class="b-form__row hide" data-anketa-office-item>
+					<div class="anketa__office">
+						<div class="anketa__office-title">Москва, бул. Волжский, д. 16, корп. 1</div>
+						<div class="anketa__office-subtitle">В отделении «Почты России».</div>
+						<div class="anketa__office-schedule">
+							<div class="anketa__office-schedule-block">
+								<div class="anketa__office-schedule-block-title">Пн</div>
+								<div class="anketa__office-schedule-block-val">11:00 — 20:00</div>
+							</div>
+							<div class="anketa__office-schedule-block">
+								<div class="anketa__office-schedule-block-title">Вт — Пт</div>
+								<div class="anketa__office-schedule-block-val">11:00 — 20:00</div>
+							</div>
+							<div class="anketa__office-schedule-block">
+								<div class="anketa__office-schedule-block-title">Сб</div>
+								<div class="anketa__office-schedule-block-val">09:00 — 18:00</div>
+							</div>
+							<div class="anketa__office-schedule-block">
+								<div class="anketa__office-schedule-block-title">Вс</div>
+								<div class="anketa__office-schedule-block-val">Выходной</div>
+							</div>
+						</div>
+						<div class="anketa__office-btn">
+							<a href="javascript:void(0);" data-anketa-office-map-show class="btn _w100">Выбрать другое отделение</a>
+						</div>
+					</div>
+				</div>
+				<div class="hide">
+					<div class="anketa__offices-map" data-anketa-office-map>
+						<a href="javascript:void(0);" class="anketa__offices-map-marker" data-anketa-office-map-marker></a>
+						<div class="anketa__offices-map-popup hide" data-anketa-office-map-marker-popup>
+							<a href="javascript:void(0);"  data-anketa-office-map-marker-popup-close class="anketa__offices-map-popup-close"></a>
+							<div class="anketa__office">
+								<div class="anketa__office-title">Москва, ул. Богданова, д. 6</div>
+								<div class="anketa__office-subtitle">В отделении «Почты России».</div>
+								<div class="anketa__office-schedule">
+									<div class="anketa__office-schedule-block">
+										<div class="anketa__office-schedule-block-title">Пн — Пт</div>
+										<div class="anketa__office-schedule-block-val">09:00 — 18:00</div>
+									</div>
+									<div class="anketa__office-schedule-block">
+										<div class="anketa__office-schedule-block-title">Сб — Вс</div>
+										<div class="anketa__office-schedule-block-val">Выходные дни</div>
+									</div>
+								</div>
+								<div class="anketa__office-btn">
+									<a href="javascript:void(0);" data-anketa-office-set class="btn _w100 _transparent">Выбрать отделение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="anketa__form-block anketa__form-bottom">
 				<div class="anketa__form-bottom-in">

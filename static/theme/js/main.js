@@ -54,6 +54,7 @@ app.init = function () {
 	app.popups();
 	app.checkToggle();
 	app.anketaAddress();
+	app.anketaOffice();
 
 };
 app.popups = function () {
@@ -109,6 +110,53 @@ app.anketaAddress=function () {
 				}
 			});
 		}
+	});
+};
+app.anketaOffice=function () {
+	var $office = $('[data-anketa-office]'),
+			$officeItem = $office.find('[data-anketa-office-item]'),
+			$block = $office.find('[data-anketa-office-block]'),
+			$inp = $office.find('[data-anketa-office-inp]'),
+			$map = $office.find('[data-anketa-office-map]'),
+			$marker = $office.find('[data-anketa-office-map-marker]'),
+			$markerPopup = $office.find('[data-anketa-office-map-marker-popup]'),
+			$markerPopupClose = $office.find('[data-anketa-office-map-marker-popup-close]'),
+			$setBtn = $office.find('[data-anketa-office-set]'),
+			$mapShow = $office.find('[data-anketa-office-map-show]')
+		;
+
+	$inp.on('change',function () {
+		var $self = $(this);
+		$officeItem.hide();
+		if($self.val()){
+			$block.show();
+		}else{
+			$block.hide();
+		}
+	});
+	$mapShow.on('click',function () {
+		$.fancybox({
+			wrapCSS: 'fc-base _popups',
+			content: $map,
+			fitToView: false,
+			autoWidth: true,
+			autoResize: true,
+			padding: 0,
+			margin:[120,10,10,120]
+		});
+	});
+
+	$marker.on('click',function () {
+		$markerPopup.show();
+	});
+	$markerPopupClose.on('click',function () {
+		$markerPopup.hide();
+	});
+	$setBtn.on('click',function () {
+		$markerPopup.hide();
+		$.fancybox.close();
+		$block.hide();
+		$officeItem.show();
 	});
 };
 app.anketaCountdown =function(){
