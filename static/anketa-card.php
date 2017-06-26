@@ -1,5 +1,5 @@
 <?include "includes/header-empty.php"?>
-	<div class="grid">
+	<div class="grid" data-no-fixed-footer>
 		<div class="anketa" data-anketa>
 			<?include "includes/anketa-card/nav.php"?>
 			<div class="grid__inner">

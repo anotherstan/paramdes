@@ -1,6 +1,15 @@
 .banner{
 	background: none no-repeat center;
 	background-size: cover;
+	&._credits{
+		background-size: auto;
+		&+.page-menu__wrap{
+			margin-top: 0;
+		}
+		.banner__inner{
+			padding-bottom: 32px;
+		}
+	}
 	&__inner{
 		padding: 96px;
 	}

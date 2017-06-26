@@ -3895,6 +3895,15 @@ h5,
   background: none no-repeat center;
   background-size: cover;
 }
+.banner._credits {
+  background-size: auto;
+}
+.banner._credits + .page-menu__wrap {
+  margin-top: 0;
+}
+.banner._credits .banner__inner {
+  padding-bottom: 32px;
+}
 .banner__inner {
   padding: 96px;
 }
@@ -4826,6 +4835,27 @@ h5,
   margin-top: 14px;
   padding-bottom: 2px;
   position: relative;
+}
+.credits {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.credits__item {
+  padding-left: 672px;
+  position: relative;
+}
+.credits__item .b-block__title.h3 a {
+  color: #001837;
+}
+.credits__item-ico {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  z-index: 2;
+  left: 275px;
+  background: none no-repeat center;
 }
 .pull-right {
   float: right;

@@ -47,7 +47,6 @@ app.init = function () {
 	app.initTabs();
 	app.constructor();
 	app.initChosen();
-	app.footer();
 	app.about();
 	app.creditCalc();
 	app.anketa();
@@ -58,6 +57,9 @@ app.init = function () {
 	app.fancyClose();
 	app.mobPhone();
 
+	if(!$('[data-no-fixed-footer]').length){
+		app.footer();
+	}
 };
 app.fancyClose = function () {
 	var flag = false;
@@ -463,7 +465,8 @@ app.footer=function () {
 	_helper();
 	app.dom.$window.resize(_helper);
 	function _helper() {
-		//app.dom.$grid.css({ marginBottom : app.dom.$window.height()});
+		
+		app.dom.$grid.css({ marginBottom : app.dom.$window.height()});
 	}
 
 };
