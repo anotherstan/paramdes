@@ -1,4 +1,4 @@
-<div class="b-block anketa__finish">
+<div class="b-block anketa__finish" data-anketa-finish="credit">
 	<div class="h3  anketa__finish-title">Спасибо за заполнение</div>
 	<div class="anketa__finish-subtitle">Пожалуйста, не закрывайте эту страницу.</div>
 	<div class="wrapper" data-anketa-timer="300">

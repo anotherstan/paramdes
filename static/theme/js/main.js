@@ -217,6 +217,7 @@ app.anketaCountdown =function(){
 };
 app.anketa=function () {
 	var $anketa = $('[data-anketa]'),
+		$finish = $anketa.find('[data-anketa-finish]'),
 		$nav = $anketa.find('[data-anketa-nav]'),
 		$navStep = $anketa.find('[data-anketa-nav-step]'),
 		$gotoBtn = $anketa.find('[ data-anketa-goto-btn]'),
@@ -333,7 +334,15 @@ app.anketa=function () {
 	}
 
 	function finish() {
-		app.anketaCountdown();
+		var type = $finish.data('anketaFinish');
+		
+		if(type =='credit'){
+			app.anketaCountdown();
+		}
+		if(type =='card'){
+			$finish.find('[data-anketa-card-finish]').addClass('_card-finish');
+		}
+		
 		
 	}
 
@@ -463,6 +472,7 @@ app.masks = function () {
 	$('[data-mask-phone]').mask("+7 (000) 000-00-00",{clearIfNotMatch: true});
 	$('[data-mask-snils]').mask("999-999-999 99",{clearIfNotMatch: true});
 	$('[data-date-mask]').mask('00/00/0000',{clearIfNotMatch: true});
+	$('[data-year-mask]').mask('0000',{clearIfNotMatch: true});
 	$('[data-num-mask]').mask("#0", {reverse: true});
 	$('[data-money-mask]').mask("# ##0", {reverse: true});
 };

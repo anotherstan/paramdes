@@ -186,8 +186,26 @@
 			}
 		}
 	}
+	&__label{
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0.8px;
+		line-height: 12px;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+		color: fade(@textColor,70%);
+		margin-top: 24px;
+	}
 	&__check{
 		margin-top: 33px;
+		position: relative;
+	 	min-height: 24px;
+		padding-left: 40px;
+		.ideal-check{
+			position: absolute;
+			left: 0;
+			top:0;
+		}
 		&._indent{
 			margin-top: 48px;
 		}

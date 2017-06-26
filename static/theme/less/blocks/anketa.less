@@ -29,6 +29,7 @@
 	}
 }
 @time : 300s;
+@cardTime : 2s;
 .anketa{
 	position: relative;
 	&__aside{
@@ -57,6 +58,12 @@
 		height: 393px;
 		text-align: center;
 		padding: 73px 48px 48px;
+		&._card{
+			height: 284px;
+			&:after{
+				background-image: url('@{pathToImg}conditions_card.png');
+			}
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -263,6 +270,49 @@
 		&-title{
 
 		}
+		&-ok{
+			width: 64px;
+			height: 43px;
+			z-index: 500;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -32px;
+			margin-top: -22px;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				.background('@{pathToImg}icons/ok_big.svg');
+				opacity: 0.3;
+			}
+			&-hidden{
+				width: 0;
+				height: 43px;
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 3;
+				transition: width @cardTime;
+			}
+			&-ico{
+				width: 64px;
+				height: 43px;
+				.background('@{pathToImg}icons/ok_big_red.svg');
+			}
+			&:before{
+
+			}
+			&:after{
+				opacity:0;
+				z-index: 3;
+			}
+		}
 		&-timer{
 			position: absolute;
 			left: 0;
@@ -296,6 +346,24 @@
 			margin: 48px auto 0;
 			position: relative;
 			background: white;
+			&._card-finish{
+				.anketa__finish-ok-hidden{
+					width: 64px;
+				}
+				.spinner{
+					animation: rota @cardTime linear forwards;
+					&:after{
+						right: -5px;
+						transition: right @cardTime;
+					}
+				}
+				.filler{
+					animation: fill @cardTime steps(1, end) forwards;
+				}
+				.mask{
+					animation: mask @cardTime steps(1, end) forwards;
+				}
+			}
 			&._active{
 				.spinner{
 					animation: rota @time linear forwards;

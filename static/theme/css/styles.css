@@ -1607,8 +1607,26 @@ h5,
   z-index: 3;
   color: rgba(0, 24, 55, 0.3);
 }
+.b-form__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: rgba(0, 24, 55, 0.7);
+  margin-top: 24px;
+}
 .b-form__check {
   margin-top: 33px;
+  position: relative;
+  min-height: 24px;
+  padding-left: 40px;
+}
+.b-form__check .ideal-check {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .b-form__check._indent {
   margin-top: 48px;
@@ -4149,6 +4167,12 @@ h5,
   text-align: center;
   padding: 73px 48px 48px;
 }
+.anketa__conditions._card {
+  height: 284px;
+}
+.anketa__conditions._card:after {
+  background-image: url('../images/conditions_card.png');
+}
 .anketa__conditions:after {
   content: '';
   position: absolute;
@@ -4367,6 +4391,48 @@ h5,
 .anketa__finish {
   text-align: center;
 }
+.anketa__finish-ok {
+  width: 64px;
+  height: 43px;
+  z-index: 500;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -22px;
+}
+.anketa__finish-ok:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: url('../images/icons/ok_big.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.3;
+}
+.anketa__finish-ok-hidden {
+  width: 0;
+  height: 43px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  transition: width 2s;
+}
+.anketa__finish-ok-ico {
+  width: 64px;
+  height: 43px;
+  background: url('../images/icons/ok_big_red.svg') no-repeat center;
+  background-size: contain;
+}
+.anketa__finish-ok:after {
+  opacity: 0;
+  z-index: 3;
+}
 .anketa__finish-timer {
   position: absolute;
   left: 0;
@@ -4397,6 +4463,22 @@ h5,
   margin: 48px auto 0;
   position: relative;
   background: white;
+}
+.anketa__finish .wrapper._card-finish .anketa__finish-ok-hidden {
+  width: 64px;
+}
+.anketa__finish .wrapper._card-finish .spinner {
+  animation: rota 2s linear forwards;
+}
+.anketa__finish .wrapper._card-finish .spinner:after {
+  right: -5px;
+  transition: right 2s;
+}
+.anketa__finish .wrapper._card-finish .filler {
+  animation: fill 2s steps(1, end) forwards;
+}
+.anketa__finish .wrapper._card-finish .mask {
+  animation: mask 2s steps(1, end) forwards;
 }
 .anketa__finish .wrapper._active .spinner {
   animation: rota 300s linear forwards;
