@@ -85,7 +85,7 @@ include "includes/header.php"
 						</div>
 					</div>
 				</div>
-				<div class="card__btn"><a href="" class="btn">Оформить карту</a></div>
+				<div class="card__btn"><a href="anketa-card.php" class="btn">Оформить карту</a></div>
 			</div>
 		</div>
 	</div>

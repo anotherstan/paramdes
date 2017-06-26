@@ -22,22 +22,22 @@
 			<div class="header__inner">
 				<div class="top-menu">
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link _arr">Частным лицам</a>
+						<a href="javascript:void(0);" class="top-menu__link _arr">Частным лицам</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link _arr">Москва</a>
+						<a href="javascript:void(0);" class="top-menu__link _arr">Москва</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Офисы и банкоматы</a>
+						<a href="javascript:void(0);" class="top-menu__link">Офисы и банкоматы</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Поддержка</a>
+						<a href="javascript:void(0);" class="top-menu__link">Поддержка</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Погасить кредит</a>
+						<a href="javascript:void(0);" class="top-menu__link">Погасить кредит</a>
 					</div>
 					<div class="top-menu__item _login">
-						<a href="#" class="top-menu__link">Интернет-банк</a>
+						<a href="javascript:void(0);" class="top-menu__link">Интернет-банк</a>
 					</div>
 				</div>
 			</div>
@@ -49,25 +49,25 @@
 				<a href="#" class="header__logo"></a>
 				<div class="header__menu">
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link _active">Карты</a>
+						<a href="/static/" class="header__menu-link _active">Карты</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Вклады</a>
+						<a href="/static/not-found.php" class="header__menu-link">Вклады</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Кредиты</a>
+						<a href="/static/credits.php" class="header__menu-link">Кредиты</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Сберегательный счет</a>
+						<a href="/static/not-found.php" class="header__menu-link">Сберегательный счет</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Ипотека</a>
+						<a href="/static/not-found.php" class="header__menu-link">Ипотека</a>
 					</div>
 					<div class="header__menu-item">
-						<a href="#" class="header__menu-link">Еще <span class="dots">...</span></a>
+						<a href="/static/not-found.php" class="header__menu-link">Еще <span class="dots">...</span></a>
 					</div>
 				</div>
-				<a href="#" class="header__main-btn btn">Онлайн-заявка</a>
+				<a href="/static/anketa.php" class="header__main-btn btn">Онлайн-заявка</a>
 			</div>
 		</div>
 	</div>

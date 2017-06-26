@@ -23,7 +23,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card__btn"><a href="" class="btn">оформить кредит</a></div>
+				<div class="card__btn"><a href="anketa.php" class="btn">оформить кредит</a></div>
 			</div>
 		</div>
 	</div>
@@ -411,7 +411,7 @@
 					<div class="b-steps__item">
 						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/1.svg')"></div>
 						<div class="b-steps__item-title">1. Подайте заявку</div>
-						<div class="b-steps__item-text">В клиентском центре, на стойке продаж или <a href="#">онлайн на сайте.</a></div>
+						<div class="b-steps__item-text">В клиентском центре, на стойке продаж или <a href="anketa.php">онлайн на сайте.</a></div>
 					</div>
 					<div class="b-steps__item">
 						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/2.svg')"></div>
