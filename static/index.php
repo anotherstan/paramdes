@@ -578,7 +578,7 @@
 								</div>
 							</div>
 							<div class="b-form__btn-wrap">
-								<button type="submit" class="btn">Оформить карту</button>
+								<button type="submit" class="btn">Перейти к оформлению</button>
 							</div>
 						</form>
 					</div>
@@ -587,7 +587,7 @@
 			<div class="b-block _transparent articles">
 				<div class="b-block__title h3 _dash">Пользуйтесь банком выгодно</div>
 				<div class="b-block__indent articles__list">
-					<a href="#" class="article">
+					<a href="javascript:void(0);" class="article">
 						<div class="article__inner">
 							<div class="article__title h4">
 								Как оплачивать товары<br />
@@ -606,7 +606,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#" class="article">
+					<a href="javascript:void(0);" class="article">
 						<div class="article__inner">
 							<div class="article__title h4">
 								Как покупать в интернете<br />

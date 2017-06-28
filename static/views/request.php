@@ -35,7 +35,7 @@
 						</div>
 					<?}}?>
 					<div class="b-form__btn-wrap">
-						<button type="submit" class="btn">Оформить карту</button>
+						<button type="submit" class="btn">Перейти к оформлению</button>
 					</div>
 				</form>
 			</div>

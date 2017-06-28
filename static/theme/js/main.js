@@ -234,7 +234,7 @@ app.anketa=function () {
 		$selects = $anketa.find('select'),
 		errors = false
 	;
-	$autocompleteInp.on('keyup',function () {
+	/*$autocompleteInp.on('keyup',function () {
 		var $self = $(this);
 		$self.closest($autocomplete).addClass('_autocomplete-show');
 	});
@@ -255,7 +255,7 @@ app.anketa=function () {
 		}
 
 		$self.closest($autocomplete).find($autocompleteInp).val(text).change();
-	});
+	});*/
 
 	$gotoBtn.on('click',function () {
 		setStep($(this).data('anketaGotoBtn'));

@@ -366,7 +366,7 @@
 		<div class="b-block _transparent articles home__help">
 			<div class="b-block__title h3 _dash">Поддержка клиентов</div>
 			<div class="b-block__indent articles__list">
-				<a href="#" class="article">
+				<a href="javascript:void(0);" class="article">
 					<div class="article__inner">
 						<div class="article__title h4">
 							Где я могу оплатить<br/>
@@ -379,7 +379,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="article">
+				<a href="javascript:void(0);" class="article">
 					<div class="article__inner">
 						<div class="article__title h4">
 							Что делать если мне<br />не дали кредит?
@@ -391,7 +391,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="article">
+				<a href="javascript:void(0);" class="article">
 					<div class="article__inner">
 						<div class="article__title h4">
 							Какие комиссии за<br/>
@@ -404,7 +404,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="article">
+				<a href="javascript:void(0);" class="article">
 					<div class="article__inner">
 						<div class="article__title h4">
 							Какими налогами <br/>облагаются вклады?

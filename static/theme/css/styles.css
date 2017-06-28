@@ -3421,6 +3421,12 @@ h5,
   position: relative;
   min-height: 390px;
 }
+.card .breadcrumbs,
+.card .card__btn,
+.card .card__options {
+  position: relative;
+  z-index: 3;
+}
 .card__img {
   width: 1433px;
   height: 394px;
