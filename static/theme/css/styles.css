@@ -3416,6 +3416,54 @@ h5,
   line-height: 16px;
   margin-top: 15px;
 }
+.cards {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.cards__item {
+  padding-left: 672px;
+  position: relative;
+  transition: background-color 0.5s;
+}
+.cards__item-pattern {
+  position: absolute;
+  background: url('../images/pattern.png') no-repeat 0 center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 202px;
+}
+.cards__item:hover {
+  background-color: #252163;
+  color: #fff;
+}
+.cards__item:hover .b-block__title,
+.cards__item:hover .b-block__title.h3 a,
+.cards__item:hover .card__option-val {
+  color: #fff;
+}
+.cards__item:hover .b-block__subtitle,
+.cards__item:hover .card__option-title {
+  color: rgba(255, 255, 255, 0.7);
+}
+.cards__item:hover .cards__item-img {
+  transform: translate(0, -35px);
+}
+.cards__item-img {
+  width: 351px;
+  height: 221px;
+  background: none no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 160px;
+  top: 50%;
+  margin-top: -110px;
+  transform: translate(0, 0);
+  transition: transform 0.5s;
+}
+.cards__item .b-block__title.h3 a {
+  color: #001837;
+}
 .card {
   padding-top: 48px;
   position: relative;

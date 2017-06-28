@@ -1,3 +1,50 @@
+.cards{
+	padding-top: 64px;
+	padding-bottom: 96px;
+	&__item{
+		padding-left: 672px;
+		position: relative;
+		transition: background-color @animTime;
+		&-pattern{
+			position: absolute;
+			background: url('@{pathToImg}pattern.png') no-repeat 0 center;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width:202px;
+		}
+		&:hover{
+			background-color: #252163;
+			color: #fff;
+			.b-block__title, .b-block__title.h3 a,.card__option-val{
+				color: #fff;
+			}
+			.b-block__subtitle, .card__option-title{
+				color: fade(#fff,70%);
+			}
+			.cards__item-img{
+				transform: translate(0,-35px);
+			}
+		}
+		&-img{
+			width: 351px;
+			height: 221px;
+			background: none no-repeat center;
+			background-size: contain;
+			position: absolute;
+			left: 160px;
+			top: 50%;
+			margin-top: -110px;
+			transform: translate(0,0);
+			transition:  transform @animTime;
+		}
+		.b-block__title.h3{
+			a{
+				color: #001837;
+			}
+		}
+	}
+}
 .card{
 	padding-top: 48px;
 	position: relative;
