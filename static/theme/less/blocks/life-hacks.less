@@ -1,0 +1,79 @@
+.life-hacks{
+	color: white;
+	padding: 67px 96px 64px;
+	&__wrap{
+		background: @cRed;
+	}
+	&__inner{
+		background: url('@{pathToImg}pattern-red.png') no-repeat right 0;
+		background-size: 1198/2px auto;
+	}
+	&__top{
+		.b-block__subtitle{
+			margin-top: 21px;
+		}
+	}
+	&__items{
+		margin: 64px -128px 0 -96px;
+		.clearfix;
+	}
+	&__item{
+		display: block;
+		color: @textColor;
+		margin-top: 0!important;
+		margin-left: 0!important;
+		margin-bottom: 32px;
+		margin-right: 32px;
+		float: left;
+		width: 640px;
+		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+		&-top{
+			width: 591px;
+			height: 256px;
+		}
+		.article__title:after{
+			color: @cRed;
+		}
+		&-img{
+			width: 346px;
+			height: 508px;
+			.background('@{pathToImg}home/life-hacks/img.png');
+			position: absolute;
+			bottom: 0;
+			right: 177px;
+		}
+		&._big{
+			height: 448px;
+			background: none no-repeat center;
+			background-size: cover;
+			width: 1312px;
+			.b-list{
+				margin-top: 46px;
+			}
+			.article{
+				&__title{
+					padding-right: 64px;
+					&:after{
+						font-size: 96px;
+						font-weight: 500;
+						line-height: 101px;
+					}
+				}
+				&__inner{
+					padding: 50px 70px 20px 96px;
+					height: auto;
+				}
+			}
+		}
+	}
+	&__all{
+		margin-top: 33px;
+		.all-btn{
+			color: #fff;
+			&__counter{
+				background-color: white;
+				color: @cRed;
+			}
+		}
+	}
+}

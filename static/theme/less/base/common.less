@@ -270,6 +270,11 @@ h5,.h5{
 	margin: 0;
 	padding-left: 0;
 	color: @textColor;
+	&._indent-20{
+		li+li{
+			margin-top: 20px;
+		}
+	}
 	li{
 		padding-left: 32px;
 		position: relative;
@@ -285,6 +290,65 @@ h5,.h5{
 			left: 0;
 			top: 11px;
 		}
+	}
+}
+.subtitle{
+	color: fade(@textColor,70%);
+}
+.val{
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	font-family: @fPragmatica;
+	color: #000076;
+	span{
+		font-size: 24px;
+		background-color: #fff;
+	}
+}
+.gall-btns{
+	.clearfix;
+}
+
+.gall-btn{
+	width: 48px;
+	height: 48px;
+	//border: 2px solid transparent;
+	float: left;
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+	&._prev{
+		&:before{
+			background-image: url('@{pathToImg}icons/arr_prev_red_small.svg')
+		}
+
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		left: 50%;
+		top:50%;
+		width: 8px;
+		height: 8px;
+		background: url('@{pathToImg}icons/arr_next_red_small.svg') no-repeat center;
+		background-size: contain;
+		margin-left: -4px;
+		margin-top: -4px;
+		z-index: 600;
+	}
+	&__pie{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: #fff;
+	}
+	&+&{
+		margin-left: 16px;
 	}
 }
 .video-btn{

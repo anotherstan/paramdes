@@ -391,57 +391,6 @@
 				z-index: 400;
 			}
 		}
-
-		.pie {
-			width: 50%;
-			height: 100%;
-			transform-origin: 100% 50%;
-			position: absolute;
-			border: 3px solid @cRed;
-		}
-
-		.spinner {
-			border-radius: ~'100% 0 0 100%/50% 0 0 50%';
-			z-index: 200;
-			border-right: none;
-			//animation: rota @time linear forwards;
-		}
-
-		.wrapper:hover .spinner,
-		.wrapper:hover .filler,
-		.wrapper:hover .mask {
-			//animation-play-state: paused;
-		}
-
-		.spinner:after {
-			position: absolute;
-			width: 8px;
-			height: 8px;
-			background: @cRed;
-			border-radius: 50%;
-			top: -5px;
-			right: -8px;
-			content: "";
-		}
-
-		.filler {
-			border-radius: ~'0 100% 100% 0/0 50% 50% 0';
-			left: 50%;
-			opacity: 0;
-			z-index: 100;
-			//animation: fill @time steps(1, end) forwards;
-			border-left: none;
-		}
-
-		.mask {
-			width: 50%;
-			height: 100%;
-			position: absolute;
-			background: inherit;
-			opacity: 1;
-			z-index: 300;
-			//animation: mask @time steps(1, end) forwards;
-		}
 	}
 	&__nav{
 		position: absolute;
@@ -696,4 +645,54 @@
 			}
 		}
 	}
+}
+.pie {
+	width: 50%;
+	height: 100%;
+	transform-origin: 100% 50%;
+	position: absolute;
+	border: 3px solid @cRed;
+}
+
+.spinner {
+	border-radius: ~'100% 0 0 100%/50% 0 0 50%';
+	z-index: 200;
+	border-right: none;
+	//animation: rota @time linear forwards;
+}
+
+.wrapper:hover .spinner,
+.wrapper:hover .filler,
+.wrapper:hover .mask {
+	//animation-play-state: paused;
+}
+
+.spinner:after {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: @cRed;
+	border-radius: 50%;
+	top: -5px;
+	right: -8px;
+	content: "";
+}
+
+.filler {
+	border-radius: ~'0 100% 100% 0/0 50% 50% 0';
+	left: 50%;
+	opacity: 0;
+	z-index: 100;
+	//animation: fill @time steps(1, end) forwards;
+	border-left: none;
+}
+
+.mask {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	opacity: 1;
+	z-index: 300;
+	//animation: mask @time steps(1, end) forwards;
 }

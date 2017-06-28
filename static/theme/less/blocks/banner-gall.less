@@ -1,0 +1,78 @@
+@gallBtnTime:5s;
+.banner-gall{
+	position: relative;
+	.gall-btns{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 48px;
+	}
+	&__slides{
+
+	}
+	&__slide{
+		height: 540px;
+		background: none no-repeat center;
+		background-size: cover;
+		&._active{
+			.spinner{
+				animation: rota @gallBtnTime linear forwards;
+				&:after{
+					display: none;
+				}
+			}
+			.filler{
+				animation: fill  @gallBtnTime steps(1, end) forwards;
+			}
+			.mask{
+				animation: mask  @gallBtnTime steps(1, end) forwards;
+			}
+		}
+	}
+	&__pag{
+
+		&-in{
+			height: 256px;
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+		&-item{
+			display: inline-block;
+			width: 288px;
+			color: @textColor;
+			background-color: #fff;
+			font-size: 16px;
+			line-height: 24px;
+			transition:all 0.5s;
+			position: relative;
+			height: 256px;
+			top: 0;
+			padding: 35px 48px;
+			&._active{
+				border-radius: 2px 2px 0 0;
+				box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
+				height: 280px;
+				z-index: 2;
+				top: -24px;
+			}
+			&-title{
+
+			}
+			&-val{
+				opacity: 0.9;
+				color: #000076;
+				font-family: @fPragmatica;
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 32px;
+				margin-top: 32px;
+				span{
+					font-size: 24px;
+				}
+			}
+			&-text{
+				margin-top: 12px;
+				color: fade(@textColor,70%);
+			}
+		}
+	}
+}

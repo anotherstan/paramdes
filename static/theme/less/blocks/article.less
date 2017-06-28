@@ -11,18 +11,25 @@
 	display: block;
 	float: left;
 	width: 640px;
-	height: 224px;
 	background-color: white;
 	border-radius: 2px 2px 0;
 	box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
 	color: @textColor;
-	padding: 34px 70px 20px 96px;
 	position: relative;
 	&:nth-child(2n){
 		margin-left: 32px;
 	}
+	&:nth-child(n+3){
+		margin-top: 32px;
+	}
 	&__inner{
-
+		padding: 34px 70px 20px 96px;
+		height: 224px;
+	}
+	&__img{
+		height: 224px;
+		background: none no-repeat center;
+		background-size: cover;
 	}
 	&__ico{
 		position: absolute;

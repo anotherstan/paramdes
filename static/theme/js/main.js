@@ -56,6 +56,7 @@ app.init = function () {
 	app.anketaOffice();
 	app.fancyClose();
 	app.mobPhone();
+	app.bannerGall();
 
 	if(!$('[data-no-fixed-footer]').length){
 		app.footer();
@@ -458,6 +459,47 @@ app.about=function () {
 		$content.hide().filter('[data-slide-content="'+n+'"]').show();
 		$pagItem.removeClass('_active').filter('[data-about-pag-item="'+n+'"]').addClass('_active');
 
+	}
+};
+app.bannerGall=function () {
+	var $gall = $('[data-banner-gall]'),
+			$slide = $gall.find('[data-banner-gall-slide]'),
+			$pagItem = $gall.find('[data-banner-gall-pag-link]'),
+			$prev = $gall.find('[data-banner-gall-prev]'),
+			$next = $gall.find('[data-banner-gall-next]'),
+			timeOut = null,
+			curSlide = 1
+		;
+	function autoplay() {
+		timeOut = setTimeout(function () {
+			setSlide(curSlide +1);
+		},5000);
+		$next.removeClass('_active');
+		setTimeout(function () {
+			$next.addClass('_active');
+		},1000);
+
+	}
+	$prev.on('click',function () {
+		setSlide(curSlide - 1);
+	});
+	$next.on('click',function () {
+		setSlide(curSlide + 1);
+	});
+	autoplay();
+	$pagItem.hover(function () {
+		setSlide($(this).data('bannerGallPagLink'));
+	},function () {
+		//setSlide(0);
+	});
+
+	function setSlide(n) {
+		var num = n > $slide.length ? 1 : n < 1 ? $slide.length:n;
+		curSlide = num;
+		$slide.hide().removeClass('_active').filter('[data-banner-gall-slide="'+num+'"]').show().addClass('_active');
+		$pagItem.removeClass('_active').filter('[data-banner-gall-pag-link="'+num+'"]').addClass('_active');
+		clearTimeout(timeOut);
+		autoplay();
 	}
 
 };
