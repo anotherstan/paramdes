@@ -64,6 +64,12 @@
 				background-image: url('@{pathToImg}conditions_card.png');
 			}
 		}
+		&._repayment{
+			height: 432px;
+			&:after{
+				background-image: url('@{pathToImg}conditions_repayment.png');
+			}
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -98,6 +104,12 @@
 				line-height: 12px;
 				text-transform: uppercase;
 				color: fade(@textColor,70%);
+			}
+			&-text{
+				font-size: 12px;
+				line-height: 12px;
+				color: fade(@textColor,30%);
+				margin-top: 16px;
 			}
 			&-val{
 				font-size: 32px;
@@ -617,6 +629,18 @@
 					margin-left: 24px;
 				}
 			}
+			&-ico{
+				width: 64px;
+				height: 64px;
+				background: none no-repeat center;
+				background-size: contain;
+				opacity: 0.1;
+				margin-top: -32px;
+				position: absolute;
+				right: 96px;
+				top: 50%;
+				z-index: 3;
+			}
 			&-step{
 				float: right;
 				padding-top: 3px;
@@ -624,6 +648,11 @@
 				background-color: #fff;
 				position: relative;
 				z-index: 2;
+				&-ico{
+					width: 64px;
+					height: 48px;
+					background: #fff;
+				}
 				&-num{
 					color: fade(@textColor,30%);
 					font-size: 12px;

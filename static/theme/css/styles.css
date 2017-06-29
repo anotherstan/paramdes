@@ -1449,6 +1449,12 @@ h5,
   line-height: 24px;
   margin-top: 18px;
 }
+.b-form__tabs {
+  margin-bottom: 48px;
+}
+.b-form__tabs .tabs__item {
+  padding-top: 0;
+}
 .b-form__row {
   *zoom: 1;
 }
@@ -4319,6 +4325,12 @@ h5,
 .anketa__conditions._card:after {
   background-image: url('../images/conditions_card.png');
 }
+.anketa__conditions._repayment {
+  height: 432px;
+}
+.anketa__conditions._repayment:after {
+  background-image: url('../images/conditions_repayment.png');
+}
 .anketa__conditions:after {
   content: '';
   position: absolute;
@@ -4352,6 +4364,12 @@ h5,
   line-height: 12px;
   text-transform: uppercase;
   color: rgba(0, 24, 55, 0.7);
+}
+.anketa__conditions-block-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 24, 55, 0.3);
+  margin-top: 16px;
 }
 .anketa__conditions-block-val {
   font-size: 32px;
@@ -4910,6 +4928,18 @@ h5,
 .anketa__form-bottom-btn + .anketa__form-bottom-btn {
   margin-left: 24px;
 }
+.anketa__form-bottom-ico {
+  width: 64px;
+  height: 64px;
+  background: none no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+  margin-top: -32px;
+  position: absolute;
+  right: 96px;
+  top: 50%;
+  z-index: 3;
+}
 .anketa__form-bottom-step {
   float: right;
   padding-top: 3px;
@@ -4917,6 +4947,11 @@ h5,
   background-color: #fff;
   position: relative;
   z-index: 2;
+}
+.anketa__form-bottom-step-ico {
+  width: 64px;
+  height: 48px;
+  background: #fff;
 }
 .anketa__form-bottom-step-num {
   color: rgba(0, 24, 55, 0.3);
@@ -5375,6 +5410,77 @@ h5,
 .life-hacks__all .all-btn__counter {
   background-color: white;
   color: #cc003d;
+}
+.repayment {
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+.repayment__payments {
+  margin-top: 74px;
+}
+.payments {
+  *zoom: 1;
+}
+.payments:before,
+.payments:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.payments:after {
+  clear: both;
+}
+.payments__item {
+  float: left;
+  width: 256px;
+  margin-right: 32px;
+  margin-top: 66px;
+  margin-bottom: 17px;
+}
+.payments__item:nth-child(4n) {
+  margin-right: 0;
+}
+.payments__item a {
+  color: #fff;
+}
+.payments__item-ico {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: block;
+}
+.payments__item-ico:hover .payments__item-ico-item._hover {
+  opacity: 1;
+}
+.payments__item-ico-item {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  border-radius: 50%;
+  background: none no-repeat center;
+  transition: opacity 0.5s;
+}
+.payments__item-ico-item._hover {
+  background-color: #fff;
+  opacity: 0;
+  z-index: 2;
+}
+.payments__item-title {
+  margin-top: 28px;
+}
+.payments__item-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 12px;
+}
+.payments__item-text span {
+  padding-left: 12px;
 }
 .pull-right {
   float: right;

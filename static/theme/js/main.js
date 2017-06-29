@@ -57,6 +57,7 @@ app.init = function () {
 	app.fancyClose();
 	app.mobPhone();
 	app.bannerGall();
+	app.baseForm();
 
 	if(!$('[data-no-fixed-footer]').length){
 		app.footer();
@@ -217,6 +218,41 @@ app.anketaCountdown =function(){
 		return i.toString();
 	}
 	timeInt = setInterval(setTime,1000);
+};
+app.baseForm = function () {
+	var $form = $('[data-base-form]'),
+		$fields = $form.find('[data-form-field]'),
+		$inputs = $form.find('[data-form-field-inp]'),
+		errors = false
+	;
+
+	$inputs.focus(function () {
+		$(this).addClass('_focus').closest($fields).removeClass('_error');
+	});
+
+	$inputs.blur(function () {
+		if($(this).val() == '') {
+			$(this).removeClass('_focus');
+		}
+	});
+	$form.on('submit',function () {
+		validate($inputs);
+		return false;
+	});
+	
+	function validate($items) {
+		errors = false;
+		$items.each(function () {
+			var $self = $(this);
+			if($.trim($self.val()) == ''){
+				$self.closest('[data-form-field]').addClass('_error');
+				errors = true;
+			}else{
+				$self.closest('[data-form-field]').removeClass('_error');
+			}
+		});
+		return errors;
+	}
 };
 app.anketa=function () {
 	var $anketa = $('[data-anketa]'),
@@ -670,7 +706,10 @@ app.benefits = function () {
 	}
 };
 app.pageMenu = function () {
-	var $menu = $('[data-page-menu]');
+	var $menu = $('[data-page-menu]'),
+			$menuTab = $menu.find('[data-page-menu-tab]'),
+			$menuContent = $('[data-page-menu-content]')
+		;
 
 	if(!$menu.length){
 		return false;
@@ -686,6 +725,15 @@ app.pageMenu = function () {
 			$menu.removeClass('_fixed');
 		}
 	}
+
+	$menuTab.on('click',function(){
+		var $self = $(this);
+		if(!($self.hasClass('_active')|| $self.hasClass('_disabled'))){
+			$menuTab.removeClass('_active');
+			$self.addClass('_active');
+			$menuContent.hide().filter('[data-page-menu-content="'+$self.data('pageMenuTab')+'"]').show();
+		}
+	});
 };
 app.constructor = function () {
 	var $constructorsBlocks = $('[data-constructors-block]');
@@ -873,6 +921,9 @@ app.creditCalc = function(){
 	calculate();
 
 	function calculate() {
+		if(!$period.length){
+			return false;
+		}
 		sum = parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
 		period = parseInt($period.val().replace(new RegExp(" ",'g'),""),10);
 
@@ -881,6 +932,9 @@ app.creditCalc = function(){
 	}
 
 	function popupCalculate() {
+		if(!$popupPeriod.length){
+			return false;
+		}
 		sum = parseInt($popupSum.val().replace(new RegExp(" ",'g'),""),10);
 		period = parseInt($popupPeriod.val().replace(new RegExp(" ",'g'),""),10);
 

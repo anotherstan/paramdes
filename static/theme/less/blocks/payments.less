@@ -1,0 +1,57 @@
+.payments{
+	.clearfix;
+	&__item{
+		float: left;
+		width: 256px;
+		margin-right: 32px;
+		margin-top: 66px;
+		margin-bottom: 17px;
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		a{
+			color: #fff;
+		}
+		&-ico{
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+			border: 2px solid fade(#fff,30%);
+			position: relative;
+			display: block;
+			&:hover{
+				.payments__item-ico-item._hover{
+					opacity: 1;
+				}
+			}
+			&-item{
+				position: absolute;
+				top: 4px;
+				left: 4px;
+				bottom:4px;
+				right: 4px;
+				border-radius: 50%;
+				background: none no-repeat center;
+				transition: opacity @animTime;
+				&._hover{
+					background-color: #fff;
+					opacity: 0;
+					z-index: 2;
+				}
+			}
+		}
+		&-title{
+			margin-top: 28px;
+		}
+		&-text{
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 12px;
+			color: fade(#fff,70%);
+			margin-top: 12px;
+			span{
+				padding-left: 12px;
+			}
+		}
+	}
+}
