@@ -459,6 +459,17 @@ fieldset[disabled] a.btn {
 *:focus {
   outline: none;
 }
+html._not-found {
+  height: 100%;
+}
+html._not-found body {
+  background: url('../images/404.png') no-repeat center;
+  background-size: cover;
+  min-height: 100%;
+}
+html._not-found .grid {
+  background-color: transparent;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -823,6 +834,35 @@ h5,
 }
 .gall-btn + .gall-btn {
   margin-left: 16px;
+}
+.not-found {
+  text-align: center;
+  padding-top: 93px;
+}
+.not-found__logo {
+  width: 256px;
+  height: 123px;
+  background: url('../images/logo-404.png') no-repeat center;
+  background-size: contain;
+  margin: 96px auto 0;
+}
+.not-found__back {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-top: 64px;
+}
+.not-found__back a:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 13px;
+  height: 12px;
+  background: url('../images/icons/arr_prev_red_bold.svg') no-repeat center;
+  background-size: contain;
+  margin-right: 12px;
 }
 .video-btn {
   display: inline-block;
