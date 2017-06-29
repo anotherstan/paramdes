@@ -851,8 +851,16 @@ app.creditCalc = function(){
 			$conditionsPeriod = $('[data-anketa-conditions-period]'),
 			$sum = $calc.find('[data-credit-calc-sum]'),
 			$period = $calc.find('[data-credit-calc-period]'),
+			$payment = $calc.find('[data-credit-calc-payment]'),
 			$popupSum = $popup.find('[data-credit-calc-popup-sum]'),
 			$popupPeriod = $popup.find('[data-credit-calc-popup-period]'),
+			$popupPayment  = $popup.find('[data-credit-calc-popup-payment]'),
+
+			sum = 0,
+			period = 0,
+			payment = 0,
+			rate = 0.149,
+			monthRate = rate/12,
 
 			
 			$popupSave = $popup.find('[data-anketa-conditions-popup-save]'),
@@ -862,11 +870,37 @@ app.creditCalc = function(){
 	if(!$calc.length){
 		return false;
 	}
+	calculate();
+
+	function calculate() {
+		sum = parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
+		period = parseInt($period.val().replace(new RegExp(" ",'g'),""),10);
+
+		payment = (sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1))).toFixed(0);
+		$payment.val(app.formatNumber(payment)).change();
+	}
+
+	function popupCalculate() {
+		sum = parseInt($popupSum.val().replace(new RegExp(" ",'g'),""),10);
+		period = parseInt($popupPeriod.val().replace(new RegExp(" ",'g'),""),10);
+
+		payment = (sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1))).toFixed(0);
+		$popupPayment.val(app.formatNumber(payment)).change();
+	}
+
 	$sum.on('change',function () {
 		$conditionsSum.text($(this).val());
+		calculate();
 	});
 	$period.on('change',function () {
 		$conditionsPeriod.text($(this).val());
+		calculate();
+	});
+	$popupSum.on('change',function () {
+		popupCalculate();
+	});
+	$popupPeriod.on('change',function () {
+		popupCalculate();
 	});
 
 	$popupShow.on('click',function () {
@@ -881,12 +915,14 @@ app.creditCalc = function(){
 			beforeShow:function () {
 				$popupSum.val($sum.val()).change();
 				$popupPeriod.val($period.val()).change();
+				$popupPayment.val($payment.val()).change();
 			}
 		});
 	});
 	$popupSave.on('click',function () {
 		$sum.val($popupSum.val()).change();
 		$period.val($popupPeriod.val()).change();
+		calculate();
 		$.fancybox.close();
 	});
 

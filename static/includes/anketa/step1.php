@@ -143,7 +143,7 @@
 						<div class="credit-calc__option-block">
 							<div class="credit-calc__option-field">
 								<span class="rub credit-calc__option-rub"></span>
-								<input type="text" value="25 460">
+								<input type="text" value="" data-credit-calc-payment>
 							</div>
 						</div>
 					</div>
