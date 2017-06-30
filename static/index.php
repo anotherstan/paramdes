@@ -52,32 +52,32 @@
 	<div data-page-menu-content="1" class="hide1">
 		<div class="b-blocks">
 			<div class="grid__inner">
-				<div class="about" data-about>
-					<div class="about__bg"></div>
-					<div class="about__inner">
+				<div class="about-gall" data-about>
+					<div class="about-gall__bg"></div>
+					<div class="about-gall__inner">
 						<?for ($i=1;$i<=5;$i++){?>
-							<div class="about__photo <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>" style="background-image: url('/static/theme/images/about.png');"></div>
+							<div class="about-gall__photo <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>" style="background-image: url('/static/theme/images/about.png');"></div>
 						<?}?>
 						<div class="clearfix">
-							<div class="about__left">
+							<div class="about-gall__left">
 								<?for ($i=1;$i<=5;$i++){?>
-									<div class="about__frame frame  <?=$i==1 ? '':'hide '?> red"  data-slide-content="<?=$i?>">
+									<div class="about-gall__frame frame  <?=$i==1 ? '':'hide '?> red"  data-slide-content="<?=$i?>">
 										<div class="frame__shadow"></div>
 										<div class="frame__in">
 											<div class="frame__img" style="background-image: url('/static/theme/images/icons/article/1_red.svg')"></div>
 										</div>
 									</div>
 								<?}?>
-								<div class="about__counter h3" data-about-counter><span data-about-counter-active>1</span> / 5</div>
+								<div class="about-gall__counter h3" data-about-counter><span data-about-counter-active>1</span> / 5</div>
 							</div>
-							<div class="about__main">
-								<div class="about__title h3">
+							<div class="about-gall__main">
+								<div class="about-gall__title h3">
 									Покупайте сейчас,<br/>
 									платите через 120 дней
 								</div>
-								<div class="about__subtitle">Без комиссий и переплат.</div>
+								<div class="about-gall__subtitle">Без комиссий и переплат.</div>
 								<?for ($i=1;$i<=5;$i++){?>
-									<div class="about__video  <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>">
+									<div class="about-gall__video  <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>">
 										<a href="javascript:void(0);" class="video-btn _red">
 											<div class="video-btn__ico"></div>
 											<div class="video-btn__title">Посмотреть видео</div>
@@ -88,35 +88,35 @@
 							</div>
 						</div>
 					</div>
-					<div class="about__steps-wrap">
-						<div class="about__steps-btn _prev" data-about-slider-prev></div>
-						<div class="about__steps-btn _next" data-about-slider-next></div>
-						<div class="about__steps swiper-container" data-about-pag>
+					<div class="about-gall__steps-wrap">
+						<div class="about-gall__steps-btn _prev" data-about-slider-prev></div>
+						<div class="about-gall__steps-btn _next" data-about-slider-next></div>
+						<div class="about-gall__steps swiper-container" data-about-pag>
 							<div class="swiper-wrapper">
-								<a href="javascript:void(0)" class="swiper-slide about__step _active" data-about-pag-item="1">
-									<div class="about__step-num">1 <span>’’</span></div>
-									<div class="about__step-title">Как купить вещи  в магазинах</div>
-									<div class="about__step-text">И не прогадать.</div>
+								<a href="javascript:void(0)" class="swiper-slide about-gall__step _active" data-about-pag-item="1">
+									<div class="about-gall__step-num">1 <span>’’</span></div>
+									<div class="about-gall__step-title">Как купить вещи  в магазинах</div>
+									<div class="about-gall__step-text">И не прогадать.</div>
 								</a>
-								<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="2">
-									<div class="about__step-num">2 <span>’’</span></div>
-									<div class="about__step-title">Как купить<br/>себе мотоцикл</div>
-									<div class="about__step-text">По цене бензина.</div>
+								<a href="javascript:void(0)" class="swiper-slide about-gall__step" data-about-pag-item="2">
+									<div class="about-gall__step-num">2 <span>’’</span></div>
+									<div class="about-gall__step-title">Как купить<br/>себе мотоцикл</div>
+									<div class="about-gall__step-text">По цене бензина.</div>
 								</a>
-								<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="3">
-									<div class="about__step-num">3 <span>’’</span></div>
-									<div class="about__step-title">Как путешествовать<br/>по всему миру</div>
-									<div class="about__step-text">Почти бесплатно.</div>
+								<a href="javascript:void(0)" class="swiper-slide about-gall__step" data-about-pag-item="3">
+									<div class="about-gall__step-num">3 <span>’’</span></div>
+									<div class="about-gall__step-title">Как путешествовать<br/>по всему миру</div>
+									<div class="about-gall__step-text">Почти бесплатно.</div>
 								</a>
-								<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="4">
-									<div class="about__step-num">4 <span>’’</span></div>
-									<div class="about__step-title">Как получать<br/>доход от хобби</div>
-									<div class="about__step-text">Не уходя с работы.</div>
+								<a href="javascript:void(0)" class="swiper-slide about-gall__step" data-about-pag-item="4">
+									<div class="about-gall__step-num">4 <span>’’</span></div>
+									<div class="about-gall__step-title">Как получать<br/>доход от хобби</div>
+									<div class="about-gall__step-text">Не уходя с работы.</div>
 								</a>
-								<a href="javascript:void(0)" class="swiper-slide about__step" data-about-pag-item="5">
-									<div class="about__step-num">5 <span>’’</span></div>
-									<div class="about__step-title">Как покупать<br/>все новые игры</div>
-									<div class="about__step-text">И не разориться.</div>
+								<a href="javascript:void(0)" class="swiper-slide about-gall__step" data-about-pag-item="5">
+									<div class="about-gall__step-num">5 <span>’’</span></div>
+									<div class="about-gall__step-title">Как покупать<br/>все новые игры</div>
+									<div class="about-gall__step-text">И не разориться.</div>
 								</a>
 							</div>
 						</div>

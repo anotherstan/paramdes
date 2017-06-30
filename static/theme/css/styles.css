@@ -3639,12 +3639,12 @@ h5,
   font-size: 24px;
   line-height: 24px;
 }
-.about {
+.about-gall {
   background-color: white;
   box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
   position: relative;
 }
-.about__bg {
+.about-gall__bg {
   width: 448px;
   background-color: #cc003d;
   box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
@@ -3656,10 +3656,10 @@ h5,
   background-position: 48px 48px;
   background-size: contain;
 }
-.about__bg.blue {
+.about-gall__bg.blue {
   background-color: #011689;
 }
-.about__photo {
+.about-gall__photo {
   width: 427px;
   background: none no-repeat top center;
   background-size: 427px 610px;
@@ -3669,72 +3669,72 @@ h5,
   top: -62px;
   bottom: 0;
 }
-.about__inner {
+.about-gall__inner {
   position: relative;
   padding: 50px 96px 64px;
   z-index: 2;
   min-height: 270px;
   *zoom: 1;
 }
-.about__inner:before,
-.about__inner:after {
+.about-gall__inner:before,
+.about-gall__inner:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.about__inner:after {
+.about-gall__inner:after {
   clear: both;
 }
-.about__left {
+.about-gall__left {
   float: left;
   width: 576px;
   padding-top: 109px;
 }
-.about__main {
+.about-gall__main {
   float: left;
   width: 544px;
 }
-.about__frame {
+.about-gall__frame {
   position: absolute;
   top: -34px;
   left: 96px;
   z-index: 2;
 }
-.about__counter {
+.about-gall__counter {
   color: rgba(255, 255, 255, 0.3);
 }
-.about__counter span {
+.about-gall__counter span {
   color: #fff;
 }
-.about .card__options {
+.about-gall .card__options {
   margin-top: 24px;
 }
-.about__subtitle {
+.about-gall__subtitle {
   margin-top: 18px;
   color: rgba(0, 24, 55, 0.7);
 }
-.about__video {
+.about-gall__video {
   margin-top: 48px;
 }
-.about__steps {
+.about-gall__steps {
   overflow: visible;
   height: 208px;
   z-index: 10;
   position: relative;
 }
-.about__steps-wrap {
+.about-gall__steps-wrap {
   padding: 32px 96px 0;
   margin-top: -32px;
   overflow: hidden;
   position: relative;
 }
-.about__steps-wrap._2-steps .about__step {
+.about-gall__steps-wrap._2-steps .about-gall__step {
   width: 50%!important;
 }
-.about__steps-wrap._3-steps .about__step {
+.about-gall__steps-wrap._3-steps .about-gall__step {
   width: 33.33%!important;
 }
-.about__steps-btn {
+.about-gall__steps-btn {
   position: absolute;
   top: 33px;
   width: 95px;
@@ -3743,7 +3743,7 @@ h5,
   bottom: 0;
   cursor: pointer;
 }
-.about__steps-btn:before {
+.about-gall__steps-btn:before {
   content: '';
   width: 48px;
   height: 48px;
@@ -3752,22 +3752,22 @@ h5,
   top: 22px;
   right: 12px;
 }
-.about__steps-btn.swiper-button-disabled {
+.about-gall__steps-btn.swiper-button-disabled {
   opacity: 0;
   cursor: default;
 }
-.about__steps-btn._prev {
+.about-gall__steps-btn._prev {
   left: 0;
 }
-.about__steps-btn._prev:before {
+.about-gall__steps-btn._prev:before {
   background-image: url('../images/icons/arr_prev_red.svg');
   left: 12px;
   right: auto;
 }
-.about__steps-btn._next {
+.about-gall__steps-btn._next {
   right: 0;
 }
-.about__step {
+.about-gall__step {
   display: inline-block;
   width: 280px;
   border-right: 1px solid #e5e7eb;
@@ -3782,8 +3782,8 @@ h5,
   top: 0;
   padding: 32px 48px;
 }
-.about__step._active,
-.about__step:hover {
+.about-gall__step._active,
+.about-gall__step:hover {
   border-color: transparent;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 20px 40px 10px rgba(204, 0, 61, 0.2);
@@ -3791,79 +3791,79 @@ h5,
   z-index: 2;
   top: -24px;
 }
-.about__step._active .about__step-num span,
-.about__step:hover .about__step-num span {
+.about-gall__step._active .about-gall__step-num span,
+.about-gall__step:hover .about-gall__step-num span {
   opacity: 1;
 }
-.about__step:first-child {
+.about-gall__step:first-child {
   border-left: 1px solid #e5e7eb;
 }
-.about__step-num {
+.about-gall__step-num {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   font-family: 'pragmatica-slabserif', sans-serif;
   color: #cc003d;
 }
-.about__step-num span {
+.about-gall__step-num span {
   font-size: 64px;
   font-weight: 500;
   float: right;
   margin-top: 13px;
   opacity: 0;
 }
-.about__step-title {
+.about-gall__step-title {
   font-weight: 600;
   margin-top: 23px;
 }
-.about__step-text {
+.about-gall__step-text {
   color: rgba(0, 30, 69, 0.7);
   margin-top: 16px;
 }
-.tablet-v .about {
+.tablet-v .about-gall {
   margin-top: 7px;
 }
-.tablet-v .about__photo {
+.tablet-v .about-gall__photo {
   width: 301px;
   height: 361px;
   left: 255px;
   top: -24px;
 }
-.tablet-v .about__left {
+.tablet-v .about-gall__left {
   padding-top: 84px;
 }
-.tablet-v .about__inner {
+.tablet-v .about-gall__inner {
   padding: 34px 96px 0;
 }
-.tablet-v .about__frame {
+.tablet-v .about-gall__frame {
   top: -25px;
 }
-.tablet-v .about__subtitle {
+.tablet-v .about-gall__subtitle {
   margin-top: 14px;
 }
-.tablet-v .about__video {
+.tablet-v .about-gall__video {
   margin-top: 32px;
 }
-.tablet-v .about__steps {
+.tablet-v .about-gall__steps {
   margin-top: 32px;
 }
-.tablet-v .about__step {
+.tablet-v .about-gall__step {
   height: 180px;
   padding: 25px 48px;
 }
-.tablet-v .about__step._active,
-.tablet-v .about__step:hover {
+.tablet-v .about-gall__step._active,
+.tablet-v .about-gall__step:hover {
   height: 200px;
 }
-.tablet-v .about__step-num {
+.tablet-v .about-gall__step-num {
   font-size: 24px;
   line-height: 24px;
 }
-.tablet-v .about__step-num span {
+.tablet-v .about-gall__step-num span {
   font-size: 48px;
   margin-top: 10px;
 }
-.tablet-v .about__step-title {
+.tablet-v .about-gall__step-title {
   margin-top: 18px;
 }
 .calc {
