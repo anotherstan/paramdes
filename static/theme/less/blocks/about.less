@@ -1,3 +1,236 @@
 .about{
-	
+	&__banner{
+
+		&-history{
+			margin-top: 64px;
+			width: 583px;
+			min-height: 128px;
+			box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+			border-radius: 2px;
+			background-color: #ffffff;
+			padding: 28px 28px 28px 161px;
+			position: relative;
+			&-logo{
+				width: 128px;
+				height: 128px;
+				box-shadow: 0 20px 40px 10px rgba(0, 24, 55, 0.1);
+				position: absolute;
+				left: 0;
+				top: 0;
+				.background('@{pathToImg}about/logo.svg');
+				z-index: 1;
+			}
+		}
+	}
+	&__manager{
+		margin-top: 18px;
+		padding-top: 64px;
+		position: relative;
+		padding-bottom: 70px;
+		&:before{
+			content: '’’';
+			font-size: 96px;
+			font-weight: 500;
+			line-height: 96px;
+			color: @cRed;
+			font-family: @fPragmatica;
+			position: absolute;
+			top: -28px;
+			left: 96px;
+		}
+		&-img{
+			width: 391px;
+			height: 576px;
+			.background('@{pathToImg}about/balloons.png');
+			position: absolute;
+			right: -2px;
+			top: -134px;
+		}
+		&-title{
+			width: 65%;
+		}
+		&-steps{
+			margin-top: 82px;
+		}
+		&-bottom{
+			.clearfix;
+			border-top: 1px solid @cBorder;
+			margin-top: 69px;
+			padding-top: 59px;
+		}
+		&-person{
+			margin-top: 0;
+			float: left;
+		}
+		&-award{
+			float: right;
+			min-height: 64px;
+			padding-left: 44px;
+			padding-right: 48px;
+			position: relative;
+			padding-top: 14px;
+			.clearfix;
+			&-ico{
+				width: 34px;
+				height: 64px;
+				background: no-repeat no-repeat center;
+				background-size: contain;
+				position: absolute;
+				top: 0;
+				&._left{
+					left: 0;
+					background-image: url('@{pathToImg}about/ico-branch-left.svg');
+				}
+				&._right{
+					right: 0;
+					background-image: url('@{pathToImg}about/ico-branch-right.svg');
+				}
+			}
+			&-year{
+				float: left;
+				color: #000076;
+				line-height: 42px;
+				letter-spacing: 2px;
+			}
+			&-text{
+				float: left;
+				margin-left: 24px;
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 20px;
+				color: fade(@textColor,30%);
+			}
+		}
+	}
+	&__accounting{
+		&-block{
+			width: 640px;
+			height: 248px;
+			box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+			border-radius: 2px;
+			background-color: #ffffff;
+			padding: 64px 96px;
+			.b-list{
+				li{
+					padding-left: 0;
+					&:before{
+						display: none;
+					}
+				}
+			}
+			&-person{
+				min-height: 80px;
+			}
+			&-position{
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 20px;
+				color: fade(@textColor,30%);
+				margin-top: 18px;
+			}
+		}
+	}
+	&__direction{
+		.clearfix;
+		margin-top: 56px;
+		&-col{
+			float: left;
+			width: 640px;
+			&+&{
+				margin-left: 32px;
+			}
+		}
+		&-list{
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+			.num{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 32px;
+				height: 32px;
+				border: 1px solid @cBorder;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 20px;
+				padding: 5px;
+			}
+			li{
+				position: relative;
+				padding-left: 56px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				&+li{
+					margin-top: 32px;
+				}
+			}
+		}
+		&-item{
+			height: 192px;
+			box-shadow: 0 20px 40px 10px rgba(210, 224, 233, 0.2);
+			border-radius: 2px;
+			background-color: #ffffff;
+			display: block;
+			color: @textColor;
+			position: relative;
+			padding: 44px 64px 10px 272px;
+			&+&{
+				margin-top: 32px;
+			}
+			&._big{
+				height: 640px;
+				&._sovet{
+					height: 612px;
+				}
+				padding: 64px 96px;
+				.about__direction-item{
+					&-name{
+						margin-top: 76px;
+						letter-spacing: 0;
+					}
+					&-photo{
+						width: 292px;
+						height: 292px;
+						position: relative;
+						top: 5px;
+						left: 4px;
+					}
+					&-position{
+						margin-top: 18px;
+					}
+				}
+			}
+			&-photo{
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				background: none no-repeat center;
+				background-size: contain;
+				position: absolute;
+				left: 100px;
+				top: 37px;
+				&:before{
+					content: '';
+					position: absolute;
+					left: -4px;
+					top: -4px;
+					bottom: -4px;
+					right: -4px;
+					border: 1px solid fade(@textColor,10%);
+					border-radius: 50%;
+				}
+			}
+			&-name{
+				letter-spacing: -0.5px;
+			}
+			&-position{
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 20px;
+				color: fade(@textColor,30%);
+				margin-top: 12px;
+			}
+		}
+	}
 }

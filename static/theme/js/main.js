@@ -708,7 +708,8 @@ app.benefits = function () {
 app.pageMenu = function () {
 	var $menu = $('[data-page-menu]'),
 			$menuTab = $menu.find('[data-page-menu-tab]'),
-			$menuContent = $('[data-page-menu-content]')
+			$menuContent = $('[data-page-menu-content]'),
+			$menuContentWrap = $('[data-page-content-wrap]')
 		;
 
 	if(!$menu.length){
@@ -729,6 +730,7 @@ app.pageMenu = function () {
 	$menuTab.on('click',function(){
 		var $self = $(this);
 		if(!($self.hasClass('_active')|| $self.hasClass('_disabled'))){
+			$('html, body').stop(true, true).animate({'scrollTop': $menuContentWrap.offset().top - $menu.height()},300);
 			$menuTab.removeClass('_active');
 			$self.addClass('_active');
 			$menuContent.hide().filter('[data-page-menu-content="'+$self.data('pageMenuTab')+'"]').show();

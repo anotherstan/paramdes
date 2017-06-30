@@ -458,6 +458,27 @@ h5,.h5{
 	vertical-align: middle !important;
 }
 .files{
+	.clearfix;
+	&._white{
+		.file{
+			color: @textColor;
+			border-color: fade(@textColor,10%);
+			&__size{
+				color:fade(@textColor,70%) ;
+			}
+			&__inner{
+				border-color: @cBorder;
+			}
+			&__type{
+				&-text{
+					color: @cRed;
+				}
+				&-ico{
+					background-image: url('@{pathToImg}icons/file_gray.svg');
+				}
+			}
+		}
+	}
 	.file{
 		float: left;
 		width: 544px;
@@ -508,9 +529,15 @@ h5,.h5{
 .page-menu{
 	border-bottom: 1px solid fade(@textColor,10%);
 	background-color: transparent;
+	&__content{
+		position: relative;
+	}
 	&__wrap{
 		position: relative;
 		margin-top: 32px;
+		&._small-indent{
+			margin-top: 10px;
+		}
 		&._fixed{
 			.page-menu{
 				position: fixed;
@@ -713,6 +740,9 @@ h5,.h5{
 		border-color: fade(@textColor,10%);
 		&__size{
 			color:fade(@textColor,70%) ;
+		}
+		&__inner{
+			border-color: @cBorder;
 		}
 		&__type{
 			&-text{

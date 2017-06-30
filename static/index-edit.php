@@ -95,9 +95,9 @@ include "includes/header.php"
 			<div class="grid__inner">
 				<div class="page-menu__in">
 					<div class="tabs page-menu__items">
-						<a href="#" class="tabs__item _active">Обзор</a>
-						<a href="#" class="tabs__item">Погашение кредита</a>
-						<a href="#" class="tabs__item">Поддержка</a>
+						<a href="javascript:void(0);" class="tabs__item _active">Обзор</a>
+						<a href="javascript:void(0);" class="tabs__item">Погашение кредита</a>
+						<a href="javascript:void(0);" class="tabs__item">Поддержка</a>
 					</div>
 					<a href="#" class="btn page-menu__btn">оформить карту</a>
 				</div>
