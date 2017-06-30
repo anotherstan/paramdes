@@ -1,0 +1,93 @@
+.person{
+	width: 836px;
+	padding: 40px 50px;
+	&__inner{
+		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 2px;
+		background-color: #ffffff;
+	}
+	&__top{
+		padding: 51px 320px 56px 96px;
+		position: relative;
+		border-bottom: 1px solid @cBorder;
+		&-blocks{
+			margin-top: 48px;
+		}
+	}
+	&__photo{
+		width: 270px;
+		height: 448px;
+		position: absolute;
+		right: 41px;
+		bottom: 0;
+		z-index: 2;
+		background: grey;
+	}
+	&__position{
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 20px;
+		color: fade(@textColor,30%);
+		margin-top: 18px;
+	}
+	&__block{
+		margin-top: 32px;
+		&-title{
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.8px;
+			line-height: 12px;
+			text-transform: uppercase;
+			color: fade(@textColor,70%);
+		}
+		&-text{
+			margin-top: 16px;
+		}
+	}
+	&__content{
+		padding-bottom:10px;
+		padding-top: 0;
+		background: #fff;
+		p{
+			margin-top: 0;
+			&+p{
+				margin-top: 24px;
+			}
+		}
+		.b-block{
+			box-shadow: none;
+			padding-top: 56px;
+			&+.b-block{
+				margin-top: 0;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 96px;
+					left: 96px;
+					border-top: 1px solid @cBorder;
+				}
+			}
+		}
+	}
+	&__education{
+		.clearfix;
+		.person__block{
+			float: left;
+			width: 256px;
+			margin-right: 32px;
+			margin-top: 54px;
+			margin-bottom: 4px;
+			&:nth-child(2n){
+				margin-right: 0;
+			}
+		}
+	}
+	&__work{
+		padding-top: 12px;
+		padding-bottom: 24px;
+		li+li{
+			margin-top: 54px;
+		}
+	}
+}

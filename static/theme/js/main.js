@@ -92,12 +92,14 @@ app.popups = function () {
 		;
 	$popupShowBtn.on('click', function () {
 		var $self = $(this),
-				data = $self.data('popupShow');
+				data = $self.data('popupShow'),
+				dopClass = $self.data('popupClass') || ' '
+			;
 
 		$content = $popups.filter('[data-popup="' + data + '"]');
 
 		$.fancybox({
-			wrapCSS: 'fc-base _popups',
+			wrapCSS: 'fc-base _popups '+dopClass,
 			content: $content,
 			fitToView: false,
 			autoWidth: true,

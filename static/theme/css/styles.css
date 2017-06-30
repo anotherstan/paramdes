@@ -756,6 +756,12 @@ h5,
 .b-list._indent-20 li + li {
   margin-top: 20px;
 }
+.b-list__subtext {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 24, 55, 0.7);
+  margin-top: 16px;
+}
 .b-list li {
   padding-left: 32px;
   position: relative;
@@ -1357,6 +1363,9 @@ h5,
   left: -141px;
   top: 12px;
   transform: skewX(-30deg);
+}
+.b-block__title._dash.h4:before {
+  top: 8px;
 }
 .b-block__indent {
   margin-left: -96px;
@@ -2275,6 +2284,10 @@ h5,
 .fancybox-wrap._right-close .fancybox-close {
   top: 24px;
   right: -151px;
+}
+.fancybox-wrap._transparent .fancybox-skin {
+  background-color: transparent;
+  box-shadow: none;
 }
 .header {
   background-color: white;
@@ -5818,6 +5831,108 @@ h5,
   line-height: 20px;
   color: rgba(0, 24, 55, 0.3);
   margin-top: 12px;
+}
+.person {
+  width: 836px;
+  padding: 40px 50px;
+}
+.person__inner {
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.person__top {
+  padding: 51px 320px 56px 96px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 24, 55, 0.1);
+}
+.person__top-blocks {
+  margin-top: 48px;
+}
+.person__photo {
+  width: 270px;
+  height: 448px;
+  position: absolute;
+  right: 41px;
+  bottom: 0;
+  z-index: 2;
+  background: grey;
+}
+.person__position {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgba(0, 24, 55, 0.3);
+  margin-top: 18px;
+}
+.person__block {
+  margin-top: 32px;
+}
+.person__block-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 24, 55, 0.7);
+}
+.person__block-text {
+  margin-top: 16px;
+}
+.person__content {
+  padding-bottom: 10px;
+  padding-top: 0;
+  background: #fff;
+}
+.person__content p {
+  margin-top: 0;
+}
+.person__content p + p {
+  margin-top: 24px;
+}
+.person__content .b-block {
+  box-shadow: none;
+  padding-top: 56px;
+}
+.person__content .b-block + .b-block {
+  margin-top: 0;
+}
+.person__content .b-block + .b-block:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 96px;
+  left: 96px;
+  border-top: 1px solid rgba(0, 24, 55, 0.1);
+}
+.person__education {
+  *zoom: 1;
+}
+.person__education:before,
+.person__education:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.person__education:after {
+  clear: both;
+}
+.person__education .person__block {
+  float: left;
+  width: 256px;
+  margin-right: 32px;
+  margin-top: 54px;
+  margin-bottom: 4px;
+}
+.person__education .person__block:nth-child(2n) {
+  margin-right: 0;
+}
+.person__work {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+.person__work li + li {
+  margin-top: 54px;
 }
 .pull-right {
   float: right;

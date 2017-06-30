@@ -89,6 +89,99 @@
 		</div>
 	</div>
 	<div class="page-menu__content"  data-page-content-wrap>
+		<div class="hide">
+			<div class="person" data-popup="person">
+				<div class="person__inner">
+					<div class="person__top">
+						<div class="person__photo"></div>
+						<div class="h3">Мохначева Елена  Владимировна</div>
+						<div class="person__position">Член Правления, операционный директор</div>
+						<div class="person__top-blocks">
+							<div class="person__block">
+								<div class="person__block-title">Дата согласования Банком России</div>
+								<div class="person__block-text">09.02.2017</div>
+							</div>
+							<div class="person__block">
+								<div class="person__block-title">Дата фактического назначения</div>
+								<div class="person__block-text">20.02.2017</div>
+							</div>
+						</div>
+					</div>
+					<div class="person__content b-blocks">
+						<div class="b-block _small-top-indent2">
+							<div class="b-block__title h4 _dash">Образование</div>
+							<div class="person__education">
+								<div class="person__block">
+									<div class="person__block-title">Высшее</div>
+									<div class="person__block-text">МФИ</div>
+								</div>
+								<div class="person__block">
+									<div class="person__block-title">Специальность</div>
+									<div class="person__block-text">Финансы и кредит</div>
+								</div>
+								<div class="person__block">
+									<div class="person__block-title">Квалификация</div>
+									<div class="person__block-text">Экономист</div>
+								</div>
+								<div class="person__block">
+									<div class="person__block-title">Дата окончания</div>
+									<div class="person__block-text">1988</div>
+								</div>
+							</div>
+						</div>
+						<div class="b-block _small-top-indent2">
+							<div class="b-block__title h4 _dash">Трудовая деятельность</div>
+							<div class="person__work b-block__content">
+								<ul class="b-list">
+									<li>
+										Заместитель руководителя Службы внутреннего контроля<br/> Банка ВТБ 24 (закрытое акционерное общество)
+										<div class="b-list__subtext">22.08.2005 — 25.07.2012</div>
+									</li>
+									<li>
+										Руководитель Службы внутреннего контроля и аудита Представительства КАБ «Бежица-банк» ОАО в г. Москве
+										<div class="b-list__subtext">01.08.2012 — 26.09.2012</div>
+									</li>
+									<li>
+										Руководитель Службы внутреннего контроля<br/>КАБ «Бежица-банк».
+										<div class="b-list__subtext">27.09.2012 — 31.10.2012</div>
+									</li>
+									<li>
+										Руководитель Службы внутреннего контроля<br/> Открытого акционерного общества «Лето Банк».
+										<div class="b-list__subtext">01.11.2012 — 31.08.2014</div>
+									</li>
+									<li>
+										Руководитель Службы внутреннего аудита<br/>Открытого акционерного общества «Лето Банк».
+										<div class="b-list__subtext">01.10.2014 — 08.11.2014</div>
+									</li>
+									<li>
+										Вице-президент, операционный директор<br/> Публичного акционерного общества «Почта Банк».
+										<div class="b-list__subtext">09.11.2015 — 19.02.2017</div>
+									</li>
+									<li>
+										Член Правления, операционный директор<br/>Публичного акционерного общества «Почта Банк».
+										<div class="b-list__subtext">20.02.2017 — настоящее время</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-block _small-top-indent2">
+							<div class="b-block__title h4 _dash">Служебные обязанности</div>
+							<div class="b-block__content">
+								<p>
+									Исполнение Мохначевой Еленой Владимировной служебных обязанностей по указанным должностям осуществляется  в
+									соответствии с требованиями Федерального закона  «Об акционерных обществах» и уставом соответствующей организации.
+								</p>
+								<p>
+									На посту члена Правления, операционного директора  ПАО «Почта Банк» курирует
+									операционную поддержку  бизнеса и систему информационной безопасности.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 		<div class="hide1" data-page-menu-content="1">
 			<div class="b-blocks">
 				<div class="grid__inner">
@@ -97,7 +190,7 @@
 						<div class="b-block__indent">
 							<div class="about__direction">
 								<div class="about__direction-col">
-									<a href="javascript:void(0);" class="about__direction-item _big">
+									<a href="javascript:void(0);"  class="about__direction-item _big">
 										<div class="about__direction-item-photo" style="background-image: url('/static/theme/images/about/directions/1-big.png');"></div>
 										<div class="about__direction-item-name h3">
 											Руденко Дмитрий<br/> Васильевич
@@ -119,7 +212,7 @@
 											 Президента-Председателя Правления Банка
 										</div>
 									</a>
-									<a href="javascript:void(0);" class="about__direction-item">
+									<a href="javascript:void(0);" data-popup-show="person" data-popup-class="_transparent" class="about__direction-item">
 										<div class="about__direction-item-photo" style="background-image: url('/static/theme/images/about/directions/2.png');"></div>
 										<div class="about__direction-item-name h5">Мохначева Елена<br/>Владимировна</div>
 										<div class="about__direction-item-position">
