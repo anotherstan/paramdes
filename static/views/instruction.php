@@ -9,8 +9,8 @@
 	<div class="instruction__top">
 		<div class="b-block__title h3 _dash">Как получить карту?</div>
 		<div class="tabs instruction__tabs">
-			<a href="#" class="tabs__item _active">Неименную</a>
-			<a href="#" class="tabs__item">Именную</a>
+			<a href="javascript:void(0);" class="tabs__item _active">Неименную</a>
+			<a href="javascript:void(0);" class="tabs__item">Именную</a>
 		</div>
 	</div>
 <?if ($parameters['stepsCounter']){?>

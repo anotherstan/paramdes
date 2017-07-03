@@ -1,16 +1,16 @@
 <?$menuCards = true;?>
 <?include "includes/header.php"?>
-	<a href="#" class="next-page"></a>
+	<a href="javascript:void(0);" class="next-page"></a>
 	<div class="grid__inner">
 		<div class="card">
 			<div class="card__img"></div>
 			<div class="card__info">
 				<div class="breadcrumbs">
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Карты</a>
+						<a href="cards.php" class="breadcrumbs__link">Карты</a>
 					</div>
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Кредитные карты</a>
+						<a href="javascript:void(0);" class="breadcrumbs__link">Кредитные карты</a>
 					</div>
 				</div>
 				<div class="card__title">Элемент 120</div>
@@ -292,7 +292,7 @@
 						<div class="b-block _transparent conditions__all">
 							<div class="h3">Полные условия</div>
 							<div class="conditions__all-files files">
-								<a href="#" class="file">
+								<a href="javascript:void(0);" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
@@ -302,7 +302,7 @@
 										<div class="file__size">254 Кб</div>
 									</div>
 								</a>
-								<a href="#" class="file">
+								<a href="javascript:void(0);" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
@@ -640,7 +640,7 @@
 										<div class="b-form__block">
 											<div class="b-check b-form__check">
 												<label><input type="checkbox" checked > Я cогласен на передачу и обработку
-													<a href="#" target="_blank">персональных данных.</a></label>
+													<a href="javascript:void(0);" target="_blank">персональных данных.</a></label>
 											</div>
 										</div>
 									</div>
@@ -714,7 +714,7 @@
 											<input type="text" data-form-field-inp data-required>
 											<div class="b-form__placeholder">Номер договора</div>
 											<div class="help">
-												<a href="#" class="help__ico">?</a>
+												<a href="javascript:void(0);" class="help__ico">?</a>
 											</div>
 										</div>
 										<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
@@ -760,7 +760,7 @@
 								<div class="b-form__check-list">
 									<div class="b-form__check">
 										<label><input type="checkbox" checked>
-											Я cогласен на передачу и обработку <a href="#">персональных данных</a>
+											Я cогласен на передачу и обработку <a href="javascript:void(0);">персональных данных</a>
 										</label>
 									</div>
 								</div>
@@ -814,120 +814,120 @@
 								<div class="h3">Все способы оплаты</div>
 								<div class="payments repayment__payments-items">
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/1.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/1.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Банкоматы Почта Банка</a>
+											<a href="javascript:void(0);">Банкоматы Почта Банка</a>
 										</div>
 										<div class="payments__item-text">
 											Моментально <span>0,00%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/2.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/2.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Банкоматы ВТБ24</a>
+											<a href="javascript:void(0);">Банкоматы ВТБ24</a>
 										</div>
 										<div class="payments__item-text">
 											На следующий день <span>1,00%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/3.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/3.png');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Платежи и переводы Visa</a>
+											<a href="javascript:void(0);">Платежи и переводы Visa</a>
 										</div>
 										<div class="payments__item-text">
 											До 4 дней
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/4.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/4.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Cистема Qiwi</a>
+											<a href="javascript:void(0);">Cистема Qiwi</a>
 										</div>
 										<div class="payments__item-text">
 											Моментально <span>1,60%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/5.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/5.png');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Cалоны Евросеть</a>
+											<a href="javascript:void(0);">Cалоны Евросеть</a>
 										</div>
 										<div class="payments__item-text">
 											Моментально <span>1,00%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/6.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/6.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Золотая Корона</a>
+											<a href="javascript:void(0);">Золотая Корона</a>
 										</div>
 										<div class="payments__item-text">
 											Моментально <span>1,00%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/7.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/7.png');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Cистема Рапида</a>
+											<a href="javascript:void(0);">Cистема Рапида</a>
 										</div>
 										<div class="payments__item-text">
 											Моментально <span>1,00%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/8.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/8.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Терминалы Элекснет</a>
+											<a href="javascript:void(0);">Терминалы Элекснет</a>
 										</div>
 										<div class="payments__item-text">
 											До 3 дней <span>1,30%</span>
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/9.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/9.svg');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Cистема СyberPlat</a>
+											<a href="javascript:void(0);">Cистема СyberPlat</a>
 										</div>
 										<div class="payments__item-text">
 											На следующий день
 										</div>
 									</div>
 									<div class="payments__item">
-										<a href="#" class="payments__item-ico">
+										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/10.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/10.png');"></div>
 										</a>
 										<div class="payments__item-title">
-											<a href="#">Межбанковские платежи</a>
+											<a href="javascript:void(0);">Межбанковские платежи</a>
 										</div>
 										<div class="payments__item-text">
 											До 5 дней
@@ -938,7 +938,7 @@
 							<div class="b-block _transparent conditions__all">
 								<div class="h3">Документы</div>
 								<div class="conditions__all-files files">
-									<a href="#" class="file">
+									<a href="javascript:void(0);" class="file">
 										<div class="file__type">
 											<div class="file__type-text">PDF</div>
 											<div class="file__type-ico"></div>

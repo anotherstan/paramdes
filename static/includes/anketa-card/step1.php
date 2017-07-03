@@ -68,7 +68,7 @@
 			<div class="b-block _transparent conditions__all">
 				<div class="h3">Полные условия</div>
 				<div class="conditions__all-files files">
-					<a href="#" class="file">
+					<a href="javascript:void(0);" class="file">
 						<div class="file__type">
 							<div class="file__type-text">PDF</div>
 							<div class="file__type-ico"></div>
@@ -79,7 +79,7 @@
 							<div class="file__size">254 Кб</div>
 						</div>
 					</a>
-					<a href="#" class="file">
+					<a href="javascript:void(0);" class="file">
 						<div class="file__type">
 							<div class="file__type-text">PDF</div>
 							<div class="file__type-ico"></div>
@@ -97,7 +97,7 @@
 		<div class="anketa__form">
 			<div class="anketa__form-block">
 				<a href="javascript:void(0);" data-popup-show="tariffPostal" class="anketa__form-block-more"></a>
-				<div class="b-block__title h4 _dash anketa__form-block-title">Карта <a href="#">«Элемент 120»</a></div>
+				<div class="b-block__title h4 _dash anketa__form-block-title">Карта <a href="/static/">«Элемент 120»</a></div>
 				<div class="credit-calc__options anketa__calc" data-credit-calc>
 					<div class="credit-calc__option" data-credit-calc-option>
 						<div class="credit-calc__option-title">Кредитный лимит</div>
@@ -191,7 +191,7 @@
 							<div class="mob-phone__popup-bottom-link">
 								СМС не приходит
 								<div class="help">
-									<a href="#" class="help__ico">?</a>
+									<a href="javascript:void(0);" class="help__ico">?</a>
 								</div>
 							</div>
 						</div>
@@ -199,8 +199,8 @@
 				</div>
 				<div class="b-form__check-list">
 					<div class="b-form__check"><label><input type="checkbox">Сделать карту именной</label></div>
-					<div class="b-form__check"><label><input type="checkbox" checked >Я принимаю <a href="#">условия соглашения</a> электронной подписи</label></div>
-					<div class="b-form__check"><label><input type="checkbox" checked >Я cогласен на обработку персональных данных  и <a href="#">отправку запроса в БКИ</a></label></div>
+					<div class="b-form__check"><label><input type="checkbox" checked >Я принимаю <a href="javascript:void(0);">условия соглашения</a> электронной подписи</label></div>
+					<div class="b-form__check"><label><input type="checkbox" checked >Я cогласен на обработку персональных данных  и <a href="javascript:void(0);">отправку запроса в БКИ</a></label></div>
 				</div>
 			</div>
 			<div class="anketa__form-block anketa__form-bottom">

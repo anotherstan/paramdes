@@ -3,7 +3,7 @@
 	<div class="banner" style="background-image: url('/static/theme/images/banners/credit.png');">
 		<div class="grid__inner">
 			<div class="banner__inner">
-				<a href="#" class="next-page-slider"></a>
+				<a href="javascript:void(0);" class="next-page-slider"></a>
 				<div>
 					<div class="banner__title">Кредит наличными</div>
 				</div>
@@ -125,7 +125,7 @@
 				<div class="b-block _transparent conditions__all">
 					<div class="h3">Полные условия</div>
 					<div class="conditions__all-files files">
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -135,7 +135,7 @@
 								<div class="file__size">254 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -145,7 +145,7 @@
 								<div class="file__size">229 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -155,7 +155,7 @@
 								<div class="file__size">229 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -165,7 +165,7 @@
 								<div class="file__size">229 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -175,7 +175,7 @@
 								<div class="file__size">229 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -400,8 +400,8 @@
 						<div class="credit-calc__info-block-val"> <span data-credit-calc-overpay>77 081</span> ₽</div>
 					</div>
 					<div class="credit-calc__info-btns">
-						<a href="#" class="btn credit-calc__info-btn">Оформить кредит</a>
-						<a href="#" class="btn credit-calc__info-btn _transparent-btn">Рассчитать график выплат</a>
+						<a href="javascript:void(0);" class="btn credit-calc__info-btn">Оформить кредит</a>
+						<a href="javascript:void(0);" class="btn credit-calc__info-btn _transparent-btn">Рассчитать график выплат</a>
 					</div>
 				</div>
 			</div>
@@ -579,7 +579,7 @@
 								<div class="b-form__block">
 									<div class="b-check b-form__check">
 										<label><input type="checkbox" checked > Я cогласен на передачу и обработку
-											<a href="#" target="_blank">персональных данных.</a></label>
+											<a href="javascript:void(0);" target="_blank">персональных данных.</a></label>
 									</div>
 								</div>
 							</div>

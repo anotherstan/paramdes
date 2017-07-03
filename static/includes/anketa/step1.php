@@ -41,7 +41,7 @@
 						</div>
 						<div class="conditions__block-item">
 							<div class="conditions__block-item-title">Комиссия за снятие наличных<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span></div>
 							<div class="conditions__block-item-val">0,0%</div>
 						</div>
@@ -60,7 +60,7 @@
 						</div>
 						<div class="conditions__block-item">
 							<div class="conditions__block-item-title">Комиссия за снятие наличных<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span></div>
 							<div class="conditions__block-item-val">0,0%</div>
 						</div>
@@ -78,7 +78,7 @@
 			<div class="b-block _transparent conditions__all">
 				<div class="h3">Полные условия</div>
 				<div class="conditions__all-files files">
-					<a href="#" class="file">
+					<a href="javascript:void(0);" class="file">
 						<div class="file__type">
 							<div class="file__type-text">PDF</div>
 							<div class="file__type-ico"></div>
@@ -88,7 +88,7 @@
 							<div class="file__size">254 Кб</div>
 						</div>
 					</a>
-					<a href="#" class="file">
+					<a href="javascript:void(0);" class="file">
 						<div class="file__type">
 							<div class="file__type-text">PDF</div>
 							<div class="file__type-ico"></div>
@@ -106,7 +106,7 @@
 		<div class="anketa__form">
 			<div class="anketa__form-block">
 				<a href="javascript:void(0);" data-popup-show="tariffPostal" class="anketa__form-block-more"></a>
-				<div class="b-block__title h4 _dash anketa__form-block-title">Тариф <a href="#">«Первый почтовый»</a></div>
+				<div class="b-block__title h4 _dash anketa__form-block-title">Тариф <a href="javascript:void(0);">«Первый почтовый»</a></div>
 				<div class="credit-calc__options anketa__calc" data-credit-calc>
 					<div class="credit-calc__option" data-credit-calc-option>
 						<div class="credit-calc__option-title">Сумма кредита</div>
@@ -151,7 +151,7 @@
 						<label><input type="checkbox">
 							Гарантированная ставка
 							<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span>
 						</label></div>
 				</div>
@@ -194,7 +194,7 @@
 							<input type="text" data-form-field-inp data-required data-mask-snils>
 							<div class="b-form__placeholder">СНИЛС</div>
 							<div class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 								<div class="help__content">
 									<div class="help__content-in">
 										<div class="help__content-img">
@@ -203,7 +203,7 @@
 										<div class="help__content-text">
 											СНИЛС выдается при устройстве<br /> на первую официальную работу. <br/>СНИЛС необходимо предъявить<br /> при посещении клиентского центра.
 										</div>
-										<a href="#" class="help__content-btn btn _transparent">Мне нужна помощь</a>
+										<a href="javascript:void(0);" class="help__content-btn btn _transparent">Мне нужна помощь</a>
 									</div>
 								</div>
 							</div>
@@ -244,7 +244,7 @@
 							<div class="mob-phone__popup-bottom-link">
 								СМС не приходит
 								<div class="help">
-									<a href="#" class="help__ico">?</a>
+									<a href="javascript:void(0);" class="help__ico">?</a>
 								</div>
 							</div>
 						</div>
@@ -252,7 +252,7 @@
 				</div>
 				<div class="b-form__check-list">
 					<div class="b-form__check"><label><input type="checkbox" checked>Я cогласен на запрос и обработку выписки из ПФР.</label></div>
-					<div class="b-form__check"><label><input type="checkbox" checked>Я cогласен на передачу и обработку <a href="#">персональных данных.</a></label></div>
+					<div class="b-form__check"><label><input type="checkbox" checked>Я cогласен на передачу и обработку <a href="javascript:void(0);">персональных данных.</a></label></div>
 				</div>
 			</div>
 			<div class="anketa__form-block anketa__form-bottom">

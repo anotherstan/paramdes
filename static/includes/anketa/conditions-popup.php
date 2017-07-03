@@ -52,7 +52,7 @@
 						<span class="b-form__radio-text">
 							Новый стандарт
 							<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span>
 						</span>
 					</label>
@@ -61,7 +61,7 @@
 						<span class="b-form__radio-text">
 							Новый максимум
 							<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span>
 						</span>
 					</label>

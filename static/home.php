@@ -441,7 +441,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="#" class="life-hacks__item article">
+						<a href="javascript:void(0);" class="life-hacks__item article">
 							<div class="article__img" style="background-image: url('/static/theme/images/home/life-hacks/1.png');"></div>
 							<div class="article__inner">
 								<div class="article__title h4">
@@ -455,7 +455,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="#" class="life-hacks__item article">
+						<a href="javascript:void(0);" class="life-hacks__item article">
 							<div class="article__img" style="background-image: url('/static/theme/images/home/life-hacks/2.png');"></div>
 							<div class="article__inner">
 								<div class="article__title h4">

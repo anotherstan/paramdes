@@ -306,7 +306,7 @@
 					<div class="b-block">
 						<div class="b-block__title h3 _dash">Нормативные документы</div>
 						<div class="b-block__content files _white">
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -316,7 +316,7 @@
 									<div class="file__size">254 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -326,7 +326,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -336,7 +336,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -346,7 +346,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -356,7 +356,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -366,7 +366,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -376,7 +376,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -386,7 +386,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -396,7 +396,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>
@@ -406,7 +406,7 @@
 									<div class="file__size">229 Кб</div>
 								</div>
 							</a>
-							<a href="#" class="file">
+							<a href="javascript:void(0);" class="file">
 								<div class="file__type">
 									<div class="file__type-text">PDF</div>
 									<div class="file__type-ico"></div>

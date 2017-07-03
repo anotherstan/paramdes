@@ -54,7 +54,7 @@
 <?
 include "includes/header.php"
 ?>
-	<a href="#" class="next-page"></a>
+	<a href="javascript:void(0);" class="next-page"></a>
 
 	<div class="grid__inner">
 		<div class="card">
@@ -62,10 +62,10 @@ include "includes/header.php"
 			<div class="card__info">
 				<div class="breadcrumbs">
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Карты</a>
+						<a href="cards.php" class="breadcrumbs__link">Карты</a>
 					</div>
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Кредитные карты</a>
+						<a href="javascript:void(0);" class="breadcrumbs__link">Кредитные карты</a>
 					</div>
 				</div>
 				<div class="card__title">Элемент 120</div>
@@ -274,7 +274,7 @@ include "includes/header.php"
 				<div class="b-block _transparent conditions__all">
 					<div class="h3">Полные условия</div>
 					<div class="conditions__all-files files">
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -284,7 +284,7 @@ include "includes/header.php"
 								<div class="file__size">254 Кб</div>
 							</div>
 						</a>
-						<a href="#" class="file">
+						<a href="javascript:void(0);" class="file">
 							<div class="file__type">
 								<div class="file__type-text">PDF</div>
 								<div class="file__type-ico"></div>
@@ -715,44 +715,44 @@ include "includes/header.php"
 			</div>
 			<div class="footer__menu">
 				<div class="footer__menu-col">
-					<div class="footer__menu-title"><a href="#">Продукты и услуги</a></div>
+					<div class="footer__menu-title"><a href="javascript:void(0);">Продукты и услуги</a></div>
 					<ul class="footer__menu-list">
-						<li><a href="#">Кредит и ипотека</a></li>
-						<li><a href="#">Карты</a></li>
-						<li><a href="#">Платежи и переводы</a></li>
-						<li><a href="#">Страхование</a></li>
-						<li><a href="#">Вклады и инвестиции</a></li>
+						<li><a href="javascript:void(0);">Кредит и ипотека</a></li>
+						<li><a href="cards.php">Карты</a></li>
+						<li><a href="javascript:void(0);">Платежи и переводы</a></li>
+						<li><a href="javascript:void(0);">Страхование</a></li>
+						<li><a href="javascript:void(0);">Вклады и инвестиции</a></li>
 					</ul>
 				</div>
 				<div class="footer__menu-col">
-					<div class="footer__menu-title"><a href="#">Помощь</a></div>
+					<div class="footer__menu-title"><a href="javascript:void(0);">Помощь</a></div>
 					<ul class="footer__menu-list">
-						<li><a href="#">Как оформить кредит</a></li>
-						<li><a href="#">Как оплатить кредит</a></li>
-						<li><a href="#">Часто задаваемые вопросы</a></li>
-						<li><a href="#">Задать вопрос</a></li>
-						<li><a href="#">Поддержка сайта</a></li>
+						<li><a href="javascript:void(0);">Как оформить кредит</a></li>
+						<li><a href="javascript:void(0);">Как оплатить кредит</a></li>
+						<li><a href="javascript:void(0);">Часто задаваемые вопросы</a></li>
+						<li><a href="javascript:void(0);">Задать вопрос</a></li>
+						<li><a href="javascript:void(0);">Поддержка сайта</a></li>
 					</ul>
 				</div>
 				<div class="footer__menu-col">
-					<div class="footer__menu-title"><a href="#">О банке</a></div>
+					<div class="footer__menu-title"><a href="about.php">О банке</a></div>
 					<ul class="footer__menu-list">
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Работа у нас</a></li>
-						<li><a href="#">Пресс-служба</a></li>
-						<li><a href="#">Раскрытие информации</a></li>
+						<li><a href="javascript:void(0);">Контакты</a></li>
+						<li><a href="javascript:void(0);">Новости</a></li>
+						<li><a href="javascript:void(0);">Работа у нас</a></li>
+						<li><a href="javascript:void(0);">Пресс-служба</a></li>
+						<li><a href="javascript:void(0);">Раскрытие информации</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="footer__bottom">
-				<a href="#" class="footer__bottom-logo" target="_blank"></a>
+				<a href="javascript:void(0);" class="footer__bottom-logo" target="_blank"></a>
 				<div class="footer__social">
-					<a href="#" class="footer__social-item _vk" target="_blank"></a>
-					<a href="#" class="footer__social-item _fb" target="_blank"></a>
-					<a href="#" class="footer__social-item _ok" target="_blank"></a>
-					<a href="#" class="footer__social-item _tw" target="_blank"></a>
-					<a href="#" class="footer__social-item _google" target="_blank"></a>
+					<a href="javascript:void(0);" class="footer__social-item _vk" target="_blank"></a>
+					<a href="javascript:void(0);" class="footer__social-item _fb" target="_blank"></a>
+					<a href="javascript:void(0);" class="footer__social-item _ok" target="_blank"></a>
+					<a href="javascript:void(0);" class="footer__social-item _tw" target="_blank"></a>
+					<a href="javascript:void(0);" class="footer__social-item _google" target="_blank"></a>
 				</div>
 				<div class="footer__bottom-text">
 					ПАО «Почта Банк» является частью международной финансовой группы ВТБ и ФГУП «Почта России».<br/>

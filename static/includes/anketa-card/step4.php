@@ -68,10 +68,10 @@
 				</div>
 				<div class="b-form__check-list">
 					<div class="b-form__check"><label><input type="checkbox" checked>Я не являюсь ИПДЛ/РПДЛ<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span></label></div>
 					<div class="b-form__check"><label><input type="checkbox" checked>Я не являюсь родственником, супругом <br/>или представителем ИПДЛ/РПДЛ<span class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 							</span></label></div>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 							<input type="text" data-form-field-inp data-required data-mask-snils>
 							<div class="b-form__placeholder">СНИЛС</div>
 							<div class="help">
-								<a href="#" class="help__ico">?</a>
+								<a href="javascript:void(0);" class="help__ico">?</a>
 								<div class="help__content">
 									<div class="help__content-in">
 										<div class="help__content-img">
@@ -181,7 +181,7 @@
 										<div class="help__content-text">
 											СНИЛС выдается при устройстве<br /> на первую официальную работу. <br/>СНИЛС необходимо предъявить<br /> при посещении клиентского центра.
 										</div>
-										<a href="#" class="help__content-btn btn _transparent">Мне нужна помощь</a>
+										<a href="javascript:void(0);" class="help__content-btn btn _transparent">Мне нужна помощь</a>
 									</div>
 								</div>
 							</div>
