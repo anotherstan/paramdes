@@ -3531,6 +3531,18 @@ h5,
   position: relative;
   transition: background-color 0.5s;
 }
+.cards__item-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.cards__item .btn {
+  position: relative;
+  z-index: 4;
+}
 .cards__item-pattern {
   position: absolute;
   background: url('../images/pattern.png') no-repeat 0 center;
@@ -5121,8 +5133,20 @@ h5,
   padding-left: 672px;
   position: relative;
 }
+.credits__item .btn {
+  position: relative;
+  z-index: 4;
+}
 .credits__item .b-block__title.h3 a {
   color: #001837;
+}
+.credits__item-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
 }
 .credits__item-ico {
   width: 120px;

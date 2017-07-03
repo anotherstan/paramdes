@@ -44,7 +44,7 @@
 						<a href="javascript:void(0);" class="tabs__item"  data-page-menu-tab="2">Погашение кредита</a>
 						<a href="javascript:void(0);" class="tabs__item">Поддержка</a>
 					</div>
-					<a href="#" class="btn page-menu__btn">оформить карту</a>
+					<a href="/static/anketa-card.php" class="btn page-menu__btn">оформить карту</a>
 				</div>
 			</div>
 		</div>

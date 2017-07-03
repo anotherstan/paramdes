@@ -113,7 +113,9 @@
 					</div>
 				</div>
 				<div class="b-form__check-list">
-					<div class="b-form__check"><label><input type="checkbox" checked>Я не являюсь ИПДЛ/РПДЛ</label></div>
+					<div class="b-form__check"><label><input type="checkbox" checked>Я не являюсь ИПДЛ/РПДЛ<span class="help">
+								<a href="#" class="help__ico">?</a>
+							</span></label></div>
 				</div>
 			</div>
 			<div class="anketa__form-block anketa__form-bottom">

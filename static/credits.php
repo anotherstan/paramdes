@@ -27,10 +27,9 @@
 	<div class="credits">
 		<div class="grid__inner">
 			<div class="b-block credits__item">
+				<a href="credit.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/1.png');"></div>
-				<div class="b-block__title h3">
-					<a href="credit.php">Кредит наличными</a>
-				</div>
+				<div class="b-block__title h3">Кредит наличными</div>
 				<div class="b-block__subtitle">На любые цели.</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -49,8 +48,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/2.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Рефинансирование</a></div>
+				<div class="b-block__title h3">Рефинансирование</div>
 				<div class="b-block__subtitle">Переведите свои кредиты на выгодных условиях.</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -69,8 +69,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/3.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Льготный кредит</a></div>
+				<div class="b-block__title h3">Льготный кредит</div>
 				<div class="b-block__subtitle">На освоение «Дальневосточного гектара»</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -89,8 +90,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/4.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Корпоративным клиентам</a></div>
+				<div class="b-block__title h3">Корпоративным клиентам</div>
 				<div class="b-block__subtitle">Для сотрудников компаний-партнеров.</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -109,8 +111,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/5.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Кредиты для пенсионеров</a></div>
+				<div class="b-block__title h3">Кредиты для пенсионеров</div>
 				<div class="b-block__subtitle">Специальные условия для зрелых решений.</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -129,8 +132,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/6.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Кредит на образование</a></div>
+				<div class="b-block__title h3">Кредит на образование</div>
 				<div class="b-block__subtitle">Выбирайте учебное заведение, о котором мечтали.</div>
 				<div class="card__options">
 					<div class="card__option">
@@ -149,8 +153,9 @@
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
 			<div class="b-block credits__item">
+				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/7.png');"></div>
-				<div class="b-block__title h3"><a href="not-found.php">Покупки в кредит</a></div>
+				<div class="b-block__title h3">Покупки в кредит</div>
 				<div class="b-block__subtitle">Кредиты на оплату товаров и услуг.</div>
 				<div class="card__options">
 					<div class="card__option">

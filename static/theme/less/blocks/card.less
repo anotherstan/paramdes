@@ -5,6 +5,18 @@
 		padding-left: 672px;
 		position: relative;
 		transition: background-color @animTime;
+		&-link{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 3;
+		}
+		.btn{
+			position: relative;
+			z-index: 4;
+		}
 		&-pattern{
 			position: absolute;
 			background: url('@{pathToImg}pattern.png') no-repeat 0 center;
