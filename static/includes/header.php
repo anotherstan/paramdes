@@ -46,7 +46,7 @@
 	<div class="header__main">
 		<div class="grid__inner">
 			<div class="header__inner">
-				<a href="#" class="header__logo"></a>
+				<a href="/static/home.php" class="header__logo"></a>
 				<div class="header__menu">
 					<div class="header__menu-item">
 						<a href="/static/cards.php" class="header__menu-link <?=$menuCards == true ? '_active':''?> >">Карты</a>
