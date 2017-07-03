@@ -153,11 +153,10 @@
 					<div class="page-menu__in">
 						<div class="tabs page-menu__items">
 							<a href="javascript:void(0);" class="tabs__item _active" data-tabs-tab="1">Рекомендации</a>
-							<a href="javascript:void(0);" class="tabs__item">Сбережения</a>
-							<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">Покупки</a>
-							<a href="javascript:void(0);" class="tabs__item">Переводы</a>
-							<a href="javascript:void(0);" class="tabs__item">Пенсионерам</a>
-							<a href="javascript:void(0);" class="tabs__item">Акции</a>
+							<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">Сбережения</a>
+							<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="3">Покупки</a>
+							<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="4">Пенсионерам</a>
+							<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="5">Акции</a>
 						</div>
 					</div>
 				</div>
@@ -209,7 +208,49 @@
 						</a>
 					</div>
 				</div>
-				<div class="hide"  data-tabs-content="2">
+				<div  data-tabs-content="2" class="hide">
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product">
+							<div class="home__product-in">
+								<div class="h3 home__product-title">Копите и расходуйте<br/>деньги одновременно</div>
+								<div class="home__product-subtitle">При помощи сберегательного счета.</div>
+								<ul class="b-list _indent-20">
+									<li>Бесплатная карта Visa Classic</li>
+									<li>Удобный мобильный банк</li>
+								</ul>
+								<div class="home__product-frame">
+									<div class="home__product-frame-val val"><span>до</span> 7,0%</div>
+									<div class="home__product-frame-text subtitle">На остаток</div>
+								</div>
+							</div>
+							<div class="home__product-img _1"></div>
+						</a>
+					</div>
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Вклад «Капитальный»</div>
+								<div class="home__product-subtitle">С максимальной ставкой.</div>
+								<ul class="b-list _indent-20">
+									<li>До 8,25% годовых</li>
+									<li>Сумма вклада от 50 000 <span class="rub"></span></li>
+									<li>Размещение от 6 месяцев</li>
+								</ul>
+							</div>
+						</a>
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Вложите деньги<br />по специальной ставке</div>
+								<div class="home__product-subtitle">При помощи сезонного вклада.</div>
+								<div class="home__product-block _no-ico">
+									<div class="home__product-block-val val"><span>до</span> 8,5%</div>
+									<div class="home__product-block-text subtitle">Годовая ставка</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="hide"  data-tabs-content="3">
 					<div class="home__products-block">
 						<a href="javascript:void(0);" class="home__product">
 							<div class="home__product-in">
@@ -250,6 +291,86 @@
 								</div>
 							</div>
 							<div class="home__product-img _2"></div>
+						</a>
+					</div>
+				</div>
+				<div class="hide"  data-tabs-content="4">
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product">
+							<div class="home__product-in">
+								<div class="h3 home__product-title">Кредит для пенсионеров</div>
+								<div class="home__product-subtitle">Специальные условия для зрелых решений.</div>
+								<ul class="b-list _indent-20">
+									<li>Решение в день обращения</li>
+									<li>Финансовая защита</li>
+								</ul>
+								<div class="home__product-frame">
+									<div class="home__product-frame-val val"><span>от</span> 14,9%</div>
+									<div class="home__product-frame-text subtitle">Годовая ставка</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Избавьтесь от<br />неподъемных кредитов</div>
+								<div class="home__product-subtitle">Воспользуйтесь рефинансированием.</div>
+								<ul class="b-list _indent-20">
+									<li>От 14,9% годовых</li>
+									<li>Погашение до 36 месяцев</li>
+								</ul>
+							</div>
+						</a>
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Копите и расходуйте<br/>деньги одновременно</div>
+								<div class="home__product-subtitle">При помощи сберегательного счета.</div>
+								<div class="home__product-block _no-ico">
+									<div class="home__product-block-val val">+ 1,0%</div>
+									<div class="home__product-block-text subtitle">Годовых к ставке</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="hide"  data-tabs-content="5">
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product">
+							<div class="home__product-in">
+								<div class="h3 home__product-title">Кредит наличными</div>
+								<div class="home__product-subtitle">Гарантированная ставка на любые цели.</div>
+								<ul class="b-list _indent-20">
+									<li>Сумма кредита до 1 000 000 <span class="rub"></span></li>
+									<li>Оформление по двум документам</li>
+								</ul>
+								<div class="home__product-frame">
+									<div class="home__product-frame-val val"><span>от</span> 14,9%</div>
+									<div class="home__product-frame-text subtitle">Годовая ставка</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="home__products-block">
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Льготный кредит на<br /><nobr>развитие Дальнего Востока</nobr></div>
+								<div class="home__product-subtitle">Программа «Дальневосточный Гектар».</div>
+								<ul class="b-list _indent-20">
+									<li>От 8,5% годовых</li>
+									<li>Решение в течение 5 минут</li>
+								</ul>
+							</div>
+						</a>
+						<a href="javascript:void(0);" class="home__product _small">
+							<div class="home__product-in">
+								<div class="h4 home__product-title">Вложите деньги<br />по специальной ставке</div>
+								<div class="home__product-subtitle">При помощи сезонного вклада..</div>
+								<div class="home__product-block _no-ico">
+									<div class="home__product-block-val val"><span>до</span> 8,5%</div>
+									<div class="home__product-block-text subtitle">Годовая ставка</div>
+								</div>
+							</div>
 						</a>
 					</div>
 				</div>

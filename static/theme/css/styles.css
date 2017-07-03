@@ -5373,6 +5373,9 @@ h5,
   margin-top: 48px;
   padding-top: 2px;
 }
+.home__product-block._no-ico {
+  padding-left: 0;
+}
 .home__product-block-ico {
   position: absolute;
   left: 0;
