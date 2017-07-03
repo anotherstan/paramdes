@@ -80,7 +80,7 @@
 						<a href="javascript:void(0);" class="tabs__item">История банка</a>
 						<a href="javascript:void(0);" class="tabs__item">Пресс-служба</a>
 						<a href="javascript:void(0);" class="tabs__item">Реквизиты</a>
-						<a href="javascript:void(0);" class="tabs__item">Раскрытие информации</a>
+						<a href="javascript:void(0);" class="tabs__item" >Раскрытие информации</a>
 						<a href="javascript:void(0);" class="tabs__item" data-page-menu-tab="6">Нормативные документы</a>
 						<a href="javascript:void(0);" class="tabs__item">Страхование</a>
 					</div>

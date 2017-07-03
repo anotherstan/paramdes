@@ -1,8 +1,7 @@
 <div class="b-block anketa__finish" data-anketa-finish="card">
-	<div class="h3  anketa__finish-title">Спасибо за заполнение</div>
+	<div class="h3  anketa__finish-title">Заявка на рассмотрении</div>
 	<div class="anketa__finish-subtitle">
-		В ближайшее время заявка будет рассмотрена.<br/>
-		Ожидайте СМС с решением банка.
+		Пожалуйста, не закрывайте эту страницу.
 	</div>
 	<div class="wrapper" data-anketa-card-finish>
 		<div class="anketa__finish-ok">

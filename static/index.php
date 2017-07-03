@@ -509,29 +509,78 @@
 									"Может ли кто-то другой внести за меня ежемесячный платеж?",
 									"Я внес сумму, превышающую ежемесячный платеж, что произойдет?",
 									"Что такое частичное досрочное погашение кредита?",
-									"Могу ли я сразу внести несколько платежей?",
-									"Шестой вопрос",
-									"Седьмой вопрос",
-									"Восьмой вопрос"
+									"Могу ли я сразу внести несколько платежей?"
 								];
-								for ($i=0;$i<5;$i++){
+								$answers =[
+									"Данная информация указана в графике платежей, который предоставлялся при оформлении кредита. Также размер платежа легко уточнить, позвонив по телефону 8 800 550-0770 и правильно назвав код доступа или обратившись в клиентский центр «Почта Банка».",
+									"Да, оплатить кредит может любой человек, которому вы доверяете и можете оставить реквизиты для внесения средств и сумму платежа.",
+									"Без подключения Заявления на досрочное погашение со счета спишется сумма равная ежемесячному платежу, остаток остается на счете. При подключении Заявления на досрочное погашение в дату платежа спишется вся сумма со счета, при этом последующие платежи уменьшатся, срок выплаты сохранится.",
+									"Это возможность сэкономить на процентах по кредиту, погашая кредит суммами, превышающими очередной платеж. Поступив на счет, деньги уменьшат остаток основного долга в дату платежа по кредиту, на который начисляются проценты.",
+									"Да, внести несколько платежей можно. В дату платежа сумма списывается равная ежемесячному платежу, а остаток остается на счете."
+								];
+								for ($i=0;$i<0;$i++){
 									?>
 									<div class="questions__item " data-questions-item>
 										<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title><?=$questions[$i]?></a>
 										<div class="questions__item-answer" data-questions-item-answer>
-											Ответ на вопрос <?=$questions[$i]?>
+											<?=$answers[$i]?>
 										</div>
 									</div>
 								<?}?>
 							<div class="hide" data-nav-content>
-								<?for ($i=5;$i<count($questions);$i++){?>
+								<?for ($i=100;$i<count($questions);$i++){?>
 									<div class="questions__item " data-questions-item>
 										<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title><?=$questions[$i]?></a>
 										<div class="questions__item-answer" data-questions-item-answer>
-											Ответ на вопрос <?=$questions[$i]?>
+											<?=$answers[$i]?>
 										</div>
 									</div>
 								<?}?>
+							</div>
+							<div class="questions__item " data-questions-item>
+								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>
+									Как узнать сумму ежемесячного платежа?
+								</a>
+								<div class="questions__item-answer" data-questions-item-answer>
+									Данная информация указана в графике платежей, который предоставлялся при оформлении кредита.<br/>
+									Также размер платежа легко уточнить, позвонив по телефону
+									8 800 550-0770 и правильно назвав код доступа или обратившись в клиентский центр «Почта Банка».
+								</div>
+							</div>
+							<div class="questions__item " data-questions-item>
+								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>
+									Может ли кто-то другой внести за меня ежемесячный платеж?
+								</a>
+								<div class="questions__item-answer" data-questions-item-answer>
+									Да, оплатить кредит может любой человек, которому вы доверяете и можете оставить реквизиты для внесения средств<br/>и сумму платежа.
+								</div>
+							</div>
+							<div class="questions__item " data-questions-item>
+								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>
+									Я внес сумму, превышающую ежемесячный платеж, что произойдет?
+								</a>
+								<div class="questions__item-answer" data-questions-item-answer>
+									Без подключения Заявления на досрочное погашение со счета спишется сумма равная ежемесячному платежу, остаток остается на счете.
+									При подключении Заявления на досрочное погашение в дату платежа спишется вся сумма со счета,
+									при этом последующие платежи уменьшатся, срок выплаты сохранится.
+								</div>
+							</div>
+							<div class="questions__item " data-questions-item>
+								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>
+									Что такое частичное досрочное погашение кредита?
+								</a>
+								<div class="questions__item-answer" data-questions-item-answer>
+									Это возможность сэкономить на процентах по кредиту, погашая кредит суммами, превышающими очередной платеж.<br/>
+									Поступив на счет, деньги уменьшат остаток основного долга в дату платежа по кредиту, на который начисляются проценты.
+								</div>
+							</div>
+							<div class="questions__item " data-questions-item>
+								<a href="javascript:void(0);" class="questions__item-title" data-questions-item-title>
+									Могу ли я сразу внести несколько платежей?
+								</a>
+								<div class="questions__item-answer" data-questions-item-answer>
+									Да, внести несколько платежей можно. В дату платежа сумма списывается равная ежемесячному платежу,<br/>а остаток остается на счете.
+								</div>
 							</div>
 							<div class="questions__all">
 								<a href="javascript:void(0);" class="all-btn" data-nav-btn>
