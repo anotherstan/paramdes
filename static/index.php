@@ -258,7 +258,12 @@
 									</div>
 									<div class="conditions__block-item">
 										<div class="conditions__block-item-title">Выпуск карты</div>
-										<div class="conditions__block-item-val">900 <span class="rub"></span></div>
+										<div  data-tabs-content="1">
+											<div class="conditions__block-item-val">900 <span class="rub"></span></div>
+										</div>
+										<div class="hide" data-tabs-content="2">
+											<div class="conditions__block-item-val">0 <span class="rub"></span></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -475,15 +480,15 @@
 			</div>
 			<div class="b-blocks">
 				<div class="grid__inner">
-					<div class="b-block">
+					<div class="b-block" data-tabs>
 						<div class="instruction__top">
 							<div class="b-block__title h3 _dash">Как получить карту?</div>
 							<div class="tabs instruction__tabs">
-								<a href="#" class="tabs__item _active">Неименную</a>
-								<a href="#" class="tabs__item">Именную</a>
+								<a href="javascript:void(0);" data-tabs-tab="1" class="tabs__item _active">Неименную</a>
+								<a href="javascript:void(0);" data-tabs-tab="2" class="tabs__item">Именную</a>
 							</div>
 						</div>
-						<div class="b-steps _indent _arrs">
+						<div class="b-steps _indent _arrs" >
 							<div class="b-steps__item">
 								<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/1.svg')"></div>
 								<div class="b-steps__item-title">1. Подайте заявку</div>
@@ -492,7 +497,11 @@
 							<div class="b-steps__item">
 								<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/2.svg')"></div>
 								<div class="b-steps__item-title">2. Узнайте решение</div>
-								<div class="b-steps__item-text">Ваша онлайн-заявка будет рассмотрена в течение минуты.</div>
+								<div class="b-steps__item-text">
+									<span data-tabs-content="1">Ваша онлайн-заявка будет рассмотрена в течение минуты.</span>
+									<span data-tabs-content="2" class="hide">Ваша заявка будет рассмотрена в течение 5 минут.</span>
+
+								</div>
 							</div>
 							<div class="b-steps__item">
 								<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/3.svg')"></div>
