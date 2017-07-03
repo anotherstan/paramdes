@@ -20,16 +20,16 @@
 		<div class="grid__inner">
 			<ol>
 				<li>
-					<a href="/static/" target="_blank">Продукт</a>
+					<a href="/static/" target="_blank">Карта</a>
 				</li>
 				<li>
-					<a href="/static/index-edit.php" target="_blank">Конструктор продукта</a>
+					<a href="/static/index-edit.php" target="_blank">Конструктор карты</a>
 				</li>
 				<li>
 					<a href="/static/home.php" target="_blank">Главная</a>
 				</li>
 				<li>
-					<a href="/static/cards.php" target="_blank">Продукты</a>
+					<a href="/static/cards.php" target="_blank">Карты</a>
 				</li>
 				<li>
 					<a href="/static/credits.php" target="_blank">Кредиты</a>
