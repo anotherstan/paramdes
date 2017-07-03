@@ -49,7 +49,7 @@
 				<a href="#" class="header__logo"></a>
 				<div class="header__menu">
 					<div class="header__menu-item">
-						<a href="/static/" class="header__menu-link <?=$menuCards == true ? '_active':''?> >">Карты</a>
+						<a href="/static/cards.php" class="header__menu-link <?=$menuCards == true ? '_active':''?> >">Карты</a>
 					</div>
 					<div class="header__menu-item">
 						<a href="/static/not-found.php" class="header__menu-link">Вклады</a>
