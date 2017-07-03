@@ -1,3 +1,4 @@
+<?$menuCards = true;?>
 <?include "includes/header.php"?>
 	<a href="#" class="next-page"></a>
 	<div class="grid__inner">

@@ -1,3 +1,4 @@
+<?$menuCredits = true;?>
 <?include "includes/header.php"?>
 	<div class="banner" style="background-image: url('/static/theme/images/banners/credit.png');">
 		<div class="grid__inner">

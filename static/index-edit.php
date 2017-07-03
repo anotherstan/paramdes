@@ -1,3 +1,4 @@
+<?$menuCards = true;?>
 <?
 	require_once('root.php');
 	require_once('class/HtmlCodeGenerator.php');
