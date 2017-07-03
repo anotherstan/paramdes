@@ -1084,6 +1084,10 @@ h5,
 .tabs._white .tabs__item:hover {
   color: #fff;
 }
+.tabs._white .help__ico {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
 .tabs__item {
   font-size: 12px;
   font-weight: 600;
@@ -4241,11 +4245,11 @@ h5,
   width: 544px;
 }
 .credit-calc__tabs {
-  margin-top: 27px;
+  margin-top: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .credit-calc__tabs .tabs__item {
-  padding-bottom: 21px;
+  padding-bottom: 16px;
 }
 .credit-calc__options {
   margin-top: 48px;
@@ -4258,7 +4262,7 @@ h5,
   font-size: 21px;
 }
 .credit-calc__option + .credit-calc__option {
-  margin-top: 63px;
+  margin-top: 62px;
 }
 .credit-calc__option-title {
   font-size: 12px;
@@ -4288,7 +4292,8 @@ h5,
   background-color: #001e45;
   border-radius: 2px;
   box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
-  padding: 146px 48px 29px;
+  padding: 48px 48px 29px;
+  margin-top: 80px;
 }
 .credit-calc__info-ico {
   width: 226px;
@@ -4298,6 +4303,7 @@ h5,
   position: absolute;
   left: -18px;
   top: -60px;
+  display: none;
 }
 .credit-calc__info-return {
   height: 48px;
@@ -4326,6 +4332,9 @@ h5,
   padding-top: 9px;
   display: inline-block;
   vertical-align: top;
+}
+.credit-calc__info-block._disabled {
+  opacity: 0.3;
 }
 .credit-calc__info-block + .credit-calc__info-block {
   margin-top: 48px;

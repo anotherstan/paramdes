@@ -904,6 +904,11 @@ app.creditCalc = function(){
 			$sum = $calc.find('[data-credit-calc-sum]'),
 			$period = $calc.find('[data-credit-calc-period]'),
 			$payment = $calc.find('[data-credit-calc-payment]'),
+			$overpay = $calc.find('[data-credit-calc-overpay]'),
+			$totalSum = $calc.find('[data-credit-calc-total-sum]'),
+			$return = $calc.find('[data-credit-calc-return]'),
+			$returnSum = $calc.find('[data-credit-calc-return-sum]'),
+			$rateTab = $calc.find('[data-credit-calc-rate-tab]'),
 			$popupSum = $popup.find('[data-credit-calc-popup-sum]'),
 			$popupPeriod = $popup.find('[data-credit-calc-popup-period]'),
 			$popupPayment  = $popup.find('[data-credit-calc-popup-payment]'),
@@ -911,8 +916,12 @@ app.creditCalc = function(){
 			sum = 0,
 			period = 0,
 			payment = 0,
+			overpay = 0,
 			rate = 0.149,
 			monthRate = rate/12,
+			totalSum = 0,
+			returnSum = 0,
+			rateFixed = false,
 
 			
 			$popupSave = $popup.find('[data-anketa-conditions-popup-save]'),
@@ -930,9 +939,26 @@ app.creditCalc = function(){
 		}
 		sum = parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
 		period = parseInt($period.val().replace(new RegExp(" ",'g'),""),10);
+		if($rateTab.length){
+			rate = $rateTab.filter('._active').data('creditCalcRateTab');
+			console.log(rate);
+			monthRate = rate/12;
+		}
+
 
 		payment = (sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1))).toFixed(0);
+		totalSum = payment*period;
+		overpay = (totalSum-sum).toFixed(0);
+		returnSum = (totalSum*0.02).toFixed(0);
+
+		if(rateFixed){
+			returnSum =0;
+		}
+
+		$overpay.text(app.formatNumber(overpay));
 		$payment.val(app.formatNumber(payment)).change();
+		$returnSum.text(app.formatNumber(returnSum));
+		$totalSum.text(app.formatNumber(totalSum));
 	}
 
 	function popupCalculate() {
@@ -945,7 +971,21 @@ app.creditCalc = function(){
 		payment = (sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1))).toFixed(0);
 		$popupPayment.val(app.formatNumber(payment)).change();
 	}
-
+	$rateTab.on('click',function () {
+		var $self = $(this);
+		if(!$self.hasClass('_active')){
+			setTimeout(function () {
+				calculate();
+			},100);
+			if($self.hasClass('_fix')){
+				$return.addClass('_disabled');
+				rateFixed = true;
+			}else{
+				$return.removeClass('_disabled');
+				rateFixed = false;
+			}
+		}
+	});
 	$sum.on('change',function () {
 		$conditionsSum.text($(this).val());
 		calculate();

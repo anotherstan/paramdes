@@ -80,7 +80,7 @@
 					<div class="h3">Условия обслуживания</div>
 					<div class="conditions__tabs tabs _white">
 						<a href="javascript:void(0);" class="tabs__item _active" data-tabs-tab="1">Гарантированная ставка</a>
-						<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">Обычная ставка</a>
+						<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">ФИКСИРОВАННАЯ СТАВКА</a>
 					</div>
 					<div class="conditions__block">
 						<div class="h4 conditions__block-title">Кредит от 50 000 ₽</div>
@@ -314,7 +314,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-nav-block class="credit-calc">
+	<div data-nav-block class="credit-calc" data-tabs>
 		<div class="grid__inner">
 			<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
 				<span class="all-btn__counter _plus"></span><span class="all-btn__text">
@@ -324,11 +324,19 @@
 		</div>
 		<div class="b-blocks _dark hide"  data-nav-content>
 			<div class="grid__inner credit-calc__inner" data-credit-calc>
-				<div class="credit-calc__block" data-tabs>
+				<div class="credit-calc__block">
 					<div class="h3">Калькулятор кредита</div>
 					<div class="credit-calc__tabs tabs _white">
-						<a href="javascript:void(0);" class="tabs__item _active" data-tabs-tab="1">Гарантированная ставка</a>
-						<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">фиксированная ставка</a>
+						<a href="javascript:void(0);" class="tabs__item _active" data-credit-calc-rate-tab="0.149" data-tabs-tab="1">
+							Гарантированная ставка <span class="help">
+								<span class="help__ico">?</span>
+							</span>
+						</a>
+						<a href="javascript:void(0);" class="tabs__item _fix"  data-credit-calc-rate-tab="0.169" data-tabs-tab="2">
+							фиксированная ставка <span class="help">
+								<span class="help__ico">?</span>
+							</span>
+						</a>
 					</div>
 					<div class="credit-calc__options">
 						<div class="credit-calc__option" data-credit-calc-option>
@@ -336,11 +344,11 @@
 							<div class="credit-calc__option-block">
 								<div class="credit-calc__option-field">
 									<span class="rub credit-calc__option-rub"></span>
-									<input type="text" value="200 000" data-credit-calc-option-inp>
+									<input type="text" value="200 000" data-credit-calc-sum data-credit-calc-option-inp>
 								</div>
 								<div class="calc__sum-slider" data-credit-calc-option-slider='{
 								"min":0,
-								"max":500000,
+								"max":1000000,
 								"step":500,
 								"value":200000}'>
 
@@ -351,7 +359,7 @@
 							<div class="credit-calc__option-title">Срок</div>
 							<div class="credit-calc__option-block">
 								<div class="credit-calc__option-field">
-									<input type="text" value="24 месяца" data-credit-calc-option-inp>
+									<input type="text" value="24 месяца" data-credit-calc-option-inp data-credit-calc-period>
 								</div>
 								<div class="calc__sum-slider" data-credit-calc-option-slider='{
 								"min":1,
@@ -361,19 +369,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="credit-calc__option" data-credit-calc-option>
+						<div class="credit-calc__option" >
 							<div class="credit-calc__option-title">Ежемесячный платеж</div>
 							<div class="credit-calc__option-block">
 								<div class="credit-calc__option-field">
 									<span class="rub credit-calc__option-rub"></span>
-									<input type="text" value="11 560" data-credit-calc-option-inp>
-								</div>
-								<div class="calc__sum-slider" data-credit-calc-option-slider='{
-								"min":0,
-								"max":500000,
-								"step":10,
-								"value":11560}'>
-
+									<input type="text" value="11 560" data-credit-calc-payment>
 								</div>
 							</div>
 						</div>
@@ -383,17 +384,19 @@
 					<div class="credit-calc__info-ico">
 
 					</div>
-					<div class="credit-calc__info-block">
+					<div class="credit-calc__info-block" data-credit-calc-return>
 						<div class="credit-calc__info-block-title">Возврат денег</div>
-						<div class="credit-calc__info-block-val"><span class="credit-calc__info-return">7 550 ₽</span><span class="credit-calc__info-return-percent">2,0%</span></div>
+						<div class="credit-calc__info-block-val">
+							<span class="credit-calc__info-return"><span data-credit-calc-return-sum></span> ₽</span>
+							<span class="credit-calc__info-return-percent"><span  data-tabs-content="1">2,0%</span><span class="hide" data-tabs-content="2">0,0%</span></span></div>
 					</div>
 					<div class="credit-calc__info-block">
 						<div class="credit-calc__info-block-title">Сумма выплат</div>
-						<div class="credit-calc__info-block-val">277 081 ₽</div>
+						<div class="credit-calc__info-block-val"><span data-credit-calc-total-sum></span> ₽</div>
 					</div>
 					<div class="credit-calc__info-block">
 						<div class="credit-calc__info-block-title">Переплата</div>
-						<div class="credit-calc__info-block-val">77 081 ₽</div>
+						<div class="credit-calc__info-block-val"> <span data-credit-calc-overpay>77 081</span> ₽</div>
 					</div>
 					<div class="credit-calc__info-btns">
 						<a href="#" class="btn credit-calc__info-btn">Оформить кредит</a>

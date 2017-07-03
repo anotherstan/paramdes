@@ -18,10 +18,10 @@
 		width: 544px;
 	}
 	&__tabs{
-		margin-top: 27px;
+		margin-top: 24px;
 		border-bottom: 1px solid fade(#fff,10%);
 		.tabs__item{
-			padding-bottom: 21px;
+			padding-bottom: 16px;
 		}
 	}
 	&__options{
@@ -36,7 +36,7 @@
 			font-size: 21px;
 		}
 		&+&{
-			margin-top: 63px;
+			margin-top: 62px;
 		}
 		&-title{
 			font-size: 12px;
@@ -70,7 +70,8 @@
 		background-color: #001e45;
 		border-radius: 2px;
 		box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
-		padding: 146px 48px 29px;
+		padding: 48px 48px 29px;
+		margin-top: 80px;
 		&-ico{
 			width: 226px;
 			height: 224px;
@@ -79,7 +80,7 @@
 			position: absolute;
 			left: -18px;
 			top: -60px;
-
+			display: none;
 		}
 		&-return{
 			height: 48px;
@@ -110,6 +111,9 @@
 			}
 		}
 		&-block{
+			&._disabled{
+				opacity: 0.3;
+			}
 			&+&{
 				margin-top: 48px;
 			}
