@@ -546,26 +546,32 @@
 				<div class="request-form__img"></div>
 				<div class="request-form">
 					<div class="request-form__block b-form">
-						<form action="">
+						<form action="" data-base-form>
 							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="text" placeholder="Имя и фамилия" >
+								<div class="b-form__block" data-form-field>
+									<div class="b-form__field">
+										<input type="text" data-form-field-inp data-required>
+										<div class="b-form__placeholder">Имя и фамилия</div>
 									</div>
+									<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 								</div>
 							</div>
 							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="text" placeholder="Электронная почта" >
+								<div class="b-form__block" data-form-field>
+									<div class="b-form__field">
+										<input type="email" data-form-field-inp data-required>
+										<div class="b-form__placeholder">Электронная почта</div>
 									</div>
+									<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 								</div>
 							</div>
 							<div class="b-form__row">
-								<div class="b-form__block">
-									<div class="b-form__block-field">
-										<input type="text" data-mask-phone placeholder="Телефон" >
+								<div class="b-form__block" data-form-field>
+									<div class="b-form__field">
+										<input type="email" data-form-field-inp data-required data-mask-phone>
+										<div class="b-form__placeholder">Телефон</div>
 									</div>
+									<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
 								</div>
 							</div>
 							<div class="b-form__row">
