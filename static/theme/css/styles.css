@@ -5126,12 +5126,12 @@ h5,
   z-index: 300;
 }
 .credits {
-  padding-top: 64px;
   padding-bottom: 96px;
 }
 .credits__item {
   padding-left: 672px;
   position: relative;
+  margin-top: 64px;
 }
 .credits__item .btn {
   position: relative;

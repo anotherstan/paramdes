@@ -58,6 +58,7 @@ app.init = function () {
 	app.mobPhone();
 	app.bannerGall();
 	app.baseForm();
+	app.filter();
 
 	if(!$('[data-no-fixed-footer]').length){
 		app.footer();
@@ -737,6 +738,41 @@ app.pageMenu = function () {
 			$self.addClass('_active');
 			$menuContent.hide().filter('[data-page-menu-content="'+$self.data('pageMenuTab')+'"]').show();
 		}
+	});
+};
+app.filter = function () {
+	var $filterTab = $('[data-filter-tab]'),
+			$filterContent = $('[data-filter-content]'),
+			top = 0
+		;
+	$filterTab.on('click',function () {
+		var  $self = $(this),
+			data = $self.data('filterTab')
+			;
+		if($self.hasClass('_active')){
+			return false;
+		}
+		$filterTab.removeClass('_active');
+		$self.addClass('_active');
+		if(data=='all'){
+			$filterContent.show();
+		}else{
+			$filterContent.each(function () {
+				var  $_self = $(this);
+				if($_self.data('filterContent').indexOf(data)!=-1){
+					$_self.show();
+				}else{
+					$_self.hide();
+				}
+			});
+		}
+		top = $filterContent.filter(':visible').first().offset().top ;
+		if($(document).scrollTop() > top){
+			$('html, body').stop(true, true).animate({'scrollTop': top-150},300);
+		}
+
+
+
 	});
 };
 app.constructor = function () {

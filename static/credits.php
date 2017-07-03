@@ -13,13 +13,13 @@
 			<div class="grid__inner">
 				<div class="page-menu__in">
 					<div class="tabs page-menu__items">
-						<a href="javascript:void(0);" class="tabs__item _active">Все кредиты</a>
-						<a href="javascript:void(0);" class="tabs__item">Акции</a>
-						<a href="javascript:void(0);" class="tabs__item">Без справок</a>
-						<a href="javascript:void(0);" class="tabs__item">На любые цели</a>
-						<a href="javascript:void(0);" class="tabs__item">Пенсионерам</a>
-						<a href="javascript:void(0);" class="tabs__item">Студентам</a>
-						<a href="javascript:void(0);" class="tabs__item">Рефинансирование</a>
+						<a href="javascript:void(0);" class="tabs__item _active" data-filter-tab="all">Все кредиты</a>
+						<a href="javascript:void(0);" class="tabs__item"  data-filter-tab="shares">Акции</a>
+						<a href="javascript:void(0);" class="tabs__item" data-filter-tab="without-reference">Без справок</a>
+						<a href="javascript:void(0);" class="tabs__item" data-filter-tab="any-purpose">На любые цели</a>
+						<a href="javascript:void(0);" class="tabs__item" data-filter-tab="pensioners">Пенсионерам</a>
+						<a href="javascript:void(0);" class="tabs__item" data-filter-tab="students">Студентам</a>
+						<a href="javascript:void(0);" class="tabs__item" data-filter-tab="refinancing">Рефинансирование</a>
 					</div>
 				</div>
 			</div>
@@ -27,7 +27,7 @@
 	</div>
 	<div class="credits">
 		<div class="grid__inner">
-			<div class="b-block credits__item">
+			<div class="b-block credits__item" data-filter-content="without-reference any-purpose">
 				<a href="credit.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/1.png');"></div>
 				<div class="b-block__title h3">Кредит наличными</div>
@@ -48,7 +48,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="any-purpose refinancing">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/2.png');"></div>
 				<div class="b-block__title h3">Рефинансирование</div>
@@ -69,7 +69,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="shares">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/3.png');"></div>
 				<div class="b-block__title h3">Льготный кредит</div>
@@ -90,7 +90,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="shares">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/4.png');"></div>
 				<div class="b-block__title h3">Корпоративным клиентам</div>
@@ -111,7 +111,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="any-purpose pensioners">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/5.png');"></div>
 				<div class="b-block__title h3">Кредиты для пенсионеров</div>
@@ -132,7 +132,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="students">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/6.png');"></div>
 				<div class="b-block__title h3">Кредит на образование</div>
@@ -153,7 +153,7 @@
 				</div>
 				<div class="card__btn"><a href="anketa.php" class="btn">Оформить заявку</a></div>
 			</div>
-			<div class="b-block credits__item">
+			<div class="b-block credits__item"  data-filter-content="shares without-reference any-purpose students">
 				<a href="not-found.php" class="credits__item-link"></a>
 				<div class="credits__item-ico" style="background-image: url('/static/theme/images/credits/7.png');"></div>
 				<div class="b-block__title h3">Покупки в кредит</div>
