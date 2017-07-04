@@ -245,10 +245,10 @@
 									</div>
 								</div>
 								<div class="benefits__gall-slide-video">
-									<a href="javascript:void(0);" class="video-btn">
+									<a href="https://www.youtube.com/embed/xVyIzxTj4xc?autoplay=1&showinfo=0&rel=0;"  data-fancybox-video class="video-btn fancybox.iframe">
 										<div class="video-btn__ico"></div>
 										<div class="video-btn__title">Посмотреть видео</div>
-										<div class="video-btn__duration">3:20</div>
+										<div class="video-btn__duration">0:30</div>
 									</a>
 								</div>
 							</div>
