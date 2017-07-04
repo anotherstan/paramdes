@@ -42,7 +42,11 @@
 				</div>
 			</div>
 			<div class="b-form__check-list">
-				<div class="b-form__check"><label><input type="checkbox">Гарантированная ставка</label></div>
+				<div class="b-form__check"><label><input type="checkbox">Гарантированная ставка
+					<span class="help">
+								<a href="javascript:void(0);" class="help__ico">?</a>
+							</span>
+					</label></div>
 				<div class="b-form__check"><label><input type="checkbox" data-check-toggle="insuranceProtection">Страховая защита</label></div>
 			</div>
 			<div class="b-form__row hide" data-check-toggle-content="insuranceProtection">
