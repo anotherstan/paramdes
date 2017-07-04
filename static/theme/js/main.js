@@ -63,7 +63,40 @@ app.init = function () {
 	if(!$('[data-no-fixed-footer]').length){
 		app.footer();
 	}
+	function onPlayerReady(event) {
+		event.target.playVideo();
+	}
+
+
 };
+function onYouTubePlayerAPIReady() {
+	$(document).ready(function() {
+		$("[data-fancybox-video]").fancybox({
+			padding     : 0,
+			margin      : 50,
+			width: 736,
+			height: 414,
+			tpl:{
+				closeBtn : '<a title="" class="fancybox-item fancybox-close" href="javascript:;"></a>'
+			},
+			beforeShow  : function() {
+
+				var id = $.fancybox.inner.find('iframe').attr('id');
+
+				var player = new YT.Player(id, {
+					height: '736',
+					width: '414',
+					events: {
+						'onReady': onPlayerReady
+					}
+				});
+			}
+		});
+	});
+}
+function onPlayerReady(event) {
+	event.target.playVideo();
+}
 app.fancyClose = function () {
 	var flag = false;
 	$('html').on('mousemove',function (e) {
@@ -98,8 +131,7 @@ app.popups = function () {
 			;
 
 		$content = $popups.filter('[data-popup="' + data + '"]');
-
-		$.fancybox({
+		$self.fancybox({
 			wrapCSS: 'fc-base _popups '+dopClass,
 			content: $content,
 			fitToView: false,
