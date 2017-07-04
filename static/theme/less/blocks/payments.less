@@ -1,12 +1,21 @@
 .payments{
 	.clearfix;
+	padding-top: 19px;
 	&__item{
 		float: left;
-		width: 256px;
+		width: 544px;
 		margin-right: 32px;
-		margin-top: 66px;
-		margin-bottom: 17px;
-		&:nth-child(4n){
+		margin-top: 48px;
+		.help{
+			margin-top: -6px;
+			margin-left: 0;
+			font-family: @fOpenSans;
+		}
+		.help__ico{
+			color: #fff;
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+		&:nth-child(2n){
 			margin-right: 0;
 		}
 		a{
@@ -19,9 +28,10 @@
 			border: 2px solid fade(#fff,30%);
 			position: relative;
 			display: block;
+			float: left;
 			&:hover{
 				.payments__item-ico-item._hover{
-					opacity: 1;
+					//opacity: 1;
 				}
 			}
 			&-item{
@@ -40,18 +50,31 @@
 				}
 			}
 		}
+		&-texts{
+			float: left;
+			margin-left: 32px;
+			padding-top: 24px;
+			width: 224px;
+		}
+		&-commission{
+			float: left;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 20px;
+			font-family: @fPragmatica;
+			color: #fff;
+			padding-top: 39px;
+			margin-left: 32px;
+		}
 		&-title{
-			margin-top: 28px;
+
 		}
 		&-text{
 			font-weight: 600;
 			font-size: 12px;
 			line-height: 12px;
-			color: fade(#fff,70%);
-			margin-top: 12px;
-			span{
-				padding-left: 12px;
-			}
+			color: fade(#fff,30%);
+			margin-top: 8px;
 		}
 	}
 }

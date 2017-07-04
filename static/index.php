@@ -835,35 +835,48 @@
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/1.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/1.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Банкоматы Почта Банка</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Банкоматы Почта Банка</a>
+											</div>
+											<div class="payments__item-text">
+												Моментальное зачисление
+											</div>
 										</div>
-										<div class="payments__item-text">
-											Моментально <span>0,00%</span>
-										</div>
+										<div class="payments__item-commission">0,0%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/2.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/2.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Банкоматы ВТБ24</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Банкоматы ВТБ24</a>
+											</div>
+											<div class="payments__item-text">
+												На следующий день
+											</div>
 										</div>
-										<div class="payments__item-text">
-											На следующий день <span>1,00%</span>
-										</div>
+										<div class="payments__item-commission">1,0%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/3.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/3.png');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Платежи и переводы Visa</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Платежи и переводы Visa</a>
+											</div>
+											<div class="payments__item-text">
+												Зачисление до 4 дней
+											</div>
 										</div>
-										<div class="payments__item-text">
-											До 4 дней
+										<div class="payments__item-commission">
+											<span class="help">
+												<a href="javascript:void(0);" class="help__ico">?</a>
+											</span>
 										</div>
 									</div>
 									<div class="payments__item">
@@ -871,71 +884,93 @@
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/4.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/4.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Cистема Qiwi</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Cистема Qiwi</a>
+											</div>
+											<div class="payments__item-text">
+												Моментальное зачисление
+											</div>
 										</div>
-										<div class="payments__item-text">
-											Моментально <span>1,60%</span>
-										</div>
+										<div class="payments__item-commission">1,6%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/5.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/5.png');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Cалоны Евросеть</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Cалоны Евросеть</a>
+											</div>
+											<div class="payments__item-text">
+												Моментальное зачисление
+											</div>
 										</div>
-										<div class="payments__item-text">
-											Моментально <span>1,00%</span>
-										</div>
+										<div class="payments__item-commission">1,0%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/6.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/6.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Золотая Корона</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Золотая Корона</a>
+											</div>
+											<div class="payments__item-text">
+												Моментальное зачисление
+											</div>
 										</div>
-										<div class="payments__item-text">
-											Моментально <span>1,00%</span>
-										</div>
+										<div class="payments__item-commission">1,0%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/7.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/7.png');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Cистема Рапида</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Cистема Рапида</a>
+											</div>
+											<div class="payments__item-text">
+												Моментальное зачисление
+											</div>
 										</div>
-										<div class="payments__item-text">
-											Моментально <span>1,00%</span>
-										</div>
+										<div class="payments__item-commission">1,0%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/8.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/8.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Терминалы Элекснет</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Терминалы Элекснет</a>
+											</div>
+											<div class="payments__item-text">
+												Зачисление до 3 дней
+											</div>
 										</div>
-										<div class="payments__item-text">
-											До 3 дней <span>1,30%</span>
-										</div>
+										<div class="payments__item-commission">1,3%</div>
 									</div>
 									<div class="payments__item">
 										<a href="javascript:void(0);" class="payments__item-ico">
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/9.svg');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/9.svg');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Cистема СyberPlat</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Cистема СyberPlat</a>
+											</div>
+											<div class="payments__item-text">
+												На следующий день
+											</div>
 										</div>
-										<div class="payments__item-text">
-											На следующий день
+										<div class="payments__item-commission">
+											<span class="help">
+												<a href="javascript:void(0);" class="help__ico">?</a>
+											</span>
 										</div>
 									</div>
 									<div class="payments__item">
@@ -943,11 +978,18 @@
 											<div class="payments__item-ico-item _static" style="background-image: url('/static/theme/images/payments/10.png');"></div>
 											<div class="payments__item-ico-item _hover" style="background-image: url('/static/theme/images/payments/10.png');"></div>
 										</a>
-										<div class="payments__item-title">
-											<a href="javascript:void(0);">Межбанковские платежи</a>
+										<div class="payments__item-texts">
+											<div class="payments__item-title">
+												<a href="javascript:void(0);">Межбанковские платежи</a>
+											</div>
+											<div class="payments__item-text">
+												Зачисление до 5 дней
+											</div>
 										</div>
-										<div class="payments__item-text">
-											До 5 дней
+										<div class="payments__item-commission">
+											<span class="help">
+												<a href="javascript:void(0);" class="help__ico">?</a>
+											</span>
 										</div>
 									</div>
 								</div>
@@ -965,6 +1007,93 @@
 											<div class="file__size">249 Кб</div>
 										</div>
 									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="benefits__wrap">
+					<div class="grid__inner">
+						<div class="b-block _transparent benefits _repayment">
+							<div class="benefits__inner">
+								<div class="benefits__top">
+									<div class="h2">Полезные услуги<br/>для клиентов</div>
+									<div class="b-block__subtitle _white">Только в Почта Банке.</div>
+								</div>
+								<div class="b-block__indent">
+									<div class="benefits__gall">
+										<div class="benefits__gall-block _credit">
+											<div class="b-block _transparent">
+												<div class="h3">Автопогашение кредита</div>
+												<div class="b-block__subtitle">Погашение очередного платежа по кредиту с вашей карты.</div>
+												<div class="benefits__steps _small-titles">
+													<div class="benefits__step">
+														<div class="benefits__step-num">1</div>
+														<div class="benefits__step-title">Предоставьте карту</div>
+														<div class="benefits__step-text">Выпущенную другим банком-эмитентом.</div>
+													</div>
+													<div class="benefits__step">
+														<div class="benefits__step-num">2</div>
+														<div class="benefits__step-title">Дождитесь проверки</div>
+														<div class="benefits__step-text">На доступность проведении операции.</div>
+													</div>
+													<div class="benefits__step">
+														<div class="benefits__step-num">3</div>
+														<div class="benefits__step-title">Подпишите заявление</div>
+														<div class="benefits__step-text">Чтобы активировать услугу.</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="benefits__gall-slides _credit">
+											<div class="benefits__gall-slide">
+												<div class="benefits__gall-slide-in">
+													<div class="benefits__gall-slide-counter"></div>
+													<div class="benefits__gall-slide-texts">
+														<div class="benefits__gall-slide-title h4">Как это работает?</div>
+														<div class="benefits__gall-slide-text">
+															В дату платежа нужная сумма будет автоматически списываться с вашей карты и погашать очередной платеж по кредиту.<br/><br/>
+															Отныне вы не пропустите ни одного платежа. Это удобно, и вам не придется тратить личное время на посещение банка.
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="benefits__blocks">
+										<div class="benefits__block">
+											<div class="h4">Изменение даты платежа</div>
+											<div class="benefits__block-subtitle">Выберите дату удобную вам.</div>
+											<ul class="benefits__block-list">
+												<li>Бесплатная активация услуги</li>
+												<li>До 15 дней от текущего платежа</li>
+												<li>В диапазоне с 4 по 28 число</li>
+											</ul>
+											<div class="article__ico frame">
+												<div class="frame__shadow"></div>
+												<div class="frame__in">
+													<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/1.svg')"></div>
+												</div>
+											</div>
+										</div>
+										<div class="benefits__block">
+											<div class="h4">Уменьшение платежа</div>
+											<div class="benefits__block-subtitle">
+												Легкие условия для оставшихся платежей.
+											</div>
+											<ul class="benefits__block-list">
+												<li>Бесплатная активация услуги</li>
+												<li>Уменьшение со следующего платежа</li>
+												<li>Увеличение срока кредита</li>
+											</ul>
+											<div class="article__ico frame">
+												<div class="frame__shadow"></div>
+												<div class="frame__in">
+													<div class="frame__img" style="background-image: url('/static/theme/images/icons/frame/2.svg')"></div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

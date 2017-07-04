@@ -2920,6 +2920,12 @@ h5,
   padding-bottom: 96px;
   color: #fff;
 }
+.benefits._repayment {
+  padding-bottom: 138px;
+}
+.benefits._repayment .benefits__blocks {
+  padding-top: 78px;
+}
 .benefits__wrap {
   background-color: #011689;
   margin-top: 96px;
@@ -2995,6 +3001,9 @@ h5,
 }
 .benefits__steps {
   margin-top: 64px;
+}
+.benefits__steps._small-titles .benefits__step-title {
+  font-size: 16px;
 }
 .benefits__step {
   position: relative;
@@ -3167,6 +3176,12 @@ h5,
   width: 512px;
   height: 650px;
   background-color: #021896;
+}
+.benefits__gall-slides._credit {
+  height: 541px;
+}
+.benefits__gall-slides._credit .benefits__gall-slide-in {
+  padding-top: 206px;
 }
 .benefits__gall-slide {
   height: 650px;
@@ -5620,6 +5635,7 @@ h5,
 }
 .payments {
   *zoom: 1;
+  padding-top: 19px;
 }
 .payments:before,
 .payments:after {
@@ -5632,12 +5648,20 @@ h5,
 }
 .payments__item {
   float: left;
-  width: 256px;
+  width: 544px;
   margin-right: 32px;
-  margin-top: 66px;
-  margin-bottom: 17px;
+  margin-top: 48px;
 }
-.payments__item:nth-child(4n) {
+.payments__item .help {
+  margin-top: -6px;
+  margin-left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.payments__item .help__ico {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.payments__item:nth-child(2n) {
   margin-right: 0;
 }
 .payments__item a {
@@ -5650,9 +5674,7 @@ h5,
   border: 2px solid rgba(255, 255, 255, 0.3);
   position: relative;
   display: block;
-}
-.payments__item-ico:hover .payments__item-ico-item._hover {
-  opacity: 1;
+  float: left;
 }
 .payments__item-ico-item {
   position: absolute;
@@ -5669,18 +5691,28 @@ h5,
   opacity: 0;
   z-index: 2;
 }
-.payments__item-title {
-  margin-top: 28px;
+.payments__item-texts {
+  float: left;
+  margin-left: 32px;
+  padding-top: 24px;
+  width: 224px;
+}
+.payments__item-commission {
+  float: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: 'pragmatica-slabserif', sans-serif;
+  color: #fff;
+  padding-top: 39px;
+  margin-left: 32px;
 }
 .payments__item-text {
   font-weight: 600;
   font-size: 12px;
   line-height: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 12px;
-}
-.payments__item-text span {
-  padding-left: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 8px;
 }
 .about__banner-history {
   margin-top: 64px;
