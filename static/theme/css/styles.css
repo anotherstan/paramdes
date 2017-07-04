@@ -1184,6 +1184,7 @@ h5,
   border: 1px solid rgba(0, 24, 55, 0.1);
   border-radius: 2px;
   padding: 57px 36px 31px;
+  display: none;
 }
 .phone-popup._indent {
   margin-top: 118px;
@@ -4975,7 +4976,7 @@ h5,
   border: 8px  solid #fff;
   margin-left: -16px;
   top: -14px;
-  box-shadow: 0 4px 34px rgba(30, 48, 85, 0.6);
+  box-shadow: 0 6px 14px rgba(204, 0, 61, 0.2);
 }
 .anketa__info {
   padding-left: 96px;
