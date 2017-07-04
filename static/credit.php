@@ -569,7 +569,7 @@
 							<div class="b-form__row">
 								<div class="b-form__block" data-form-field>
 									<div class="b-form__field">
-										<input type="email" data-form-field-inp data-required data-mask-phone>
+										<input type="text" data-form-field-inp data-required data-mask-phone>
 										<div class="b-form__placeholder">Телефон</div>
 									</div>
 									<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
