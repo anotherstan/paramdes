@@ -131,7 +131,7 @@ app.popups = function () {
 			;
 
 		$content = $popups.filter('[data-popup="' + data + '"]');
-		$self.fancybox({
+		$.fancybox({
 			wrapCSS: 'fc-base _popups '+dopClass,
 			content: $content,
 			fitToView: false,

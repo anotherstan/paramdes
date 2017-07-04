@@ -3,6 +3,9 @@
 		filter: blur(2px);
 	}
 }
+.fancybox-overlay{
+	cursor: none!important;
+}
 .fancybox-close{
 	width: 48px;
 	height: 48px;
@@ -10,6 +13,7 @@
 	right: 96px;
 	border-radius: 50%;
 	background: url("@{pathToImg}icons/close_white.svg") no-repeat center @cRed;
+	cursor: none!important;
 	&._fixed{
 		position: fixed;
 		right: auto!important;
@@ -30,4 +34,8 @@
 			box-shadow: none;
 		}
 	}
+}
+.fancybox-iframe,.fancybox-type-iframe{
+	width: 736px;
+	height: 414px;
 }

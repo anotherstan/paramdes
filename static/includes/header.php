@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/static/theme/css/styles.css">
 
 	<script src="/static/theme/js/libs.js"></script>
+	<script src="http://www.youtube.com/player_api"></script>
 	<script src="/static/theme/js/main.js"></script>
 </head>
 <body >

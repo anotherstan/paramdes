@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="hide">
-		<div class="tariff-popup" data-popup="tariffPostal">
+		<div class="tariff-popup" data-popup="card120">
 			<div class="b-block conditions__main" data-tabs>
 				<div class="h3">Карта «Элемент 120»</div>
 				<div class="conditions__tabs tabs">
@@ -96,8 +96,8 @@
 	<div class="clearfix">
 		<div class="anketa__form">
 			<div class="anketa__form-block">
-				<a href="javascript:void(0);" data-popup-show="tariffPostal" class="anketa__form-block-more"></a>
-				<div class="b-block__title h4 _dash anketa__form-block-title">Карта <a href="/static/">«Элемент 120»</a></div>
+				<a href="javascript:void(0);" data-popup-show="card120" class="anketa__form-block-more"></a>
+				<div class="b-block__title h4 _dash anketa__form-block-title">Карта <a href="javascript:void(0);" data-popup-show="card120">«Элемент 120»</a></div>
 				<div class="credit-calc__options anketa__calc" data-credit-calc>
 					<div class="credit-calc__option" data-credit-calc-option>
 						<div class="credit-calc__option-title">Кредитный лимит</div>
