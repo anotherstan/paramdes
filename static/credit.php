@@ -92,11 +92,17 @@
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Ставка</div>
-								<div class="conditions__block-item-val">от 16,9%</div>
+								<div class="conditions__block-item-val">
+									<div data-tabs-content="1">от 16,9%</div>
+									<div data-tabs-content="2" class="hide">от 19,9%</div>
+								</div>
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Комиссия</div>
-								<div class="conditions__block-item-val">от 3,9%</div>
+								<div class="conditions__block-item-val">
+									<div data-tabs-content="1">от 3,9%</div>
+									<div data-tabs-content="2" class="hide">0,0%</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -109,11 +115,17 @@
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Ставка</div>
-								<div class="conditions__block-item-val">от 14,9%</div>
+								<div class="conditions__block-item-val">
+									<div data-tabs-content="1">от 14,9%</div>
+									<div data-tabs-content="2" class="hide">от 16,9%</div>
+								</div>
 							</div>
 							<div class="conditions__block-item">
 								<div class="conditions__block-item-title">Комиссия</div>
-								<div class="conditions__block-item-val">1,0%</div>
+								<div class="conditions__block-item-val">
+									<div data-tabs-content="1">1,0%</div>
+									<div data-tabs-content="2" class="hide">0,0%</div>
+								</div>
 							</div>
 						</div>
 					</div>
