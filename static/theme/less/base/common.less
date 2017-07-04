@@ -692,6 +692,49 @@ h5,.h5{
 	background: url('@{pathToImg}icons/next.svg') no-repeat center;
 	background-size: contain;
 }
+
+.request-popup{
+	width: 736px;
+	box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	background-color: #ffffff;
+	padding: 48px 96px 64px;
+	&__items{
+		margin-top: 48px;
+	}
+	&__item{
+		display: block;
+		position: relative;
+		padding: 35px 48px 33px 160px;
+		color: @textColor;
+		box-shadow: 0;
+		transition: box-shadow @animTime;
+		&:hover{
+			box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
+		}
+		&+&{
+			margin-top: 32px;
+		}
+		&-ico{
+			position: absolute;
+			left: 48px;
+			width: 64px;
+			height: 64px;
+			background: none no-repeat center;
+			background-size: contain;
+			top: 32px;
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 20px;
+		}
+		&-text{
+			color: fade(@textColor,70%);
+			margin-top: 16px;
+		}
+	}
+}
 .phone-popup{
 	position: relative;
 	text-align: center;

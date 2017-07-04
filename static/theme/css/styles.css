@@ -1178,6 +1178,48 @@ h5,
   background: url('../images/icons/next.svg') no-repeat center;
   background-size: contain;
 }
+.request-popup {
+  width: 736px;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color: #ffffff;
+  padding: 48px 96px 64px;
+}
+.request-popup__items {
+  margin-top: 48px;
+}
+.request-popup__item {
+  display: block;
+  position: relative;
+  padding: 35px 48px 33px 160px;
+  color: #001837;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+.request-popup__item:hover {
+  box-shadow: 0 20px 40px 10px rgba(1, 22, 137, 0.2);
+}
+.request-popup__item + .request-popup__item {
+  margin-top: 32px;
+}
+.request-popup__item-ico {
+  position: absolute;
+  left: 48px;
+  width: 64px;
+  height: 64px;
+  background: none no-repeat center;
+  background-size: contain;
+  top: 32px;
+}
+.request-popup__item-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.request-popup__item-text {
+  color: rgba(0, 24, 55, 0.7);
+  margin-top: 16px;
+}
 .phone-popup {
   position: relative;
   text-align: center;
@@ -2276,6 +2318,9 @@ h5,
 }
 .fancybox-overlay {
   cursor: none!important;
+}
+.fancybox-inner {
+  cursor: default;
 }
 .fancybox-close {
   width: 48px;

@@ -135,6 +135,9 @@ app.popups = function () {
 			wrapCSS: 'fc-base _popups '+dopClass,
 			content: $content,
 			fitToView: false,
+			tpl:{
+				closeBtn : '<a title="" class="fancybox-item fancybox-close" href="javascript:;"></a>'
+			},
 			autoWidth: true,
 			autoResize: true,
 			padding: 0,

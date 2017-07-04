@@ -68,7 +68,25 @@
 						<a href="/static/not-found.php" class="header__menu-link">Еще <span class="dots">...</span></a>
 					</div>
 				</div>
-				<a href="/static/anketa.php" class="header__main-btn btn">Онлайн-заявка</a>
+				<a href="javascript:void(0);"  data-popup-show="request-online" data-popup-class="_right-close" class="header__main-btn btn">Онлайн-заявка</a>
+			</div>
+		</div>
+	</div>
+	<div class="hide">
+		<div class="request-popup" data-popup="request-online">
+			<div class="h3">Онлайн-заявка</div>
+			<div class="b-block__subtitle">Заполните заявку и получите решение онлайн.</div>
+			<div class="request-popup__items">
+				<a href="/static/anketa.php" class="request-popup__item">
+					<div class="request-popup__item-ico" style="background-image: url('/static/theme/images/icons/request-popup/1.svg');"></div>
+					<div class="request-popup__item-title">Кредит наличными</div>
+					<div class="request-popup__item-text">На любые цели.</div>
+				</a>
+				<a href="/static/anketa-card.php" class="request-popup__item">
+					<div class="request-popup__item-ico" style="background-image: url('/static/theme/images/icons/request-popup/2.png');"></div>
+					<div class="request-popup__item-title">Кредитная карта</div>
+					<div class="request-popup__item-text">120 дней без комиссии.</div>
+				</a>
 			</div>
 		</div>
 	</div>
