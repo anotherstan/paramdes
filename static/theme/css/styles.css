@@ -3837,6 +3837,15 @@ h5,
   top: 22px;
   right: 12px;
 }
+.about-gall__steps-btn:after {
+  content: '';
+  height: 40px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
 .about-gall__steps-btn.swiper-button-disabled {
   opacity: 0;
   cursor: default;

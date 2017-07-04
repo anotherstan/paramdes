@@ -50,6 +50,21 @@
 			</div>
 		</div>
 	</div>
+	<?
+		$videoLinks = ["https://www.youtube.com/embed/7k1xxPLrAFc",
+			"https://www.youtube.com/embed/sPkndPfCJeA",
+			"https://www.youtube.com/embed/xToEmrKy7jI",
+			"https://www.youtube.com/embed/WG7Qc41SvnE",
+			"https://www.youtube.com/embed/rfrTCrW26dM"
+		];
+		$videoDuration = ["1:23","1:33","1:44","1:32","1:14"];
+		$title = ["Покупайте сейчас,",
+			"Пользуйтесь сейчас,",
+			"Путешествуйте сейчас,",
+			"Учитесь сейчас,",
+			"Играйте сейчас,"
+		];
+	?>
 	<div class="page-menu__content"  data-page-content-wrap>
 		<div data-page-menu-content="1" class="hide1">
 			<div class="b-blocks">
@@ -73,17 +88,19 @@
 									<div class="about-gall__counter h3" data-about-counter><span data-about-counter-active>1</span> / 5</div>
 								</div>
 								<div class="about-gall__main">
-									<div class="about-gall__title h3">
-										Покупайте сейчас,<br/>
+									<?for ($i=1;$i<=5;$i++){?>
+									<div class="about-gall__title h3 <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>" >
+										<?=$title[$i-1]?><br/>
 										платите через 120 дней
 									</div>
+									<?}?>
 									<div class="about-gall__subtitle">Без комиссий и переплат.</div>
 									<?for ($i=1;$i<=5;$i++){?>
 										<div class="about-gall__video  <?=$i==1 ? '':'hide'?>" data-slide-content="<?=$i?>">
-											<a href="https://www.youtube.com/embed/7k1xxPLrAFc?autoplay=1&showinfo=0&rel=0;"  data-fancybox-video class="video-btn _red fancybox.iframe">
+											<a href="<?=$videoLinks[$i-1]?>?autoplay=1&showinfo=0&rel=0;"  data-fancybox-video class="video-btn _red fancybox.iframe">
 												<div class="video-btn__ico"></div>
 												<div class="video-btn__title">Посмотреть видео</div>
-												<div class="video-btn__duration">1:24</div>
+												<div class="video-btn__duration"><?=$videoDuration[$i-1]?></div>
 											</a>
 										</div>
 									<?}?>
