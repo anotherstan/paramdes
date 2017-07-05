@@ -44,6 +44,11 @@
 		.clearfix;
 		margin-top: 29px;
 		position: relative;
+		&:hover{
+			.calc__top-close{
+				opacity: 1;
+			}
+		}
 		&._2{
 			height: 0;
 			overflow: hidden;
@@ -54,12 +59,13 @@
 			height: 48px;
 			border: 1px solid fade(#fff,20%);
 			border-radius: 50%;
-			transition: border @animTime;
+			transition: border @animTime,opacity @animTime;
 			position: absolute;
 			top: 50%;
 			margin-top: -24px;
 			right: 32px;
 			background: url('@{pathToImg}icons/close_white.svg') no-repeat center;
+			opacity: 0;
 			&:hover{
 				border-color: fade(#fff,70%);
 			}

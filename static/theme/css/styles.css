@@ -4076,6 +4076,9 @@ h5,
 .calc__top:after {
   clear: both;
 }
+.calc__top:hover .calc__top-close {
+  opacity: 1;
+}
 .calc__top._2 {
   height: 0;
   overflow: hidden;
@@ -4086,12 +4089,13 @@ h5,
   height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  transition: border 0.5s;
+  transition: border 0.5s, opacity 0.5s;
   position: absolute;
   top: 50%;
   margin-top: -24px;
   right: 32px;
   background: url('../images/icons/close_white.svg') no-repeat center;
+  opacity: 0;
 }
 .calc__top-close:hover {
   border-color: rgba(255, 255, 255, 0.7);
