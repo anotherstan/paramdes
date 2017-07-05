@@ -4065,6 +4065,9 @@ h5,
   background: url('../images/vector.png') no-repeat 96px bottom #001e45;
   background-size: 1240px 185px;
 }
+.calc .disabled-result {
+  display: none!important;
+}
 .calc._2-lines {
   background-image: url('../images/vector2.png');
   background-size: 1120px 176px;

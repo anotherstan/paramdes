@@ -929,6 +929,9 @@ app.calc = function(){
 	$monthSelect.val(month);
 	$monthSelect.on('change',function () {
 		month = $(this).val();
+		$monthSelect2.find('option:disabled').attr('disabled',false);
+		$monthSelect2.find('option[value="'+month+'"]').attr('disabled',true);
+		$monthSelect2.trigger('chosen:updated');
 		month2=+month+1;
 		if(month2>12){
 			month2 = 1;
