@@ -245,39 +245,102 @@
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="0"></div>
 										<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-										<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Минимальный платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Каждый месяц необходимо вносить 5% от суммы задолженности.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="1"></div>
 										<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-										<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Минимальный платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Каждый месяц необходимо вносить 5% от суммы задолженности.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="2"></div>
 										<div class="calc__schedule-block-sum h4"><span data-calc-rest-payment></span> ₽</div>
-										<div class="calc__schedule-block-text">Последний платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Последний платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Оплата всей задолженности для реализации беспроцентного периода.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="calc__schedule-blocks _2">
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="0"></div>
 										<div class="calc__schedule-block-sum h4"><span  data-calc-payment1></span> ₽</div>
-										<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Минимальный платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Каждый месяц необходимо вносить 5% от суммы задолженности.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="1"></div>
 										<div class="calc__schedule-block-sum h4"><span  data-calc-payment2></span> ₽</div>
-										<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Минимальный платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Каждый месяц необходимо вносить 5% от суммы задолженности.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="calc__schedule-block _hide">
 										<div class="calc__label" data-calc-schedule-month="2"></div>
 										<div class="calc__schedule-block-sum h4"><span data-calc-payment3></span> ₽</div>
-										<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Минимальный платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Каждый месяц необходимо вносить 5% от суммы задолженности.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="calc__schedule-block">
 										<div class="calc__label" data-calc-schedule-month="3"></div>
 										<div class="calc__schedule-block-sum h4"><span data-calc-payment4></span> ₽</div>
-										<div class="calc__schedule-block-text">Последний платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+										<div class="calc__schedule-block-text">Последний платеж
+											<div class="help">
+												<a href="javascript:void(0);" class="calc__help">?</a>
+												<div class="help__content _top _blue">
+													<div class="help__content-in">
+														Оплата всей задолженности для реализации беспроцентного периода.
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

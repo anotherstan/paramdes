@@ -343,17 +343,17 @@
 							<div class="h3">Калькулятор кредита</div>
 							<div class="credit-calc__tabs tabs _white">
 								<a href="javascript:void(0);" class="tabs__item _active" data-credit-calc-rate-tab="0.149" data-tabs-tab="1">
-									Гарантированная ставка <span class="help">
+									Гарантированная ставка <div class="help">
 									<span class="help__ico">?</span>
 										<div class="help__content _top _blue">
 									<div class="help__content-in">
 										Специальная ставка от 14,9% годовых. С возможностью вернуть часть взносов по кредиту.
 									</div>
 								</div>
-								</span>
+								</div>
 								</a>
 								<a href="javascript:void(0);" class="tabs__item _fix"  data-credit-calc-rate-tab="0.169" data-tabs-tab="2">
-									фиксированная ставка <span class="help">
+									фиксированная ставка <div class="help">
 									<span class="help__ico">?</span>
 										<div class="help__content _top _blue">
 									<div class="help__content-in">
@@ -361,7 +361,7 @@
 										Конечная ставка зависит от вашей кредитной истории, заработной платы и условий кредитования.
 									</div>
 								</div>
-								</span>
+								</div>
 								</a>
 							</div>
 							<div class="credit-calc__options">
