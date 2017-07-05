@@ -435,7 +435,7 @@
 						<div class="b-block _transparent conditions__all">
 							<div class="h3">Полные условия</div>
 							<div class="conditions__all-files files">
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/contents/687/Tarif_po_kreditnoj_karte_EHlement_120_vstupaet_v_silu_24_01_17.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
@@ -445,7 +445,7 @@
 										<div class="file__size">254 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/documents/120/Tarif_Element_120_predloznie_zp_klientam.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
