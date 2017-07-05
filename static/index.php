@@ -1099,6 +1099,44 @@
 						</div>
 					</div>
 				</div>
+				<div data-nav-block class="repayment__block-wrap">
+					<div class="grid__inner">
+						<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+							<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+							<span data-nav-text>Досрочное погашение</span>
+						</span>
+						</a>
+					</div>
+					<div class="b-blocks _dark hide repayment__block"  data-nav-content>
+						<div class="grid__inner">
+							<div class="repayment__block-left" data-tabs>
+								<div class="h3">Досрочное погашение</div>
+								<div class="b-block__subtitle _white">Без комиссии и заявлений.</div>
+								<div class="conditions__tabs tabs _white">
+									<a href="javascript:void(0);" class="tabs__item _active" data-tabs-tab="1">Частичное погашение</a>
+									<a href="javascript:void(0);" class="tabs__item" data-tabs-tab="2">Полное погашение</a>
+								</div>
+								<div class="repayment__block-left-text">
+									Чтобы произвести частичное досрочное погашение обратитесь <br/>в клиентский центр, на стойку продаж или в клиентскую службу<br/>
+									 по телефону 8 800 550 0770 не позднее, чем за 7 дней до текущей даты платежа по кредиту.<br /><br />
+									  Вся сумма свыше очередного платежа в дату платежа будет направлена на погашение
+									основного долга по кредиту, при этом размер следующих платежей будет уменьшен, а срок кредита останется прежним.
+								</div>
+							</div>
+							<div class="repayment__block-right">
+								<div class="repayment__block-right-ico"></div>
+								<div class="repayment__block-right-text">
+									Денежные средства необходимо вносить<br/> не позднее установленной даты платежа.<br/><br/>
+									Пожалуйста, учитывайте время зачисления денежных средств конкретного способа.
+								</div>
+								<div class="repayment__block-right-frame">
+									Если вы не активировали услугу <a href="#">«Пропускаю платеж»</a>, при пропуске платежа ежедневно будет
+									начисляться неустойка в размере 20% годовых на сумму просроченного платежа.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

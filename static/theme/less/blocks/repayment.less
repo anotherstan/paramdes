@@ -7,4 +7,47 @@
 
 		}
 	}
+	&__block{
+		color: #fff;
+		.clearfix;
+		padding-bottom: 140px;
+		&-wrap{
+			margin-top: 96px;
+		}
+		&-left{
+			width: 736px;
+			box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 2px;
+			background-color: #001e45;
+			padding: 48px 96px 78px;
+			float: left;
+			.conditions__tabs{
+				margin-top: 39px;
+				margin-bottom: 47px;
+			}
+		}
+		&-right{
+			float: left;
+			width: 352px;
+			margin-left: 128px;
+			padding-top: 64px;
+			&-ico{
+				width: 96px;
+				height: 96px;
+				background: url('@{pathToImg}icons/footer/1.svg') no-repeat center;
+				background-size: contain;
+			}
+			&-text{
+				margin-top: 44px;
+			}
+			&-frame{
+				margin-top: 48px;
+				font-size: 12px;
+				line-height: 20px;
+				padding: 32px;
+				border-radius: 2px;
+				border: 1px solid fade(#fff,10%);
+			}
+		}
+	}
 }

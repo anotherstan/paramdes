@@ -5633,6 +5633,58 @@ h5,
 .repayment__payments {
   margin-top: 74px;
 }
+.repayment__block {
+  color: #fff;
+  *zoom: 1;
+  padding-bottom: 140px;
+}
+.repayment__block:before,
+.repayment__block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.repayment__block:after {
+  clear: both;
+}
+.repayment__block-wrap {
+  margin-top: 96px;
+}
+.repayment__block-left {
+  width: 736px;
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color: #001e45;
+  padding: 48px 96px 78px;
+  float: left;
+}
+.repayment__block-left .conditions__tabs {
+  margin-top: 39px;
+  margin-bottom: 47px;
+}
+.repayment__block-right {
+  float: left;
+  width: 352px;
+  margin-left: 128px;
+  padding-top: 64px;
+}
+.repayment__block-right-ico {
+  width: 96px;
+  height: 96px;
+  background: url('../images/icons/footer/1.svg') no-repeat center;
+  background-size: contain;
+}
+.repayment__block-right-text {
+  margin-top: 44px;
+}
+.repayment__block-right-frame {
+  margin-top: 48px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 32px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 .payments {
   *zoom: 1;
   padding-top: 19px;
