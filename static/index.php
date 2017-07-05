@@ -797,7 +797,7 @@
 												<a href="javascript:void(0);" class="help__ico">?</a>
 												<div class="help__content _top">
 													<div class="help__content-in">
-														<div>sdf</div>
+														<div>8 цифр, например, 12345678.</div>
 													</div>
 												</div>
 											</div>
