@@ -887,26 +887,59 @@ app.calc = function(){
 			$sumSlider = $sum.find('[data-calc-sum-slider]'),
 			$sumInp = $sum.find('[data-calc-sum-inp]'),
 			$monthSelect = $calc.find('[data-calc-month-field]'),
+			$sum2 = $calc.find('[data-calc-sum2]'),
+			$sumSlider2 = $sum2.find('[data-calc-sum-slider2]'),
+			$sumInp2 = $sum2.find('[data-calc-sum-inp2]'),
+			$monthSelect2 = $calc.find('[data-calc-month-field2]'),
 			$sheduleMonth = $calc.find('[data-calc-schedule-month]'),
 			$minPayment = $calc.find('[data-calc-min-payment]'),
 			$restPayment = $calc.find('[data-calc-rest-payment]'),
+			$add = $calc.find('[data-calc-add]'),
+			$del = $calc.find('[data-calc-del]'),
 			calcData = $sumSlider.data('calcSumSlider'),
+			calcData2 = $sumSlider2.data('calcSumSlider2'),
 			months=["В январе","в Феврале","в Марте","в Апреле","в Мае","в Июне","в Июле"," в Августе","в Сентябре"," в Октябре","в Ноябре","в Декабре"],
 			sum = null,
+			sum2 = null,
 			month = null,
+			month2 = null,
 			startSumValue = null,
-			val = null
+			startSumValue2 = null,
+			val = null,
+			dop=false
 
 		;
 	if(!$calc.length){
 		return false;
 	}
+	$add.on('click',function () {
+		$calc.addClass('_2-lines');
+		dop = true;
+		calculate();
+	});
+	$del.on('click',function () {
+		$calc.removeClass('_2-lines');
+		dop = false;
+		calculate();
+	});
 	month = calcData.month;
 	$monthSelect.val(month);
 	$monthSelect.on('change',function () {
 		month = $(this).val();
+		month2=+month+1;
+		if(month2>12){
+			month2 = 1;
+		}
+		$monthSelect2.val(month2).trigger('chosen:updated');
 		calculate();
 	});
+	month2 = calcData2.month;
+	$monthSelect2.val(month2);
+	$monthSelect2.on('change',function () {
+		return false;
+	});
+
+
 	$sumSlider.slider({
 		range: "min",
 		min: calcData.min,
@@ -942,6 +975,46 @@ app.calc = function(){
 		$sumInp.val(app.formatNumber(val));
 		calculate();
 	});
+
+	$sumSlider2.slider({
+		range: "min",
+		min: calcData2.min,
+		max: calcData2.max,
+		step: calcData2.step,
+		value: calcData2.value || calcData2.min,
+		slide: function( event, ui ){
+			calculate();
+			$sumInp2.val(app.formatNumber(ui.value));
+		},
+		start: function( event, ui ){
+			startSumValue2 = ui.value;
+		},
+		stop: function( event, ui ){
+			if(ui.value != startSumValue2){
+				calculate();
+				$sumInp2.val(app.formatNumber(ui.value));
+			}
+		}
+	});
+	$sumInp2.focus(function () {
+		val = parseInt($sumInp2.val().replace(new RegExp(" ",'g'),""),10);
+		$sumInp2.val(val);
+	}).keyup(function () {
+
+	});
+	$sumInp2.val(app.formatNumber(calcData2.value)).change();
+
+	$sumInp2.on('change',function(){
+		var val1 = parseInt($sumInp2.val().replace(new RegExp(" ",'g'),""),10) || calcData2.min;
+		val = Math.min(Math.max(calcData2.min, val1),calcData2.max);
+		$sumSlider2.slider("value",val);
+		$sumInp2.val(app.formatNumber(val));
+		calculate();
+	});
+
+
+
+
 	calculate();
 
 	function setMonth(n) {
@@ -954,8 +1027,16 @@ app.calc = function(){
 
 	function calculate() {
 		sum = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
-		$minPayment.text(app.formatNumber(sum*0.05));
-		$restPayment.text(app.formatNumber(sum*0.9));
+		if(dop){
+			sum2 = parseInt($sumInp2.val().replace(new RegExp(" ",'g'),""),10);
+			$calc.find('[data-calc-payment1]').text(app.formatNumber(sum*0.05));
+			$calc.find('[data-calc-payment2]').text(app.formatNumber(sum*0.05+sum2*0.05));
+			$calc.find('[data-calc-payment3]').text(app.formatNumber(sum*0.9+sum2*0.05));
+			$calc.find('[data-calc-payment4]').text(app.formatNumber(sum2*0.9));
+		}else{
+			$minPayment.text(app.formatNumber(sum*0.05));
+			$restPayment.text(app.formatNumber(sum*0.9));
+		}
 
 		$sheduleMonth.each(function (index) {
 			var $self = $(this),

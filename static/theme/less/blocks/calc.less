@@ -3,6 +3,38 @@
 	padding-bottom: 0;
 	background: url('@{pathToImg}vector.png') no-repeat  96px bottom #001e45;
 	background-size: 1240px 185px;
+	&._2-lines{
+		background-image: url('@{pathToImg}vector2.png');
+		background-size: 1120px 176px;
+		.calc__top{
+			background-color: #002352;
+			&._2{
+				height: auto;
+				overflow: visible;
+				margin-top: 16px;
+			}
+			&-add{
+				display: none;
+			}
+		}
+		.calc{
+			&__schedule-blocks{
+				display: none;
+				&._2{
+					display: block;
+				}
+			}
+			&__schedule-block{
+				width: 281px;
+				&:last-child{
+					width: 270px;
+				}
+				&._hide{
+					display: block;
+				}
+			}
+		}
+	}
 	select{
 		background: transparent;
 		height: 64px;
@@ -11,6 +43,27 @@
 	&__top{
 		.clearfix;
 		margin-top: 29px;
+		position: relative;
+		&._2{
+			height: 0;
+			overflow: hidden;
+			margin-top: 0;
+		}
+		&-close{
+			width: 48px;
+			height: 48px;
+			border: 1px solid fade(#fff,20%);
+			border-radius: 50%;
+			transition: border @animTime;
+			position: absolute;
+			top: 50%;
+			margin-top: -24px;
+			right: 32px;
+			background: url('@{pathToImg}icons/close_white.svg') no-repeat center;
+			&:hover{
+				border-color: fade(#fff,70%);
+			}
+		}
 		&-add{
 			float: left;
 			width: 352px;
@@ -120,6 +173,9 @@
 		&-blocks{
 			.clearfix;
 			margin-top: 43px;
+			&._2{
+				display: none;
+			}
 		}
 		&-block{
 			float: left;
@@ -127,8 +183,11 @@
 			padding-left: 32px;
 			border-left: 1px dashed fade(#fff,10%);
 			height: 158px;
-			&:nth-child(3n){
+			&:last-child{
 				width: 340px;
+			}
+			&._hide{
+				display: none;
 			}
 			&-sum{
 				line-height: 24px;
