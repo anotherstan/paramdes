@@ -139,64 +139,64 @@
 						<div class="b-block _transparent conditions__all">
 							<div class="h3">Полные условия</div>
 							<div class="conditions__all-files files">
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/documents/cashcredit/Pervyj_Pochtovyj_180517.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тариф «Первый Почтовый» <br />(действует с 19.05.17)</div>
-										<div class="file__size">254 Кб</div>
+										<div class="file__size">214 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/documents/cashcredit/Pochtovyj_180517.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тариф «Почтовый» <br /> (действует с 19.05.17)</div>
-										<div class="file__size">229 Кб</div>
+										<div class="file__size">215 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/03.02_docs/tarif_pervyi_pochtovyi_1_000_000_s_01.02.17.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тариф «Первый Почтовый 1 000 000» <br /> (действует с 01.02.17)</div>
-										<div class="file__size">229 Кб</div>
+										<div class="file__size">214 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/documents/01.03/superstavka.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тарифы по услуге «Гарантированная ставка»  для действующих клиентов</div>
-										<div class="file__size">229 Кб</div>
+										<div class="file__size">189 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/documents/cashcredit/Zarplatnyj_180517.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тариф «Зарплатный»  <br />(действует с 19.05.17)</div>
-										<div class="file__size">229 Кб</div>
+										<div class="file__size">213 Кб</div>
 									</div>
 								</a>
-								<a href="javascript:void(0);" class="file">
+								<a href="https://www.pochtabank.ru/upload/images/03.02_docs/tarif_zarplatnyi_1_000_000_s_01.02.17.pdf" target="_blank" class="file">
 									<div class="file__type">
 										<div class="file__type-text">PDF</div>
 										<div class="file__type-ico"></div>
 									</div>
 									<div class="file__inner">
 										<div class="file__name">Тариф «Зарплатный 1 000 000»  <br /> (действует с 01.02.17)</div>
-										<div class="file__size">229 Кб</div>
+										<div class="file__size">214 Кб</div>
 									</div>
 								</a>
 							</div>
