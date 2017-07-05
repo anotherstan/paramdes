@@ -115,6 +115,13 @@
 				<div class="b-form__check-list">
 					<div class="b-form__check"><label><input type="checkbox" checked>Я не являюсь ИПДЛ/РПДЛ<span class="help">
 								<a href="javascript:void(0);" class="help__ico">?</a>
+								<div class="help__content _top">
+									<div class="help__content-in">
+										Я не являюсь иностранным<br/>
+										или российским публичным<br/>должностным лицом<br/>
+										либо его родственником.
+									</div>
+								</div>
 							</span></label></div>
 				</div>
 			</div>

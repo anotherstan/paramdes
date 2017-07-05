@@ -45,6 +45,11 @@
 				<div class="b-form__check"><label><input type="checkbox">Гарантированная ставка
 					<span class="help">
 								<a href="javascript:void(0);" class="help__ico">?</a>
+						<div class="help__content _top">
+									<div class="help__content-in">
+										Специальная ставка от 14,9% годовых. С возможностью вернуть часть взносов по кредиту.
+									</div>
+								</div>
 							</span>
 					</label></div>
 				<div class="b-form__check"><label><input type="checkbox" data-check-toggle="insuranceProtection">Страховая защита</label></div>

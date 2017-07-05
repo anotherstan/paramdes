@@ -563,6 +563,7 @@ h5,
   line-height: 0;
   margin-left: 8px;
   margin-bottom: 1px;
+  z-index: 100;
 }
 .help:hover .help__ico {
   background-color: #cc003d;
@@ -594,6 +595,43 @@ h5,
   top: 10px;
   left: 0;
   padding-left: 32px;
+}
+.help__content._top {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, -21px);
+  left: 10px;
+  padding-left: 0!important;
+}
+.help__content._top .help__content-in {
+  width: 256px;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+}
+.help__content._top .help__content-in:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  border: 8px solid transparent;
+  border-bottom: 0;
+  border-top: 9px solid #fff;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: 0;
+}
+.help__content._top._blue .help__content-in {
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.1);
+  background-color: #001e45;
+  color: rgba(255, 255, 255, 0.9);
+}
+.help__content._top._blue .help__content-in:before {
+  border-top-color: #001e45 ;
 }
 .help__content-in {
   padding: 32px 48px;
