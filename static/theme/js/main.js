@@ -140,6 +140,9 @@ app.popups = function () {
 			},
 			autoWidth: true,
 			autoResize: true,
+			closeEffect:'none',
+			closeOpacity:false,
+			closeSpeed:0,
 			padding: 0,
 			margin:[120,10,10,60]
 		});
