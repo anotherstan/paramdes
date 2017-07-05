@@ -182,7 +182,7 @@
 												<option value="2">феврале</option>
 												<option value="3" selected>марте</option>
 												<option value="4">апреле</option>
-												<option value="5">мае</option>
+												<option value="5" >мае</option>
 												<option value="6">июне</option>
 												<option value="7">июле</option>
 												<option value="8">августе</option>

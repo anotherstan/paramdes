@@ -44,7 +44,7 @@
 							<li>Оформление по двум документам</li>
 						</ul>
 						<div class="card__btn">
-							<a href="not-found.php" class="btn">Подробнее</a>
+							<a href="credit.php" class="btn">Подробнее</a>
 							<div class="gall-btns">
 								<a href="javascript:void(0);" class="gall-btn _prev" data-banner-gall-prev></a>
 								<a href="javascript:void(0);" class="gall-btn _next" data-banner-gall-next>
@@ -92,7 +92,7 @@
 				<div class="grid__inner">
 					<div class="banner__inner">
 						<div>
-							<div class="banner__title">Пакет онлайн-  покупателя</div>
+							<div class="banner__title">Пакет онлайн -  покупателя</div>
 						</div>
 						<div>
 							<div class="banner__subtitle">текст</div>
@@ -121,21 +121,21 @@
 		<div class="banner-gall__pag">
 			<div class="grid__inner">
 				<div class="banner-gall__pag-in">
-					<a href="javascript:void(0);" class="swiper-slide banner-gall__pag-item _active" data-banner-gall-pag-link="1">
+					<a href="not-found.php" class="swiper-slide banner-gall__pag-item _active" data-banner-gall-pag-link="1">
 						<div class="banner-gall__pag-item-title h4">Вклад  «Сезонный»</div>
 						<div class="banner-gall__pag-item-val"><span>до</span> 8,5%</div>
 						<div class="banner-gall__pag-item-text">Повышенная ставка
 							для пенсионеров.</div>
-					</a><a href="javascript:void(0);" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="2">
+					</a><a href="credit.php" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="2">
 						<div class="banner-gall__pag-item-title h4">Кредит  наличными</div>
 						<div class="banner-gall__pag-item-val"><span>от</span> 14,9%</div>
 						<div class="banner-gall__pag-item-text">Гарантированная ставка на любые цели.</div>
-					</a><a href="javascript:void(0);" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="3">
+					</a><a href="not-found.php" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="3">
 						<div class="banner-gall__pag-item-title h4">Льготный  кредит</div>
 						<div class="banner-gall__pag-item-val"><span>от</span> 8,5%</div>
 						<div class="banner-gall__pag-item-text">Программа развития
 							Дальнего Востока.</div>
-					</a><a href="javascript:void(0);" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="4">
+					</a><a href="not-found.php" class="swiper-slide banner-gall__pag-item" data-banner-gall-pag-link="4">
 						<div class="banner-gall__pag-item-title h4">Пакет онлайн-  покупателя</div>
 						<div class="banner-gall__pag-item-val">0 ₽</div>
 						<div class="banner-gall__pag-item-text">Комфортные покупки <br/>в интернете.</div>
@@ -166,7 +166,7 @@
 			<div class="home__products">
 				<div  data-tabs-content="1">
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product">
+						<a href="not-found.php" class="home__product">
 							<div class="home__product-in">
 								<div class="h3 home__product-title">Копите и расходуйте<br/>деньги одновременно</div>
 								<div class="home__product-subtitle">При помощи сберегательного счета.</div>
@@ -183,7 +183,7 @@
 						</a>
 					</div>
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="/static/index.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Покупайте сейчас,<br/>платите через 120 дней</div>
 								<div class="home__product-subtitle">С картой «Элемент 120».</div>
@@ -194,7 +194,7 @@
 							</div>
 							<div class="home__product-img _2"></div>
 						</a>
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Подарите лес другу</div>
 								<div class="home__product-subtitle">Первый в мире проект по посадке  деревьев через интернет.</div>
@@ -210,7 +210,7 @@
 				</div>
 				<div  data-tabs-content="2" class="hide">
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product">
+						<a href="not-found.php" class="home__product">
 							<div class="home__product-in">
 								<div class="h3 home__product-title">Копите и расходуйте<br/>деньги одновременно</div>
 								<div class="home__product-subtitle">При помощи сберегательного счета.</div>
@@ -227,7 +227,7 @@
 						</a>
 					</div>
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Вклад «Капитальный»</div>
 								<div class="home__product-subtitle">С максимальной ставкой.</div>
@@ -238,7 +238,7 @@
 								</ul>
 							</div>
 						</a>
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Вложите деньги<br />по специальной ставке</div>
 								<div class="home__product-subtitle">При помощи сезонного вклада.</div>
@@ -252,7 +252,7 @@
 				</div>
 				<div class="hide"  data-tabs-content="3">
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product">
+						<a href="credit.php" class="home__product">
 							<div class="home__product-in">
 								<div class="h3 home__product-title">Покупки в кредит</div>
 								<div class="home__product-subtitle">30 минут от выбора до покупки.</div>
@@ -269,7 +269,7 @@
 						</a>
 					</div>
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="index.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Покупайте сейчас,<br/>платите через 120 дней</div>
 								<div class="home__product-subtitle">С картой «Элемент 120».</div>
@@ -280,7 +280,7 @@
 							</div>
 							<div class="home__product-img _2"></div>
 						</a>
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Онлайн карта</div>
 								<div class="home__product-subtitle">Для удобных покупок в интернете.</div>
@@ -296,7 +296,7 @@
 				</div>
 				<div class="hide"  data-tabs-content="4">
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product">
+						<a href="not-found.php" class="home__product">
 							<div class="home__product-in">
 								<div class="h3 home__product-title">Кредит для пенсионеров</div>
 								<div class="home__product-subtitle">Специальные условия для зрелых решений.</div>
@@ -312,7 +312,7 @@
 						</a>
 					</div>
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Избавьтесь от<br />неподъемных кредитов</div>
 								<div class="home__product-subtitle">Воспользуйтесь рефинансированием.</div>
@@ -322,7 +322,7 @@
 								</ul>
 							</div>
 						</a>
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Копите и расходуйте<br/>деньги одновременно</div>
 								<div class="home__product-subtitle">При помощи сберегательного счета.</div>
@@ -336,7 +336,7 @@
 				</div>
 				<div class="hide"  data-tabs-content="5">
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product">
+						<a href="credit.php" class="home__product">
 							<div class="home__product-in">
 								<div class="h3 home__product-title">Кредит наличными</div>
 								<div class="home__product-subtitle">Гарантированная ставка на любые цели.</div>
@@ -352,7 +352,7 @@
 						</a>
 					</div>
 					<div class="home__products-block">
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Льготный кредит на<br /><nobr>развитие Дальнего Востока</nobr></div>
 								<div class="home__product-subtitle">Программа «Дальневосточный Гектар».</div>
@@ -362,7 +362,7 @@
 								</ul>
 							</div>
 						</a>
-						<a href="javascript:void(0);" class="home__product _small">
+						<a href="not-found.php" class="home__product _small">
 							<div class="home__product-in">
 								<div class="h4 home__product-title">Вложите деньги<br />по специальной ставке</div>
 								<div class="home__product-subtitle">При помощи сезонного вклада..</div>
@@ -403,7 +403,7 @@
 					<div class="home__main-btn-title h4">Оплатить кредит</div>
 					<div class="home__main-btn-text">Онлайн и без комиссий.</div>
 				</a>
-				<a href="javascript:void(0);" class="home__main-btn">
+				<a href="javascript:void(0);" data-popup-show="request-online" class="home__main-btn">
 					<div class="home__main-btn-ico"  style="background-image: url('/static/theme/images/home/btns/2.svg');"></div>
 					<div class="home__main-btn-title h4">Оформить заявку</div>
 					<div class="home__main-btn-text">На кредит или карту.</div>

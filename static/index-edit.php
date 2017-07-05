@@ -122,19 +122,19 @@ include "includes/header.php"
 		</a>
 	</div>
 	<div class="b-blocks _dark hide"  data-nav-content>
-		<div class="grid__inner">
-			<div class="b-block conditions__main calc" data-calc>
-				<div class="h3">Все просто — платите через 4 месяца после покупок. </div>
-				<div class="calc__top">
-					<div class="calc__fields">
-						<div class="calc__fields-title">Вы сделали покупки на сумму</div>
-						<div class="calc__field _sum">
-							<div class="calc__sum" data-calc-sum>
-								<div class="calc__sum-field">
-									<span class="rub calc__sum-rub"></span>
-									<input type="text" data-calc-sum-inp value="">
-								</div>
-								<div class="calc__sum-slider" data-calc-sum-slider='{
+			<div class="grid__inner">
+				<div class="b-block conditions__main calc" data-calc>
+					<div class="h3">Все просто — платите через 4 месяца после покупок. </div>
+					<div class="calc__top">
+						<div class="calc__fields">
+							<div class="calc__fields-title">Вы сделали покупки на сумму</div>
+							<div class="calc__field _sum">
+								<div class="calc__sum" data-calc-sum>
+									<div class="calc__sum-field">
+										<span class="rub calc__sum-rub"></span>
+										<input type="text" data-calc-sum-inp value="">
+									</div>
+									<div class="calc__sum-slider" data-calc-sum-slider='{
 											"min":0,
 											"max":500000,
 											"step":500,
@@ -142,43 +142,43 @@ include "includes/header.php"
 											"month":5
 
 										}'></div>
-							</div>
-						</div>
-						<div class="calc__fields-title">в</div>
-						<div class="calc__field _month">
-							<div class="calc__month">
-								<select  data-calc-month-field data-chosen>
-									<option value="1">январе</option>
-									<option value="2">феврале</option>
-									<option value="3" selected>марте</option>
-									<option value="4">апреле</option>
-									<option value="5">мае</option>
-									<option value="6">июне</option>
-									<option value="7">июле</option>
-									<option value="8">августе</option>
-									<option value="9">сентябре</option>
-									<option value="10">октябре</option>
-									<option value="11">ноябре</option>
-									<option value="12">декабре</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<a href="javascript:void(0);" class="calc__top-add" data-calc-add>
-						<span class="calc__top-add-ico"></span>Добавить покупки
-					</a>
-				</div>
-				<div class="calc__top _2">
-					<a href="javascript:void(0);" class="calc__top-close" data-calc-del></a>
-					<div class="calc__fields">
-						<div class="calc__fields-title">Вы сделали покупки на сумму</div>
-						<div class="calc__field _sum">
-							<div class="calc__sum" data-calc-sum2>
-								<div class="calc__sum-field">
-									<span class="rub calc__sum-rub"></span>
-									<input type="text" data-calc-sum-inp2 value="">
 								</div>
-								<div class="calc__sum-slider" data-calc-sum-slider2='{
+							</div>
+							<div class="calc__fields-title">в</div>
+							<div class="calc__field _month">
+								<div class="calc__month">
+									<select  data-calc-month-field data-chosen>
+										<option value="1">январе</option>
+										<option value="2">феврале</option>
+										<option value="3" selected>марте</option>
+										<option value="4">апреле</option>
+										<option value="5">мае</option>
+										<option value="6">июне</option>
+										<option value="7">июле</option>
+										<option value="8">августе</option>
+										<option value="9">сентябре</option>
+										<option value="10">октябре</option>
+										<option value="11">ноябре</option>
+										<option value="12">декабре</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:void(0);" class="calc__top-add" data-calc-add>
+							<span class="calc__top-add-ico"></span>Добавить покупки
+						</a>
+					</div>
+					<div class="calc__top _2">
+						<a href="javascript:void(0);" class="calc__top-close" data-calc-del></a>
+						<div class="calc__fields">
+							<div class="calc__fields-title">Вы сделали покупки на сумму</div>
+							<div class="calc__field _sum">
+								<div class="calc__sum" data-calc-sum2>
+									<div class="calc__sum-field">
+										<span class="rub calc__sum-rub"></span>
+										<input type="text" data-calc-sum-inp2 value="">
+									</div>
+									<div class="calc__sum-slider" data-calc-sum-slider2='{
 											"min":0,
 											"max":500000,
 											"step":500,
@@ -186,74 +186,137 @@ include "includes/header.php"
 											"month":6
 
 										}'></div>
+								</div>
 							</div>
-						</div>
-						<div class="calc__fields-title">в</div>
-						<div class="calc__field _month">
-							<div class="calc__month">
-								<select  data-calc-month-field2 data-chosen>
-									<option value="1">январе</option>
-									<option value="2">феврале</option>
-									<option value="3" selected>марте</option>
-									<option value="4">апреле</option>
-									<option value="5">мае</option>
-									<option value="6">июне</option>
-									<option value="7">июле</option>
-									<option value="8">августе</option>
-									<option value="9">сентябре</option>
-									<option value="10">октябре</option>
-									<option value="11">ноябре</option>
-									<option value="12">декабре</option>
-								</select>
+							<div class="calc__fields-title">в</div>
+							<div class="calc__field _month">
+								<div class="calc__month">
+									<select  data-calc-month-field2 data-chosen>
+										<option value="1">январе</option>
+										<option value="2">феврале</option>
+										<option value="3" selected>марте</option>
+										<option value="4">апреле</option>
+										<option value="5">мае</option>
+										<option value="6">июне</option>
+										<option value="7">июле</option>
+										<option value="8">августе</option>
+										<option value="9">сентябре</option>
+										<option value="10">октябре</option>
+										<option value="11">ноябре</option>
+										<option value="12">декабре</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="calc__schedule">
-					<div class="h4">Чтобы не платить проценты, вам нужно будет вернуть</div>
-					<div class="calc__schedule-blocks">
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="0"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+					<div class="calc__schedule">
+						<div class="h4">Чтобы не платить проценты, вам нужно будет вернуть</div>
+						<div class="calc__schedule-blocks">
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="0"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Каждый месяц необходимо вносить 5% от суммы задолженности.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="1"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Каждый месяц необходимо вносить 5% от суммы задолженности.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="2"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-rest-payment></span> ₽</div>
+								<div class="calc__schedule-block-text">Последний платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Оплата всей задолженности для реализации беспроцентного периода.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="1"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-min-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
-						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="2"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-rest-payment></span> ₽</div>
-							<div class="calc__schedule-block-text">Последний платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
-						</div>
-					</div>
-					<div class="calc__schedule-blocks _2">
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="0"></div>
-							<div class="calc__schedule-block-sum h4"><span  data-calc-payment1></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
-						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="1"></div>
-							<div class="calc__schedule-block-sum h4"><span  data-calc-payment2></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
-						</div>
-						<div class="calc__schedule-block _hide">
-							<div class="calc__label" data-calc-schedule-month="2"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-payment3></span> ₽</div>
-							<div class="calc__schedule-block-text">Минимальный платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
-						</div>
-						<div class="calc__schedule-block">
-							<div class="calc__label" data-calc-schedule-month="3"></div>
-							<div class="calc__schedule-block-sum h4"><span data-calc-payment4></span> ₽</div>
-							<div class="calc__schedule-block-text">Последний платеж <a href="javascript:void(0);" class="calc__help">?</a></div>
+						<div class="calc__schedule-blocks _2">
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="0"></div>
+								<div class="calc__schedule-block-sum h4"><span  data-calc-payment1></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Каждый месяц необходимо вносить 5% от суммы задолженности.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="1"></div>
+								<div class="calc__schedule-block-sum h4"><span  data-calc-payment2></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Каждый месяц необходимо вносить 5% от суммы задолженности.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc__schedule-block _hide">
+								<div class="calc__label" data-calc-schedule-month="2"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-payment3></span> ₽</div>
+								<div class="calc__schedule-block-text">Минимальный платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Каждый месяц необходимо вносить 5% от суммы задолженности.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calc__schedule-block">
+								<div class="calc__label" data-calc-schedule-month="3"></div>
+								<div class="calc__schedule-block-sum h4"><span data-calc-payment4></span> ₽</div>
+								<div class="calc__schedule-block-text">Последний платеж
+									<div class="help">
+										<a href="javascript:void(0);" class="calc__help">?</a>
+										<div class="help__content _top _blue">
+											<div class="help__content-in">
+												Оплата всей задолженности для реализации беспроцентного периода.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 	<div class="b-blocks">
 		<div class="grid__inner">
