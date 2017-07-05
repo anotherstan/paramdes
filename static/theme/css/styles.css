@@ -2964,6 +2964,9 @@ h5,
 .benefits._repayment .benefits__blocks {
   padding-top: 78px;
 }
+.benefits._repayment .benefits__gall-slides._credit .benefits__gall-slide-in {
+  padding-top: 300px;
+}
 .benefits__wrap {
   background-color: #011689;
   margin-top: 96px;
@@ -3216,6 +3219,9 @@ h5,
   background-color: #021896;
 }
 .benefits__gall-slides._credit {
+  height: 541px;
+}
+.benefits__gall-slides._credit .benefits__gall-slide {
   height: 541px;
 }
 .benefits__gall-slides._credit .benefits__gall-slide-in {
@@ -5171,6 +5177,9 @@ h5,
 .anketa__form-block-title._dash:before {
   top: 6px;
 }
+.anketa__form-block-title._dash:before.h4 {
+  top: 6px;
+}
 .anketa__form-block + .anketa__form-block {
   border-top: 1px solid rgba(0, 24, 55, 0.1);
 }
@@ -5729,7 +5738,16 @@ h5,
 }
 .repayment {
   padding-top: 48px;
-  padding-bottom: 96px;
+  padding-bottom: 138px;
+}
+.repayment__benefits__gall-img {
+  width: 610px;
+  height: 559px;
+  background: url('../images/flower.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: -113px;
+  left: -98px;
 }
 .repayment__payments {
   margin-top: 74px;
@@ -5737,7 +5755,7 @@ h5,
 .repayment__block {
   color: #fff;
   *zoom: 1;
-  padding-bottom: 140px;
+  padding-bottom: 96px;
 }
 .repayment__block:before,
 .repayment__block:after {
@@ -5748,15 +5766,33 @@ h5,
 .repayment__block:after {
   clear: both;
 }
+.repayment__block-help-ico {
+  width: 88px;
+  height: 88px;
+  background: url('../images/icons/2.svg') no-repeat center;
+  background-size: contain;
+  margin: 0 auto 46px;
+}
+.repayment__block-help-phone {
+  color: #fff;
+}
+.repayment__block-help .b-block__subtitle {
+  margin-top: 10px;
+}
+.repayment__block-notice {
+  padding-right: 78px;
+  margin-top: 48px;
+  background-position: 48px 32px;
+}
 .repayment__block-wrap {
-  margin-top: 96px;
+  margin-top: 138px;
 }
 .repayment__block-left {
   width: 736px;
   box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   background-color: #001e45;
-  padding: 48px 96px 78px;
+  padding: 48px 96px 61px;
   float: left;
 }
 .repayment__block-left .conditions__tabs {
@@ -5767,13 +5803,20 @@ h5,
   float: left;
   width: 352px;
   margin-left: 128px;
-  padding-top: 64px;
+  padding-top: 82px;
+  text-align: center;
+}
+.repayment__block-right-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 64px;
+  padding-top: 59px;
 }
 .repayment__block-right-ico {
   width: 96px;
   height: 96px;
   background: url('../images/icons/footer/1.svg') no-repeat center;
   background-size: contain;
+  margin: 0 auto;
 }
 .repayment__block-right-text {
   margin-top: 44px;

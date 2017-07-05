@@ -1,6 +1,15 @@
 .repayment{
 	padding-top: 48px;
-	padding-bottom: 96px;
+	//padding-bottom: 190px;
+	padding-bottom: 138px;
+	&__benefits__gall-img{
+		width: 610px;
+		height:559px;
+		.background('@{pathToImg}flower.png');
+		position: absolute;
+		top: -113px;
+		left: -98px;
+	}
 	&__payments{
 		margin-top: 74px;
 		&-items{
@@ -10,16 +19,35 @@
 	&__block{
 		color: #fff;
 		.clearfix;
-		padding-bottom: 140px;
+		padding-bottom: 96px;
+		&-help{
+			&-ico{
+				width: 88px;
+				height: 88px;
+				.background('@{pathToImg}icons/2.svg');
+				margin: 0 auto 46px;
+			}
+			&-phone{
+				color: #fff;
+			}
+			.b-block__subtitle{
+				margin-top: 10px;
+			}
+		}
+		&-notice{
+			padding-right: 78px;
+			margin-top: 48px;
+			background-position: 48px 32px;
+		}
 		&-wrap{
-			margin-top: 96px;
+			margin-top: 138px;
 		}
 		&-left{
 			width: 736px;
 			box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.2);
 			border-radius: 2px;
 			background-color: #001e45;
-			padding: 48px 96px 78px;
+			padding: 48px 96px 61px;
 			float: left;
 			.conditions__tabs{
 				margin-top: 39px;
@@ -30,12 +58,19 @@
 			float: left;
 			width: 352px;
 			margin-left: 128px;
-			padding-top: 64px;
+			padding-top: 82px;
+			text-align: center;
+			&-bottom{
+				border-top: 1px solid fade(#fff,10%);
+				margin-top: 64px;
+				padding-top: 59px;
+			}
 			&-ico{
 				width: 96px;
 				height: 96px;
 				background: url('@{pathToImg}icons/footer/1.svg') no-repeat center;
 				background-size: contain;
+				margin: 0 auto;
 			}
 			&-text{
 				margin-top: 44px;
