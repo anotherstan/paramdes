@@ -27,7 +27,7 @@
 					<div class="b-block cards__item">
 						<a href="index.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/2/1.png');"></div>
 						<div class="b-block__title h3">Элемент 120</div>
 						<div class="b-block__subtitle">Платежная карта для покупок.</div>
 						<div class="card__options">
@@ -49,7 +49,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/2/2.png');"></div>
 						<div class="b-block__title h3">Почтовый экспресс</div>
 						<div class="b-block__subtitle">0% — разумное решение.</div>
 						<div class="card__options">
@@ -71,7 +71,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/2/3.png');"></div>
 						<div class="b-block__title h3">Зеленый мир</div>
 						<div class="b-block__subtitle">Ваш вклад в озеленение планеты.</div>
 						<div class="card__options">
@@ -95,7 +95,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1/1.png');"></div>
 						<div class="b-block__title h3">Онлайн карта</div>
 						<div class="b-block__subtitle">Виртуальная карта для оплаты в интернете.</div>
 						<div class="card__options">
@@ -117,7 +117,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1/2.png');"></div>
 						<div class="b-block__title h3">Visa Classic</div>
 						<div class="b-block__subtitle">Карта к сберегательному счету.</div>
 						<div class="card__options">
@@ -139,7 +139,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1/3.png');"></div>
 						<div class="b-block__title h3">Visa Platinum</div>
 						<div class="b-block__subtitle">Карта к сберегательному счету.</div>
 						<div class="card__options">
@@ -161,7 +161,7 @@
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
-						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1.png');"></div>
+						<div class="cards__item-img" style="background-image: url('/static/theme/images/cards/1/4.png');"></div>
 						<div class="b-block__title h3">Карта «Мир»</div>
 						<div class="b-block__subtitle">Карта к сберегательному счету.</div>
 						<div class="card__options">

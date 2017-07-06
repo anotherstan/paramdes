@@ -3709,28 +3709,25 @@ h5,
   width: 202px;
 }
 .cards__item:hover {
-  background-color: #252163;
-  color: #fff;
-}
-.cards__item:hover .b-block__title,
-.cards__item:hover .b-block__title.h3 a,
-.cards__item:hover .card__option-val {
-  color: #fff;
-}
-.cards__item:hover .b-block__subtitle,
-.cards__item:hover .card__option-title {
-  color: rgba(255, 255, 255, 0.7);
-}
-.cards__item:hover .cards__item-img {
-  transform: translate(0, -35px);
+  /*background-color: #252163;
+			color: #fff;
+			.b-block__title, .b-block__title.h3 a,.card__option-val{
+				color: #fff;
+			}
+			.b-block__subtitle, .card__option-title{
+				color: fade(#fff,70%);
+			}
+			.cards__item-img{
+				transform: translate(0,-35px);
+			}*/
 }
 .cards__item-img {
-  width: 351px;
-  height: 221px;
+  width: 731px;
+  height: 244px;
   background: none no-repeat center;
   background-size: contain;
   position: absolute;
-  left: 160px;
+  left: 0;
   top: 50%;
   margin-top: -110px;
   transform: translate(0, 0);
