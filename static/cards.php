@@ -14,8 +14,8 @@
 				<div class="grid__inner">
 					<div class="page-menu__in">
 						<div class="tabs page-menu__items">
-							<a href="javascript:void(0);" data-tabs-tab="1" class="tabs__item _active">Кредитные карты</a>
-							<a href="javascript:void(0);" data-tabs-tab="2" class="tabs__item">Дебетовые карты</a>
+							<a href="javascript:void(0);" data-tabs-tab="1" class="tabs__item ">Кредитные карты</a>
+							<a href="javascript:void(0);" data-tabs-tab="2" class="tabs__item _active">Дебетовые карты</a>
 						</div>
 					</div>
 				</div>
@@ -23,7 +23,7 @@
 		</div>
 		<div class="cards">
 			<div class="grid__inner">
-				<div data-tabs-content="1">
+				<div data-tabs-content="1" class="hide">
 					<div class="b-block cards__item">
 						<a href="index.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
@@ -91,7 +91,7 @@
 						<div class="card__btn"><a href="anketa-card.php" class="btn">Оформить карту</a></div>
 					</div>
 				</div>
-				<div data-tabs-content="2" class="hide">
+				<div data-tabs-content="2">
 					<div class="b-block cards__item">
 						<a href="not-found.php" class="cards__item-link"></a>
 						<div class="cards__item-pattern"></div>
