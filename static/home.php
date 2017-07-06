@@ -435,7 +435,7 @@
 								</div>
 								
 								<div class="article__author">
-									<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author1.png');"></div>
+									<div class="article__author-photo" style="background-image: url('/static/theme/images/home/12.png');"></div>
 									<div class="article__author-name">Павел Гаврилов</div>
 									<div class="article__author-position">Предприниматель</div>
 								</div>
@@ -449,7 +449,7 @@
 									по самой выгодной цене
 								</div>
 								<div class="article__author">
-									<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author2.png');"></div>
+									<div class="article__author-photo" style="background-image: url('/static/theme/images/home/13.png');"></div>
 									<div class="article__author-name">Дарья Ермолинa</div>
 									<div class="article__author-position">Покупатель со стажем</div>
 								</div>
@@ -463,7 +463,7 @@
 									к рождению ребенка
 								</div>
 								<div class="article__author">
-									<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author2.png');"></div>
+									<div class="article__author-photo" style="background-image: url('/static/theme/images/home/14.png');"></div>
 									<div class="article__author-name">Вероника Титовa</div>
 									<div class="article__author-position">Молодая мама</div>
 								</div>

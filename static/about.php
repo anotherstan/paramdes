@@ -1,5 +1,5 @@
 <?include "includes/header.php"?>
-	<div class="banner" style="background-image: url('/static/theme/images/banners/about.jpg');">
+	<div class="banner" style="background-image: url('/static/theme/images/banners/about.png');">
 		<div class="grid__inner">
 			<div class="banner__inner">
 				<div>
@@ -53,7 +53,7 @@
 				</div>
 				<div class="about__manager-bottom">
 					<div class="article__author about__manager-person">
-						<div class="article__author-photo" style="background-image: url('/static/theme/images/icons/author1.png');"></div>
+						<div class="article__author-photo" style="background-image: url('/static/theme/images/about/3.png');"></div>
 						<div class="article__author-name">Руденко Дмитрий Васильевич</div>
 						<div class="article__author-position">Президент-Председатель Правления, Член Наблюдательного совета</div>
 					</div>
@@ -93,7 +93,7 @@
 			<div class="person" data-popup="person">
 				<div class="person__inner">
 					<div class="person__top">
-						<div class="person__photo"></div>
+						<div class="person__photo" style="background-image: url('/static/theme/images/about/9.png');"></div>
 						<div class="h3">Мохначева Елена  Владимировна</div>
 						<div class="person__position">Член Правления, операционный директор</div>
 						<div class="person__top-blocks">
