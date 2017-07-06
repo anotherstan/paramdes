@@ -99,6 +99,10 @@ function onPlayerReady(event) {
 }
 app.fancyClose = function () {
 	var flag = false;
+	$('[data-fancy-close]').on('click',function () {
+		$.fancybox.close();
+	});
+	
 	$('html').on('mousemove',function (e) {
 		if(flag){
 			$('.fancybox-close').addClass('_fixed').css({

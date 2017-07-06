@@ -1,4 +1,26 @@
 .questions{
+	&._links{
+		.questions__item-title{
+			&:hover{
+				color: @cRed;
+				&:after{
+					opacity: 1;
+					transform: translate(5px,0);
+				}
+			}
+			&:after{
+				position: static;
+				display: inline-block;
+				vertical-align: top;
+				background-image: url('@{pathToImg}icons/arr-right.svg');
+				opacity: 0;
+				margin-top: 3px;
+				transform: translate(0,0);
+				transition: transform @animTime,opacity @animTime;
+				margin-left: 10px;
+			}
+		}
+	}
 	&__items{
 		margin-top: 8px;
 	}

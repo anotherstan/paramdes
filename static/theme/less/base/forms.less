@@ -5,6 +5,9 @@
 			padding-top: 0;
 		}
 	}
+	&__fields{
+		margin-top: 48px;
+	}
 	&__row{
 		.clearfix;
 		&._checks{
@@ -18,6 +21,9 @@
 		&+&{
 			margin-top: 24px;
 		}
+	}
+	&__btn{
+		margin-top: 48px;
 	}
 	&__error{
 		color: @cRed;
@@ -60,7 +66,7 @@
 				color: @cRed;
 			}
 			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+			input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 				border:2px solid @cRed!important;
 			}
 		}
@@ -71,34 +77,34 @@
 			&._error{
 				&+&{
 					input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-					input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+					input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 						border-left: 0!important;
 					}
 
 				}
 			}
 			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+			input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 				border-radius: 0;
 			}
 			width: 50%;
 			float: left;
 			&+&{
 				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 					border-left: 0;
 				}
 			}
 			&:first-child{
 				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 					border-top-left-radius: 2px;
 					border-top-right-radius: 2px;
 				}
 			}
 			&:last-child{
 				input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-				input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 					border-bottom-left-radius: 2px;
 					border-bottom-right-radius: 2px;
 				}
@@ -158,12 +164,15 @@
 	&__field{
 		height: 64px;
 		position: relative;
+		&._textarea{
+			height: 192px;
+		}
 		&._autocomplete-show{
 			.b-form__autocomplete{
 				display: block;
 			}
 			input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-			input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+			input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 			}
@@ -179,7 +188,7 @@
 			}
 		}
 		input[type='text'], input[type='password'], input[type='tel'], input[type='date'],
-		input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+		input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 			background-color: transparent;
 			&._focus{
 				&+.b-form__placeholder{

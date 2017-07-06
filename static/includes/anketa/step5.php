@@ -258,7 +258,7 @@
 					<div class="anketa__offices-map" data-anketa-office-map>
 						<a href="javascript:void(0);" class="anketa__offices-map-marker" data-anketa-office-map-marker></a>
 						<div class="anketa__offices-map-popup hide" data-anketa-office-map-marker-popup>
-							<a href="javascript:void(0);"  data-anketa-office-map-marker-popup-close class="anketa__offices-map-popup-close"></a>
+							<a href="javascript:void(0);" onclick="$.fancybox.close();"   class="anketa__offices-map-popup-close"></a>
 							<div class="anketa__office">
 								<div class="anketa__office-title">Москва, ул. Богданова, д. 6</div>
 								<div class="anketa__office-subtitle">В отделении «Почты России».</div>
