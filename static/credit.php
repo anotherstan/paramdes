@@ -36,7 +36,7 @@
 					<div class="tabs page-menu__items">
 						<a href="javascript:void(0);" data-page-menu-tab="1" class="tabs__item _active">Обзор</a>
 						<a href="javascript:void(0);" data-page-menu-tab="2" class="tabs__item">Погашение кредита</a>
-						<a href="javascript:void(0);" class="tabs__item">Поддержка</a>
+						<a href="javascript:void(0);" data-page-menu-tab="3" class="tabs__item">Поддержка</a>
 					</div>
 					<a href="/static/anketa.php" class="btn page-menu__btn">оформить кредит</a>
 				</div>
@@ -1094,6 +1094,306 @@
 										начисляться неустойка в размере 20% годовых на сумму просроченного платежа.
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-page-menu-content="3" class="hide">
+			<div class="support">
+				<div class="grid__inner">
+					<div class="b-block questions _links">
+						<div class="b-block__title h3 _dash">Решение проблем</div>
+						<div class="questions__items" data-questions data-nav-block>
+							<?
+								$questions = [
+									"Что такое код доступа?",
+									"Как восстановить код доступа?",
+									"Что делать, если график платежей потерялся?",
+									"Где можно получить выписку по кредиту?",
+									"Я не успеваю внести ежемесячный платеж, что делать?"
+								];
+								for ($i=0;$i<5;$i++){
+									?>
+									<div class="questions__item">
+										<a href="not-found.php" class="questions__item-title"><?=$questions[$i]?></a>
+									</div>
+								<?}?>
+							<div class="hide" data-nav-content>
+								<?for ($i=100;$i<count($questions);$i++){?>
+									<div class="questions__item " data-questions-item>
+										<a href="not-found.php" class="questions__item-title"><?=$questions[$i]?></a>
+									</div>
+								<?}?>
+							</div>
+							<div class="questions__all">
+								<a href="javascript:void(0);" class="all-btn" data-nav-btn>
+									<span class="all-btn__counter">9</span><span class="all-btn__text">
+									<span data-nav-text>Показать все вопросы</span>
+									<span data-nav-text class="hide">Скрыть</span>
+								</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-nav-block class="support__docs">
+					<div class="grid__inner">
+						<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+							<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+						<span data-nav-text>Документы</span>
+					</span>
+						</a>
+					</div>
+					<div class="b-blocks _dark conditions hide"  data-nav-content>
+						<div class="grid__inner">
+							<div class="b-block conditions__main">
+								<div class="h3">Документы</div>
+								<div class="support__docs-block files">
+									<a href="https://www.pochtabank.ru/upload/images/documents/120/Uslovija_predostavlenija_ispolzovanija_i_vozvrata_kredita_Jelement_120_dejstvujut_s_24_03_17.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Условия предоставления, использования<br/> и возврата кредита (действуют с 24.03.17)</div>
+											<div class="file__size">218 Кб</div>
+										</div>
+									</a>
+									<a href="https://www.pochtabank.ru/upload/contents/687/Uslovija_predostavlenija_kreditnyh_kart_redakcija_3_8_dejstvujut_s_16.02.17.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Условия предоставления кредитных карт<br/>(редакция 3.8, действуют с 16.02.17)</div>
+											<div class="file__size">453 Кб</div>
+										</div>
+									</a>
+									<a href="https://www.pochtabank.ru/upload/images/documents/120/Tarif_Element_120_predloznie_zp_klientam.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Тариф по кредитной карте «Элемент 120» (для зарплатных клиентов; действует с 10.03.17)</div>
+											<div class="file__size">229 Кб</div>
+										</div>
+									</a>
+									<a href="https://www.pochtabank.ru/upload/images/15.03_credcards/trebovaniya_k_klientu_s_10_03_2017.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Требования к клиенту<br/>(действуют с 10.03.17)</div>
+											<div class="file__size">464 Кб</div>
+										</div>
+									</a>
+									<a href="https://www.pochtabank.ru/upload/contents/687/pamyatka_credit.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Памятка безопасного использования банковских карт</div>
+											<div class="file__size">464 Кб</div>
+										</div>
+									</a>
+									<a href="https://www.pochtabank.ru/upload/contents/687/Tarif_po_kreditnoj_karte_EHlement_120_vstupaet_v_silu_24_01_17.pdf" target="_blank" class="file">
+										<div class="file__type">
+											<div class="file__type-text">PDF</div>
+											<div class="file__type-ico"></div>
+										</div>
+										<div class="file__inner">
+											<div class="file__name">Тариф по кредитной карте «Элемент 120»<br/>(действует с 24.01.17)</div>
+											<div class="file__size">229 Кб</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid__inner">
+					<div class="support__block">
+						<div class="b-block support__block-left">
+							<div class="b-block__title h3 _dash">Клиентская служба</div>
+							<div class="benefits__steps">
+								<div class="benefits__step">
+									<div class="benefits__step-num">0</div>
+									<div class="benefits__step-title">Линия блокировки карты</div>
+								</div>
+								<div class="benefits__step">
+									<div class="benefits__step-num">1</div>
+									<div class="benefits__step-title">Автоматизированное меню</div>
+								</div>
+								<div class="benefits__step">
+									<div class="benefits__step-num">2</div>
+									<div class="benefits__step-title">Узнать информацию о продуктах и услугах</div>
+								</div>
+								<div class="benefits__step">
+									<div class="benefits__step-num">*</div>
+									<div class="benefits__step-title">Соединение с оператором</div>
+								</div>
+							</div>
+						</div>
+						<div class="support__block-phones">
+							<div class="support__block-phones-ico"></div>
+							<div class="support__block-phones-block">
+								<a href="tel:88005500770" class="h3 val">8 800 550 0770</a>
+								<div class="support__block-phones-block-text">Бесплатный звонок по России.</div>
+							</div>
+							<div class="support__block-phones-block">
+								<a href="tel:+74955321300" class="h3 val">+7 495 532 13 00</a>
+								<div class="support__block-phones-block-text">Для звонков из-за границы.</div>
+							</div>
+							<div class="support__block-phones-btn">
+								<a href="javascript:void(0);" class="btn">Позвонить с сайта</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-nav-block class="support__form">
+					<div class="grid__inner">
+						<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+							<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+						<span data-nav-text>Задать вопрос специалисту</span>
+					</span>
+						</a>
+					</div>
+					<div class="b-blocks _dark hide support__form-in"  data-nav-content>
+						<div class="grid__inner">
+							<form action="" data-base-form>
+								<div class="support__form-block b-block" >
+									<div class="h3">Задайте вопрос специалисту</div>
+									<div class="b-block__subtitle _white">Получите профессиональную консультацию.</div>
+									<div class="b-form__fields">
+										<div class="b-form__row">
+											<div class="b-form__block" data-form-field>
+												<div class="b-form__field">
+													<input type="text" data-form-field-inp data-required>
+													<div class="b-form__placeholder">ФИО</div>
+												</div>
+												<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block" data-form-field>
+												<div class="b-form__field">
+													<input type="text" data-form-field-inp data-required data-mask-phone>
+													<div class="b-form__placeholder">Телефон</div>
+												</div>
+												<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block" data-form-field>
+												<div class="b-form__field">
+													<input type="email" data-form-field-inp data-required>
+													<div class="b-form__placeholder">E-mail</div>
+												</div>
+												<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block" data-form-field>
+												<div class="b-form__field">
+													<input type="text" data-form-field-inp data-required>
+													<div class="b-form__placeholder">Фактический адрес</div>
+												</div>
+												<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block" data-form-field>
+												<div class="b-form__field _textarea">
+													<textarea data-form-field-inp data-required></textarea>
+													<div class="b-form__placeholder">Текст вопроса</div>
+												</div>
+												<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+											</div>
+										</div>
+										<div class="b-form__btn">
+											<button type="submit" class="btn">Отправить форму</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="anketa__aside">
+								<div class="b-steps anketa__aside-steps _vertical _arrs">
+									<div class="b-steps__item">
+										<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/1_white.svg')"></div>
+										<div class="b-steps__item-title">1. Заполните форму</div>
+										<div class="b-steps__item-text">На заполнение уйдет<br />не больше 5 минут.</div>
+									</div>
+									<div class="b-steps__item">
+										<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/2_white.svg')"></div>
+										<div class="b-steps__item-title">2. Дождитесь ответа</div>
+										<div class="b-steps__item-text">Вопрос будет рассмотрен<br />в течение 10 минут.</div>
+									</div>
+								</div>
+								<div class="anketa__aside-img-wrap">
+									<div class="anketa__aside-img"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid__inner">
+					<div class="support__contacts">
+						<div class="b-block support__contacts-main">
+							<div class="support__contacts-main-ico"></div>
+							<div class="support__contacts-main-block">
+								<div class="b-block__title h3 _dash">Головной офис</div>
+								<div class="support__contacts-main-text">Преображенская пл., д. 8, г. Москва, 107061</div>
+								<div class="support__contacts-items">
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">Телефон</div>
+										<div class="support__contacts-item-val _big"><a href="tel:84956465814">8 (495) 646-5814</a></div>
+									</div>
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">E-mail</div>
+										<div class="support__contacts-item-val _big"><a href="mailto:welcome@pochtabank.ru">welcome@pochtabank.ru</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="support__contacts-main-block">
+								<div class="h4">Пресс-служба</div>
+								<div class="support__contacts-items">
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">Телефон</div>
+										<div class="support__contacts-item-val"><a href="tel:84956465814">8 (495) 646-5814</a></div>
+									</div>
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">E-mail</div>
+										<div class="support__contacts-item-val"><a href="mailto:pr@pochtabank.ru">pr@pochtabank.ru</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="support__contacts-main-block">
+								<div class="h4">Служба подбора персонала</div>
+								<div class="support__contacts-items">
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">Телефон</div>
+										<div class="support__contacts-item-val"><a href="tel:84952283888">8 (495) 228-3888</a></div>
+									</div>
+									<div class="support__contacts-item">
+										<div class="support__contacts-item-title">E-mail</div>
+										<div class="support__contacts-item-val"><a href="mailto:rabota@pochtabank.ru">rabota@pochtabank.ru</a></div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="support__contacts-city">
+							<div class="support__contacts-city-ico"></div>
+							<div class="anketa__offices-counter h3">215 <span>отделений</span></div>
+							<div class="anketa__offices-city">В городе Москва</div>
+							<div class="anketa__offices-btn">
+								<a href="javascript:void(0);" class="btn" data-popup-show="map">Показать на карте</a>
 							</div>
 						</div>
 					</div>

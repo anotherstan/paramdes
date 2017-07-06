@@ -540,17 +540,92 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-blocks">
-		<div data-nav-block>
-			<div class="grid__inner">
-				<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
-					<span class="all-btn__counter _plus"></span><span class="all-btn__text">
-					<span data-nav-text>Задать вопрос специалисту</span>
-				</span>
-				</a>
+	<div data-nav-block class="support__form">
+	<div class="grid__inner">
+		<a href="javascript:void(0);" class="all-btn _toggle" data-nav-btn>
+			<span class="all-btn__counter _plus"></span><span class="all-btn__text">
+						<span data-nav-text>Задать вопрос специалисту</span>
+					</span>
+		</a>
+	</div>
+	<div class="b-blocks _dark hide support__form-in"  data-nav-content>
+		<div class="grid__inner">
+			<form action="" data-base-form>
+				<div class="support__form-block b-block" >
+					<div class="h3">Задайте вопрос специалисту</div>
+					<div class="b-block__subtitle _white">Получите профессиональную консультацию.</div>
+					<div class="b-form__fields">
+						<div class="b-form__row">
+							<div class="b-form__block" data-form-field>
+								<div class="b-form__field">
+									<input type="text" data-form-field-inp data-required>
+									<div class="b-form__placeholder">ФИО</div>
+								</div>
+								<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block" data-form-field>
+								<div class="b-form__field">
+									<input type="text" data-form-field-inp data-required data-mask-phone>
+									<div class="b-form__placeholder">Телефон</div>
+								</div>
+								<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block" data-form-field>
+								<div class="b-form__field">
+									<input type="email" data-form-field-inp data-required>
+									<div class="b-form__placeholder">E-mail</div>
+								</div>
+								<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block" data-form-field>
+								<div class="b-form__field">
+									<input type="text" data-form-field-inp data-required>
+									<div class="b-form__placeholder">Фактический адрес</div>
+								</div>
+								<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block" data-form-field>
+								<div class="b-form__field _textarea">
+									<textarea data-form-field-inp data-required></textarea>
+									<div class="b-form__placeholder">Текст вопроса</div>
+								</div>
+								<div class="b-form__error">Были допущены ошибки или поле оставлено пустым.</div>
+							</div>
+						</div>
+						<div class="b-form__btn">
+							<button type="submit" class="btn">Отправить форму</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="anketa__aside">
+				<div class="b-steps anketa__aside-steps _vertical _arrs">
+					<div class="b-steps__item">
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/1_white.svg')"></div>
+						<div class="b-steps__item-title">1. Заполните форму</div>
+						<div class="b-steps__item-text">На заполнение уйдет<br />не больше 5 минут.</div>
+					</div>
+					<div class="b-steps__item">
+						<div class="b-steps__item-ico" style="background-image: url('/static/theme/images/icons/instruction/2_white.svg')"></div>
+						<div class="b-steps__item-title">2. Дождитесь ответа</div>
+						<div class="b-steps__item-text">Вопрос будет рассмотрен<br />в течение 10 минут.</div>
+					</div>
+				</div>
+				<div class="anketa__aside-img-wrap">
+					<div class="anketa__aside-img"></div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 <?include "includes/footer.php"?>
 
