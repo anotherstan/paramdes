@@ -59,6 +59,7 @@ app.init = function () {
 	app.bannerGall();
 	app.baseForm();
 	app.filter();
+	app.footerSearch();
 
 	if(!$('[data-no-fixed-footer]').length){
 		app.footer();
@@ -97,12 +98,25 @@ function onYouTubePlayerAPIReady() {
 function onPlayerReady(event) {
 	event.target.playVideo();
 }
+app.footerSearch = function () {
+	var $search = $('[data-footer-search]'),
+			$searchBtn = $search.find('[data-footer-search-btn]'),
+			$searchClose = $search.find('[data-footer-search-close]')
+		;
+
+	$searchBtn.on('click',function () {
+		$search.addClass('_open');
+	});
+	$searchClose.on('click',function () {
+		$search.removeClass('_open');
+	});
+};
 app.fancyClose = function () {
 	var flag = false;
 	$('[data-fancy-close]').on('click',function () {
 		$.fancybox.close();
 	});
-	
+
 	$('html').on('mousemove',function (e) {
 		if(flag){
 			$('.fancybox-close').addClass('_fixed').css({

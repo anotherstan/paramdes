@@ -55,12 +55,23 @@
 					</div>
 					<div class="footer__bottom">
 						<a href="javascript:void(0);" class="footer__bottom-logo" target="_blank"></a>
-						<div class="footer__social">
-							<a href="javascript:void(0);" class="footer__social-item _vk" target="_blank"></a>
-							<a href="javascript:void(0);" class="footer__social-item _fb" target="_blank"></a>
-							<a href="javascript:void(0);" class="footer__social-item _ok" target="_blank"></a>
-							<a href="javascript:void(0);" class="footer__social-item _tw" target="_blank"></a>
-							<a href="javascript:void(0);" class="footer__social-item _google" target="_blank"></a>
+						<div class="footer__bottom-left">
+							<div class="footer__search" data-footer-search>
+								<a href="javascript:void(0);" class="footer__search-btn" data-footer-search-btn></a>
+								<div class="footer__search-block">
+									<div class="footer__search-field">
+										<input type="text" placeholder="Поиск по сайту">
+										<a href="javascript:void(0);" class="footer__search-close" data-footer-search-close></a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__social">
+								<a href="javascript:void(0);" class="footer__social-item _vk" target="_blank"></a>
+								<a href="javascript:void(0);" class="footer__social-item _fb" target="_blank"></a>
+								<a href="javascript:void(0);" class="footer__social-item _ok" target="_blank"></a>
+								<a href="javascript:void(0);" class="footer__social-item _tw" target="_blank"></a>
+								<a href="javascript:void(0);" class="footer__social-item _google" target="_blank"></a>
+							</div>
 						</div>
 						<div class="footer__bottom-text">
 							ПАО «Почта Банк» является частью международной финансовой группы ВТБ и ФГУП «Почта России».<br/>
